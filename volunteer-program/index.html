@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Brújula Digital</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="header">
+  <h1>🧭 Brújula Digital</h1>
+  <p>Usa la tecnología de forma más segura, consciente y saludable.</p>
+</header>
+
+<main class="container">
+
+  <!-- INICIO -->
+  <section id="home">
+    <div class="intro">
+      <h2>Bienvenido 👋</h2>
+      <p>Cada paso que das en el mundo digital es una oportunidad para aprender, descubrir y sentirte más seguro al usar la tecnología. </p>
+      <div style="display: flex; justify-content: center;">
+        <button class="btn" onclick="showSection('modulos')" style="width: auto; min-width: 250px;">Comenzar</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- MÓDULOS -->
+  <section id="modulos" style="display:none">
+    <h2 style="color: var(--blue);">Módulos</h2>
+    <div class="module-card" onclick="showSection('modulo-salud')">📱 Uso saludable de dispositivos</div>
+    <div class="module-card" onclick="showSection('modulo-estafas')">⚠️ Estafas digitales</div>
+    <div class="module-card" onclick="showSection('modulo-deepfakes')">🤖 Deepfakes y desinformación</div>
+    <div class="module-card" onclick="showSection('modulo-privacidad')">🔒 Privacidad y seguridad</div>
+  </section>
+
+  <!--INTRO MÓDULO 1 -->
+  <section id="modulo-salud" style="display:none">
+    <div class="intro">
+      <h2>📱 Uso saludable de dispositivos</h2>
+      <p>La tecnología puede ser una herramienta poderosa para aprender, comunicarnos y descubrir nuevas oportunidades. Sin embargo, también es importante aprender a usarla con equilibrio, ya que un uso excesivo puede afectar nuestra salud y bienestar.</p>
+      <h3>📝 Consejos prácticos</h3>
+      <h4>👓 <span class="subtitle2">Regla 20-20-20</span></h4>
+      <p>¿Alguna vez has sentido los ojos cansados o resecos después de usar el celular por mucho tiempo?</p>
+      <p>Nuestros ojos también necesitan descansar. Cada 20 minutos, mira algo que esté a unos 6 metros de distancia durante 20 segundos. Este pequeño hábito puede ayudar a reducir la fatiga visual.</p>
+      <h4>🌙 <span class="subtitle2">Modo nocturno</span></h4>
+      <p>¿Te ha pasado que te cuesta dormir después de usar el teléfono por la noche?</p> 
+      <p>La luz azul de las pantallas puede interferir con el sueño. Intenta activar el modo nocturno o la luz cálida después de las 7:00 p. m.</p>
+      <h4>📵 <span class="subtitle2">Zona sin pantallas</span></h4>
+      <p>¿Cuántas veces has mirado el celular durante una comida o justo antes de dormir?</p>
+      <p>A veces, dejar el celular a un lado también hace bien. Aprovecha esos momentos para descansar, conversar o disfrutar del tiempo con las personas que te rodean.</p>
+      <h4>🧍 <span class="subtitle2">Postura</span></h4>
+      <p>¿Alguna vez has sentido tensión o dolor en el cuello después de usar el teléfono?</p>
+       <p>Muchas veces se debe a la postura. Procura sostener el dispositivo a la altura de los ojos para evitar molestias en el cuello y la espalda.</p>
+      <h3>🎯 Meta del módulo</h3>
+      <p>Descubrir cómo pequeños cambios en nuestros hábitos digitales pueden ayudarnos a disfrutar la tecnología de una manera más equilibrada, saludable y consciente. 🧭💙</p>
+      <div style="display: flex; justify-content: center;">
+        <button class="btn" onclick="showSection('leccion-salud')" style="width: auto; min-width: 250px;">🚀 Empecemos</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- LECCIÓN MÓDULO 1 -->
+  <section id="leccion-salud" style="display:none">
+    <div class="intro">
+      <h3>🎥 Video recomendado</h3>
+      <p>Antes de continuar, mira este breve video sobre el uso de la tecnología:</p>
+      <div class="video-container">
+        <iframe src="https://www.youtube.com/embed/wqQ0L8LKuh4?si=8RIyOmY3HJELRznG"
+          title="Uso saludable de la tecnología"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen></iframe>
+      </div>
+      <h2>📖 Lección 1: ¿Por qué es importante cuidar el tiempo en pantalla?</h2>
+      <p>Nuestro tiempo es valioso. Cada momento que pasamos frente a una pantalla es un momento que también podríamos dedicar a descansar, realizar actividad física, conversar con nuestra familia o simplemente disfrutar de lo que sucede a nuestro alrededor.</p>
+      <p>¿Esto significa que la tecnología es mala? No. La tecnología puede ser una herramienta increíble para aprender, entretenernos y mantenernos conectados. Pero, como una espada de doble filo, su impacto depende de cómo la usamos.</p>
+      <p>Pasar demasiado tiempo frente a una pantalla puede afectar:</p>
+      <ul>
+        <li><span class = "subtitle">El sueño</span> 😴 — Usar pantallas hasta muy tarde puede hacer que nos cueste más dormir.</li>
+        <li> <span class = "subtitle"> La actividad física</span> 🚶 — A veces pasamos horas sentados sin darnos cuenta.</li>
+        <li><span class = "subtitle"> El bienestar emocional</span> 😔 — Estar constantemente conectados o recibir demasiada información puede hacernos sentir agotados o estresados.</li>
+      </ul>
+      <p><span class="highlight3">No se trata de dejar de usar la tecnología, sino de aprender a utilizarla de una forma que beneficie nuestra salud y nuestro bienestar.</span></p>
+      <p>📚 <strong>¿Quieres saber más?</strong> La Comisión Europea explica los efectos del tiempo excesivo en pantalla:<br>
+        <a href="https://health.ec.europa.eu/inthistogether/healthy-screentime_es" target="_blank" rel="noopener noreferrer" style="color: var(--blue); font-size: 1rem;">🔗 Ver fuente oficial (Comisión Europea)</a>
+      </p>
+      <hr style="margin: 25px 0; border-color: #e2e8f0;">
+      <h3>🧠 Quiz: Pon a prueba lo que aprendiste</h3>
+      <div id="quiz-container"></div>
+      <div style="display: flex; justify-content: center; margin-top: 20px;">
+        <button class="btn" onclick="mostrarPuntaje()" id="btn-resultado" style="display:none; width: auto;">Ver mi resultado 🎯</button>
+      </div>
+      <div id="resultado-final" style="display:none;"></div>
+      <div style="display: flex; justify-content: space-between; align-items: center; margin-top: 20px; flex-wrap: wrap; gap: 10px;">
+        <button class="btn btn-secondary" onclick="goHome()">← Volver al inicio</button>
+        <button class="btn" onclick="showSection('modulo-estafas')">Siguiente módulo →</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- INTRO MÓDULO 2 -->
+  <section id="modulo-estafas" style="display:none">
+    <div class="intro">
+      <h2>⚠️ Estafas digitales</h2>
+      <p>Hoy en día es muy común recibir mensajes por WhatsApp, correo electrónico o llamadas de personas que intentan engañarnos. Aprender a reconocer estas situaciones nos ayuda a proteger nuestra información, nuestro dinero y a navegar por internet con mayor tranquilidad.</p>
+      <h3>📝 Consejos prácticos</h3>
+      <h4>⏳ <span class="subtitle2">Desconfía de la urgencia</span></h4>
+      <p>¿Alguna vez has recibido un mensaje diciendo que tu cuenta será bloqueada si no actúas de inmediato?</p>
+      <p>Ese tipo de mensajes buscan generar miedo o urgencia para que tomemos decisiones sin pensar. Si recibes un aviso así, detente unos segundos y verifica la información antes de actuar.</p>
+      <h4>🔐 <span class="subtitle2">Nunca compartas datos personales</span></h4>
+      <p>¿Te han pedido alguna vez una contraseña o un código por mensaje o llamada?</p>
+      <p>Ningún banco ni entidad confiable te pedirá esa información por esos medios. Si alguien lo hace, lo mejor es no responder y verificar directamente con la institución.</p>
+      <h4>🔍 <span class="subtitle2">Verifica antes de hacer clic</span></h4>
+      <p>¿Recibiste un enlace inesperado por WhatsApp o correo?</p>
+      <p>Antes de abrirlo, pregúntate si esperabas ese mensaje y si conoces realmente a quien lo envió. Si tienes dudas, es mejor no hacer clic.</p>
+      <h4>📞 <span class="subtitle2">Llama directamente</span></h4>
+      <p>¿Recibiste una llamada de alguien que dice ser de tu banco o de una institución?</p>
+      <p> No te apresures a responder. Lo más seguro es comunicarte tú mismo usando el número oficial que aparece en la página web o en tus documentos.</p>
+      <h3>🎯 Meta del módulo</h3>
+      <p>Reconocer las señales más comunes de una estafa digital para proteger nuestra información y navegar con mayor seguridad.</p>
+      <div style="display: flex; justify-content: center;">
+        <button class="btn" onclick="showSection('leccion-estafas')" style="width: auto; min-width: 250px;">🚀 Empecemos</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- LECCIÓN MÓDULO 2 -->
+  <section id="leccion-estafas" style="display:none">
+    <div class="intro">
+      <h3>🎥 Video recomendado</h3>
+      <p>Antes de continuar, mira este breve video sobre estafas digitales:</p>
+      <div class="video-container">
+        <iframe src="https://www.youtube.com/embed/ZqhCvKTK98U?si=CCe5GijveqKE_iSP" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </div>
+      <h2>📖 Lección 2: ¿Cómo reconocer una estafa digital?</h2>
+      <p>Cada día aparecen nuevas formas de estafa en internet. Aunque cambian constantemente, la mayoría tienen algo en común: buscan que actuemos rápidamente, sin detenernos a pensar o verificar la información.</p>
+      <h3>🚨 Tipos de estafas más comunes</h3>
+      <ul>
+        <li><span class="subtitle">Phishing</span> 📧 — Correos o mensajes que imitan a tu banco o a una empresa conocida para robarte datos.</li>
+        <li><span class="subtitle">Llamadas falsas</span> 📞 — Alguien dice ser del banco o del gobierno y te pide información urgente.</li>
+        <li> <span class="subtitle">"Ganaste un premio"</span> 🎁 — Te dicen que ganaste algo pero necesitas pagar para recibirlo. Nadie regala nada así.</li>
+        <li><span class="subtitle">Estafa del familiar</span> 👨‍👩‍👧 — Alguien finge ser un familiar en apuros y pide dinero urgente.</li>
+        <li><span class="subtitle">Enlaces falsos</span> 🔗 — Links que parecen reales pero te llevan a páginas falsas que roban tus datos.</li>
+      </ul>
+      <p>Aunque las estafas pueden presentarse de muchas formas, <span class= "highlight2">la mayoría comparten algunas señales que pueden ayudarnos a identificarlas.</span> Conocerlas es el primer paso para actuar con mayor seguridad.</p>
+      <ul>
+        <li>El mensaje crea <span class=" highlight3">miedo o urgencia innecesaria</span></li>
+        <li>Te piden <span class="highlight3">datos personales</span>, contraseñas o dinero</li>
+        <li>El remitente tiene un <span class="highlight3">nombre extraño</span> o dirección de correo desconocida</li>
+        <li>Hay <span class="highlight3">errores de ortografía</span> o el mensaje se ve <span class="highlight3">mal redactado</span></li>
+        <li>Te ofrecen algo <span class="highlight3">demasiado bueno para ser verdad</span></li>
+      </ul>
+      <p><strong>Recuerda:</strong> Tomarte unos segundos para verificar un mensaje puede evitar muchos problemas. Ante cualquier duda, es mejor confirmar la información antes de compartir datos personales o realizar un pago.</p>
+      <p>📚 <strong>¿Quieres saber más?</strong> La Oficina de Seguridad del Internauta explica cómo protegerse del phishing:<br>
+        <a href="https://www.osi.es/es/phishing" target="_blank" rel="noopener noreferrer" style="color: var(--blue); font-size: 1rem;">🔗 Ver fuente oficial (OSI - Oficina de Seguridad del Internauta)</a>
+      </p>
+      <hr style="margin: 25px 0; border-color: #e2e8f0;">
+      <h3>🧠 Quiz: ¿Es estafa o no?</h3>
+      <div id="quiz-container-estafas"></div>
+      <div style="display: flex; justify-content: center; margin-top: 20px;">
+        <button class="btn" onclick="mostrarPuntajeEstafas()" id="btn-resultado-estafas" style="display:none; width: auto;">Ver mi resultado 🎯</button>
+      </div>
+      <div id="resultado-final-estafas" style="display:none;"></div>
+      <div style="display: flex; justify-content: space-between; align-items: center; margin-top: 20px; flex-wrap: wrap; gap: 10px;">
+        <button class="btn btn-secondary" onclick="goHome()">← Volver al inicio</button>
+        <button class="btn" onclick="showSection('modulo-deepfakes')">Siguiente módulo →</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- INTRO MÓDULO 3 -->
+  <section id="modulo-deepfakes" style="display:none">
+    <div class="intro">
+      <h2>🤖 Deepfakes y desinformación</h2>
+      <p>Hoy en día, internet nos permite acceder a una enorme cantidad de información, imágenes y videos en cuestión de segundos. Sin embargo, no todo lo que vemos es verdadero. Aprender a reconocer información falsa y contenidos creados con inteligencia artificial nos ayudará a navegar con mayor seguridad y confianza.</p>
+      <h3>📝 Consejos prácticos</h3>
+      <h4>🔍 <span class="subtitle2">Verifica la fuente</span></h4>
+      <p>¿Alguna vez has visto una noticia sorprendente en redes sociales o por WhatsApp?</p>
+      <p>Antes de creerla o compartirla, revisa quién la publicó. Es más confiable si proviene de un medio de comunicación reconocido o de una institución oficial.</p>
+      <h4>🤔 <span class="subtitle2">No compartas de inmediato</span></h4>
+      <p> ¿Te ha pasado que recibes un mensaje y quieres reenviarlo enseguida?</p>
+      <p>Tómate unos segundos para verificar si la información es verdadera. Compartir una noticia falsa, aunque sea sin intención, puede contribuir a la desinformación.</p>
+      <h4>🎭 <span class="subtitle2">No todo lo que ves es real</span></h4>
+      <p>¿Sabías que hoy es posible crear imágenes, videos y audios muy realistas con inteligencia artificial?</p>
+      <p>Si un contenido te parece muy sorprendente o extraño, busca otras fuentes antes de creer que es verdadero.</p>
+      <h4> ⚠️ <span class="subtitle2">Desconfía de lo demasiado impactante</span></h4>
+      <p>¿Has visto una noticia que parece increíble o provoca una reacción muy fuerte?</p>
+      <p>Muchas veces los contenidos falsos buscan sorprendernos o hacernos reaccionar rápidamente. Si algo parece demasiado bueno, demasiado malo o demasiado increíble, verifica la información antes de compartirla.</p>
+      <h3>🎯 Meta del módulo</h3>
+      <p>Aprender a identificar información falsa y reconocer cómo los deepfakes pueden utilizarse para engañar, desarrollando el hábito de verificar antes de creer o compartir un contenido.</p>
+      <div style="display: flex; justify-content: center;">
+        <button class="btn" onclick="showSection('leccion-deepfakes')" style="width: auto; min-width: 250px;">🚀 Empecemos</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- LECCIÓN MÓDULO 3 -->
+  <section id="leccion-deepfakes" style="display:none">
+    <div class="intro">
+      <h3>🎥 Video recomendado</h3>
+      <p>Antes de continuar, mira este breve video sobre la desinformación y los deepfakes:</p>
+      <div class="video-container">
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/G29kYRBRiPk?si=ThHPMCeKT2FS3GE8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+    <h2>📖 Lección 3: ¿Cómo reconocer la desinformación y los deepfakes?</h2>
+    <p>Internet nos permite aprender cosas nuevas, mantenernos informados y comunicarnos con personas de todo el mundo. Sin embargo, no todo lo que vemos o leemos en internet es verdadero. Algunas publicaciones pueden contener información falsa o haber sido modificadas para confundir a las personas.</p>
+    <p>¿Esto significa que no podemos confiar en nada de lo que vemos en internet? No. La mayoría del contenido que encontramos es auténtico, pero es importante desarrollar el hábito de verificar la información antes de creerla o compartirla.</p>
+    <p>Uno de los ejemplos más conocidos de este tipo de contenido son los deepfakes. Se trata de imágenes, videos o audios creados o modificados con inteligencia artificial para que parezcan reales. En algunos casos se utilizan con fines de entretenimiento, pero también pueden emplearse para difundir información falsa o hacer creer que una persona dijo o hizo algo que nunca ocurrió.</p>
+    <h4>🔍 ¿Cómo podemos reconocerlos?</h4>
+    <p>No siempre es fácil identificar un contenido falso, especialmente cuando ha sido creado con inteligencia artificial. Sin embargo, hay algunas señales que pueden ayudarnos a analizar la información con mayor cuidado.</p>
+    <ul>
+      <li>🎭 El contenido parece demasiado sorprendente o increíble.</li>
+      <li>🔍 No encuentras la misma información en otras fuentes confiables.</li>
+      <li>📢 La publicación no indica quién la creó o proviene de una fuente poco conocida.</li>
+      <li>🤖 En algunos videos, la voz o los movimientos pueden verse poco naturales.</li>
+      <li>📅 La información está fuera de contexto o utiliza imágenes antiguas para hablar de un hecho reciente.</li>
+    </ul>
+    <p>No siempre podremos saber de inmediato si un contenido es verdadero o falso. Por eso, si algo te genera dudas, lo mejor es detenerte un momento, buscar otras fuentes confiables y evitar compartirlo hasta confirmar que la información es correcta. Unos minutos de verificación pueden ayudar a evitar que la desinformación siga circulando.</p>
+    <p>📚 <strong>¿Quieres saber más?</strong> El Instituto Nacional de Ciberseguridad (INCIBE) ofrece recomendaciones para identificar la desinformación y protegerse frente a contenidos manipulados, incluidos los deepfakes.<br>
+  <a href="https://www.incibe.es/ciudadania/blog/deepfakes" target="_blank" rel="noopener noreferrer" style="color: var(--blue); font-size: 1rem;">
+    🔗 Ver fuente oficial (INCIBE)
+  </a>
+</p>
+ <hr style="margin: 25px 0; border-color: #e2e8f0;">
+      <h3>🧠 Quiz: ¿Puedes identificar la desinformación?</h3>
+      <div id="quiz-container-deepfakes"></div>
+      <div style="display: flex; justify-content: center; margin-top: 20px;">
+        <button class="btn" onclick="mostrarPuntajeDeepfakes()" id="btn-resultado-deepfakes" style="display:none; width: auto;">Ver mi resultado 🎯</button>
+      </div>
+      <div id="resultado-final-deepfakes" style="display:none;"></div>
+      <div style="display: flex; justify-content: space-between; align-items: center; margin-top: 20px; flex-wrap: wrap; gap: 10px;">
+        <button class="btn btn-secondary" onclick="goHome()">← Volver al inicio</button>
+        <button class="btn" onclick="showSection('modulo-privacidad')">Siguiente módulo →</button>
+      </div>
+      </div>
+  </section>
+
+  <!-- MÓDULO 4 -->
+  <section id="modulo-privacidad" style="display:none">
+    <div class="intro">
+      <h2>🔒 Privacidad y seguridad</h2>
+      <p>Próximamente...</p>
+      <h4> proximamente  <span class="subtitle2">kjn</span></h4>
+      <p>Próximamente...</p>
+      <h4> proximamente  <span class="subtitle2">j</span></h4>
+      <p>Próximamente... </p>
+      <h4> proximamente  <span class="subtitle2">j</span></h4>
+      <p> proximamente </p>
+      <h4> proximamente  <span class="subtitle2">j</span></h4>
+      <p> proximamente </p>
+      <h3>🎯 Meta del módulo</h3>
+      <p> kjn</p>
+      <div style="display: flex; justify-content: center;">
+        <button class="btn" onclick="showSection('leccion-privacidad')" style="width: auto; min-width: 250px;">🚀 Empecemos</button>
+      </div>
+      </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <p>Proyecto educativo — Brújula Digital</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
