@@ -8,6 +8,7 @@ function showSection(id) {
   if (id === "leccion-salud") initQuiz();
   if (id === "leccion-estafas") initQuizEstafas();
   if (id === "leccion-deepfakes") initQuizDeepfakes();
+  if (id === "leccion-privacidad") initQuizPrivacidad();
 
   window.scrollTo({ top: 0, behavior: "smooth" });
 }
