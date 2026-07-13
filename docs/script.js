@@ -271,9 +271,10 @@ function mostrarPuntajeEstafas() {
 //QUIZ MÓDULO 3
 const quizDataDeepfakes = [
 {
-  pregunta: "Recibes por WhatsApp una noticia muy sorprendente, pero solo aparece en un mensaje reenviado y no en medios conocidos. ¿Qué deberías hacer?", 
-  opciones: ["Compartirla para avisar a otras personas.", "Buscar la misma información en fuentes confiables antes de creerla.", "Asumir que es verdadera porque muchas personas la reenviaron.", "Guardar la noticia sin verificarla."],
-  correcta: 1,
+  pregunta: "Un familiar te envía por WhatsApp un video que asegura mostrar un hecho muy grave. El video parece real, pero no encuentras información en medios confiables. ¿Qué deberías hacer primero?",
+  opciones: [ "Compartir el video para advertir a otras personas.", "Buscar si medios confiables o fuentes oficiales también informan sobre el hecho.", "Creer que es verdadero porque el video parece auténtico.", "Guardar el video como prueba sin verificarlo."
+  ],
+  correcta: 1
 },
 
 {
