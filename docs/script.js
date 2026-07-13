@@ -174,7 +174,7 @@ const quizDataEstafas = [
     pregunta: "¿Cuál es la mejor forma de verificar si un mensaje de una institución es real?",
     opciones: ["Hacer clic en el enlace del mensaje", "Responder el mensaje preguntando si es real", "Contactar directamente a la institución por sus canales oficiales", "Reenviar el mensaje a tus contactos"],
     correcta: 2
-  }
+  },
 ];
 
 let respuestasCorrectasEstafas = 0;
@@ -278,35 +278,39 @@ const quizDataDeepfakes = [
 },
 
 {
-  pregunta:"¿Qué es un deepfake?",
-  opciones:["Un virus que daña el computador.", "Un tipo de contraseña segura.", "Un programa para bloquear noticias falsas.", "Una imagen, video o audio creado o modificado con inteligencia artificial para parecer real."],
+  pregunta: "¿Cuál de estas situaciones podría ser un ejemplo de un deepfake?",
+  opciones: ["Una fotografía tomada con un celular.", "Un correo electrónico con publicidad.", "Una videollamada con mala conexión.", "Un video donde una persona parece decir algo que realmente nunca dijo."
+  ],
   correcta: 3
 },
 
 {
-  pregunta: "Si un video muestra a una persona famosa diciendo algo muy inesperado, ¿qué es lo más recomendable?",
-  opciones: ["Verificar si otros medios confiables también informan sobre el hecho.", "Compartirlo inmediatamente.", "Asumir que es verdadero porque el video parece real.", "Descargar el video y enviarlo a todos tus contactos."],
+  pregunta: "Un video muestra a un personaje público diciendo algo muy inesperado. ¿Qué aumenta la probabilidad de que sea auténtico?",
+  opciones: ["Que varias fuentes confiables informen el mismo hecho.", "Que tenga miles de compartidos.", "Que alguien de tu familia lo haya enviado.", "Que el video tenga buena calidad."
+  ],
   correcta: 0
 },
 
 {
-  pregunta: "¿Cuál de estas puede ser una señal de desinformación?",
-  opciones: ["La información proviene de una entidad oficial.", "La noticia incluye la fecha y la fuente original.", "La publicación no indica quién la creó y contiene información muy sorprendente.", "La noticia aparece en varios medios reconocidos.",],
+  pregunta: "¿Cuál de estas características debería hacerte revisar una noticia con más cuidado?",
+  opciones: ["Indica claramente su fuente y la fecha de publicación.", "Aparece en varios medios reconocidos.", "Promete una información impactante pero no menciona quién la publicó.", "Incluye declaraciones verificables."
+  ],
   correcta: 2
 },
 
 {
-    pregunta: "Si tienes dudas sobre una noticia o un video, ¿qué deberías hacer?",
-    opciones: ["Compartirlo para preguntar si alguien sabe más.", "Ignorar todas las noticias de internet.", "Verificar la información antes de compartirla.", "Creer que es verdadero porque muchas personas hablan del tema."],
-    correcta: 2,
+  pregunta: "¿Por qué los deepfakes pueden ser difíciles de identificar?",
+  opciones: ["Porque siempre tienen una marca de agua.", "Porque pueden verse y escucharse muy parecidos a un contenido real.", "Porque solo existen en películas.", "Porque únicamente afectan a personas famosas."
+  ],
+  correcta: 1
 },
 
 {
-    pregunta: "Mientras navegas por internet encuentras una noticia que parece muy impactante, pero no estás seguro de que sea verdadera. ¿Cuál es la mejor decisión?",
-    opciones: [ "Compartirla para que otras personas den su opinión.", "Creer que es verdadera porque tiene muchas reacciones.", "Verificar la información en fuentes confiables antes de compartirla.", "Guardar la noticia y compartirla más tarde sin revisarla."],
-    correcta: 2,
-}
-];
+  pregunta: "¿Qué significa tener pensamiento crítico al consumir información en internet?",
+  opciones: ["Creer únicamente lo que dicen las redes sociales.", "Aceptar cualquier información si tiene muchas reacciones.", "Analizar y verificar la información antes de creerla o compartirla.", "Desconfiar de toda la información que existe en internet."
+  ],
+  correcta: 2
+},
 
 let respuestasCorrectasDeepfakes = 0;
 let preguntasRespondidasDeepfakes = 0;
