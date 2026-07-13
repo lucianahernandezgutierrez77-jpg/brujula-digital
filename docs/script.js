@@ -312,6 +312,8 @@ const quizDataDeepfakes = [
   correcta: 2
 },
 
+];
+
 let respuestasCorrectasDeepfakes = 0;
 let preguntasRespondidasDeepfakes = 0;
 
