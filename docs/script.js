@@ -440,7 +440,7 @@ const quizDataPrivacidad = [
 
 {
   pregunta: "Una aplicación solicita permiso para acceder a tu ubicación, cámara y contactos. ¿Qué es lo más recomendable?",
-  opciones: ["Aceptar todos los permisos sin leer.", "Desinstalar inmediatamente la aplicación.", "Apagar el teléfono.", "Aceptar todos los permisos sin leer."],
+  opciones: ["Aceptar todos los permisos sin leer.", "Desinstalar inmediatamente la aplicación.", "Apagar el teléfono.", "Revisar cuáles permisos realmente necesita antes de aceptarlos.",],
   correcta: 3
 },
 
@@ -476,7 +476,7 @@ const quizDataPrivacidad = [
   container.innerHTML = quizHTML;
 }
 
-function verificarRespuestaPrivacidad(preguntaIndice, opcionIndice, button) {
+function verificarRespuestaPrivacidad(preguntaIndice, opcionElegida, botonPresionado) {
 
   const correcta = quizDataPrivacidad[preguntaIndice].correcta;
   const feedback = document.getElementById(`feedback-privacidad-${preguntaIndice}`);
@@ -546,6 +546,3 @@ function mostrarPuntajePrivacidad() {
   document.getElementById("btn-resultado-deepfakes").style.display = "none";
 
 }
-
-
-
