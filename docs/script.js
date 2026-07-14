@@ -178,9 +178,6 @@ const quizDataEstafas = [
   },
 ];
 
-let respuestasCorrectasEstafas = 0;
-let preguntasRespondidasEstafas = 0;
-
 function initQuizEstafas() {
   respuestasCorrectasEstafas = 0;
   preguntasRespondidasEstafas = 0;
@@ -415,6 +412,15 @@ function initQuizDeepfakes() {
 
   }
 
+  // QUIZ MÓDULO 4
+const quizDataPrivacidad = [
+{
+   pregunta: "Vas a crear una cuenta en una página web. ¿Cuál de estas contraseñas es la más segura?",
+    opciones: ["12345678", "MiNombre2026", "P4rqu3!Sol#92","contraseña" ],
+    correcta: 2
+},
+];
+
   function initQuizPrivacidad() {
     let respuestasCorrectasPrivacidad = 0;
     let preguntasRespondidasPrivacidad = 0;
@@ -465,7 +471,51 @@ function verificarRespuestaPrivacidad(preguntaIndice, opcionIndice, button) {
   if (preguntasRespondidasPrivacidad === quizDataPrivacidad.length) {
     document.getElementById("btn-resultado-privacidad").style.display = "block";
   }
-} 
+}
+
+function mostrarPuntajePrivacidad() {
+  
+  const total = quizDataPrivacidad.length;
+    const resultado = document.getElementById("resultado-final-privacidad");
+
+    let mensaje = "";
+    let color = "";
+
+    if (respuestasCorrectasPrivacidad === total) {
+        mensaje = "🏆 ¡Excelente! Sabes identificar la desinformación.";
+        color = "var(--green)";
+    }
+    else if (respuestasCorrectasPrivacidad >= total/2){
+        mensaje = "👍 ¡Muy bien! Cada vez analizas mejor la información.";
+        color = "var(--blue)";
+    }
+    else{
+        mensaje = "📖 No pasa nada. Puedes volver a leer la lección e intentarlo otra vez.";
+        color = "var(--orange)";
+    }
+
+    resultado.innerHTML = ` 
+    <div style="background: white; border-radius: 12px; padding: 20px; margin-top: 15px; text-align: center; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+      <h3 style="color: ${color};">${mensaje}</h3>
+      <p style="font-size: 1.3rem;">Obtuviste <strong>${respuestasCorrectasPrivacidad} de ${total}</strong> respuestas correctas.</p>
+    </div>
+    <div style="background: #F0FDF4; border-radius: 12px; padding: 20px; margin-top: 20px; border-left: 4px solid var(--green);">
+      <h3>📰 ¿Cómo protegerte de la desinformación?</h3>
+      <p>No todo lo que vemos en internet es verdadero. Antes de creer o compartir una noticia, recuerda:</p>
+      <ul style="line-height: 2;">
+        <li>🔍 Verifica la información en fuentes confiables y reconocidas.</li>
+        <li>📅 Revisa la fecha de publicación y el contexto de la noticia.</li>
+        <li>🤖 Recuerda que imágenes, videos y audios pueden haber sido creados o modificados con inteligencia artificial.</li>
+        <li>⚠️ Desconfía de contenidos que buscan generar miedo, urgencia o emociones muy fuertes.</li>
+        <li>📤 Si tienes dudas, no compartas el contenido hasta comprobar que sea verdadero.</li>
+      </ul>
+      <p>La mejor forma de combatir la desinformación es detenerse unos minutos para verificar antes de compartir.</p>
+    </div>`;
+  
+  resultado.style.display = "block";
+  document.getElementById("btn-resultado-deepfakes").style.display = "none";
+
+}
 
 
 
