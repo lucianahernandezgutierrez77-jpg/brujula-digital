@@ -415,9 +415,39 @@ function initQuizDeepfakes() {
   // QUIZ MÓDULO 4
 const quizDataPrivacidad = [
 {
-   pregunta: "Vas a crear una cuenta en una página web. ¿Cuál de estas contraseñas es la más segura?",
-    opciones: ["12345678", "MiNombre2026", "P4rqu3!Sol#92","contraseña" ],
-    correcta: 2
+  pregunta: "Vas a crear una cuenta en una página web. ¿Cuál de estas contraseñas es la más segura?",
+  opciones: ["12345678", "MiNombre2026", "P4rqu3!Sol#92","contraseña" ],
+  correcta: 2
+},
+
+{
+  pregunta:"Recibes un correo que te pide confirmar tu contraseña mediante un enlace. ¿Qué deberías hacer?",
+  opciones: ["Ignorar el mensaje para siempre.", "Entrar directamente al sitio web oficial y verificar si el aviso es real.", "Responder el correo con tu contraseña.",  "Hacer clic en el enlace inmediatamente."],
+  correcta: 1
+},
+
+{
+  pregunta:  "¿Cuál de estos datos es mejor evitar publicar en redes sociales?",
+  opciones: ["Tu dirección de casa y número de teléfono.", "Una receta de cocina.","Una foto de un paisaje.", "La ciudad donde vives."],
+  correcta: 0
+},
+
+{
+  pregunta: "¿Para qué sirve la verificación en dos pasos?",
+  opciones: ["Para hacer que internet sea más rápido.", "Para añadir una capa extra de seguridad al iniciar sesión.", "Para cambiar automáticamente la contraseña.", "Para guardar más fotos en el teléfono."],
+  correcta: 1
+},
+
+{
+  pregunta: "Una aplicación solicita permiso para acceder a tu ubicación, cámara y contactos. ¿Qué es lo más recomendable?",
+  opciones: ["Aceptar todos los permisos sin leer.", "Desinstalar inmediatamente la aplicación.", "Apagar el teléfono.", "Aceptar todos los permisos sin leer."],
+  correcta: 3
+},
+
+{
+  pregunta: "¿Qué ayuda a mantener más seguros tu teléfono y tus aplicaciones?",
+  opciones: ["No actualizar nunca el dispositivo.", "Instalar todas las aplicaciones que encuentres.", "Actualizar el sistema y las aplicaciones cuando haya nuevas versiones.",  "Compartir tu contraseña con un familiar."],
+  correcta: 2
 },
 ];
 
