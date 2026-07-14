@@ -415,5 +415,57 @@ function initQuizDeepfakes() {
 
   }
 
+  function initQuizPrivacidad() {
+    let respuestasCorrectasPrivacidad = 0;
+    let preguntasRespondidasPrivacidad = 0;
+
+    const container = document.getElementById("quiz-container-privacidad");
+    const btnResultado = document.getElementById("btn-resultado-privacidad");
+    const resultadoFinal = document.getElementById("resultado-final-privacidad");
+
+    btnResultado.style.display = "none";
+    resultadoFinal.style.display = "none";
+    resultadoFinal.innerHTML = "";
+
+     let quizHTML = "";
+  quizDataPrivacidad.forEach(function(item, indice) {
+    quizHTML += `<div class="quiz-pregunta" id="pregunta-privacidad-${indice}">`;
+    quizHTML += `<p><strong>${indice + 1}. ${item.pregunta}</strong></p>`;
+    item.opciones.forEach(function(opcion, opcionIndice) {
+      quizHTML += `<button class="quiz-opcion" onclick="verificarRespuestaPrivacidad(${indice}, ${opcionIndice}, this)">${opcion}</button>`;
+    });
+    quizHTML += `<p id="feedback-privacidad-${indice}" class="quiz-feedback"></p>`;
+    quizHTML += `</div>`;
+  });
+  container.innerHTML = quizHTML;
+}
+
+function verificarRespuestaPrivacidad(preguntaIndice, opcionIndice, button) {
+
+  const correcta = quizDataPrivacidad[preguntaIndice].correcta;
+  const feedback = document.getElementById(`feedback-privacidad-${preguntaIndice}`);
+  const botones = document.querySelectorAll(`#pregunta-privacidad-${preguntaIndice} .quiz-opcion`);
+  const resultado = document.getElementById("resultado-final-privacidad");
+
+  botones.forEach(function(btn) { btn.disabled = true; });
+
+  if (opcionElegida === correcta) {
+    botonPresionado.style.backgroundColor = "var(--green)";
+    feedback.textContent = "✅ ¡Correcto!";
+    feedback.style.color = "var(--green)";
+    respuestasCorrectasPrivacidad++;
+  } else {
+    botonPresionado.style.backgroundColor = "var(--red)";
+    feedback.textContent = "❌ No es correcto. La respuesta correcta era: " + quizDataPrivacidad[preguntaIndice].opciones[correcta];
+    feedback.style.color = "var(--red)";
+    botones[correcta].style.backgroundColor = "var(--green)";
+  }
+
+  preguntasRespondidasPrivacidad++;
+  if (preguntasRespondidasPrivacidad === quizDataPrivacidad.length) {
+    document.getElementById("btn-resultado-privacidad").style.display = "block";
+  }
+} 
+
 
 
