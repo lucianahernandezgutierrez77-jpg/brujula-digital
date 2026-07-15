@@ -5,7 +5,7 @@ function showSection(id) {
   });
   document.getElementById(id).style.display = "block";
 
-  if (id === "leccion-salud") initQuiz();
+  if (id === "leccion-salud") initQuiz(); initRuleta();
   if (id === "leccion-estafas") initQuizEstafas();
   if (id === "leccion-deepfakes") initQuizDeepfakes();
   if (id === "leccion-privacidad") initQuizPrivacidad();
@@ -50,6 +50,72 @@ const quizData = [
     correcta: 2
   }
 ];
+
+let ruletaAngulo = 0;
+let ruletaGirando = false;
+let ruletaVelocidad = 0;
+
+function dibujarRuleta() {
+  const canvas = document.getElementById("canvas-ruleta");
+  if (!canvas) return;
+  const ctx    = canvas.getContext("2d");
+  const cx     = canvas.width / 2;
+  const cy     = canvas.height / 2;
+  const radio  = cx - 10;
+  const angulo = (2 * Math.PI) / habitosRuleta.length;
+}
+//ACTIVIDAD MODULO 1
+const habitosRuleta = [
+  {
+    texto: "Descansa los ojos",
+    icono: "👓",
+    color: "#60a5fa",
+    mensaje: "Cada rato que uses el celular, busca una ventana y mira hacia afuera unos segundos. Tus ojos necesitan ese descanso."
+  },
+  {
+    texto: "Apaga el celular",
+    icono: "🌙",
+    color: "#a78bfa",
+    mensaje: "Esta noche, apaga o silencia el celular media hora antes de acostarte. Vas a notar que descansas mejor."
+  },
+  {
+    texto: "Sal un momento",
+    icono: "🚪",
+    color: "#34d399",
+    mensaje: "Deja el celular en casa y sal a dar una vuelta corta por el barrio. El aire fresco también es bueno para la mente."
+  },
+  {
+    texto: "Llama a alguien",
+    icono: "📞",
+    color: "#fb923c",
+    mensaje: "Hoy llama por teléfono a un familiar o amigo que hace tiempo no escuchas. Una llamada vale más que mil mensajes."
+  },
+  {
+    texto: "Siéntate bien",
+    icono: "🪑",
+    color: "#fbbf24",
+    mensaje: "Cuando uses el celular, siéntate derecho y sostén el teléfono a la altura de los ojos. Tu cuello y tu espalda te lo van a agradecer."
+  },
+  {
+    texto: "Lee algo impreso",
+    icono: "📰",
+    color: "#2dd4bf",
+    mensaje: "Agarra un libro, una revista o el periódico y lee un rato. Descansar los ojos de la pantalla hace bien."
+  },
+  {
+    texto: "Tómate un café sin celular",
+    icono: "☕",
+    color: "#f87171",
+    mensaje: "La próxima vez que tomes un café o un tinto, déjalo sin celular. Disfruta el momento tranquilo."
+  },
+  {
+    texto: "Pide ayuda si la necesitas",
+    icono: "🤝",
+    color: "#e879f9",
+    mensaje: "Si algo en el celular te confunde, no te preocupes. Pídele ayuda a alguien de confianza, no tienes que resolverlo solo."
+  },
+];
+
 
 let respuestasCorrectas = 0;
 let preguntasRespondidas = 0;
