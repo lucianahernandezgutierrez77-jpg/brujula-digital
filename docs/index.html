@@ -86,6 +86,22 @@
       <p>📚 <strong>¿Quieres saber más?</strong> La Comisión Europea explica los efectos del tiempo excesivo en pantalla:<br>
         <a href="https://health.ec.europa.eu/inthistogether/healthy-screentime_es" target="_blank" rel="noopener noreferrer" style="color: var(--blue); font-size: 1rem;">🔗 Ver fuente oficial (Comisión Europea)</a>
       </p>
+
+  <div class="actividad-card" id="actividad-ruleta">
+     <h3>🎡 Actividad: Ruleta de hábitos saludables</h3>
+    <p>Gira la ruleta y descubre el hábito digital del día. ¡Inténtalo más de una vez!</p>
+    <div class="ruleta-wrapper">
+      <div class="ruleta-indicador">▼</div>
+      <canvas id="canvas-ruleta" width="320" height="320" aria-label="Ruleta de hábitos saludables"></canvas>
+    </div>
+   <div style="display:flex; justify-content:center; margin-top: 20px;">
+     <button class="btn" id="btn-girar" onclick="girarRuleta()" style="width:auto; min-width:200px;">
+       🎰 ¡Girar!
+     </button>
+   </div>
+   <div id="resultado-ruleta" style="display:none;"></div>
+ </div>
+ 
       <hr style="margin: 25px 0; border-color: #e2e8f0;">
       <h3>🧠 Quiz: Pon a prueba lo que aprendiste</h3>
       <div id="quiz-container"></div>
