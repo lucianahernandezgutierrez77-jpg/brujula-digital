@@ -546,3 +546,31 @@ function mostrarPuntajePrivacidad() {
   document.getElementById("btn-resultado-deepfakes").style.display = "none";
 
 }
+// ACTIVIDAD
+const paisaje = document.getElementById("paisaje");
+
+let posicion = 0;
+
+setInterval(function(){
+
+    posicion--;
+
+    paisaje.style.left = posicion + "px";
+
+},40);
+const juan = document.getElementById("juan");
+
+
+let frame = 0;
+
+setInterval(function(){
+
+    juan.textContent = pasos[frame];
+
+    frame++;
+
+    if(frame >= pasos.length){
+        frame = 0;
+    }
+
+},150);
