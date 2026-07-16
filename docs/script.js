@@ -558,8 +558,16 @@ setInterval(function(){
     paisaje.style.left = posicion + "px";
 
 },40);
+
 const juan = document.getElementById("juan");
 
+const pasos = [
+
+`   ◉
+  /|\\
+  / \\`,
+
+];
 
 let frame = 0;
 
