@@ -63,6 +63,12 @@ function dibujarRuleta() {
   const cy     = canvas.height / 2;
   const radio  = cx - 10;
   const angulo = (2 * Math.PI) / habitosRuleta.length;
+
+   ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+  habitosRuleta.forEach(function(habito, i) {
+    const inicio = ruletaAngulo + i * angulo;
+    const fin    = inicio + angulo;
 }
 //ACTIVIDAD MODULO 1
 const habitosRuleta = [
