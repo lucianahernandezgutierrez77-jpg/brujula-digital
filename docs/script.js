@@ -5,7 +5,7 @@ function showSection(id) {
   });
   document.getElementById(id).style.display = "block";
 
-  if (id === "leccion-salud") initQuiz(); initRuleta();
+  if (id === "leccion-salud") initQuiz();
   if (id === "leccion-estafas") initQuizEstafas();
   if (id === "leccion-deepfakes") initQuizDeepfakes();
   if (id === "leccion-privacidad") initQuizPrivacidad();

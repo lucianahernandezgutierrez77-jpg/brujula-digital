@@ -256,17 +256,20 @@ body{
     overflow:hidden;
 }
 
-#paisaje{
-    position: relative;
-    left: 0;
-}
-
 #camino{
-    height: 170px;
     position: relative;
+    height:170px;
+    overflow:hidden;
 }
 
-
+#paisaje1,
+#paisaje2{
+    position:absolute;
+    top:0;
+    left:0;
+    font-size:30px;
+    white-space:nowrap;
+}
 
 #juan{
     position: absolute;
