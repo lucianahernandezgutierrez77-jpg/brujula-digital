@@ -450,10 +450,10 @@ const quizDataPrivacidad = [
   correcta: 2
 },
 ];
-
-  function initQuizPrivacidad() {
     let respuestasCorrectasPrivacidad = 0;
     let preguntasRespondidasPrivacidad = 0;
+
+  function initQuizPrivacidad() {
 
     const container = document.getElementById("quiz-container-privacidad");
     const btnResultado = document.getElementById("btn-resultado-privacidad");
@@ -546,39 +546,73 @@ function mostrarPuntajePrivacidad() {
   document.getElementById("btn-resultado-deepfakes").style.display = "none";
 
 }
-// ACTIVIDAD
-const paisaje = document.getElementById("paisaje");
+// ===== ACTIVIDAD =====
 
-let posicion = 0;
 
-setInterval(function(){
+const paisaje1 = document.getElementById("paisaje1");
+const paisaje2 = document.getElementById("paisaje2");
 
-    posicion--;
 
-    paisaje.style.left = posicion + "px";
+const leftArm = document.querySelector(".left-arm");
+const rightArm = document.querySelector(".right-arm");
 
-},40);
+const leftLeg = document.querySelector(".left-leg");
+const rightLeg = document.querySelector(".right-leg");
 
-const juan = document.getElementById("juan");
+const head = document.querySelector(".head");
 
-const pasos = [
 
-`   ◉
-  /|\\
-  / \\`,
+let x1 = 0;
+let x2 = 900; 
 
-];
 
-let frame = 0;
+setInterval(() => {
 
-setInterval(function(){
+    x1 -= 2;
+    x2 -= 2;
 
-    juan.textContent = pasos[frame];
-
-    frame++;
-
-    if(frame >= pasos.length){
-        frame = 0;
+    if (x1 <= -900) {
+        x1 = x2 + 900;
     }
 
-},150);
+    if (x2 <= -900) {
+        x2 = x1 + 900;
+    }
+
+    paisaje1.style.left = x1 + "px";
+    paisaje2.style.left = x2 + "px";
+
+}, 30);
+
+
+// ===== MOVIMIENTO  JUAN =====
+
+let paso = false;
+
+setInterval(() => {
+
+    if (paso) {
+
+        leftArm.style.transform = "rotate(45deg)";
+        rightArm.style.transform = "rotate(-25deg)";
+
+        leftLeg.style.transform = "rotate(35deg)";
+        rightLeg.style.transform = "rotate(-15deg)";
+
+        head.style.top = "1px";
+
+    } else {
+
+        leftArm.style.transform = "rotate(25deg)";
+        rightArm.style.transform = "rotate(-45deg)";
+
+        leftLeg.style.transform = "rotate(15deg)";
+        rightLeg.style.transform = "rotate(-35deg)";
+
+        head.style.top = "0px";
+
+    }
+
+    paso = !paso;
+
+}, 180);

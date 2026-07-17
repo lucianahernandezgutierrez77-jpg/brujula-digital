@@ -68,8 +68,8 @@ body{
 }
 
 .highlight2 {
-    background-color: #fffdb5;
-    background: linear-gradient(transparent 29%, #DDF7D8 55%);
+    background-color: #e1ffb5;
+    background: linear-gradient(transparent 29%, #eaf7d8 55%);
 }
 
 .highlight3 {
@@ -84,6 +84,13 @@ body{
     display: inline-block;
     border-bottom: 3px solid #60A5FA;
     padding-bottom: 4px;
+}
+
+.highlight4 {
+    background-color: #ddff00;
+    padding: 2px 5px;
+    border-radius: 4px;
+    font-weight: 500;
 }
 /*=====CONTAINER=====*/
 
@@ -243,14 +250,15 @@ body{
     font-size: 40px;
 }
 
+#camino{
+    position: relative;
+    height:170px;
+    overflow:hidden;
+}
+
 #paisaje{
-    position:relative;
-
-    font-size:30px;
-
-    white-space:nowrap;
-
-    left:0;
+    position: relative;
+    left: 0;
 }
 
 #camino{
@@ -258,17 +266,107 @@ body{
     position: relative;
 }
 
+
+
 #juan{
+    position: absolute;
+    left: 60px;
+    bottom: 0;
+    width: 40px;
+    height: 70px;
+}
+
+.head{
     position:absolute;
-    left:60px;
-    bottom:18px;
 
-    font-size:28px;
-    line-height:20px;
+    width:14px;
+    height:14px;
 
-    transition:0.12s;
-  
+    border:3px solid black;
+    border-radius:50%;
 
+    left:13px;
+}
+
+.body{
+
+    position:absolute;
+
+    width:3px;
+    height:20px;
+
+    background:black;
+
+    top:16px;
+    left:19px;
+}
+
+.left-arm{
+
+    position:absolute;
+
+    width:3px;
+    height:18px;
+
+    background:black;
+
+    left:19px;
+    top:18px;
+
+    transform:rotate(35deg);
+
+    transform-origin:top;
+}
+
+.right-arm{
+
+    position:absolute;
+
+    width:3px;
+    height:18px;
+
+    background:black;
+
+    left:19px;
+    top:18px;
+
+    transform:rotate(-35deg);
+
+    transform-origin:top;
+}
+
+.left-leg{
+
+    position:absolute;
+
+    width:3px;
+    height:22px;
+
+    background:black;
+
+    top:35px;
+    left:19px;
+
+    transform:rotate(25deg);
+
+    transform-origin:top;
+}
+
+.right-leg{
+
+    position:absolute;
+
+    width:3px;
+    height:22px;
+
+    background:black;
+
+    top:35px;
+    left:19px;
+
+    transform:rotate(-25deg);
+
+    transform-origin:top;
 }
 
 #suelo{
