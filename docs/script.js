@@ -178,9 +178,13 @@ const quizDataEstafas = [
   },
 ];
 
+let respuestasCorrectasEstafas = 0;
+let preguntasRespondidasEstafas = 0;
+
 function initQuizEstafas() {
-  respuestasCorrectasEstafas = 0;
-  preguntasRespondidasEstafas = 0;
+
+   respuestasCorrectasEstafas = 0;
+   preguntasRespondidasEstafas = 0;
 
   const container = document.getElementById("quiz-container-estafas");
   const btnResultado = document.getElementById("btn-resultado-estafas");
@@ -455,6 +459,9 @@ const quizDataPrivacidad = [
 
   function initQuizPrivacidad() {
 
+    respuestasCorrectasPrivacidad = 0;
+    preguntasRespondidasPrivacidad = 0;
+
     const container = document.getElementById("quiz-container-privacidad");
     const btnResultado = document.getElementById("btn-resultado-privacidad");
     const resultadoFinal = document.getElementById("resultado-final-privacidad");
@@ -543,8 +550,7 @@ function mostrarPuntajePrivacidad() {
     </div>`;
   
   resultado.style.display = "block";
-  document.getElementById("btn-resultado-deepfakes").style.display = "none";
-
+  document.getElementById("btn-resultado-privacidad").style.display = "none";
 }
 // ===== ACTIVIDAD =====
 
