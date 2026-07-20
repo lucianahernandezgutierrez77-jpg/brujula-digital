@@ -552,73 +552,181 @@ function mostrarPuntajePrivacidad() {
   resultado.style.display = "block";
   document.getElementById("btn-resultado-privacidad").style.display = "none";
 }
-// ===== ACTIVIDAD =====
 
-
-const paisaje1 = document.getElementById("paisaje1");
-const paisaje2 = document.getElementById("paisaje2");
-
-
-const leftArm = document.querySelector(".left-arm");
-const rightArm = document.querySelector(".right-arm");
-
-const leftLeg = document.querySelector(".left-leg");
-const rightLeg = document.querySelector(".right-leg");
-
-const head = document.querySelector(".head");
-
-
+// ACTIVIDAD 
+let animacionPaisaje = null;
+let animacionJuan = null;
+let paso = false;
 let x1 = 0;
-let x2 = 900; 
+let x2 = 900;
+let paisajeMoviendo = false;
+let velocidadPaisaje = 0;
+let juanCaminando = false;
 
+function iniciarAnimaciones() {
+  const paisaje1 = document.getElementById("paisaje1");
+  const paisaje2 = document.getElementById("paisaje2");
+  const leftArm = document.querySelector(".left-arm");
+  const rightArm = document.querySelector(".right-arm");
+  const leftLeg = document.querySelector(".left-leg");
+  const rightLeg = document.querySelector(".right-leg");
+  const head = document.querySelector(".head");
 
-setInterval(() => {
+  if (!paisaje1 || !leftArm || !leftLeg || !head) {
+    console.error("Error: elementos de Juan no encontrados en el DOM");
+    return;
+  }
 
-    x1 -= 2;
-    x2 -= 2;
+  if (animacionPaisaje) clearInterval(animacionPaisaje);
+  if (animacionJuan) clearInterval(animacionJuan);
 
-    if (x1 <= -900) {
-        x1 = x2 + 900;
-    }
-
-    if (x2 <= -900) {
-        x2 = x1 + 900;
-    }
-
+  animacionPaisaje = setInterval(() => {
+    if (!paisajeMoviendo) return;
+    x1 -= velocidadPaisaje;
+    x2 -= velocidadPaisaje;
+    if (x1 <= -900) x1 = x2 + 900;
+    if (x2 <= -900) x2 = x1 + 900;
     paisaje1.style.left = x1 + "px";
     paisaje2.style.left = x2 + "px";
+  }, 30);
 
-}, 30);
-
-
-// ===== MOVIMIENTO  JUAN =====
-
-let paso = false;
-
-setInterval(() => {
-
+  animacionJuan = setInterval(() => {
+    if (!juanCaminando) return;
     if (paso) {
-
-        leftArm.style.transform = "rotate(45deg)";
-        rightArm.style.transform = "rotate(-25deg)";
-
-        leftLeg.style.transform = "rotate(35deg)";
-        rightLeg.style.transform = "rotate(-15deg)";
-
-        head.style.top = "1px";
-
+      leftArm.style.transform = "rotate(45deg)";
+      rightArm.style.transform = "rotate(-25deg)";
+      leftLeg.style.transform = "rotate(35deg)";
+      rightLeg.style.transform = "rotate(-15deg)";
+      head.style.top = "1px";
     } else {
-
-        leftArm.style.transform = "rotate(25deg)";
-        rightArm.style.transform = "rotate(-45deg)";
-
-        leftLeg.style.transform = "rotate(15deg)";
-        rightLeg.style.transform = "rotate(-35deg)";
-
-        head.style.top = "0px";
-
+      leftArm.style.transform = "rotate(25deg)";
+      rightArm.style.transform = "rotate(-45deg)";
+      leftLeg.style.transform = "rotate(15deg)";
+      rightLeg.style.transform = "rotate(-35deg)";
+      head.style.top = "0px";
     }
-
     paso = !paso;
+  }, 180);
+}
 
-}, 180);
+const actividadPreguntas = [
+  {
+    pregunta: "¿Cada cuánto tiempo se recomienda hacer una pausa al usar pantallas?",
+    opciones: ["Cada 20 minutos", "Cada 3 horas", "Solo cuando hay dolor de ojos", "Una vez al día"],
+    correcta: 0,
+    explicacion: "La regla 20-20-20 sugiere hacer una pausa cada 20 minutos para cuidar la vista."
+  },
+  {
+    pregunta: "¿Qué beneficio tiene salir a caminar después de usar el computador?",
+    opciones: ["Ninguno, es mejor seguir descansando en el sofá", "Ayuda a relajar el cuerpo y descansar la vista", "Solo sirve si caminas más de una hora", "Empeora el cansancio visual"],
+    correcta: 1,
+    explicacion: "Caminar activa el cuerpo y permite que los ojos descansen de la luz de las pantallas."
+  },
+  {
+    pregunta: "¿Qué es la regla 20-20-20?",
+    opciones: ["Usar el teléfono 20 minutos y apagarlo 20 horas", "Cada 20 minutos, mirar algo a 6 metros durante 20 segundos", "Cargar el teléfono cada 20 minutos", "Dormir 20 horas cada 20 días"],
+    correcta: 1,
+    explicacion: "La regla 20-20-20 ayuda a reducir la fatiga visual causada por el uso prolongado de pantallas."
+  },
+  {
+    pregunta: "¿Por qué es importante hacer pausas activas durante el día?",
+    opciones: ["Para gastar la batería del teléfono", "Para evitar la tensión muscular y el sedentarismo", "No son importantes si uno se siente bien", "Solo las necesitan los deportistas"],
+    correcta: 1,
+    explicacion: "Las pausas activas reducen la tensión en cuello, espalda y ojos causada por el uso prolongado de dispositivos."
+  }
+];
+
+let actividadIndice = 0;
+
+function iniciarActividad() {
+  document.getElementById("btn-iniciar-actividad").style.display = "none";
+  x1 = 0;
+  x2 = 900;
+  iniciarAnimaciones();
+  juanCaminando = true;
+  paisajeMoviendo = true;
+  velocidadPaisaje = 2;
+  setTimeout(() => {
+    juanCaminando = false;
+    paisajeMoviendo = false;
+    velocidadPaisaje = 0;
+    initRuleta();
+  }, 2000);
+}
+
+function initRuleta() {
+  actividadIndice = 0;
+  juanCaminando = false;
+  paisajeMoviendo = false;
+  velocidadPaisaje = 0;
+  const mensajeFinal = document.getElementById("actividad-mensaje-final");
+  if (mensajeFinal) mensajeFinal.style.display = "none";
+  mostrarPreguntaActividad();
+}
+
+function mostrarPreguntaActividad() {
+  const contenedor = document.getElementById("actividad-pregunta-container");
+  if (actividadIndice >= actividadPreguntas.length) {
+    juanCaminando = true;
+    paisajeMoviendo = true;
+    velocidadPaisaje = 3;
+    contenedor.innerHTML = "";
+    setTimeout(() => {
+      juanCaminando = false;
+      paisajeMoviendo = false;
+      velocidadPaisaje = 0;
+      document.getElementById("actividad-mensaje-final").style.display = "block";
+    }, 4000);
+    return;
+  }
+  const item = actividadPreguntas[actividadIndice];
+  let html = `<div class="actividad-card"><p class="actividad-num">Pregunta ${actividadIndice + 1} de ${actividadPreguntas.length}</p><p class="actividad-pregunta"><strong>${item.pregunta}</strong></p>`;
+  item.opciones.forEach((op, i) => {
+    html += `<button class="actividad-opcion" onclick="responderActividad(${i}, this)">${op}</button>`;
+  });
+  html += `<p id="feedback-actividad" class="quiz-feedback"></p></div>`;
+  contenedor.innerHTML = html;
+}
+
+function responderActividad(opcionElegida, boton) {
+  const item = actividadPreguntas[actividadIndice];
+  const feedback = document.getElementById("feedback-actividad");
+  const botones = document.querySelectorAll("#actividad-pregunta-container .actividad-opcion");
+  botones.forEach(b => b.disabled = true);
+  if (opcionElegida === item.correcta) {
+    boton.style.backgroundColor = "var(--green)";
+    boton.style.color = "white";
+    boton.style.borderColor = "var(--green)";
+    feedback.textContent = "✅ ¡Correcto! Juan avanza.";
+    feedback.style.color = "var(--green)";
+    juanCaminando = true;
+    paisajeMoviendo = true;
+    velocidadPaisaje = 2;
+    setTimeout(() => {
+      juanCaminando = false;
+      paisajeMoviendo = false;
+      velocidadPaisaje = 0;
+      actividadIndice++;
+      mostrarPreguntaActividad();
+    }, 3000);
+  } else {
+    boton.style.backgroundColor = "var(--red)";
+    boton.style.color = "white";
+    boton.style.borderColor = "var(--red)";
+    botones[item.correcta].style.backgroundColor = "var(--green)";
+    botones[item.correcta].style.color = "white";
+    botones[item.correcta].style.borderColor = "var(--green)";
+    feedback.textContent = "❌ " + item.explicacion;
+    feedback.style.color = "var(--red)";
+    setTimeout(() => {
+      actividadIndice++;
+      mostrarPreguntaActividad();
+    }, 3000);
+  }
+}
+
+
+
+
+
+

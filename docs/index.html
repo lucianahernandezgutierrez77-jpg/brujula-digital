@@ -88,20 +88,14 @@
       </p>
 
 <h3>Actividad</h3>
-
-<p>Ayuda a Juan a caminar</p>
+<p><p>Después de pasar un tiempo usando el computador, Juan decidió salir a caminar para descansar su vista y mover el cuerpo. Responde correctamente las preguntas para ayudarlo a completar su recorrido.</p>
 
 <div id="game">
 
-    <div id="cielo">☀️ ☁️</div>
-
-    <div id="paisaje">🌳 🌼 🌳 🏠</div>
-
-     <div id="paisaje2">
-        🌳 🌼 🌳 🏠 🌳 🌳 🌼 🌳 🌳 🌼 🌳 🏢 🌳 🌼 🌳</div>
-
-
     <div id="camino">
+
+      <div id="paisaje1">🏢 🏠 🌲 🏢 🏡 🌲 🏠 🏢 🌲 🏡 🏠 🏢 🌲 🏠</div>
+      <div id="paisaje2">🌳 🌼 🌳 🌳 🌻 🌳 🌼 🌳 🌳 🌻 🌳 🌼 🌳 🌳</div>
 
         <div id="juan">
 
@@ -120,10 +114,22 @@
         </div>
 
     </div>
+    <div id="suelo"></div>
+    <div id="actividad-pregunta-container"></div>
 
-    <div id="suelo">────────────────────</div>
+    <div style="display: flex; justify-content: center;">
+  <button class="btn" id="btn-iniciar-actividad" onclick="iniciarActividad()" style="width: auto; min-width: 250px;">🚶 Iniciar actividad</button>
+</div>
 
 </div>
+
+<div id="actividad-pregunta-container"></div>
+<div id="actividad-mensaje-final" style="display:none; background:#F0FDF4; border-radius:12px; padding:20px; margin-top:20px; border-left:4px solid var(--green);">
+  <h3>🎉 ¡Excelente!</h3>
+  <p>Gracias a tus respuestas, Juan pudo terminar su caminata. Recuerda que levantarte unos minutos, caminar o estirarte después de usar dispositivos electrónicos también ayuda a cuidar tu salud y descansar la vista.</p>
+</div>
+
+<hr style="margin: 25px 0; border-color: #e2e8f0;">
 
       <hr style="margin: 25px 0; border-color: #e2e8f0;">
       <h3>🧠 Quiz: Pon a prueba lo que aprendiste</h3>
