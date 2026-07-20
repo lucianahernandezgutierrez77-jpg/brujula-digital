@@ -235,26 +235,109 @@ body{
 #game {
   width: 100%;
   box-sizing: border-box;
-  background: linear-gradient(to bottom, #bae6fd, #e0f2fe);
-  border-radius: 16px;
-  padding: 24px;
+  background: #DDF4FF;
+  border-radius: 25px;
+  padding: 30px;
   margin: 20px auto;
   overflow: hidden;
-  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
 }
 
 #camino {
   position: relative;
   height: 170px;
   overflow: hidden;
-  border-radius: 8px;
+  background: linear-gradient(to bottom, #93c5fd 60%, #4ade80 60%, #16a34a 100%);
+  border-radius: 20px;
 }
 
 #suelo {
+  display: none;
+}
+
+#juan {
+  position: absolute;
+  left: 60px;
+  bottom: 15px;
+  width: 40px;
+  height: 70px;
+}
+
+.head {
+  position: absolute;
+  width: 14px;
+  height: 14px;
+  border: 3px solid black;
+  border-radius: 50%;
+  left: 13px;
+}
+
+.body {
+  position: absolute;
+  width: 3px;
   height: 20px;
-  background: linear-gradient(to bottom, #4ade80, #16a34a);
-  border-radius: 0 0 12px 12px;
+  background: black;
+  top: 16px;
+  left: 19px;
 }
+
+.left-arm {
+  position: absolute;
+  width: 3px;
+  height: 18px;
+  background: black;
+  left: 19px;
+  top: 18px;
+  transform: rotate(35deg);
+  transform-origin: top;
+}
+
+.right-arm {
+  position: absolute;
+  width: 3px;
+  height: 18px;
+  background: black;
+  left: 19px;
+  top: 18px;
+  transform: rotate(-35deg);
+  transform-origin: top;
+}
+
+.left-leg {
+  position: absolute;
+  width: 3px;
+  height: 22px;
+  background: black;
+  top: 35px;
+  left: 19px;
+  transform: rotate(25deg);
+  transform-origin: top;
+}
+
+.right-leg {
+  position: absolute;
+  width: 3px;
+  height: 22px;
+  background: black;
+  top: 35px;
+  left: 19px;
+  transform: rotate(-25deg);
+  transform-origin: top;
+}
+
+#paisaje1 {
+  position: absolute;
+  top: 8px;
+  font-size: 24px;
+  white-space: nowrap;
+}
+
+#paisaje2 {
+  position: absolute;
+  top: 75px;
+  font-size: 30px;
+  white-space: nowrap;
+}
+
 
 .actividad-card {
   background: white;
@@ -303,59 +386,3 @@ body{
 .actividad-opcion:disabled {
   cursor: default;
 }
-
-.actividad-card {
-  background: white;
-  border-radius: 12px;
-  padding: 20px 24px;
-  margin-top: 20px;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.07);
-  border-left: 4px solid var(--blue);
-}
-
-.actividad-num {
-  font-size: 0.85rem;
-  color: #64748b;
-  font-weight: 600;
-  text-transform: uppercase;
-  letter-spacing: 0.5px;
-  margin: 0 0 8px 0;
-}
-
-.actividad-pregunta {
-  font-size: 1.05rem;
-  margin: 0 0 16px 0;
-  line-height: 1.5;
-}
-
-.actividad-opcion {
-  display: block;
-  width: 100%;
-  text-align: left;
-  background: #F8FAFC;
-  border: 2px solid #E2E8F0;
-  border-radius: 8px;
-  padding: 12px 16px;
-  margin-bottom: 10px;
-  font-size: 1rem;
-  cursor: pointer;
-  transition: background 0.15s, border-color 0.15s, transform 0.1s;
-}
-
-.actividad-opcion:hover:not(:disabled) {
-  background: #EFF6FF;
-  border-color: var(--blue);
-  transform: translateX(4px);
-}
-
-.actividad-opcion:disabled {
-  cursor: default;
-}
-
-
-
-
-
-
-
-
