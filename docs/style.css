@@ -386,3 +386,59 @@ body{
 .actividad-opcion:disabled {
   cursor: default;
 }
+
+/* ===== JUAN TIRADO ===== */
+#juan {
+  transition: transform 0.5s ease, bottom 0.5s ease;
+}
+
+#juan.tirado {
+  transform: rotate(90deg);
+  bottom: 2px;
+}
+
+#juan.tirado .head {
+  transition: all 0.4s ease;
+}
+#juan.tirado .left-arm {
+  transform: rotate(60deg);
+  transition: all 0.4s ease;
+}
+#juan.tirado .right-arm {
+  transform: rotate(-60deg);
+  transition: all 0.4s ease;
+}
+#juan.tirado .left-leg {
+  transform: rotate(20deg);
+  transition: all 0.4s ease;
+}
+#juan.tirado .right-leg {
+  transform: rotate(-20deg);
+  transition: all 0.4s ease;
+}
+
+#juan {
+  transition: transform 0.5s ease, bottom 0.5s ease;
+}
+
+#juan.tirado {
+  transform: rotate(90deg);
+  bottom: 2px;
+}
+
+#juan-expresion {
+  position: absolute;
+  left: 45px;
+  bottom: 80px;
+  font-size: 22px;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+  pointer-events: none;
+  z-index: 10;
+}
+
+#juan-expresion.visible {
+  opacity: 1;
+}
+
+

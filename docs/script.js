@@ -690,16 +690,21 @@ function responderActividad(opcionElegida, boton) {
   const item = actividadPreguntas[actividadIndice];
   const feedback = document.getElementById("feedback-actividad");
   const botones = document.querySelectorAll("#actividad-pregunta-container .actividad-opcion");
+  const juan = document.getElementById("juan");
+
   botones.forEach(b => b.disabled = true);
+
   if (opcionElegida === item.correcta) {
     boton.style.backgroundColor = "var(--green)";
     boton.style.color = "white";
     boton.style.borderColor = "var(--green)";
     feedback.textContent = "✅ ¡Correcto! Juan avanza.";
     feedback.style.color = "var(--green)";
+
     juanCaminando = true;
     paisajeMoviendo = true;
     velocidadPaisaje = 2;
+
     setTimeout(() => {
       juanCaminando = false;
       paisajeMoviendo = false;
@@ -707,6 +712,7 @@ function responderActividad(opcionElegida, boton) {
       actividadIndice++;
       mostrarPreguntaActividad();
     }, 3000);
+
   } else {
     boton.style.backgroundColor = "var(--red)";
     boton.style.color = "white";
@@ -716,15 +722,20 @@ function responderActividad(opcionElegida, boton) {
     botones[item.correcta].style.borderColor = "var(--green)";
     feedback.textContent = "❌ " + item.explicacion;
     feedback.style.color = "var(--red)";
+
+    if (animacionJuan) clearInterval(animacionJuan);
+    if (animacionPaisaje) clearInterval(animacionPaisaje);
+    animacionJuan = null;
+    animacionPaisaje = null;
+
+    juan.classList.add("tirado");
+
     setTimeout(() => {
+      juan.classList.remove("tirado");
+      iniciarAnimaciones();
       actividadIndice++;
       mostrarPreguntaActividad();
     }, 3000);
   }
 }
-
-
-
-
-
 
