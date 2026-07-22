@@ -692,6 +692,10 @@ function mostrarPreguntaActividad() {
                 const mitad = actividadPreguntas.length / 2;
 
                 if (erroresActividad > mitad) {
+                   casa.style.transition = "none";
+                   casa.style.opacity = "0";
+                   casa.style.right = "-80px";
+                   juanCaminando = true;
                     juan.classList.add("tirado");
                     dialogo.textContent = "😓 ¡Qué cansado llegué!";
                      dialogo.classList.add("victoria-dialogo");
