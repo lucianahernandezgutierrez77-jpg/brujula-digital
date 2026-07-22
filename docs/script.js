@@ -551,7 +551,7 @@ function mostrarPuntajePrivacidad() {
   document.getElementById("btn-resultado-privacidad").style.display = "none";
 }
 
-// ACTIVIDAD 
+// ACTIVIDAD
 let animacionPaisaje = null;
 let animacionJuan = null;
 let paso = false;
@@ -570,10 +570,7 @@ function iniciarAnimaciones() {
   const rightLeg = document.querySelector(".right-leg");
   const head = document.querySelector(".head");
 
-  if (!paisaje1 || !leftArm || !leftLeg || !head) {
-    console.error("Error: elementos de Juan no encontrados en el DOM");
-    return;
-  }
+  if (!paisaje1 || !leftArm || !leftLeg || !head) return;
 
   if (animacionPaisaje) clearInterval(animacionPaisaje);
   if (animacionJuan) clearInterval(animacionJuan);
@@ -638,47 +635,80 @@ let actividadIndice = 0;
 
 function iniciarActividad() {
   document.getElementById("btn-iniciar-actividad").style.display = "none";
+  actividadIndice = 0;
   x1 = 0;
   x2 = 900;
+
+  const casa = document.getElementById("meta-casa");
+  casa.style.opacity = "0";
+  casa.style.right = "-80px";
+
+  document.getElementById("actividad-mensaje-final").style.display = "none";
+
   iniciarAnimaciones();
   juanCaminando = true;
   paisajeMoviendo = true;
   velocidadPaisaje = 2;
+
   setTimeout(() => {
     juanCaminando = false;
     paisajeMoviendo = false;
     velocidadPaisaje = 0;
-    initRuleta();
+    mostrarPreguntaActividad();
   }, 2000);
-}
-
-function initRuleta() {
-  actividadIndice = 0;
-  juanCaminando = false;
-  paisajeMoviendo = false;
-  velocidadPaisaje = 0;
-  const mensajeFinal = document.getElementById("actividad-mensaje-final");
-  if (mensajeFinal) mensajeFinal.style.display = "none";
-  mostrarPreguntaActividad();
 }
 
 function mostrarPreguntaActividad() {
   const contenedor = document.getElementById("actividad-pregunta-container");
-  if (actividadIndice >= actividadPreguntas.length) {
-    juanCaminando = true;
-    paisajeMoviendo = true;
-    velocidadPaisaje = 3;
-    contenedor.innerHTML = "";
-    setTimeout(() => {
+
+if (actividadIndice >= actividadPreguntas.length) {
+  contenedor.innerHTML = "";
+
+  const casa = document.getElementById("meta-casa");
+  const juan = document.getElementById("juan");
+
+  // La casa aparece al borde derecho
+  casa.style.left = "auto";
+  casa.style.right = "10px";
+  casa.style.opacity = "1";
+
+  // Juan y el paisaje se mueven
+  juanCaminando = true;
+  paisajeMoviendo = true;
+  velocidadPaisaje = 2;
+
+  // La casa también se mueve hacia la izquierda con el paisaje
+  let casaRight = 10;
+  const moverCasa = setInterval(() => {
+    casaRight += 2;
+    casa.style.right = casaRight + "px";
+
+    // Cuando la casa llega cerca de Juan (aprox left: 100px)
+    const casaLeft = casa.getBoundingClientRect().left;
+    const juanLeft = juan.getBoundingClientRect().left;
+
+    if (casaLeft <= juanLeft + 80) {
+      clearInterval(moverCasa);
       juanCaminando = false;
       paisajeMoviendo = false;
       velocidadPaisaje = 0;
-      document.getElementById("actividad-mensaje-final").style.display = "block";
-    }, 4000);
-    return;
-  }
+
+      // Juan hace victoria
+      juan.classList.add("victoria");
+
+      setTimeout(() => {
+        juan.classList.remove("victoria");
+        document.getElementById("actividad-mensaje-final").style.display = "block";
+      }, 2000);
+    }
+  }, 30);
+
+  return;
+}
+
   const item = actividadPreguntas[actividadIndice];
-  let html = `<div class="actividad-card"><p class="actividad-pregunta"><strong>${item.pregunta}</strong></p>`;
+  let html = `<div class="actividad-card">
+    <p class="actividad-pregunta"><strong>${item.pregunta}</strong></p>`;
   item.opciones.forEach((op, i) => {
     html += `<button class="actividad-opcion" onclick="responderActividad(${i}, this)">${op}</button>`;
   });
@@ -691,6 +721,7 @@ function responderActividad(opcionElegida, boton) {
   const feedback = document.getElementById("feedback-actividad");
   const botones = document.querySelectorAll("#actividad-pregunta-container .actividad-opcion");
   const juan = document.getElementById("juan");
+  const dialogo = document.getElementById("juan-dialogo");
 
   botones.forEach(b => b.disabled = true);
 
@@ -732,10 +763,22 @@ function responderActividad(opcionElegida, boton) {
 
     setTimeout(() => {
       juan.classList.remove("tirado");
-      iniciarAnimaciones();
-      actividadIndice++;
-      mostrarPreguntaActividad();
-    }, 3000);
+      juan.classList.add("arrodillado");
+      dialogo.classList.add("visible");
+
+      setTimeout(() => {
+        juan.classList.remove("arrodillado");
+        dialogo.classList.remove("visible");
+
+        setTimeout(() => {
+          iniciarAnimaciones();
+          actividadIndice++;
+          mostrarPreguntaActividad();
+        }, 700);
+
+      }, 1000);
+
+    }, 2500);
   }
 }
 

@@ -389,7 +389,7 @@ body{
 
 /* ===== JUAN TIRADO ===== */
 #juan {
-  transition: transform 0.5s ease, bottom 0.5s ease;
+  transition: transform 0.6s ease, bottom 0.6s ease;
 }
 
 #juan.tirado {
@@ -397,48 +397,78 @@ body{
   bottom: 2px;
 }
 
-#juan.tirado .head {
-  transition: all 0.4s ease;
-}
-#juan.tirado .left-arm {
-  transform: rotate(60deg);
-  transition: all 0.4s ease;
-}
-#juan.tirado .right-arm {
-  transform: rotate(-60deg);
-  transition: all 0.4s ease;
-}
-#juan.tirado .left-leg {
-  transform: rotate(20deg);
-  transition: all 0.4s ease;
-}
-#juan.tirado .right-leg {
-  transform: rotate(-20deg);
-  transition: all 0.4s ease;
+#juan.arrodillado {
+  transform: rotate(45deg);
+  bottom: 8px;
 }
 
-#juan {
-  transition: transform 0.5s ease, bottom 0.5s ease;
-}
-
-#juan.tirado {
-  transform: rotate(90deg);
-  bottom: 2px;
-}
-
-#juan-expresion {
+/* ===== GLOBO DE DIALOGO ===== */
+#juan-dialogo {
   position: absolute;
-  left: 45px;
-  bottom: 80px;
-  font-size: 22px;
+  left: 62px;
+  bottom: 70px;
+  background: white;
+  border: 2px solid #1F2937;
+  border-radius: 10px;
+  padding: 4px 10px;
+  font-size: 13px;
+  font-weight: bold;
+  white-space: nowrap;
   opacity: 0;
   transition: opacity 0.4s ease;
+  z-index: 20;
   pointer-events: none;
-  z-index: 10;
 }
 
-#juan-expresion.visible {
+#juan-dialogo::after {
+  content: "";
+  position: absolute;
+  bottom: -8px;
+  left: 12px;
+  width: 0;
+  height: 0;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-top: 8px solid #1F2937;
+}
+
+#juan-dialogo.visible {
   opacity: 1;
 }
+/*CASA*/
+#meta-casa {
+  position: absolute;
+  right: -80px;
+  bottom: 10px;
+  font-size: 110px;
+  z-index: 10;
+  opacity: 0;
+  transition: right 0.05s linear, opacity 0.3s ease;
+}
+
+#juan.victoria .left-arm {
+  transform: rotate(-150deg);
+  transition: all 0.3s ease;
+}
+
+#juan.victoria .right-arm {
+  transform: rotate(150deg);
+  transition: all 0.3s ease;
+}
+
+#juan.victoria .left-leg {
+  transform: rotate(0deg);
+  transition: all 0.3s ease;
+}
+
+#juan.victoria .right-leg {
+  transform: rotate(0deg);
+  transition: all 0.3s ease;
+}
+
+
+
+
+
 
 
