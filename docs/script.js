@@ -560,6 +560,7 @@ let x2 = 900;
 let paisajeMoviendo = false;
 let velocidadPaisaje = 0;
 let juanCaminando = false;
+let erroresActividad = 0;
 
 function iniciarAnimaciones() {
   const paisaje1 = document.getElementById("paisaje1");
@@ -636,6 +637,7 @@ let actividadIndice = 0;
 function iniciarActividad() {
   document.getElementById("btn-iniciar-actividad").style.display = "none";
   actividadIndice = 0;
+  erroresActividad = 0;
   x1 = 0;
   x2 = 900;
 
@@ -659,62 +661,72 @@ function iniciarActividad() {
 }
 
 function mostrarPreguntaActividad() {
-  const contenedor = document.getElementById("actividad-pregunta-container");
+    const contenedor = document.getElementById("actividad-pregunta-container");
+    if (actividadIndice >= actividadPreguntas.length) {
+        contenedor.innerHTML = "";
+        const casa = document.getElementById("meta-casa");
+         const juan = document.getElementById("juan");
+        casa.style.left = "auto";
+        casa.style.right = "10px";
+        casa.style.opacity = "1";
+         juanCaminando = true;
+        paisajeMoviendo = true;
+        velocidadPaisaje = 2;
+        let casaRight = 10;
+        const moverCasa = setInterval(() => {
+            casaRight += 2;
+            casa.style.right = casaRight + "px";
+            const casaLeft = casa.getBoundingClientRect().left;
+             const juanLeft = juan.getBoundingClientRect().left;
+            if (casaLeft <= juanLeft + 80) {
+                 clearInterval(moverCasa);
+                juanCaminando = false;
+                 paisajeMoviendo = false;
+                velocidadPaisaje = 0;
+                if (animacionJuan) {
+                    clearInterval(animacionJuan);
+                    animacionJuan = null;
+                }
 
-if (actividadIndice >= actividadPreguntas.length) {
-  contenedor.innerHTML = "";
+                const dialogo = document.getElementById("juan-dialogo");
+                const mitad = actividadPreguntas.length / 2;
 
-  const casa = document.getElementById("meta-casa");
-  const juan = document.getElementById("juan");
-
-  // La casa aparece al borde derecho
-  casa.style.left = "auto";
-  casa.style.right = "10px";
-  casa.style.opacity = "1";
-
-  // Juan y el paisaje se mueven
-  juanCaminando = true;
-  paisajeMoviendo = true;
-  velocidadPaisaje = 2;
-
-  // La casa también se mueve hacia la izquierda con el paisaje
-  let casaRight = 10;
-  const moverCasa = setInterval(() => {
-    casaRight += 2;
-    casa.style.right = casaRight + "px";
-
-    // Cuando la casa llega cerca de Juan (aprox left: 100px)
-    const casaLeft = casa.getBoundingClientRect().left;
-    const juanLeft = juan.getBoundingClientRect().left;
-
-    if (casaLeft <= juanLeft + 80) {
-      clearInterval(moverCasa);
-      juanCaminando = false;
-      paisajeMoviendo = false;
-      velocidadPaisaje = 0;
-
-      // Juan hace victoria
-      juan.classList.add("victoria");
-
-      setTimeout(() => {
-        juan.classList.remove("victoria");
-        document.getElementById("actividad-mensaje-final").style.display = "block";
-      }, 2000);
+                if (erroresActividad > mitad) {
+                    juan.classList.add("tirado");
+                    dialogo.textContent = "😓 ¡Qué cansado llegué!";
+                     dialogo.classList.add("victoria-dialogo");
+                    dialogo.classList.add("visible");
+                    setTimeout(() => {
+                        dialogo.classList.remove("visible");
+                        dialogo.classList.remove("victoria-dialogo");
+                         document.getElementById("actividad-mensaje-final").style.display = "block";
+                    }, 1400);
+                } else {
+                    dialogo.textContent = "¡Llegué! 🏠💪";
+                    dialogo.classList.add("victoria-dialogo");
+                    dialogo.classList.add("visible");
+                    juan.classList.add("victoria");
+                     setTimeout(() => {
+                        dialogo.classList.remove("visible");
+                        dialogo.classList.remove("victoria-dialogo");
+                       juan.classList.remove("victoria");
+                        document.getElementById("actividad-mensaje-final").style.display = "block";
+                   }, 1400);
+                }
+            }
+        }, 30);
+        return;
     }
-  }, 30);
 
-  return;
+    const item = actividadPreguntas[actividadIndice];
+    let html = `<div class="actividad-card"><p class="actividad-pregunta"><strong>${item.pregunta}</strong></p>`;
+    item.opciones.forEach((op, i) => {
+        html += `<button class="actividad-opcion" onclick="responderActividad(${i}, this)">${op}</button>`;
+    });
+    html += `<p id="feedback-actividad" class="quiz-feedback"></p></div>`;
+    contenedor.innerHTML = html;
 }
 
-  const item = actividadPreguntas[actividadIndice];
-  let html = `<div class="actividad-card">
-    <p class="actividad-pregunta"><strong>${item.pregunta}</strong></p>`;
-  item.opciones.forEach((op, i) => {
-    html += `<button class="actividad-opcion" onclick="responderActividad(${i}, this)">${op}</button>`;
-  });
-  html += `<p id="feedback-actividad" class="quiz-feedback"></p></div>`;
-  contenedor.innerHTML = html;
-}
 
 function responderActividad(opcionElegida, boton) {
   const item = actividadPreguntas[actividadIndice];
@@ -745,14 +757,15 @@ function responderActividad(opcionElegida, boton) {
     }, 3000);
 
   } else {
-    boton.style.backgroundColor = "var(--red)";
-    boton.style.color = "white";
-    boton.style.borderColor = "var(--red)";
-    botones[item.correcta].style.backgroundColor = "var(--green)";
-    botones[item.correcta].style.color = "white";
-    botones[item.correcta].style.borderColor = "var(--green)";
-    feedback.textContent = "❌ " + item.explicacion;
-    feedback.style.color = "var(--red)";
+  erroresActividad++;
+  boton.style.backgroundColor = "var(--red)";
+  boton.style.color = "white";
+  boton.style.borderColor = "var(--red)";
+  botones[item.correcta].style.backgroundColor = "var(--green)";
+  botones[item.correcta].style.color = "white";
+  botones[item.correcta].style.borderColor = "var(--green)";
+  feedback.textContent = "❌ " + item.explicacion;
+  feedback.style.color = "var(--red)";
 
     if (animacionJuan) clearInterval(animacionJuan);
     if (animacionPaisaje) clearInterval(animacionPaisaje);
@@ -781,4 +794,3 @@ function responderActividad(opcionElegida, boton) {
     }, 2500);
   }
 }
-
