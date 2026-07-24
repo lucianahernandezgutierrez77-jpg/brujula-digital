@@ -721,6 +721,9 @@ function mostrarPreguntaActividad() {
         }, 30);
         return;
     }
+    //NO OLVIDAR DESAPARECER CASA CUANDO LA ACTIVIDAD NO ESTA CORRECTA , Y DAR UNA OPCION DE REACER ACTIVIDAD 
+    //NO OLVIDAR COREJIR NUBES 
+    //NO OLVIDAR VARIAR LAS PREGUNTAS 
 
     const item = actividadPreguntas[actividadIndice];
     let html = `<div class="actividad-card"><p class="actividad-pregunta"><strong>${item.pregunta}</strong></p>`;
