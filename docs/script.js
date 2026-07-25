@@ -605,7 +605,7 @@ function iniciarAnimaciones() {
   }, 180);
 }
 
-const actividadPreguntas = [
+let actividadPreguntas = [
   {
     pregunta: "¿Cada cuánto tiempo se recomienda hacer una pausa al usar pantallas?",
     opciones: ["Cada 20 minutos", "Cada 3 horas", "Solo cuando hay dolor de ojos", "Una vez al día"],
@@ -632,12 +632,23 @@ const actividadPreguntas = [
   }
 ];
 
+function mezclarArray(arr) {
+  const copia = [...arr];
+  for (let i = copia.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [copia[i], copia[j]] = [copia[j], copia[i]];
+  }
+  return copia;
+}
+
 let actividadIndice = 0;
 
 function iniciarActividad() {
   document.getElementById("btn-iniciar-actividad").style.display = "none";
   actividadIndice = 0;
   erroresActividad = 0;
+  actividadPreguntas = mezclarArray(actividadPreguntas);
+
   x1 = 0;
   x2 = 900;
 
@@ -663,68 +674,63 @@ function iniciarActividad() {
 function mostrarPreguntaActividad() {
     const contenedor = document.getElementById("actividad-pregunta-container");
     if (actividadIndice >= actividadPreguntas.length) {
-        contenedor.innerHTML = "";
-        const casa = document.getElementById("meta-casa");
-         const juan = document.getElementById("juan");
-        casa.style.left = "auto";
-        casa.style.right = "10px";
-        casa.style.opacity = "1";
-         juanCaminando = true;
-        paisajeMoviendo = true;
-        velocidadPaisaje = 2;
-        let casaRight = 10;
-        const moverCasa = setInterval(() => {
-            casaRight += 2;
-            casa.style.right = casaRight + "px";
-            const casaLeft = casa.getBoundingClientRect().left;
-             const juanLeft = juan.getBoundingClientRect().left;
-            if (casaLeft <= juanLeft + 80) {
-                 clearInterval(moverCasa);
-                juanCaminando = false;
-                 paisajeMoviendo = false;
-                velocidadPaisaje = 0;
-                if (animacionJuan) {
-                    clearInterval(animacionJuan);
-                    animacionJuan = null;
-                }
+  contenedor.innerHTML = "";
+  const mitad = actividadPreguntas.length / 2;
 
-                const dialogo = document.getElementById("juan-dialogo");
-                const mitad = actividadPreguntas.length / 2;
+  if (erroresActividad > mitad) {
+    juanCaminando = false;
+    paisajeMoviendo = false;
+    velocidadPaisaje = 0;
+    if (animacionJuan) { clearInterval(animacionJuan); animacionJuan = null; }
+    if (animacionPaisaje) { clearInterval(animacionPaisaje); animacionPaisaje = null; }
 
-                if (erroresActividad > mitad) {
-                   casa.style.transition = "none";
-                   casa.style.opacity = "0";
-                   casa.style.right = "-80px";
-                   juanCaminando = true;
-                    juan.classList.add("tirado");
-                    dialogo.textContent = "😓 ¡Qué cansado llegué!";
-                     dialogo.classList.add("victoria-dialogo");
-                    dialogo.classList.add("visible");
-                    setTimeout(() => {
-                        dialogo.classList.remove("visible");
-                        dialogo.classList.remove("victoria-dialogo");
-                         document.getElementById("actividad-mensaje-final").style.display = "block";
-                    }, 1400);
-                } else {
-                    dialogo.textContent = "¡Llegué! 🏠💪";
-                    dialogo.classList.add("victoria-dialogo");
-                    dialogo.classList.add("visible");
-                    juan.classList.add("victoria");
-                     setTimeout(() => {
-                        dialogo.classList.remove("visible");
-                        dialogo.classList.remove("victoria-dialogo");
-                       juan.classList.remove("victoria");
-                        document.getElementById("actividad-mensaje-final").style.display = "block";
-                   }, 1400);
-                }
-            }
-        }, 30);
-        return;
-    }
-    //NO OLVIDAR DESAPARECER CASA CUANDO LA ACTIVIDAD NO ESTA CORRECTA , Y DAR UNA OPCION DE REACER ACTIVIDAD 
-    //NO OLVIDAR COREJIR NUBES 
-    //NO OLVIDAR VARIAR LAS PREGUNTAS 
+    const juan = document.getElementById("juan");
+    juan.classList.add("tirado");
 
+    setTimeout(() => {
+      document.getElementById("actividad-mensaje-fallo").style.display = "block";
+    }, 800);
+
+  } else {
+    const casa = document.getElementById("meta-casa");
+    const juan = document.getElementById("juan");
+    casa.style.left = "auto";
+    casa.style.right = "10px";
+    casa.style.opacity = "1";
+    juanCaminando = true;
+    paisajeMoviendo = true;
+    velocidadPaisaje = 2;
+
+    let casaRight = 10;
+    const moverCasa = setInterval(() => {
+      casaRight += 2;
+      casa.style.right = casaRight + "px";
+      const casaLeft = casa.getBoundingClientRect().left;
+      const juanLeft = juan.getBoundingClientRect().left;
+      if (casaLeft <= juanLeft + 80) {
+        clearInterval(moverCasa);
+        juanCaminando = false;
+        paisajeMoviendo = false;
+        velocidadPaisaje = 0;
+        if (animacionJuan) { clearInterval(animacionJuan); animacionJuan = null; }
+
+        const dialogo = document.getElementById("juan-dialogo");
+        dialogo.textContent = "¡Llegué! 🏠💪";
+        dialogo.classList.add("victoria-dialogo");
+        dialogo.classList.add("visible");
+        juan.classList.add("victoria");
+
+        setTimeout(() => {
+          dialogo.classList.remove("visible");
+          dialogo.classList.remove("victoria-dialogo");
+          juan.classList.remove("victoria");
+          document.getElementById("actividad-mensaje-final").style.display = "block";
+        }, 1400);
+      }
+    }, 30);
+  }
+  return;
+}
     const item = actividadPreguntas[actividadIndice];
     let html = `<div class="actividad-card"><p class="actividad-pregunta"><strong>${item.pregunta}</strong></p>`;
     item.opciones.forEach((op, i) => {
@@ -800,4 +806,39 @@ function responderActividad(opcionElegida, boton) {
 
     }, 2500);
   }
+}
+
+function reiniciarActividad() {
+  actividadIndice = 0;
+  erroresActividad = 0;
+  x1 = 0;
+  x2 = 900;
+
+  document.getElementById("actividad-mensaje-fallo").style.display = "none";
+  document.getElementById("actividad-mensaje-final").style.display = "none";
+  document.getElementById("actividad-pregunta-container").innerHTML = "";
+
+  const juan = document.getElementById("juan");
+  juan.classList.remove("tirado", "arrodillado", "victoria");
+
+  const casa = document.getElementById("meta-casa");
+  casa.style.opacity = "0";
+  casa.style.right = "-80px";
+
+  const paisaje1 = document.getElementById("paisaje1");
+  const paisaje2 = document.getElementById("paisaje2");
+  paisaje1.style.left = "0px";
+  paisaje2.style.left = "900px";
+
+  iniciarAnimaciones();
+  juanCaminando = true;
+  paisajeMoviendo = true;
+  velocidadPaisaje = 2;
+
+  setTimeout(() => {
+    juanCaminando = false;
+    paisajeMoviendo = false;
+    velocidadPaisaje = 0;
+    mostrarPreguntaActividad();
+  }, 2000);
 }

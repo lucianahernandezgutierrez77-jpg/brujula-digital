@@ -51,20 +51,26 @@ body{
   display: block;
   margin-bottom: 10px;
 }
-
-.highlight {
-    background-color: #c6b5ff;
-    padding: 2px 5px;
-    border-radius: 4px;
-    font-weight: 500;
-}
-
+/*====SUBTITLES====*/
 .subtitle {
     display: inline;
     background: linear-gradient(transparent 29%, #DDF7D8 55%);
     font-size: inherit;
     font-weight: inherit;
     color: inherit;
+}
+
+.subtitle2 {
+    display: inline-block;
+    border-bottom: 3px solid #60A5FA;
+    padding-bottom: 4px;
+}
+/*====HIGHLIGHT====*/
+.highlight {
+    background-color: #c6b5ff;
+    padding: 2px 5px;
+    border-radius: 4px;
+    font-weight: 500;
 }
 
 .highlight2 {
@@ -80,17 +86,19 @@ body{
     color: inherit;
 }
 
-.subtitle2 {
-    display: inline-block;
-    border-bottom: 3px solid #60A5FA;
-    padding-bottom: 4px;
-}
-
 .highlight4 {
     background-color: #ddff00;
     padding: 2px 5px;
     border-radius: 4px;
     font-weight: 500;
+}
+
+.highlight5 {
+    display: inline;
+    background: linear-gradient(transparent 30%, #ddff00 55%);
+    font-size: inherit;
+    font-weight: inherit;
+    color: inherit;
 }
 /*=====CONTAINER=====*/
 
@@ -154,6 +162,43 @@ body{
         font-size: 1rem;
     }
 }
+/*==CONSEJO==*/
+
+.consejo-card {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 24px;
+}
+
+.consejo-texto {
+  flex: 1;
+}
+
+.consejo-texto h4 {
+  margin-top: 0;
+}
+
+.consejo-emoji {
+  font-size: 4rem;
+  flex-shrink: 0;
+  line-height: 1;
+  background: #cffec3;
+  border-radius: 12px;
+  padding: 16px;
+  border: 2px solid var(--green);
+}
+
+@media (max-width: 600px) {
+  .consejo-card {
+    flex-direction: column-reverse;
+    align-items: flex-start;
+  }
+  .consejo-emoji {
+    font-size: 3rem;
+  }
+}
+
 
 /* ===== VIDEO RESPONSIVE ===== */
 .video-container {
@@ -324,11 +369,43 @@ body{
   transform-origin: top;
 }
 
+/* ===== NUBES ===== */
 #paisaje1 {
   position: absolute;
-  top: 8px;
-  font-size: 24px;
-  white-space: nowrap;
+  top: 0;
+  width: 900px;
+  height: 60px;
+}
+
+.nube {
+  position: absolute;
+  width: 70px;
+  height: 22px;
+  background: white;
+  border-radius: 50px;
+  opacity: 0.92;
+}
+
+.nube::before {
+  content: "";
+  position: absolute;
+  width: 35px;
+  height: 30px;
+  background: white;
+  border-radius: 50%;
+  top: -14px;
+  left: 10px;
+}
+
+.nube::after {
+  content: "";
+  position: absolute;
+  width: 25px;
+  height: 22px;
+  background: white;
+  border-radius: 50%;
+  top: -10px;
+  left: 32px;
 }
 
 #paisaje2 {
@@ -435,6 +512,7 @@ body{
 #juan-dialogo.visible {
   opacity: 1;
 }
+
 /*CASA*/
 #meta-casa {
   position: absolute;
@@ -445,6 +523,7 @@ body{
   opacity: 0;
   transition: right 0.05s linear, opacity 0.3s ease;
 }
+
 /*JUAN VITORIA*/
 #juan.victoria {
     transform: rotate(0deg) !important;
