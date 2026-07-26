@@ -236,7 +236,7 @@
     </div>
   </section>
 
-  <!-- LECCIÓN MÓDULO 2 -->
+  <!-- LECCION MODULO 2 -->
   <section id="leccion-estafas" style="display:none">
     <div class="intro">
       <h3>🎥 Video recomendado</h3>
@@ -244,7 +244,7 @@
       <div class="video-container">
         <iframe src="https://www.youtube.com/embed/ZqhCvKTK98U?si=CCe5GijveqKE_iSP" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
       </div>
-      <h2>📖 Lección 2: ¿Cómo reconocer una estafa digital?</h2>
+      <h2> emoji ¿Cómo reconocer una estafa digital? emoji</h2>
       <p>Cada día aparecen nuevas formas de estafa en internet. Aunque cambian constantemente, la mayoría tienen algo en común: buscan que actuemos rápidamente, sin detenernos a pensar o verificar la información.</p>
       <h3>🚨 Tipos de estafas más comunes</h3>
       <ul>
@@ -266,6 +266,72 @@
       <p>📚 <strong>¿Quieres saber más?</strong> La Oficina de Seguridad del Internauta explica cómo protegerse del phishing:<br>
         <a href="https://www.osi.es/es/phishing" target="_blank" rel="noopener noreferrer" style="color: var(--blue); font-size: 1rem;">🔗 Ver fuente oficial (OSI - Oficina de Seguridad del Internauta)</a>
       </p>
+      <!-- ACTIVIDAD MODULO 2 -->
+<h3>Actividad</h3>
+<p>Juan ha recibido varios mensajes hoy. Ayúdalo a identificar cuáles son estafas y cuáles son legítimos.</p>
+<div id="game-estafas">
+  <div id="escena-cuarto">
+    <div id="cuarto-fondo">
+      <div id="ventana">
+        <div id="ventana-cielo"></div>
+      </div>
+      <div id="mesa"></div>
+      <div id="lampara">💡</div>
+      <div id="cama">🛏️</div>
+
+    </div>
+    <div id="juan-estafas">
+      <div class="head"></div>
+      <div class="body"></div>
+      <div class="arm left-arm"></div>
+      <div class="arm right-arm"></div>
+      <div class="leg left-leg"></div>
+      <div class="leg right-leg"></div>
+    </div>
+    <div id="telefono-cuarto">
+      <div id="telefono-pantalla-off"></div>
+      <div id="notificacion-ping">📩</div>
+    </div>
+    <div id="juan-dialogo-estafas"></div>
+    <div id="btn-iniciar-estafas-container" style="position:absolute; bottom:16px; left:50%; transform:translateX(-50%);">
+      <button class="btn" id="btn-iniciar-estafas" onclick="iniciarActividadEstafas()" style="width:auto; min-width:220px;">📱 Ver mensajes de Juan</button>
+    </div>
+  </div>
+
+  <div id="escena-telefono" style="display:none;">
+    <div id="telefono-frame">
+      <div id="telefono-header">
+        <div id="telefono-status">
+          <span>📶</span><span>🔋</span>
+        </div>
+        <div id="telefono-app-header">
+          <span id="telefono-icono-app"></span>
+          <span id="telefono-contacto"></span>
+        </div>
+      </div>
+      <div id="telefono-chat">
+        <div id="burbuja-mensaje"></div>
+        <div id="telefono-hora"></div>
+      </div>
+    </div>
+    <div id="estafas-pregunta-container"></div>
+    <div id="estafas-feedback-container" style="display:none;"></div>
+  </div>
+</div>
+
+<div id="estafas-mensaje-final" style="display:none; background:#F0FDF4; border-radius:12px; padding:20px; margin-top:20px; border-left:4px solid var(--green);">
+  <h3>🎉 ¡Bien hecho!</h3>
+  <p>Juan pudo identificar los mensajes gracias a tu ayuda. Recuerda: ante cualquier mensaje sospechoso, lo mejor es no hacer clic, no compartir datos y verificar directamente con la fuente oficial.</p>
+</div>
+<div id="estafas-mensaje-fallo" style="display:none; background:#FFF5F5; border-radius:12px; padding:20px; margin-top:20px; border-left:4px solid var(--red);">
+  <h3>😓 Juan tuvo algunos tropiezos</h3>
+  <p>No te preocupes, reconocer una estafa no siempre es fácil. ¡Inténtalo de nuevo!</p>
+  <div style="display:flex; justify-content:center;">
+    <button class="btn" onclick="reiniciarActividadEstafas()" style="width:auto; min-width:250px;">🔄 Intentar de nuevo</button>
+  </div>
+</div>
+<hr style="margin: 40px 0; border: none; border-top: 3px solid #e2e8f0;">
+
       <hr style="margin: 25px 0; border-color: #e2e8f0;">
       <h3>🧠 Quiz: ¿Es estafa o no?</h3>
       <div id="quiz-container-estafas"></div>
