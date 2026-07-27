@@ -843,7 +843,7 @@ function reiniciarActividad() {
   }, 2000);
 }
 
-// ===== ACTIVIDAD MODULO 2 =====
+// ===== ACTIVIDAD MODULO 2 ===== //
 
 const mensajesEstafas = [
   {
@@ -923,9 +923,13 @@ const mensajesEstafas = [
 let mensajeEstafasIndice = 0;
 let erroresEstafas = 0;
 let mensajesMezclados = [];
+let animacionJuanEstafas = null;
+let pasoEstafas = false;
+let juanCaminandoEstafas = false;
 
 function iniciarActividadEstafas() {
   document.getElementById("btn-iniciar-estafas-container").style.display = "none";
+
   mensajeEstafasIndice = 0;
   erroresEstafas = 0;
   mensajesMezclados = mezclarArray([...mensajesEstafas]);
@@ -933,19 +937,39 @@ function iniciarActividadEstafas() {
   const dialogo = document.getElementById("juan-dialogo-estafas");
   const telefono = document.getElementById("telefono-cuarto");
   const notificacion = document.getElementById("notificacion-ping");
+  const juan = document.getElementById("juan-estafas");
+
+  juan.style.transition = "none";
+  juan.style.transform = "translateX(-50%)";
+  void juan.offsetWidth; 
+  juan.style.transition = "transform 2s linear";
 
   notificacion.classList.add("ping-animado");
+
   dialogo.textContent = "📩 ¡Tengo mensajes!";
   dialogo.classList.add("visible");
 
+  iniciarAnimacionJuanEstafas();
+  juanCaminandoEstafas = true;
+
+  juan.style.transform = "translateX(185px)";
+
   setTimeout(() => {
+
+    juanCaminandoEstafas = false;
+
     telefono.classList.add("zoom-telefono");
+
     setTimeout(() => {
+
       document.getElementById("escena-cuarto").style.display = "none";
       document.getElementById("escena-telefono").style.display = "block";
+
       mostrarMensajeEstafas();
+
     }, 700);
-  }, 1800);
+
+  }, 2000);
 }
 
 function mostrarMensajeEstafas() {
@@ -988,6 +1012,43 @@ function mostrarMensajeEstafas() {
   contenedor.innerHTML = html;
 }
 
+function iniciarAnimacionJuanEstafas() {
+
+  const juan = document.getElementById("juan-estafas");
+
+  const leftArm = juan.querySelector(".left-arm");
+  const rightArm = juan.querySelector(".right-arm");
+  const leftLeg = juan.querySelector(".left-leg");
+  const rightLeg = juan.querySelector(".right-leg");
+  const head = juan.querySelector(".head");
+
+  if (animacionJuanEstafas) {
+    clearInterval(animacionJuanEstafas);
+  }
+
+  animacionJuanEstafas = setInterval(() => {
+
+    if (!juanCaminandoEstafas) return;
+
+    if (pasoEstafas) {
+      leftArm.style.transform = "rotate(45deg)";
+      rightArm.style.transform = "rotate(-25deg)";
+      leftLeg.style.transform = "rotate(35deg)";
+      rightLeg.style.transform = "rotate(-15deg)";
+      head.style.top = "1px";
+    } else {
+      leftArm.style.transform = "rotate(25deg)";
+      rightArm.style.transform = "rotate(-45deg)";
+      leftLeg.style.transform = "rotate(15deg)";
+      rightLeg.style.transform = "rotate(-35deg)";
+      head.style.top = "0px";
+    }
+
+    pasoEstafas = !pasoEstafas;
+
+  },180);
+}
+
 function responderEstafa(opcionElegida, boton) {
   const item = mensajesMezclados[mensajeEstafasIndice];
   const botones = document.querySelectorAll("#estafas-pregunta-container .actividad-opcion");
@@ -1014,22 +1075,18 @@ function responderEstafa(opcionElegida, boton) {
   }
 
   setTimeout(() => {
-    const contenedor = document.getElementById("estafas-pregunta-container");
-    const esUltimo = mensajeEstafasIndice === mensajesMezclados.length - 1;
-    const btnSiguiente = document.createElement("div");
-    btnSiguiente.style.display = "flex";
-    btnSiguiente.style.justifyContent = "center";
-    btnSiguiente.innerHTML = `<button class="btn" onclick="siguienteMensaje()" style="width:auto; min-width:200px; margin-top:10px;">${esUltimo ? "Ver resultado 🎯" : "Siguiente mensaje →"}</button>`;
-    contenedor.appendChild(btnSiguiente);
-  }, 400);
+    siguienteMensaje();
+  }, 3000);
 }
 
 function siguienteMensaje() {
   mensajeEstafasIndice++;
+
   const burbuja = document.getElementById("burbuja-mensaje");
   burbuja.style.transition = "opacity 0.3s, transform 0.3s";
   burbuja.style.opacity = "0";
   burbuja.style.transform = "translateY(-10px)";
+
   setTimeout(() => {
     mostrarMensajeEstafas();
   }, 300);
@@ -1050,8 +1107,17 @@ function reiniciarActividadEstafas() {
   dialogo.classList.remove("visible");
   dialogo.textContent = "¡Auch! 😣";
 
+  const juan = document.getElementById("juan-estafas");
+  juan.style.transition = "none";
+  juan.style.left = "50%";
+  juanCaminandoEstafas = false;
+
+if(animacionJuanEstafas){
+    clearInterval(animacionJuanEstafas);
+    animacionJuanEstafas = null;
+}
+
   document.getElementById("btn-iniciar-estafas-container").style.display = "block";
   document.getElementById("escena-telefono").style.display = "none";
   document.getElementById("escena-cuarto").style.display = "block";
 }
-
