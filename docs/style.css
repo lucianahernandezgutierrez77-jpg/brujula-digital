@@ -604,10 +604,10 @@ body{
 #ventana {
   position: absolute;
   top: 20px;
-  left: 30px;
+  left: 400px;
 
-  width: 60px;
-  height: 50px;
+  width: 210px;
+  height: 75px;
 
   background: #9fd3ff;
   border: 5px solid #8b5e3c;
@@ -635,18 +635,75 @@ body{
   background: #8b5e3c;
 }
 
-#ventana-cielo {
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(to bottom, #93c5fd, #bfdbfe);
+#ventana-cielo{
+  position: relative;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    width:100%;
+    height:100%;
+    background:linear-gradient(to bottom,#87CEEB,#DFF4FF);
+    font-size:200px;
+    top: 25px;
 }
 
-.cuadro{
+.cortina{
+    position: absolute;
+    top: 0;
+    width: 28px;
+    height: 100px; 
+    background: linear-gradient(to right, #4f91d8, #6b93f2);
+    z-index: 10;
+}
+
+.cortina-izquierda{
+    left: 0;
+    border-radius: 0 6px 6px 0;
+}
+
+.cortina-derecha{
+    right: 0;
+    border-radius: 6px 0 0 6px;
+}
+
+.cortina::after{
+    content:"";
     position:absolute;
-    width:42px;
-    height:42px;
-    border:4px solid #8b5e3c;
-    background:white;
+    inset:0;
+    background: repeating-linear-gradient(
+        90deg,
+        rgba(255,255,255,0.15) 0px,
+        rgba(255,255,255,0.15) 4px,
+        transparent 4px,
+        transparent 8px
+    );
+}
+
+#ventana::after{
+    content:"";
+    position:absolute;
+    top:-6px;
+    left:-4px;
+    width:calc(100% + 8px);
+    height:5px;
+    background:#1F2937;
+    border-radius:3px;
+    z-index:15;
+}
+
+.cuadro {
+  position: absolute;
+  width: 42px;
+  height: 42px;
+  border: 4px solid #8b5e3c;
+  background: #fffdf8;
+  border-radius: 4px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-size: 40px; 
 }
 
 .cuadro1{
@@ -659,6 +716,13 @@ body{
     top:35px;
 }
 
+.cuadro1::after{
+    content:"🌉";
+}
+
+.cuadro2::after{
+    content:"🖼️";
+}
 #mesa {
   position: absolute;
   bottom: 55px;
