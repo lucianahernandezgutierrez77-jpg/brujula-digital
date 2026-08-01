@@ -350,7 +350,6 @@ function initQuizDeepfakes() {
   const correcta = quizDataDeepfakes[preguntaIndice].correcta;
   const feedback = document.getElementById(`feedback-deepfakes-${preguntaIndice}`);
   const botones = document.querySelectorAll(`#pregunta-deepfakes-${preguntaIndice} .quiz-opcion`);
-  const resultado = document.getElementById("resultado-final-deepfakes");
 
   botones.forEach(function(btn) { btn.disabled = true; });
 
@@ -488,7 +487,6 @@ function verificarRespuestaPrivacidad(preguntaIndice, opcionElegida, botonPresio
   const correcta = quizDataPrivacidad[preguntaIndice].correcta;
   const feedback = document.getElementById(`feedback-privacidad-${preguntaIndice}`);
   const botones = document.querySelectorAll(`#pregunta-privacidad-${preguntaIndice} .quiz-opcion`);
-  const resultado = document.getElementById("resultado-final-privacidad");
 
   botones.forEach(function(btn) { btn.disabled = true; });
 
@@ -816,6 +814,7 @@ function reiniciarActividad() {
 
   document.getElementById("actividad-mensaje-fallo").style.display = "none";
   document.getElementById("actividad-mensaje-final").style.display = "none";
+  document.getElementById("btn-iniciar-actividad").style.display = "block";
   document.getElementById("actividad-pregunta-container").innerHTML = "";
 
   const juan = document.getElementById("juan");
@@ -1109,7 +1108,7 @@ function reiniciarActividadEstafas() {
 
   const juan = document.getElementById("juan-estafas");
   juan.style.transition = "none";
-  juan.style.left = "50%";
+  juan.style.transform = "translateX(-50%)";
   juanCaminandoEstafas = false;
 
 if(animacionJuanEstafas){
