@@ -613,6 +613,8 @@ body{
   border: 5px solid #8b5e3c;
   border-radius: 6px;
   overflow: hidden;
+  z-index: 5;
+
 }
 
 #ventana::before {
@@ -679,6 +681,8 @@ body{
     );
 }
 
+/*poner el boton de la actividad antes de que muestre el paisaje*/
+/*mensaje final de juan de gracias por ayudarme para cerrar la actividad*/
 #ventana::after{
     content:"";
     position:absolute;
@@ -779,6 +783,7 @@ body{
   width: 40px;
   height: 70px;
   transition: transform 2s linear;
+  z-index: 20;
 }
 
 /* TELEFONO */
