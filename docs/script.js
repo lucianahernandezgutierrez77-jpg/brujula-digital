@@ -1120,3 +1120,4 @@ if(animacionJuanEstafas){
   document.getElementById("escena-telefono").style.display = "none";
   document.getElementById("escena-cuarto").style.display = "block";
 }
+/comprobando la funcionalidad/
