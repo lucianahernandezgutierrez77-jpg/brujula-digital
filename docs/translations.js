@@ -18,8 +18,8 @@ const translations = {
     "modulos.privacidad": "🔒 Privacidad y seguridad",
 
     // INTRO MODULO 1
-    "modulo-salud.titulo": "📱 Uso saludable de dispositivos",
-    "modulo-salud.descripcion": "La tecnología puede ser una herramienta poderosa para aprender, comunicarnos y descubrir nuevas oportunidades. Sin embargo, también es importante aprender a usarla con equilibrio, ya que un uso excesivo puede afectar nuestra salud y bienestar.",
+    "modulo-salud.consejos.titulo": "📱 Uso saludable de dispositivos",
+    "modulo-salud.consejos.descripcion": "La tecnología puede ser una herramienta poderosa para aprender, comunicarnos y descubrir nuevas oportunidades. Sin embargo, también es importante aprender a usarla con equilibrio, ya que un uso excesivo puede afectar nuestra salud y bienestar.",
     "modulo-salud.consejos": "📝 Consejos prácticos",
 
     "titulo.consejo1": "Regla 20-20-20",
@@ -43,7 +43,10 @@ const translations = {
     "modulo-salud.boton": "🚀 Empecemos",
 
     // MODULO 1 LECCION
-    "modulo-salud.video": "🎥 Video recomendado"
+    "modulo-salud.video": "🎥 Video recomendado",
+    "modulo-salud.video.descripcion": "Antes de continuar, mira este breve video sobre el uso de la tecnología:",
+    "modulo-salud.titulo": "📈💻 ¿Por qué es importante cuidar el tiempo en pantalla?  📺📊",
+    "modulo-salud.descripcion": "Nuestro tiempo es valioso. Cada momento que pasamos frente a una pantalla es un <span class = highlight5>momento que también podríamos dedicar a descansar, realizar actividad física, conversar con nuestra familia o simplemente disfrutar</span> de lo que sucede a nuestro alrededor."
   },
 
     //ENGLISH
@@ -66,8 +69,8 @@ const translations = {
     "modulos.privacidad": "🔒 Privacy and Security",
 
     // INTRO MODULE 1 
-    "modulo-salud.titulo": "📱 Healthy Device Use",
-    "modulo-salud.descripcion": "Technology can be a powerful tool for learning, communicating, and discovering new opportunities. However, it is also important to use it in a balanced way, since excessive use can affect our health and well-being.",
+    "modulo-salud.consejos.titulo": "📱 Healthy Device Use",
+    "modulo-salud.consejos.descripcion": "Technology can be a powerful tool for learning, communicating, and discovering new opportunities. However, it is also important to use it in a balanced way, since excessive use can affect our health and well-being.",
     "modulo-salud.consejos": "📝 Practical Tips",
 
     "titulo.consejo1": "20-20-20 Rule",
@@ -91,7 +94,10 @@ const translations = {
     "modulo-salud.boton": "🚀 Let's Get Started",
 
     // MODULE 1 LESSON
-    "modulo-salud.video": "🎥 Recommended Video"
+    "modulo-salud.video": "🎥 Recommended Video",
+    "modulo-salud.video.descripcion": "Before continuing, watch this brief video about technology use:",
+    "modulo-salud.titulo": "📈💻 Why is it important to manage screen time?  📺📊",
+    "modulo-salud.descripcion": "Managing screen time is crucial for maintaining a healthy balance between our digital and physical lives. Excessive screen time can lead to various health issues, including eye strain, sleep disturbances, and reduced physical activity."
   }
 };
 
