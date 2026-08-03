@@ -36,8 +36,12 @@ const translations = {
 
     "titulo.consejo4": "Postura",
     "descripcion1.consejo4": "¿Alguna vez has sentido tensión o dolor en el cuello después de usar el teléfono?",
-    "descripcion2.consejo4": "Muchas veces se debe a la postura. Procura sostener el dispositivo a la altura de los ojos para evitar molestias en el cuello y la espalda."
+    "descripcion2.consejo4": "Muchas veces se debe a la postura. Procura sostener el dispositivo a la altura de los ojos para evitar molestias en el cuello y la espalda.",
+
+    "modulo-salud.meta": "🎯 Meta del módulo",
+    "modulo-salud.meta.descripcion": "Descubrir cómo pequeños cambios en nuestros hábitos digitales pueden ayudarnos a disfrutar la tecnología de una manera más equilibrada, saludable y consciente. 🧭💙"
   },
+  
     //ENGLISH
   en: {
 
@@ -76,7 +80,10 @@ const translations = {
 
     "titulo.consejo4": "Posture",
     "descripcion1.consejo4": "Have you ever felt tension or pain in your neck after using your phone?",
-    "descripcion2.consejo4": "Many times this is due to posture. Try to hold the device at eye level to avoid discomfort in your neck and back."
+    "descripcion2.consejo4": "Many times this is due to posture. Try to hold the device at eye level to avoid discomfort in your neck and back.",
+
+    "modulo-salud.meta": "🎯 Module Goal",
+    "modulo-salud.meta.descripcion": "Discover how small changes in our digital habits can help us enjoy technology in a more balanced, healthy, and conscious way. 🧭💙"
   }
 };
 
