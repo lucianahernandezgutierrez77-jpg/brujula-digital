@@ -46,7 +46,12 @@ const translations = {
     "modulo-salud.video": "🎥 Video recomendado",
     "modulo-salud.video.descripcion": "Antes de continuar, mira este breve video sobre el uso de la tecnología:",
     "modulo-salud.titulo": "📈💻 ¿Por qué es importante cuidar el tiempo en pantalla?  📺📊",
-    "modulo-salud.descripcion": "Nuestro tiempo es valioso. Cada momento que pasamos frente a una pantalla es un <span class = highlight5>momento que también podríamos dedicar a descansar, realizar actividad física, conversar con nuestra familia o simplemente disfrutar</span> de lo que sucede a nuestro alrededor."
+    "modulo-salud.descripcion": "Nuestro tiempo es valioso. Cada momento que pasamos frente a una pantalla es un <span class = highlight5>momento que también podríamos dedicar a descansar, realizar actividad física, conversar con nuestra familia o simplemente disfrutar</span> de lo que sucede a nuestro alrededor.",
+    "modulo-salud.descripcion2": "¿Esto significa que la tecnología es mala? No. La tecnología puede ser una herramienta increíble para aprender, entretenernos y mantenernos conectados. Pero, como una espada de doble filo, su impacto depende de cómo la usamos.",
+    "modulo-salud.descripcion3": "Pasar demasiado tiempo frente a una pantalla puede afectar:",
+    "modulo-salud.list.item1": "<span class = 'subtitle'>El sueño</span> 😴 — Usar pantallas hasta muy tarde puede hacer que nos cueste más dormir.",
+    "modulo-salud.list.item2": "<span class = 'subtitle'> La actividad física</span> 🚶 — A veces pasamos horas sentados sin darnos cuenta.",
+    "modulo-salud.list.item3": "<span class = 'subtitle'> El bienestar emocional</span> 😔 — Estar constantemente conectados o recibir demasiada información puede hacernos sentir agotados o estresados.",
   },
 
     //ENGLISH
@@ -97,7 +102,12 @@ const translations = {
     "modulo-salud.video": "🎥 Recommended Video",
     "modulo-salud.video.descripcion": "Before continuing, watch this brief video about technology use:",
     "modulo-salud.titulo": "📈💻 Why is it important to manage screen time?  📺📊",
-    "modulo-salud.descripcion": "Managing screen time is crucial for maintaining a healthy balance between our digital and physical lives. Excessive screen time can lead to various health issues, including eye strain, sleep disturbances, and reduced physical activity."
+    "modulo-salud.descripcion": "Our time is valuable. Every moment we spend in front of a screen is a <span class = highlight5>moment that we could also dedicate to resting, engaging in physical activity, talking with our family, or simply enjoying</span> what is happening around us.",
+    "modulo-salud.descripcion2": "Does this mean that technology is bad? No. Technology can be an incredible tool for learning, entertainment, and staying connected. However, like a double-edged sword, its impact depends on how we use it.",
+    "modulo-salud.descripcion3": "Spending too much time in front of a screen can affect:",
+    "modulo-salud.list.item1": "<span class = 'subtitle'>Sleep</span> 😴 — Using screens late at night can make it harder for us to fall asleep.",
+    "modulo-salud.list.item2": "<span class = 'subtitle'>Physical Activity</span> 🚶 — Sometimes we spend hours sitting without realizing it.",
+    "modulo-salud.list.item3": "<span class = 'subtitle'>Emotional Well-being</span> 😔 — Being constantly connected or receiving too much information can make us feel exhausted or stressed.",
   }
 };
 
