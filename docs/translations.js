@@ -52,7 +52,9 @@ const translations = {
     "modulo-salud.list.item1": "<span class = 'subtitle'>El sueño</span> 😴 — Usar pantallas hasta muy tarde puede hacer que nos cueste más dormir.",
     "modulo-salud.list.item2": "<span class = 'subtitle'> La actividad física</span> 🚶 — A veces pasamos horas sentados sin darnos cuenta.",
     "modulo-salud.list.item3": "<span class = 'subtitle'> El bienestar emocional</span> 😔 — Estar constantemente conectados o recibir demasiada información puede hacernos sentir agotados o estresados.",
-  },
+    "modulo-salud.descripcion5": "📚 <strong>¿Quieres saber más?</strong> La Comisión Europea explica los efectos del tiempo excesivo en pantalla:<br>",
+  },//modulo salud link
+  
 
     //ENGLISH
   en: {
@@ -105,9 +107,12 @@ const translations = {
     "modulo-salud.descripcion": "Our time is valuable. Every moment we spend in front of a screen is a <span class = highlight5>moment that we could also dedicate to resting, engaging in physical activity, talking with our family, or simply enjoying</span> what is happening around us.",
     "modulo-salud.descripcion2": "Does this mean that technology is bad? No. Technology can be an incredible tool for learning, entertainment, and staying connected. However, like a double-edged sword, its impact depends on how we use it.",
     "modulo-salud.descripcion3": "Spending too much time in front of a screen can affect:",
+    "modulo-salud.descripcion4": "<span class=\"highlight3\">No se trata de dejar de usar la tecnología, sino de aprender a utilizarla de una forma que beneficie nuestra salud y nuestro bienestar.</span>",
     "modulo-salud.list.item1": "<span class = 'subtitle'>Sleep</span> 😴 — Using screens late at night can make it harder for us to fall asleep.",
     "modulo-salud.list.item2": "<span class = 'subtitle'>Physical Activity</span> 🚶 — Sometimes we spend hours sitting without realizing it.",
     "modulo-salud.list.item3": "<span class = 'subtitle'>Emotional Well-being</span> 😔 — Being constantly connected or receiving too much information can make us feel exhausted or stressed.",
+    "modulo-salud.descripcion5": "📚 <strong>Want to learn more?</strong> The European Commission explains the effects of excessive screen time:<br>",
+    // modulo salud link
   }
 };
 
