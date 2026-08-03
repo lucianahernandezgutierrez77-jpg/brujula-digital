@@ -39,9 +39,13 @@ const translations = {
     "descripcion2.consejo4": "Muchas veces se debe a la postura. Procura sostener el dispositivo a la altura de los ojos para evitar molestias en el cuello y la espalda.",
 
     "modulo-salud.meta": "🎯 Meta del módulo",
-    "modulo-salud.meta.descripcion": "Descubrir cómo pequeños cambios en nuestros hábitos digitales pueden ayudarnos a disfrutar la tecnología de una manera más equilibrada, saludable y consciente. 🧭💙"
+    "modulo-salud.meta.descripcion": "Descubrir cómo pequeños cambios en nuestros hábitos digitales pueden ayudarnos a disfrutar la tecnología de una manera más equilibrada, saludable y consciente. 🧭💙",
+    "modulo-salud.boton": "🚀 Empecemos",
+
+    // MODULO 1 LECCION
+    "modulo-salud.video": "🎥 Video recomendado"
   },
-  
+
     //ENGLISH
   en: {
 
@@ -83,7 +87,11 @@ const translations = {
     "descripcion2.consejo4": "Many times this is due to posture. Try to hold the device at eye level to avoid discomfort in your neck and back.",
 
     "modulo-salud.meta": "🎯 Module Goal",
-    "modulo-salud.meta.descripcion": "Discover how small changes in our digital habits can help us enjoy technology in a more balanced, healthy, and conscious way. 🧭💙"
+    "modulo-salud.meta.descripcion": "Discover how small changes in our digital habits can help us enjoy technology in a more balanced, healthy, and conscious way. 🧭💙",
+    "modulo-salud.boton": "🚀 Let's Get Started",
+
+    // MODULE 1 LESSON
+    "modulo-salud.video": "🎥 Recommended Video"
   }
 };
 
