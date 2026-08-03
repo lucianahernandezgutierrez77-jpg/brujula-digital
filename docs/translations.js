@@ -55,7 +55,14 @@ const translations = {
     "modulo-salud.descripcion4": "<span class=\"highlight3\">No se trata de dejar de usar la tecnología, sino de aprender a utilizarla de una forma que beneficie nuestra salud y nuestro bienestar.</span>",
     "modulo-salud.descripcion5": "📚 <strong>¿Quieres saber más?</strong> La Comisión Europea explica los efectos del tiempo excesivo en pantalla:<br>",
     "modulo-salud.actividad.titulo": "<span class=\"subtitle2\">Actividad  </span>",
-    "modulo-salud.actividad.descripcion": "Después de pasar un tiempo usando el computador, Juan decidió salir a caminar para descansar su vista y mover el cuerpo. Responde correctamente las preguntas para ayudarlo a completar su recorrido."
+    "modulo-salud.actividad.descripcion": "Después de pasar un tiempo usando el computador, Juan decidió salir a caminar para descansar su vista y mover el cuerpo. Responde correctamente las preguntas para ayudarlo a completar su recorrido.",
+    //ACTIVIDAD
+    "modulo-salud.boton.actividad": "🚶 Iniciar actividad",
+    "modulo-salud.mesaje.final1": "🎉 ¡Excelente!",
+    "modulo-salud.mesaje.final2": "Gracias a tus respuestas, Juan pudo terminar su caminata. Recuerda que levantarte unos minutos, caminar o estirarte después de usar dispositivos electrónicos también ayuda a cuidar tu salud y descansar la vista.",
+    "modulo-salud.mesaje.fallo": "😓 Juan no pudo completar su caminata",
+    "modulo-salud.mesaje.fallo2": "Tuvo demasiados tropiezos en el camino. ¡Pero no te preocupes! Puedes intentarlo de nuevo y ayudarlo a llegar a casa.",
+    "modulo-salud.boton.reiniciar": "🔄 Intentar de nuevo"
   },
 
 
@@ -116,7 +123,14 @@ const translations = {
     "modulo-salud.descripcion4": "<span class=\"highlight3\">It's not about stopping the use of technology, but rather learning to use it in a way that benefits our health and well-being.</span>",
     "modulo-salud.descripcion5": "📚 <strong>Want to learn more?</strong> The European Commission explains the effects of excessive screen time:<br>",
     "modulo-salud.actividad.titulo": "<span class=\"subtitle2\">Activity  </span>",
-    "modulo-salud.actividad.descripcion": "After spending some time using the computer, Juan decided to go for a walk to rest his eyes and move his body. Answer the questions correctly to help him complete his journey."
+    "modulo-salud.actividad.descripcion": "After spending some time using the computer, Juan decided to go for a walk to rest his eyes and move his body. Answer the questions correctly to help him complete his journey.",
+    //ACTIVIDAD
+    "modulo-salud.boton.actividad": "🚶 Start Activity",
+    "modulo-salud.mesaje.final1": "🎉 Excellent!",
+    "modulo-salud.mesaje.final2": "Thanks to your answers, Juan was able to finish his walk. Remember that taking a few minutes to get up, walk, or stretch after using electronic devices also helps take care of your health and rest your eyes.",
+    "modulo-salud.mesaje.fallo": "😓 Juan couldn't complete his walk",
+    "modulo-salud.mesaje.fallo2": "He had too many trips on the way. But don't worry! You can try again and help him get home.",
+    "modulo-salud.boton.reiniciar": "🔄 Try Again",
   }
 };
 

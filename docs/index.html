@@ -163,21 +163,21 @@
     <div id="actividad-pregunta-container"></div>
 
     <div style="display: flex; justify-content: center;">
-  <button class="btn" id="btn-iniciar-actividad" onclick="iniciarActividad()" style="width: auto; min-width: 250px;">🚶 Iniciar actividad</button>
+  <button class="btn" id="btn-iniciar-actividad" data-i18n="modulo-salud.boton.actividad" onclick="iniciarActividad()" style="width: auto; min-width: 250px;">🚶 Iniciar actividad</button>
 </div>
 
 </div>
 
 <div id="actividad-mensaje-final" style="display:none; background:#F0FDF4; border-radius:12px; padding:20px; margin-top:20px; border-left:4px solid var(--green);">
-  <h3>🎉 ¡Excelente!</h3>
-  <p>Gracias a tus respuestas, Juan pudo terminar su caminata. Recuerda que levantarte unos minutos, caminar o estirarte después de usar dispositivos electrónicos también ayuda a cuidar tu salud y descansar la vista.</p>
+  <h3 data-i18n="modulo-salud.mesaje.final1">🎉 ¡Excelente!</h3>
+  <p data-i18n="modulo-salud.mesaje.final2">Gracias a tus respuestas, Juan pudo terminar su caminata. Recuerda que levantarte unos minutos, caminar o estirarte después de usar dispositivos electrónicos también ayuda a cuidar tu salud y descansar la vista.</p>
 </div>
 
 <div id="actividad-mensaje-fallo" style="display:none; background:#FFF5F5; border-radius:12px; padding:20px; margin-top:20px; border-left:4px solid var(--red);">
-  <h3>😓 Juan no pudo completar su caminata</h3>
-  <p>Tuvo demasiados tropiezos en el camino. ¡Pero no te preocupes! Puedes intentarlo de nuevo y ayudarlo a llegar a casa.</p>
+  <h3 data-i18n="modulo-salud.mesaje.fallo">😓 Juan no pudo completar su caminata</h3>
+  <p data-i18n="modulo-salud.mesaje.fallo2">Tuvo demasiados tropiezos en el camino. ¡Pero no te preocupes! Puedes intentarlo de nuevo y ayudarlo a llegar a casa.</p>
   <div style="display: flex; justify-content: center;">
-    <button class="btn" onclick="reiniciarActividad()" style="width: auto; min-width: 250px;">🔄 Intentar de nuevo</button>
+    <button class="btn" data-i18n="modulo-salud.boton.reiniciar" onclick="reiniciarActividad()" style="width: auto; min-width: 250px;">🔄 Intentar de nuevo</button>
   </div>
 </div>
 
