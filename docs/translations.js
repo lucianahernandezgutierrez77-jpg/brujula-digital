@@ -56,7 +56,37 @@ const translations = {
     "modulo-salud.descripcion5": "📚 <strong>¿Quieres saber más?</strong> La Comisión Europea explica los efectos del tiempo excesivo en pantalla:<br>",
     "modulo-salud.actividad.titulo": "<span class=\"subtitle2\">Actividad  </span>",
     "modulo-salud.actividad.descripcion": "Después de pasar un tiempo usando el computador, Juan decidió salir a caminar para descansar su vista y mover el cuerpo. Responde correctamente las preguntas para ayudarlo a completar su recorrido.",
+    
     //ACTIVIDAD
+  
+    "actividad1.p1": "¿Qué es la regla 20-20-20?",
+    "actividad1.p1.a": "Cada 20 minutos, mirar algo a 6 metros durante 20 segundos",
+    "actividad1.p1.b": "Usar el teléfono 20 minutos y apagarlo 20 horas",
+    "actividad1.p1.c": "Cargar el teléfono cada 20 minutos",
+    "actividad1.p1.d": " Dormir 20 horas cada 20 días",
+    "actividad1.p1.exp": " La regla 20-20-20 ayuda a reducir la fatiga visual causada por el uso prolongado de pantallas.",
+
+    "actividad1.p2": "¿Por qué es importante hacer pausas activas durante el día?",
+    "actividad1.p2.a": "Para gastar la batería del teléfono",
+    "actividad1.p2.b": "Para evitar la tensión muscular y el sedentarismo",
+    "actividad1.p2.c": "No son importantes si uno se siente bien",
+    "actividad1.p2.d": "Solo las necesitan los deportistas",
+    "actividad1.p2.exp": "Las pausas activas reducen la tensión en cuello, espalda y ojos causada por el uso prolongado de dispositivos.",
+
+    "actividad1.p3": "¿Qué beneficio tiene salir a caminar después de usar el computador?",
+    "actividad1.p3.a": "Ninguno, es mejor seguir descansando en el sofá",
+    "actividad1.p3.b": "Ayuda a relajar el cuerpo y descansar la vista",
+    "actividad1.p3.c": "Solo sirve si caminas más de una hora",
+    "actividad1.p3.d": "Empeora el cansancio visual",
+    "actividad1.p3.exp": "Caminar activa el cuerpo y permite que los ojos descansen de la luz de las pantallas.",
+
+    "actividad1.p4" : "¿Cada cuánto tiempo se recomienda hacer una pausa al usar pantallas?",
+    "actividad1.p4.a" : "Cada 3 horass",
+    "actividad1.p4.b" : "Cada 20 minutos",
+    "actividad1.p4.c" : "Solo cuando hay dolor de ojos",
+    "actividad1.p4.d" : "Una vez al día",
+    "actividad1.p4.exp" : "Se recomienda hacer una pausa cada 20 minutos para descansar la vista y el cuerpo.",
+
     "modulo-salud.boton.actividad": "🚶 Iniciar actividad",
     "modulo-salud.mesaje.final1": "🎉 ¡Excelente!",
     "modulo-salud.mesaje.final2": "Gracias a tus respuestas, Juan pudo terminar su caminata. Recuerda que levantarte unos minutos, caminar o estirarte después de usar dispositivos electrónicos también ayuda a cuidar tu salud y descansar la vista.",
@@ -124,7 +154,36 @@ const translations = {
     "modulo-salud.descripcion5": "📚 <strong>Want to learn more?</strong> The European Commission explains the effects of excessive screen time:<br>",
     "modulo-salud.actividad.titulo": "<span class=\"subtitle2\">Activity  </span>",
     "modulo-salud.actividad.descripcion": "After spending some time using the computer, Juan decided to go for a walk to rest his eyes and move his body. Answer the questions correctly to help him complete his journey.",
+    
     //ACTIVIDAD
+    "actividad1.p1": "What is the 20-20-20 rule?",
+    "actividad1.p1.a": "Every 20 minutes, look at something 6 meters away for 20 seconds",
+    "actividad1.p1.b": "Use the phone for 20 minutes and turn it off for 20 hours",
+    "actividad1.p1.c": "Charge the phone every 20 minutes",
+    "actividad1.p1.d": "Sleep for 20 hours every 20 days",
+    "actividad1.p1.exp": "The 20-20-20 rule helps reduce eye strain caused by prolonged screen use.",
+
+    "actividad1.p2": "Why is it important to take active breaks during the day?",
+    "actividad1.p2.a": "To drain the phone's battery",
+    "actividad1.p2.b": "To prevent muscle tension and sedentary behavior",
+    "actividad1.p2.c": "They are not important if one feels fine",
+    "actividad1.p2.d": "Only athletes need them",
+    "actividad1.p2.exp": "Active breaks reduce tension in the neck, back, and eyes caused by prolonged device use.",
+
+    "actividad1.p3": "What is the benefit of going for a walk after using the computer?",
+    "actividad1.p3.a": "None, it's better to keep resting on the couch",
+    "actividad1.p3.b": "It helps relax the body and rest the eyes",
+    "actividad1.p3.c": "It only works if you walk for more than an hour",
+    "actividad1.p3.d": "It worsens eye strain",
+    "actividad1.p3.exp": "Walking activates the body and allows the eyes to rest from screen light.",
+
+    "actividad1.p4" : "How often is it recommended to take a break when using screens?",
+    "actividad1.p4.a" : "Every 3 hours",
+    "actividad1.p4.b" : "Every 20 minutes",
+    "actividad1.p4.c" : "Only when there is eye pain",
+    "actividad1.p4.d" : "Once a day",
+    "actividad1.p4.exp" : "It is recommended to take a break every 20 minutes to rest the eyes and body.",
+
     "modulo-salud.boton.actividad": "🚶 Start Activity",
     "modulo-salud.mesaje.final1": "🎉 Excellent!",
     "modulo-salud.mesaje.final2": "Thanks to your answers, Juan was able to finish his walk. Remember that taking a few minutes to get up, walk, or stretch after using electronic devices also helps take care of your health and rest your eyes.",

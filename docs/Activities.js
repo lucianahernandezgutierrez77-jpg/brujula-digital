@@ -52,30 +52,34 @@ function iniciarAnimaciones() {
   }, 180);
 }
 
+function t(clave) {
+    return translations[idiomaActual][clave];
+}
+
 let actividadPreguntas = [
   {
-    pregunta: "¿Cada cuánto tiempo se recomienda hacer una pausa al usar pantallas?",
-    opciones: ["Cada 20 minutos", "Cada 3 horas", "Solo cuando hay dolor de ojos", "Una vez al día"],
+    pregunta: "actividad1.p1",
+    opciones: ["actividad1.p1.a", "actividad1.p1.b", "actividad1.p1.c", "actividad1.p1.d"],
     correcta: 0,
-    explicacion: "La regla 20-20-20 sugiere hacer una pausa cada 20 minutos para cuidar la vista."
+    explicacion: "actividad1.p1.exp"
   },
   {
-    pregunta: "¿Qué beneficio tiene salir a caminar después de usar el computador?",
-    opciones: ["Ninguno, es mejor seguir descansando en el sofá", "Ayuda a relajar el cuerpo y descansar la vista", "Solo sirve si caminas más de una hora", "Empeora el cansancio visual"],
+    pregunta: "actividad1.p2",
+    opciones: ["actividad1.p2.a", "actividad1.p2.b", "actividad1.p2.c", "actividad1.p2.d"],
     correcta: 1,
-    explicacion: "Caminar activa el cuerpo y permite que los ojos descansen de la luz de las pantallas."
+    explicacion: "actividad1.p2.exp"
   },
   {
-    pregunta: "¿Qué es la regla 20-20-20?",
-    opciones: ["Usar el teléfono 20 minutos y apagarlo 20 horas", "Cada 20 minutos, mirar algo a 6 metros durante 20 segundos", "Cargar el teléfono cada 20 minutos", "Dormir 20 horas cada 20 días"],
+    pregunta: "actividad1.p3",
+    opciones: ["actividad1.p3.a", "actividad1.p3.b", "actividad1.p3.c", "actividad1.p3.d"],
     correcta: 1,
-    explicacion: "La regla 20-20-20 ayuda a reducir la fatiga visual causada por el uso prolongado de pantallas."
+    explicacion: "actividad1.p3.exp"
   },
   {
-    pregunta: "¿Por qué es importante hacer pausas activas durante el día?",
-    opciones: ["Para gastar la batería del teléfono", "Para evitar la tensión muscular y el sedentarismo", "No son importantes si uno se siente bien", "Solo las necesitan los deportistas"],
+    pregunta: "actividad1.p4",
+    opciones: ["actividad1.p4.a", "actividad1.p4.b", "actividad1.p4.c", "actividad1.p4.d"],
     correcta: 1,
-    explicacion: "Las pausas activas reducen la tensión en cuello, espalda y ojos causada por el uso prolongado de dispositivos."
+    explicacion: "actividad1.p4.exp"
   }
 ];
 
@@ -119,74 +123,113 @@ function iniciarActividad() {
 }
 
 function mostrarPreguntaActividad() {
-    const contenedor = document.getElementById("actividad-pregunta-container");
-    if (actividadIndice >= actividadPreguntas.length) {
-  contenedor.innerHTML = "";
-  const mitad = actividadPreguntas.length / 2;
+  const contenedor = document.getElementById("actividad-pregunta-container");
 
-  if (erroresActividad > mitad) {
-    juanCaminando = false;
-    paisajeMoviendo = false;
-    velocidadPaisaje = 0;
-    if (animacionJuan) { clearInterval(animacionJuan); animacionJuan = null; }
-    if (animacionPaisaje) { clearInterval(animacionPaisaje); animacionPaisaje = null; }
+  if (actividadIndice >= actividadPreguntas.length) {
+    contenedor.innerHTML = "";
+    const mitad = actividadPreguntas.length / 2;
 
-    const juan = document.getElementById("juan");
-    juan.classList.add("tirado");
+    if (erroresActividad > mitad) {
+      juanCaminando = false;
+      paisajeMoviendo = false;
+      velocidadPaisaje = 0;
 
-    setTimeout(() => {
-      document.getElementById("actividad-mensaje-fallo").style.display = "block";
-    }, 800);
-
-  } else {
-    const casa = document.getElementById("meta-casa");
-    const juan = document.getElementById("juan");
-    casa.style.left = "auto";
-    casa.style.right = "10px";
-    casa.style.opacity = "1";
-    juanCaminando = true;
-    paisajeMoviendo = true;
-    velocidadPaisaje = 2;
-
-    let casaRight = 10;
-    const moverCasa = setInterval(() => {
-      casaRight += 2;
-      casa.style.right = casaRight + "px";
-      const casaLeft = casa.getBoundingClientRect().left;
-      const juanLeft = juan.getBoundingClientRect().left;
-      if (casaLeft <= juanLeft + 80) {
-        clearInterval(moverCasa);
-        juanCaminando = false;
-        paisajeMoviendo = false;
-        velocidadPaisaje = 0;
-        if (animacionJuan) { clearInterval(animacionJuan); animacionJuan = null; }
-
-        const dialogo = document.getElementById("juan-dialogo");
-        dialogo.textContent = "¡Llegué! 🏠💪";
-        dialogo.classList.add("victoria-dialogo");
-        dialogo.classList.add("visible");
-        juan.classList.add("victoria");
-
-        setTimeout(() => {
-          dialogo.classList.remove("visible");
-          dialogo.classList.remove("victoria-dialogo");
-          juan.classList.remove("victoria");
-          document.getElementById("actividad-mensaje-final").style.display = "block";
-        }, 1400);
+      if (animacionJuan) {
+        clearInterval(animacionJuan);
+        animacionJuan = null;
       }
-    }, 30);
-  }
-  return;
-}
-    const item = actividadPreguntas[actividadIndice];
-    let html = `<div class="actividad-card"><p class="actividad-pregunta"><strong>${item.pregunta}</strong></p>`;
-    item.opciones.forEach((op, i) => {
-        html += `<button class="actividad-opcion" onclick="responderActividad(${i}, this)">${op}</button>`;
-    });
-    html += `<p id="feedback-actividad" class="quiz-feedback"></p></div>`;
-    contenedor.innerHTML = html;
-}
 
+      if (animacionPaisaje) {
+        clearInterval(animacionPaisaje);
+        animacionPaisaje = null;
+      }
+
+      const juan = document.getElementById("juan");
+      juan.classList.add("tirado");
+
+      setTimeout(() => {
+        document.getElementById("actividad-mensaje-fallo").style.display = "block";
+      }, 800);
+
+    } else {
+      const casa = document.getElementById("meta-casa");
+      const juan = document.getElementById("juan");
+
+      casa.style.left = "auto";
+      casa.style.right = "10px";
+      casa.style.opacity = "1";
+
+      juanCaminando = true;
+      paisajeMoviendo = true;
+      velocidadPaisaje = 2;
+
+      let casaRight = 10;
+
+      const moverCasa = setInterval(() => {
+        casaRight += 2;
+        casa.style.right = casaRight + "px";
+
+        const casaLeft = casa.getBoundingClientRect().left;
+        const juanLeft = juan.getBoundingClientRect().left;
+
+        if (casaLeft <= juanLeft + 80) {
+          clearInterval(moverCasa);
+
+          juanCaminando = false;
+          paisajeMoviendo = false;
+          velocidadPaisaje = 0;
+
+          if (animacionJuan) {
+            clearInterval(animacionJuan);
+            animacionJuan = null;
+          }
+
+          const dialogo = document.getElementById("juan-dialogo");
+          dialogo.textContent = "¡Llegué! 🏠💪";
+          dialogo.classList.add("victoria-dialogo");
+          dialogo.classList.add("visible");
+
+          juan.classList.add("victoria");
+
+          setTimeout(() => {
+            dialogo.classList.remove("visible");
+            dialogo.classList.remove("victoria-dialogo");
+            juan.classList.remove("victoria");
+
+            document.getElementById("actividad-mensaje-final").style.display = "block";
+          }, 1400);
+        }
+      }, 30);
+    }
+
+    return;
+  }
+
+  const item = actividadPreguntas[actividadIndice];
+
+  let html = `
+    <div class="actividad-card">
+      <p class="actividad-pregunta">
+        <strong>${t(item.pregunta)}</strong>
+      </p>
+  `;
+
+  item.opciones.forEach((op, i) => {
+    html += `
+      <button class="actividad-opcion"
+        onclick="responderActividad(${i}, this)">
+        ${t(op)}
+      </button>
+    `;
+  });
+
+  html += `
+      <p id="feedback-actividad" class="quiz-feedback"></p>
+    </div>
+  `;
+
+  contenedor.innerHTML = html;
+}
 
 function responderActividad(opcionElegida, boton) {
   const item = actividadPreguntas[actividadIndice];
@@ -224,7 +267,7 @@ function responderActividad(opcionElegida, boton) {
   botones[item.correcta].style.backgroundColor = "var(--green)";
   botones[item.correcta].style.color = "white";
   botones[item.correcta].style.borderColor = "var(--green)";
-  feedback.textContent = "❌ " + item.explicacion;
+  feedback.textContent = "❌ " + t(item.explicacion);
   feedback.style.color = "var(--red)";
 
     if (animacionJuan) clearInterval(animacionJuan);
