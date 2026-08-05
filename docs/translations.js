@@ -92,7 +92,50 @@ const translations = {
     "modulo-salud.mesaje.final2": "Gracias a tus respuestas, Juan pudo terminar su caminata. Recuerda que levantarte unos minutos, caminar o estirarte después de usar dispositivos electrónicos también ayuda a cuidar tu salud y descansar la vista.",
     "modulo-salud.mesaje.fallo": "😓 Juan no pudo completar su caminata",
     "modulo-salud.mesaje.fallo2": "Tuvo demasiados tropiezos en el camino. ¡Pero no te preocupes! Puedes intentarlo de nuevo y ayudarlo a llegar a casa.",
-    "modulo-salud.boton.reiniciar": "🔄 Intentar de nuevo"
+    "modulo-salud.boton.reiniciar": "🔄 Intentar de nuevo",
+
+    //QUIZ
+    "quiz1.p1": "¿Cuál de estos efectos puede causar pasar demasiado tiempo frente a una pantalla?",
+    "quiz1.p1.a": "Mejora la calidad del sueño",
+    "quiz1.p1.b": "Puede dificultar el descanso y el sueño",
+    "quiz1.p1.c": "Aumenta las ganas de hacer ejercicio",
+    "quiz1.p1.d": "No tiene ningún efecto en la salud",
+    "quiz1.p1.exp": "Pasar demasiado tiempo frente a una pantalla puede dificultar el descanso y el sueño.",
+
+    "quiz1.p2": "¿Cómo debemos ver la tecnología?",
+    "quiz1.p2.a": "Como algo que debemos evitar por completo",
+    "quiz1.p2.b": "Como el centro de nuestra vida diaria",
+    "quiz1.p2.c": "Como una herramienta que nos ayuda si la usamos bien",
+    "quiz1.p2.d": "Como algo solo para jóvenes",
+    "quiz1.p2.exp": "La tecnología debe ser vista como una herramienta que nos ayuda si la usamos bien.",
+
+    "quiz1.p3": "¿Qué podemos hacer para cuidar nuestro tiempo en pantalla?",
+    "quiz1.p3.a": "Nunca usar tecnología después de las 6pm",
+    "quiz1.p3.b": "Usar el teléfono hasta quedarnos dormidos",
+    "quiz1.p3.c": "Ver pantallas todo el día si nos sentimos bien",
+    "quiz1.p3.d": "Poner límites de tiempo y hacer pausas regulares",
+    "quiz1.p3.exp": "Poner límites de tiempo y hacer pausas regulares ayuda a cuidar nuestro tiempo en pantalla.",
+
+    "quiz1.p4": "¿En qué consiste la regla 20-20-20?",
+    "quiz1.p4.a": "Cada 20 minutos, mirar algo lejano durante 20 segundos",
+    "quiz1.p4.b": "Usar el teléfono 20 minutos y descansar 20 horas",
+    "quiz1.p4.c": "Cargar el teléfono cada 20 minutos",
+    "quiz1.p4.d": "Caminar 20 pasos cada 20 minutos",
+    "quiz1.p4.exp": "La regla 20-20-20 consiste en mirar algo lejano durante 20 segundos cada 20 minutos.",
+
+    "quiz1.p5": "¿Por qué se recomienda activar el modo nocturno en la noche?",
+    "quiz1.p5.a": "Para ahorrar batería",
+    "quiz1.p5.b": "Porque la luz azul dificulta conciliar el sueño",
+    "quiz1.p5.c": "Para ver mejor la pantalla",
+    "quiz1.p5.d": "No hay ninguna razón real",
+    "quiz1.p5.exp": "El modo nocturno reduce la exposición a la luz azul, que puede dificultar conciliar el sueño.",
+
+    "quiz1.p6": "¿Cuál es una buena alternativa a usar el teléfono en tiempo libre?",
+    "quiz1.p6.a": "Ver más televisión",
+    "quiz1.p6.b": "Buscar otra pantalla",
+    "quiz1.p6.c": "Llamar a un familiar o dar una caminata",
+    "quiz1.p6.d": "Ninguna, el teléfono es la mejor opción",
+    "quiz1.p6.exp": "Llamar a un familiar o dar una caminata es una excelente alternativa para desconectar y cuidar nuestra salud.",
   },
 
 
@@ -190,9 +233,51 @@ const translations = {
     "modulo-salud.mesaje.fallo": "😓 Juan couldn't complete his walk",
     "modulo-salud.mesaje.fallo2": "He had too many trips on the way. But don't worry! You can try again and help him get home.",
     "modulo-salud.boton.reiniciar": "🔄 Try Again",
+
+    //QUIZ
+    "quiz1.p1": "Which of these effects can result from spending too much time in front of a screen?",
+    "quiz1.p1.a": "Improves sleep quality",
+    "quiz1.p1.b": "Can make it harder to rest and sleep",
+    "quiz1.p1.c": "Increases the desire to exercise",
+    "quiz1.p1.d": "Has no effect on health",
+    "quiz1.p1.exp": "Spending too much time in front of a screen can make it harder to rest and sleep.",
+
+    "quiz1.p2": "How should we view technology?",
+    "quiz1.p2.a": "As something we should avoid completely",
+    "quiz1.p2.b": "As the center of our daily life",
+    "quiz1.p2.c": "As a tool that helps us if we use it well",
+    "quiz1.p2.d": "As something only for young people",
+    "quiz1.p2.exp": "Technology should be viewed as a tool that helps us if we use it well.",
+
+    "quiz1.p3": "What can we do to care for our screen time?",
+    "quiz1.p3.a": "Never use technology after 6pm",
+    "quiz1.p3.b": "Use the phone until we fall asleep",
+    "quiz1.p3.c": "Watch screens all day if we feel well",
+    "quiz1.p3.d": "Set time limits and take regular breaks",
+    "quiz1.p3.exp": "Setting time limits and taking regular breaks helps care for our screen time.",
+
+    "quiz1.p4": "What does the 20-20-20 rule consist of?",
+    "quiz1.p4.a": "Every 20 minutes, look at something 6 meters away for 20 seconds",
+    "quiz1.p4.b": "Use the phone for 20 minutes and turn it off for 20 hours",
+    "quiz1.p4.c": "Charge the phone every 20 minutes",
+    "quiz1.p4.d": "Walk 20 steps every 20 minutes",
+    "quiz1.p4.exp": "The 20-20-20 rule consists of looking at something 6 meters away for 20 seconds every 20 minutes.",
+
+    "quiz1.p5": "Why is it recommended to activate night mode at night?",
+    "quiz1.p5.a": "To save battery",
+    "quiz1.p5.b": "Because blue light makes it harder to fall asleep",
+    "quiz1.p5.c": "To see the screen better",
+    "quiz1.p5.d": "There is no real reason",
+    "quiz1.p5.exp": "Night mode reduces exposure to blue light, which can make it harder to fall asleep.",
+
+    "quiz1.p6": "What is a good alternative to using the phone during free time?",
+    "quiz1.p6.a": "Watch more television",
+    "quiz1.p6.b": "Look for another screen",
+    "quiz1.p6.c": "Call a family member or take a walk",
+    "quiz1.p6.d": "None, the phone is the best option",
+    "quiz1.p6.exp": "Calling a family member or taking a walk is an excellent alternative to disconnect and take care of our health.",
   }
 };
-
 let idiomaActual = "es";
 
 function setLanguage(lang) {

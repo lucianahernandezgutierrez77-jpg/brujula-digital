@@ -20,36 +20,65 @@ function goHome() {
 // QUIZ MÓDULO 1
 const quizData = [
   {
-    pregunta: "¿Cuál de estos efectos puede causar pasar demasiado tiempo frente a una pantalla?",
-    opciones: ["Mejora la calidad del sueño", "Puede dificultar el descanso y el sueño", "Aumenta las ganas de hacer ejercicio", "No tiene ningún efecto en la salud"],
+    pregunta: "quiz.p1",
+    opciones: ["quiz.p1.a", "quiz.p1.b", "quiz.p1.c", "quiz.p1.d"],
     correcta: 1
   },
   {
-    pregunta: "¿Cómo debemos ver la tecnología?",
-    opciones: ["Como algo que debemos evitar por completo", "Como el centro de nuestra vida diaria", "Como una herramienta que nos ayuda si la usamos bien", "Como algo solo para jóvenes"],
+    pregunta: "quiz.p2",
+    opciones: ["quiz.p2.a", "quiz.p2.b", "quiz.p2.c", "quiz.p2.d"],
     correcta: 2
   },
   {
-    pregunta: "¿Qué podemos hacer para cuidar nuestro tiempo en pantalla?",
-    opciones: ["Nunca usar tecnología después de las 6pm", "Usar el teléfono hasta quedarnos dormidos", "Ver pantallas todo el día si nos sentimos bien", "Poner límites de tiempo y hacer pausas regulares"],
+    pregunta: "quiz.p3",
+    opciones: ["quiz.p3.a", "quiz.p3.b", "quiz.p3.c", "quiz.p3.d"],
     correcta: 3
   },
   {
-    pregunta: "¿En qué consiste la regla 20-20-20?",
-    opciones: ["Cada 20 minutos, mirar algo lejano durante 20 segundos", "Usar el teléfono 20 minutos y descansar 20 horas", "Cargar el teléfono cada 20 minutos", "Caminar 20 pasos cada 20 minutos"],
+    pregunta: "quiz.p4",
+    opciones: ["quiz.p4.a", "quiz.p4.b", "quiz.p4.c", "quiz.p4.d"],
     correcta: 0
   },
   {
-    pregunta: "¿Por qué se recomienda activar el modo nocturno en la noche?",
-    opciones: ["Para ahorrar batería", "Porque la luz azul dificulta conciliar el sueño", "Para ver mejor la pantalla", "No hay ninguna razón real"],
+    pregunta: "quiz.p5",
+    opciones: ["quiz.p5.a", "quiz.p5.b", "quiz.p5.c", "quiz.p5.d"],
     correcta: 1
   },
   {
-    pregunta: "¿Cuál es una buena alternativa a usar el teléfono en tiempo libre?",
-    opciones: ["Ver más televisión", "Buscar otra pantalla", "Llamar a un familiar o dar una caminata", "Ninguna, el teléfono es la mejor opción"],
+    pregunta: "quiz.p6",
+    opciones: ["quiz.p6.a", "quiz.p6.b", "quiz.p6.c", "quiz.p6.d"],
     correcta: 2
   }
 ];
+
+let respuestasCorrectas = 0;
+let preguntasRespondidas = 0;
+
+function initQuiz() {
+  respuestasCorrectas = 0;
+  preguntasRespondidas = 0;
+
+  const container = document.getElementById("quiz-container");
+  const btnResultado = document.getElementById("btn-resultado");
+  const resultadoFinal = document.getElementById("resultado-final");
+
+  btnResultado.style.display = "none";
+  resultadoFinal.style.display = "none";
+  resultadoFinal.innerHTML = "";
+
+  let quizHTML = "";
+  quizData.forEach(function(item, indice) {
+    quizHTML += `<div class="quiz-pregunta" id="pregunta-${indice}">`;
+    quizHTML += `<p><strong>${indice + 1}. ${item.pregunta}</strong></p>`;
+    item.opciones.forEach(function(opcion, opcionIndice) {
+      quizHTML += `<button class="quiz-opcion" onclick="verificarRespuesta(${indice}, ${opcionIndice}, this)">${opcion}</button>`;
+    });
+    quizHTML += `<p id="feedback-${indice}" class="quiz-feedback"></p>`;
+    quizHTML += `</div>`;
+  });
+
+  container.innerHTML = quizHTML;
+}
 
 let respuestasCorrectas = 0;
 let preguntasRespondidas = 0;
