@@ -18,33 +18,6 @@ function goHome() {
 }
 
 // QUIZ MÓDULO 1
-
-function initQuiz() {
-  respuestasCorrectas = 0;
-  preguntasRespondidas = 0;
-
-  const container = document.getElementById("quiz-container");
-  const btnResultado = document.getElementById("btn-resultado");
-  const resultadoFinal = document.getElementById("resultado-final");
-
-  btnResultado.style.display = "none";
-  resultadoFinal.style.display = "none";
-  resultadoFinal.innerHTML = "";
-
-  let quizHTML = "";
-  quizData.forEach(function(item, indice) {
-    quizHTML += `<div class="quiz-pregunta" id="pregunta-${indice}">`;
-    quizHTML += `<p><strong>${indice + 1}. ${item.pregunta}</strong></p>`;
-    item.opciones.forEach(function(opcion, opcionIndice) {
-      quizHTML += `<button class="quiz-opcion" onclick="verificarRespuesta(${indice}, ${opcionIndice}, this)">${opcion}</button>`;
-    });
-    quizHTML += `<p id="feedback-${indice}" class="quiz-feedback"></p>`;
-    quizHTML += `</div>`;
-  });
-
-  container.innerHTML = quizHTML;
-}
-
 const quizData = [
   {
     pregunta: "quiz.p1",
@@ -81,7 +54,31 @@ const quizData = [
 let respuestasCorrectas = 0;
 let preguntasRespondidas = 0;
 
+function initQuiz() {
+  respuestasCorrectas = 0;
+  preguntasRespondidas = 0;
 
+  const container = document.getElementById("quiz-container");
+  const btnResultado = document.getElementById("btn-resultado");
+  const resultadoFinal = document.getElementById("resultado-final");
+
+  btnResultado.style.display = "none";
+  resultadoFinal.style.display = "none";
+  resultadoFinal.innerHTML = "";
+
+  let quizHTML = "";
+  quizData.forEach(function(item, indice) {
+    quizHTML += `<div class="quiz-pregunta" id="pregunta-${indice}">`;
+    quizHTML += `<p><strong>${indice + 1}. ${item.pregunta}</strong></p>`;
+    item.opciones.forEach(function(opcion, opcionIndice) {
+      quizHTML += `<button class="quiz-opcion" onclick="verificarRespuesta(${indice}, ${opcionIndice}, this)">${opcion}</button>`;
+    });
+    quizHTML += `<p id="feedback-${indice}" class="quiz-feedback"></p>`;
+    quizHTML += `</div>`;
+  });
+
+  container.innerHTML = quizHTML;
+}
 
 function verificarRespuesta(preguntaIndice, opcionElegida, botonPresionado) {
   const correcta = quizData[preguntaIndice].correcta;
