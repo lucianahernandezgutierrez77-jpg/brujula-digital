@@ -12,4 +12,3 @@ Digital Compass is still growing. Some of my next goals for the project include:
 - Add a final assessment that users must pass after completing all modules.
 - Award an honorary mention to learners who complete all modules. 
 - Add interactive activities and real-world scenarios to reinforce learning.
-probando funcionalidad
