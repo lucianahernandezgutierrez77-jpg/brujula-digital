@@ -139,6 +139,8 @@ const translations = {
     "quiz1.p6.c": "Llamar a un familiar o dar una caminata",
     "quiz1.p6.d": "Ninguna, el teléfono es la mejor opción",
     "quiz1.p6.exp": "Llamar a un familiar o dar una caminata es una excelente alternativa para desconectar y cuidar nuestra salud.",
+    "quiz1.pregunta.correcta": "✅ ¡Correcto!",
+    "quiz1.pregunta.incorrecta": "❌ No es correcto. La respuesta correcta era: ",
 
     "modulo-salud.mensaje.perfecto": "🎉 ¡Perfecto! Has completado el módulo de uso saludable de dispositivos. Recuerda que pequeños cambios en nuestros hábitos digitales pueden ayudarnos a disfrutar la tecnología de una manera más equilibrada, saludable y consciente. 🧭💙",
     "modulo-salud,mensaje.bien":"👍 ¡Bien hecho! Vas por buen camino.",
@@ -293,6 +295,8 @@ const translations = {
     "quiz1.p6.c": "Call a family member or take a walk",
     "quiz1.p6.d": "None, the phone is the best option",
     "quiz1.p6.exp": "Calling a family member or taking a walk is an excellent alternative to disconnect and take care of our health.",
+    "quiz1.pregunta.correcta": "✅ Correct!",
+    "quiz1.pregunta.incorrecta": "❌ Not correct. The correct answer was: ",
 
     "modulo-salud.mensaje.perfecto": "🎉 Perfect! You have completed the healthy device use module. Remember that small changes in our digital habits can help us enjoy technology in a more balanced, healthy, and conscious way. 🧭💙",
     "modulo-salud,mensaje.bien":"👍 Well done! You're on the right track.",

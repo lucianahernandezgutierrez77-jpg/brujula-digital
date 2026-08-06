@@ -92,12 +92,12 @@ function verificarRespuesta(preguntaIndice, opcionElegida, botonPresionado) {
 
   if (opcionElegida === correcta) {
     botonPresionado.style.backgroundColor = "var(--green)";
-    feedback.textContent = "✅ ¡Correcto!";
+    feedback.textContent = t("quiz1.pregunta.correcta");
     feedback.style.color = "var(--green)";
     respuestasCorrectas++;
   } else {
     botonPresionado.style.backgroundColor = "var(--red)";
-    feedback.textContent = "❌ No es correcto. La respuesta correcta era: " + quizData[preguntaIndice].opciones[correcta];
+    feedback.textContent = t("quiz1.pregunta.incorrecta") + t(quizData[preguntaIndice].opciones[correcta]);
     feedback.style.color = "var(--red)";
     botonesDeEsaPregunta[correcta].style.backgroundColor = "var(--green)";
   }
