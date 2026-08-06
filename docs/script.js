@@ -140,7 +140,7 @@ function mostrarPuntaje() {
         <li> data-i18n="modulo-salud.mensaje.cambio6">🧩 Hacer un crucigrama o rompecabezas</li>
         <li> data-i18n="modulo-salud.mensaje.cambio7">🌱 Regar las plantas o salir al balcón</li>
       </ul>
-      <p>La tecnología es una herramienta, no un pasatiempo obligatorio.</p>
+      <p data-i18n="modulo-salud.mensaje.cambio8">La tecnología es una herramienta, no un pasatiempo obligatorio.</p>
     </div>`;
 
   resultado.style.display = "block";

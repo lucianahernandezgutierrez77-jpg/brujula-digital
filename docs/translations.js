@@ -147,6 +147,7 @@ const translations = {
     "modulo-salud.mensaje.cambio5": "📖 Leer un libro o revista física",
     "modulo-salud.mensaje.cambio6": "🧩 Hacer un crucigrama o rompecabezas",
     "modulo-salud.mensaje.cambio7": "🌱 Regar las plantas o salir al balcón",
+    "modulo-salud.mensaje.cambio8": "La tecnología es una herramienta, no un pasatiempo obligatorio.",
   },
 
   //ENGLISH
@@ -297,6 +298,7 @@ const translations = {
     "modulo-salud.mensaje.cambio5": "📖 Read a physical book or magazine",
     "modulo-salud.mensaje.cambio6": "🧩 Do a crossword puzzle or jigsaw puzzle",
     "modulo-salud.mensaje.cambio7": "🌱 Water the plants or go out on the balcony",
+    "modulo-salud.mensaje.cambio8": "Technology is a tool, not a mandatory pastime.",
   }
 };
 
