@@ -131,14 +131,14 @@ function mostrarPuntaje() {
       <p style="font-size: 1.3rem;">Obtuviste <strong>${respuestasCorrectas} de ${total}</strong> respuestas correctas.</p>
     </div>
     <div style="background: #F0FDF4; border-radius: 12px; padding: 20px; margin-top: 20px; border-left: 4px solid var(--green);">
-      <h3>🌿 ¿Qué hacer en cambio?</h3>
-      <p>Reducir el tiempo en pantalla no significa aburrirse. Aquí algunas ideas:</p>
+      <h3 data-i18n="modulo-salud.mensaje.cambio">🌿 ¿Qué hacer en cambio?</h3>
+      <p data-i18n="modulo-salud.mensaje.cambio2"> sataReducir el tiempo en pantalla no significa aburrirse. Aquí algunas ideas:</p>
       <ul style="line-height: 2;">
-        <li>🚶 Dar una caminata corta de 10-15 minutos</li>
-        <li>📞 Llamar a un familiar o amigo por teléfono</li>
-        <li>📖 Leer un libro o revista física</li>
-        <li>🧩 Hacer un crucigrama o rompecabezas</li>
-        <li>🌱 Regar las plantas o salir al balcón</li>
+        <li> data-i18n="modulo-salud.mensaje.cambio3">🚶 Dar una caminata corta de 10-15 minutos</li>
+        <li> data-i18n="modulo-salud.mensaje.cambio4">📞 Llamar a un familiar o amigo por teléfono</li>
+        <li> data-i18n="modulo-salud.mensaje.cambio5">📖 Leer un libro o revista física</li>
+        <li> data-i18n="modulo-salud.mensaje.cambio6">🧩 Hacer un crucigrama o rompecabezas</li>
+        <li> data-i18n="modulo-salud.mensaje.cambio7">🌱 Regar las plantas o salir al balcón</li>
       </ul>
       <p>La tecnología es una herramienta, no un pasatiempo obligatorio.</p>
     </div>`;

@@ -185,7 +185,7 @@ function mostrarPreguntaActividad() {
           }
 
           const dialogo = document.getElementById("juan-dialogo");
-          dialogo.textContent = "actividad1.llegue";
+          dialogo.textContent = t("actividad1.llegue");
           dialogo.classList.add("victoria-dialogo");
           dialogo.classList.add("visible");
 
@@ -244,7 +244,7 @@ function responderActividad(opcionElegida, boton) {
     boton.style.backgroundColor = "var(--green)";
     boton.style.color = "white";
     boton.style.borderColor = "var(--green)";
-    feedback.textContent = "✅ ¡Correcto! Juan avanza.";
+    feedback.textContent = t("actividad1.correcto");
     feedback.style.color = "var(--green)";
 
     juanCaminando = true;
