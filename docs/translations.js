@@ -306,6 +306,7 @@ const translations = {
     "modulo-salud.mensaje.perfecto": "🎉 Perfect! You have completed the healthy device use module. Remember that small changes in our digital habits can help us enjoy technology in a more balanced, healthy, and conscious way. 🧭💙",
     "modulo-salud.mensaje.bien":"👍 Well done! You're on the right track.",
     "modulo-salud.mensaje.intentar": "📖 Don't worry. You can reread the lesson and try again.",
+    
     "modulo-salud.mensaje.cambio": "🌿 What to do instead?",
     "modulo-salud.mensaje.cambio2": "Reducing screen time doesn't mean being bored. Here are some ideas:",
     "modulo-salud.mensaje.cambio3": "🚶 Take a short walk of 10-15 minutes",
