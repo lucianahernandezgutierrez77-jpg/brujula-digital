@@ -115,13 +115,13 @@ function mostrarPuntaje() {
   let color = "";
 
   if (respuestasCorrectas === total) {
-    mensaje = "🏆 ¡Perfecto! Respondiste todo correctamente.";
+    mensaje = "modulo-salud.mensaje.perfecto";
     color = "var(--green)";
   } else if (respuestasCorrectas >= total / 2) {
-    mensaje = "👍 ¡Bien hecho! Vas por buen camino.";
+    mensaje = "modulo-salud.mensaje.bien";
     color = "var(--blue)";
   } else {
-    mensaje = "📖 No te preocupes. Puedes releer la lección e intentarlo de nuevo.";
+    mensaje = "modulo-salud.mensaje.intentar";
     color = "var(--orange)";
   }
 
@@ -131,16 +131,16 @@ function mostrarPuntaje() {
       <p style="font-size: 1.3rem;">Obtuviste <strong>${respuestasCorrectas} de ${total}</strong> respuestas correctas.</p>
     </div>
     <div style="background: #F0FDF4; border-radius: 12px; padding: 20px; margin-top: 20px; border-left: 4px solid var(--green);">
-      <h3 data-i18n="modulo-salud.mensaje.cambio">🌿 ¿Qué hacer en cambio?</h3>
-      <p data-i18n="modulo-salud.mensaje.cambio2"> sataReducir el tiempo en pantalla no significa aburrirse. Aquí algunas ideas:</p>
+      <h3> ${t("modulo-salud.mensaje.cambio")}</h3>
+      <p>${t("modulo-salud.mensaje.cambio2")}</p>
       <ul style="line-height: 2;">
-        <li> data-i18n="modulo-salud.mensaje.cambio3">🚶 Dar una caminata corta de 10-15 minutos</li>
-        <li> data-i18n="modulo-salud.mensaje.cambio4">📞 Llamar a un familiar o amigo por teléfono</li>
-        <li> data-i18n="modulo-salud.mensaje.cambio5">📖 Leer un libro o revista física</li>
-        <li> data-i18n="modulo-salud.mensaje.cambio6">🧩 Hacer un crucigrama o rompecabezas</li>
-        <li> data-i18n="modulo-salud.mensaje.cambio7">🌱 Regar las plantas o salir al balcón</li>
+        <li> ${t("modulo-salud.mensaje.cambio3")}</li>
+        <li> ${t("modulo-salud.mensaje.cambio4")}</li>
+        <li> ${t("modulo-salud.mensaje.cambio5")}</li>
+        <li> ${t("modulo-salud.mensaje.cambio6")}</li>
+        <li> ${t("modulo-salud.mensaje.cambio7")}</li>
       </ul>
-      <p data-i18n="modulo-salud.mensaje.cambio8">La tecnología es una herramienta, no un pasatiempo obligatorio.</p>
+      <p> ${t("modulo-salud.mensaje.cambio8")}</p>
     </div>`;
 
   resultado.style.display = "block";

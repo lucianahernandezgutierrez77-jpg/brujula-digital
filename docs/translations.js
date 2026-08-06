@@ -140,6 +140,9 @@ const translations = {
     "quiz1.p6.d": "Ninguna, el teléfono es la mejor opción",
     "quiz1.p6.exp": "Llamar a un familiar o dar una caminata es una excelente alternativa para desconectar y cuidar nuestra salud.",
 
+    "modulo-salud.mensaje.perfecto": "🎉 ¡Perfecto! Has completado el módulo de uso saludable de dispositivos. Recuerda que pequeños cambios en nuestros hábitos digitales pueden ayudarnos a disfrutar la tecnología de una manera más equilibrada, saludable y consciente. 🧭💙",
+    "modulo-salud,mensaje.bien":"👍 ¡Bien hecho! Vas por buen camino.",
+    "modulo-salud.mensaje.intentar": "📖 No te preocupes. Puedes releer la lección e intentarlo de nuevo.",
     "modulo-salud.mensaje.cambio": "🌿 ¿Qué hacer en cambio?",
     "modulo-salud.mensaje.cambio2": "Reducir el tiempo en pantalla no significa aburrirse. Aquí algunas ideas:",
     "modulo-salud.mensaje.cambio3": "🚶 Dar una caminata corta de 10-15 minutos",
@@ -291,6 +294,9 @@ const translations = {
     "quiz1.p6.d": "None, the phone is the best option",
     "quiz1.p6.exp": "Calling a family member or taking a walk is an excellent alternative to disconnect and take care of our health.",
 
+    "modulo-salud.mensaje.perfecto": "🎉 Perfect! You have completed the healthy device use module. Remember that small changes in our digital habits can help us enjoy technology in a more balanced, healthy, and conscious way. 🧭💙",
+    "modulo-salud,mensaje.bien":"👍 Well done! You're on the right track.",
+    "modulo-salud.mensaje.intentar": "📖 Don't worry. You can reread the lesson and try again.",
     "modulo-salud.mensaje.cambio": "🌿 What to do instead?",
     "modulo-salud.mensaje.cambio2": "Reducing screen time doesn't mean being bored. Here are some ideas:",
     "modulo-salud.mensaje.cambio3": "🚶 Take a short walk of 10-15 minutes",
