@@ -89,12 +89,14 @@ const translations = {
 
     "modulo-salud.boton.actividad": "🚶 Iniciar actividad",
     "modulo-salud.mesaje.final1": "🎉 ¡Excelente!",
+    "actividad1.llegue": "¡Llegué! 🏠💪",
     "modulo-salud.mesaje.final2": "Gracias a tus respuestas, Juan pudo terminar su caminata. Recuerda que levantarte unos minutos, caminar o estirarte después de usar dispositivos electrónicos también ayuda a cuidar tu salud y descansar la vista.",
     "modulo-salud.mesaje.fallo": "😓 Juan no pudo completar su caminata",
     "modulo-salud.mesaje.fallo2": "Tuvo demasiados tropiezos en el camino. ¡Pero no te preocupes! Puedes intentarlo de nuevo y ayudarlo a llegar a casa.",
     "modulo-salud.boton.reiniciar": "🔄 Intentar de nuevo",
 
     //QUIZ
+    "modulo-salud.titulo.quiz": "🧠 Pon a prueba lo que aprendiste",
     "quiz1.p1": "¿Cuál de estos efectos puede causar pasar demasiado tiempo frente a una pantalla?",
     "quiz1.p1.a": "Mejora la calidad del sueño",
     "quiz1.p1.b": "Puede dificultar el descanso y el sueño",
@@ -229,12 +231,14 @@ const translations = {
 
     "modulo-salud.boton.actividad": "🚶 Start Activity",
     "modulo-salud.mesaje.final1": "🎉 Excellent!",
+    "actividad1.llegue": "I've arrived! 🏠💪",
     "modulo-salud.mesaje.final2": "Thanks to your answers, Juan was able to finish his walk. Remember that taking a few minutes to get up, walk, or stretch after using electronic devices also helps take care of your health and rest your eyes.",
     "modulo-salud.mesaje.fallo": "😓 Juan couldn't complete his walk",
     "modulo-salud.mesaje.fallo2": "He had too many trips on the way. But don't worry! You can try again and help him get home.",
     "modulo-salud.boton.reiniciar": "🔄 Try Again",
 
     //QUIZ
+    "modulo-salud.titulo.quiz": "🧠 Test what you've learned",
     "quiz1.p1": "Which of these effects can result from spending too much time in front of a screen?",
     "quiz1.p1.a": "Improves sleep quality",
     "quiz1.p1.b": "Can make it harder to rest and sleep",

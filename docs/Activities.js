@@ -185,7 +185,7 @@ function mostrarPreguntaActividad() {
           }
 
           const dialogo = document.getElementById("juan-dialogo");
-          dialogo.textContent = "¡Llegué! 🏠💪";
+          dialogo.textContent = "actividad1.llegue";
           dialogo.classList.add("victoria-dialogo");
           dialogo.classList.add("visible");
 
