@@ -147,10 +147,17 @@ const translations = {
     "quiz1.p6.c": "Llamar a un familiar o dar una caminata",
     "quiz1.p6.d": "Ninguna, el teléfono es la mejor opción",
     "quiz1.p6.exp": "Llamar a un familiar o dar una caminata es una excelente alternativa para desconectar y cuidar nuestra salud.",
+
+    "modulo-salud.mensaje.cambio": "🌿 ¿Qué hacer en cambio?",
+    "modulo-salud.mensaje.cambio2": "Reducir el tiempo en pantalla no significa aburrirse. Aquí algunas ideas:",
+    "modulo-salud.mensaje.cambio3": "🚶 Dar una caminata corta de 10-15 minutos",
+    "modulo-salud.mensaje.cambio4": "📞 Llamar a un familiar o amigo por teléfono",
+    "modulo-salud.mensaje.cambio5": "📖 Leer un libro o revista física",
+    "modulo-salud.mensaje.cambio6": "🧩 Hacer un crucigrama o rompecabezas",
+    "modulo-salud.mensaje.cambio7": "🌱 Regar las plantas o salir al balcón",
   },
 
-
-    //ENGLISH
+  //ENGLISH
   en: {
 
     // HEADER 
@@ -298,8 +305,11 @@ const translations = {
     "quiz1.p6.c": "Call a family member or take a walk",
     "quiz1.p6.d": "None, the phone is the best option",
     "quiz1.p6.exp": "Calling a family member or taking a walk is an excellent alternative to disconnect and take care of our health.",
+
+    "modulo-salud.mensaje.cambio": "🌿 What to do instead?"
   }
 };
+
 let idiomaActual = "es";
 
 function setLanguage(lang) {
