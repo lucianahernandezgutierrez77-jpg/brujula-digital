@@ -153,7 +153,9 @@ const translations = {
     "modulo-salud.mensaje.cambio6": "🧩 Hacer un crucigrama o rompecabezas",
     "modulo-salud.mensaje.cambio7": "🌱 Regar las plantas o salir al balcón",
     "modulo-salud.mensaje.cambio8": "La tecnología es una herramienta, no un pasatiempo obligatorio.",
+    
     "modulo-salud.boton.resultado": "Ver mi resultado 🎯",
+    "modulo-salud.mensaje.puntaje": "Obtuviste <strong>{respuestasCorrectas} de {total}</strong> respuestas correctas.",
     "modulo-salud.boton.inicio": "← Volver al inicio",
     "modulo-salud.boton.siguiente": "Siguiente módulo →"
   },
@@ -302,7 +304,7 @@ const translations = {
     "quiz1.pregunta.incorrecta": "❌ Not correct. The correct answer was: ",
 
     "modulo-salud.mensaje.perfecto": "🎉 Perfect! You have completed the healthy device use module. Remember that small changes in our digital habits can help us enjoy technology in a more balanced, healthy, and conscious way. 🧭💙",
-    "modulo-salud,mensaje.bien":"👍 Well done! You're on the right track.",
+    "modulo-salud.mensaje.bien":"👍 Well done! You're on the right track.",
     "modulo-salud.mensaje.intentar": "📖 Don't worry. You can reread the lesson and try again.",
     "modulo-salud.mensaje.cambio": "🌿 What to do instead?",
     "modulo-salud.mensaje.cambio2": "Reducing screen time doesn't mean being bored. Here are some ideas:",
@@ -313,6 +315,7 @@ const translations = {
     "modulo-salud.mensaje.cambio7": "🌱 Water the plants or go out on the balcony",
     "modulo-salud.mensaje.cambio8": "Technology is a tool, not a mandatory pastime.",
     "modulo-salud.boton.resultado": "See my result 🎯",
+    "modulo-salud.mensaje.puntaje": "You got <strong>{respuestasCorrectas} out of {total}</strong> correct answers.",
     "modulo-salud.boton.inicio": "← Back to Home",
     "modulo-salud.boton.siguiente": "Next Module →"
   }

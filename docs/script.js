@@ -115,20 +115,20 @@ function mostrarPuntaje() {
   let color = "";
 
   if (respuestasCorrectas === total) {
-    mensaje = "modulo-salud.mensaje.perfecto";
+    mensaje = t("modulo-salud.mensaje.perfecto");
     color = "var(--green)";
   } else if (respuestasCorrectas >= total / 2) {
-    mensaje = "modulo-salud.mensaje.bien";
+    mensaje = t("modulo-salud.mensaje.bien");
     color = "var(--blue)";
   } else {
-    mensaje = "modulo-salud.mensaje.intentar";
+    mensaje = t("modulo-salud.mensaje.intentar");
     color = "var(--orange)";
   }
 
   resultado.innerHTML = `
     <div style="background: white; border-radius: 12px; padding: 20px; margin-top: 15px; text-align: center; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
       <h3 style="color: ${color};">${mensaje}</h3>
-      <p style="font-size: 1.3rem;">Obtuviste <strong>${respuestasCorrectas} de ${total}</strong> respuestas correctas.</p>
+      <p style="font-size: 1.3rem;" >${t("modulo-salud.mensaje.puntaje").replace("{respuestasCorrectas}", respuestasCorrectas).replace("{total}", total)}</p>
     </div>
     <div style="background: #F0FDF4; border-radius: 12px; padding: 20px; margin-top: 20px; border-left: 4px solid var(--green);">
       <h3> ${t("modulo-salud.mensaje.cambio")}</h3>
