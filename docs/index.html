@@ -181,17 +181,17 @@
     <button class="btn" data-i18n="modulo-salud.boton.reiniciar" onclick="reiniciarActividad()" style="width: auto; min-width: 250px;">🔄 Intentar de nuevo</button>
   </div>
 </div>
-
+<!-- QUIZ MODULO 1 -->
       <hr style="margin: 40px 0; border: none; border-top: 3px solid #e2e8f0;">
       <h3 data-i18n="modulo-salud.titulo.quiz">🧠 Pon a prueba lo que aprendiste</h3>
       <div id="quiz-container"></div>
       <div style="display: flex; justify-content: center; margin-top: 20px;">
-        <button class="btn" onclick="mostrarPuntaje()" id="btn-resultado" style="display:none; width: auto;">Ver mi resultado 🎯</button>
+        <button class="btn" data-i18n="modulo-salud.boton.resultado" onclick="mostrarPuntaje()" id="btn-resultado" style="display:none; width: auto;">Ver mi resultado 🎯</button>
       </div>
       <div id="resultado-final" style="display:none;"></div>
       <div style="display: flex; justify-content: space-between; align-items: center; margin-top: 20px; flex-wrap: wrap; gap: 10px;">
-        <button class="btn btn-secondary" onclick="goHome()">← Volver al inicio</button>
-        <button class="btn" onclick="showSection('modulo-estafas')">Siguiente módulo →</button>
+        <button class="btn btn-secondary" data-i18n="modulo-salud.boton.inicio" onclick="goHome()">← Volver al inicio</button>
+        <button class="btn" data-i18n="modulo-salud.boton.siguiente" onclick="showSection('modulo-estafas')">Siguiente módulo →</button>
       </div>
     </div>
   </section>

@@ -153,6 +153,9 @@ const translations = {
     "modulo-salud.mensaje.cambio6": "🧩 Hacer un crucigrama o rompecabezas",
     "modulo-salud.mensaje.cambio7": "🌱 Regar las plantas o salir al balcón",
     "modulo-salud.mensaje.cambio8": "La tecnología es una herramienta, no un pasatiempo obligatorio.",
+    "modulo-salud.boton.resultado": "Ver mi resultado 🎯",
+    "modulo-salud.boton.inicio": "← Volver al inicio",
+    "modulo-salud.boton.siguiente": "Siguiente módulo →"
   },
 
   //ENGLISH
@@ -309,6 +312,9 @@ const translations = {
     "modulo-salud.mensaje.cambio6": "🧩 Do a crossword puzzle or jigsaw puzzle",
     "modulo-salud.mensaje.cambio7": "🌱 Water the plants or go out on the balcony",
     "modulo-salud.mensaje.cambio8": "Technology is a tool, not a mandatory pastime.",
+    "modulo-salud.boton.resultado": "See my result 🎯",
+    "modulo-salud.boton.inicio": "← Back to Home",
+    "modulo-salud.boton.siguiente": "Next Module →"
   }
 };
 
