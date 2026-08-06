@@ -20,33 +20,33 @@ function goHome() {
 // QUIZ MÓDULO 1
 const quizData = [
   {
-    pregunta: "quiz.p1",
-    opciones: ["quiz.p1.a", "quiz.p1.b", "quiz.p1.c", "quiz.p1.d"],
+    pregunta: "quiz1.p1",
+    opciones: ["quiz1.p1.a", "quiz1.p1.b", "quiz1.p1.c", "quiz1.p1.d"],
     correcta: 1
   },
   {
-    pregunta: "quiz.p2",
-    opciones: ["quiz.p2.a", "quiz.p2.b", "quiz.p2.c", "quiz.p2.d"],
+    pregunta: "quiz1.p2",
+    opciones: ["quiz1.p2.a", "quiz1.p2.b", "quiz1.p2.c", "quiz1.p2.d"],
     correcta: 2
   },
   {
-    pregunta: "quiz.p3",
-    opciones: ["quiz.p3.a", "quiz.p3.b", "quiz.p3.c", "quiz.p3.d"],
+    pregunta: "quiz1.p3",
+    opciones: ["quiz1.p3.a", "quiz1.p3.b", "quiz1.p3.c", "quiz1.p3.d"],
     correcta: 3
   },
   {
-    pregunta: "quiz.p4",
-    opciones: ["quiz.p4.a", "quiz.p4.b", "quiz.p4.c", "quiz.p4.d"],
+    pregunta: "quiz1.p4",
+    opciones: ["quiz1.p4.a", "quiz1.p4.b", "quiz1.p4.c", "quiz1.p4.d"],
     correcta: 0
   },
   {
-    pregunta: "quiz.p5",
-    opciones: ["quiz.p5.a", "quiz.p5.b", "quiz.p5.c", "quiz.p5.d"],
+    pregunta: "quiz1.p5",
+    opciones: ["quiz1.p5.a", "quiz1.p5.b", "quiz1.p5.c", "quiz1.p5.d"],
     correcta: 1
   },
   {
-    pregunta: "quiz.p6",
-    opciones: ["quiz.p6.a", "quiz.p6.b", "quiz.p6.c", "quiz.p6.d"],
+    pregunta: "quiz1.p6",
+    opciones: ["quiz1.p6.a", "quiz1.p6.b", "quiz1.p6.c", "quiz1.p6.d"],
     correcta: 2
   }
 ];
@@ -71,11 +71,10 @@ function initQuiz() {
     quizHTML += `<div class="quiz-pregunta" id="pregunta-${indice}">`;
     quizHTML += `<p><strong>${indice + 1}. ${t(item.pregunta)}</strong></p>`;
     item.opciones.forEach(function(opcion, opcionIndice) {
-      quizHTML += `
-    <button class="quiz-opcion"
-  onclick="verificarRespuesta(${indice}, ${opcionIndice}, this)">
+      quizHTML += `<button class="quiz-opcion"
+    onclick="verificarRespuesta(${indice}, ${opcionIndice}, this)">
     ${t(opcion)}
- </button>`;
+    </button>`;
     });
     quizHTML += `<p id="feedback-${indice}" class="quiz-feedback"></p>`;
     quizHTML += `</div>`;
