@@ -143,7 +143,7 @@ const translations = {
     "quiz1.pregunta.incorrecta": "❌ No es correcto. La respuesta correcta era: ",
 
     "modulo-salud.mensaje.perfecto": "🎉 ¡Perfecto! Has completado el módulo de uso saludable de dispositivos. Recuerda que pequeños cambios en nuestros hábitos digitales pueden ayudarnos a disfrutar la tecnología de una manera más equilibrada, saludable y consciente. 🧭💙",
-    "modulo-salud,mensaje.bien":"👍 ¡Bien hecho! Vas por buen camino.",
+    "modulo-salud.mensaje.bien": "👍 ¡Bien hecho! Vas por buen camino.",
     "modulo-salud.mensaje.intentar": "📖 No te preocupes. Puedes releer la lección e intentarlo de nuevo.",
     "modulo-salud.mensaje.cambio": "🌿 ¿Qué hacer en cambio?",
     "modulo-salud.mensaje.cambio2": "Reducir el tiempo en pantalla no significa aburrirse. Aquí algunas ideas:",
