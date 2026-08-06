@@ -96,14 +96,6 @@ const translations = {
     "modulo-salud.boton.reiniciar": "🔄 Intentar de nuevo",
     "actividad1.correcto": "✅ ¡Correcto! Juan avanza.",
 
-    "modulo-salud.mensaje.cambio": "🌿 ¿Qué hacer en cambio?",
-    "modulo-salud.mensaje.cambio2": "Reducir el tiempo en pantalla no significa aburrirse. Aquí algunas ideas:",
-    "modulo-salud.mensaje.cambio3": "🚶 Dar una caminata corta de 10-15 minutos",
-    "modulo-salud.mensaje.cambio4": "📞 Llamar a un familiar o amigo por teléfono",
-    "modulo-salud.mensaje.cambio5": "📖 Leer un libro o revista física",
-    "modulo-salud.mensaje.cambio6": "🧩 Hacer un crucigrama o rompecabezas",
-    "modulo-salud.mensaje.cambio7": "🌱 Regar las plantas o salir al balcón",
-
     //QUIZ
     "modulo-salud.titulo.quiz": "🧠 Pon a prueba lo que aprendiste",
     "quiz1.p1": "¿Cuál de estos efectos puede causar pasar demasiado tiempo frente a una pantalla?",
@@ -253,14 +245,6 @@ const translations = {
     "modulo-salud.mesaje.fallo2": "He had too many trips on the way. But don't worry! You can try again and help him get home.",
     "modulo-salud.boton.reiniciar": "🔄 Try Again",
     "actividad1.correcto": "✅ Correct! Juan moves forward.",
-    
-    "modulo-salud.mensaje.cambio": "🌿 What to do instead?",
-    "modulo-salud.mensaje.cambio2": "Reducing screen time doesn't mean being bored. Here are some ideas:",
-    "modulo-salud.mensaje.cambio3": "🚶 Take a short walk of 10-15 minutes",
-    "modulo-salud.mensaje.cambio4": "📞 Call a family member or friend on the phone",
-    "modulo-salud.mensaje.cambio5": "📖 Read a physical book or magazine",
-    "modulo-salud.mensaje.cambio6": "🧩 Do a crossword puzzle or jigsaw puzzle",
-    "modulo-salud.mensaje.cambio7": "🌱 Water the plants or go out on the balcony",
 
     //QUIZ
     "modulo-salud.titulo.quiz": "🧠 Test what you've learned",
@@ -306,7 +290,13 @@ const translations = {
     "quiz1.p6.d": "None, the phone is the best option",
     "quiz1.p6.exp": "Calling a family member or taking a walk is an excellent alternative to disconnect and take care of our health.",
 
-    "modulo-salud.mensaje.cambio": "🌿 What to do instead?"
+    "modulo-salud.mensaje.cambio": "🌿 What to do instead?",
+    "modulo-salud.mensaje.cambio2": "Reducing screen time doesn't mean being bored. Here are some ideas:",
+    "modulo-salud.mensaje.cambio3": "🚶 Take a short walk of 10-15 minutes",
+    "modulo-salud.mensaje.cambio4": "📞 Call a family member or friend on the phone",
+    "modulo-salud.mensaje.cambio5": "📖 Read a physical book or magazine",
+    "modulo-salud.mensaje.cambio6": "🧩 Do a crossword puzzle or jigsaw puzzle",
+    "modulo-salud.mensaje.cambio7": "🌱 Water the plants or go out on the balcony",
   }
 };
 
