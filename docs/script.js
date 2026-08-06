@@ -69,9 +69,13 @@ function initQuiz() {
   let quizHTML = "";
   quizData.forEach(function(item, indice) {
     quizHTML += `<div class="quiz-pregunta" id="pregunta-${indice}">`;
-    quizHTML += `<p><strong>${indice + 1}. ${item.pregunta}</strong></p>`;
+    quizHTML += `<p><strong>${indice + 1}. ${t(item.pregunta)}</strong></p>`;
     item.opciones.forEach(function(opcion, opcionIndice) {
-      quizHTML += `<button class="quiz-opcion" onclick="verificarRespuesta(${indice}, ${opcionIndice}, this)">${opcion}</button>`;
+      quizHTML += `
+    <button class="quiz-opcion"
+  onclick="verificarRespuesta(${indice}, ${opcionIndice}, this)">
+    ${t(opcion)}
+ </button>`;
     });
     quizHTML += `<p id="feedback-${indice}" class="quiz-feedback"></p>`;
     quizHTML += `</div>`;
