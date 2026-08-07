@@ -343,6 +343,35 @@ function setLanguage(lang) {
       btn.getAttribute("data-lang") === lang
     );
   });
+
+  refreshDynamicContent();
+}
+
+function refreshDynamicContent() {
+  const visibleSection = Array.from(document.querySelectorAll("main.container > section")).find(function(section) {
+    return section.style.display !== "none";
+  });
+
+  if (!visibleSection) return;
+
+  if (visibleSection.id === "leccion-salud") {
+    if (typeof initQuiz === "function") initQuiz();
+    if (document.getElementById("actividad-pregunta-container").children.length > 0 && typeof mostrarPreguntaActividad === "function") {
+      mostrarPreguntaActividad();
+    }
+  }
+
+  if (visibleSection.id === "leccion-estafas" && typeof initQuizEstafas === "function") {
+    initQuizEstafas();
+  }
+
+  if (visibleSection.id === "leccion-deepfakes" && typeof initQuizDeepfakes === "function") {
+    initQuizDeepfakes();
+  }
+
+  if (visibleSection.id === "leccion-privacidad" && typeof initQuizPrivacidad === "function") {
+    initQuizPrivacidad();
+  }
 }
 
 document.addEventListener("DOMContentLoaded", function () {
