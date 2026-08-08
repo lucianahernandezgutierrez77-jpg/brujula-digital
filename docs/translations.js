@@ -49,9 +49,11 @@ const translations = {
     "modulo-salud.descripcion": "Nuestro tiempo es valioso. Cada momento que pasamos frente a una pantalla es un <span class = highlight5>momento que también podríamos dedicar a descansar, realizar actividad física, conversar con nuestra familia o simplemente disfrutar</span> de lo que sucede a nuestro alrededor.",
     "modulo-salud.descripcion2": "¿Esto significa que la tecnología es mala? No. La tecnología puede ser una herramienta increíble para aprender, entretenernos y mantenernos conectados. Pero, como una espada de doble filo, su impacto depende de cómo la usamos.",
     "modulo-salud.descripcion3": "Pasar demasiado tiempo frente a una pantalla puede afectar:",
+
     "modulo-salud.list.item1": "<span class = 'subtitle'>El sueño</span> 😴 — Usar pantallas hasta muy tarde puede hacer que nos cueste más dormir.",
     "modulo-salud.list.item2": "<span class = 'subtitle'> La actividad física</span> 🚶 — A veces pasamos horas sentados sin darnos cuenta.",
     "modulo-salud.list.item3": "<span class = 'subtitle'> El bienestar emocional</span> 😔 — Estar constantemente conectados o recibir demasiada información puede hacernos sentir agotados o estresados.",
+
     "modulo-salud.descripcion4": "<span class=\"highlight3\">No se trata de dejar de usar la tecnología, sino de aprender a utilizarla de una forma que beneficie nuestra salud y nuestro bienestar.</span>",
     "modulo-salud.descripcion5": "📚 <strong>¿Quieres saber más?</strong> La Comisión Europea explica los efectos del tiempo excesivo en pantalla:<br>",
     "modulo-salud.actividad.titulo": "<span class=\"subtitle2\">Actividad  </span>",
@@ -186,7 +188,23 @@ const translations = {
 
     // MODULO 2 LECCION
     "modulo-estafas.video": "🎥 Video recomendado",
-    "modulo-estafas.video.descripcion": "Antes de continuar, mira este breve video sobre estafas digitales:"
+    "modulo-estafas.video.descripcion": "Antes de continuar, mira este breve video sobre estafas digitales:",
+    "modulo-estafas.titulo": "⚠️ Estafas digitales: cómo protegernos",
+    "modulo-estafas.descripcion": "Las estafas digitales son intentos de engañar a las personas para obtener información personal, dinero u otros beneficios. Pueden presentarse en correos electrónicos, mensajes de texto, redes sociales o sitios web falsos.",
+    "modulo-estafas.tipos": "🚨 Tipos de estafas más comunes",
+
+    "modulo-estafas.list.item1": "<span class = 'subtitle'>Phishing</span> 📧 — Mensajes que parecen de empresas confiables, pero buscan robar información personal.",
+    "modulo-estafas.list.item2": "<span class = 'subtitle'>Llamadas falsas</span> 📞 — Alguien dice ser del banco o del gobierno y te pide información urgente.",
+    "modulo-estafas.list.item3": "<span class = 'subtitle'>\"Ganaste un premio\"</span> 🎁 — Te dicen que ganaste algo pero necesitas pagar para recibirlo. Nadie regala nada así.",
+    "modulo-estafas.list.item4": "<span class = 'subtitle'>Estafa del familiar</span> 👨‍👩‍👧 — Alguien finge ser un familiar en apuros y pide dinero urgente.",
+    "modulo-estafas.list.item5": "<span class = 'subtitle'>Enlaces falsos</span> 🔗 — Links que parecen reales pero te llevan a páginas falsas que roban tus datos.",
+
+    "modulo-estafas.descripcion2": "Aunque las estafas pueden presentarse de muchas formas, <span class= \"highlight2\">la mayoría comparten algunas señales que pueden ayudarnos a identificarlas.</span> Conocerlas es el primer paso para actuar con mayor seguridad.",
+    "modulo-estafas.list2.item1": "El mensaje crea <span class=\"highlight3\">miedo o urgencia innecesaria</span>",
+    "modulo-estafas.list2.item2": "Te piden <span class=\"highlight3\">datos personales</span>, contraseñas o dinero",
+    "modulo-estafas.list2.item3": "El remitente tiene un <span class=\"highlight3\">nombre extraño</span> o dirección de correo desconocida",
+    "modulo-estafas.list2.item4": "Hay <span class=\"highlight3\">errores de ortografía</span> o el mensaje se ve <span class=\"highlight3\">mal redactado</span>",
+    "modulo-estafas.list2.item5": "Te ofrecen algo <span class=\"highlight3\">demasiado bueno para ser verdad</span>"
 
   },
 
@@ -378,6 +396,22 @@ const translations = {
     // MODULE 2 LESSON
     "modulo-estafas.video": "🎥 Recommended Video",
     "modulo-estafas.video.descripcion": "Before continuing, watch this brief video about digital scams:",
+    "modulo-estafas.titulo": "⚠️ Digital Scams: How to Protect Yourself",
+    "modulo-estafas.descripcion": "Digital scams are attempts to deceive people in order to obtain personal information, money, or other benefits. They can appear in emails, text messages, social media, or fake websites.",
+    "modulo-estafas.tipos": "🚨 Most Common Types of Scams",
+
+    "modulo-estafas.list.item1": "<span class = 'subtitle'>Phishing</span> 📧 — Messages that appear to be from trusted companies but aim to steal personal information.",
+    "modulo-estafas.list.item2": "<span class = 'subtitle'>False Calls</span> 📞 — Someone claims to be from the bank or government and asks for urgent information.",
+    "modulo-estafas.list.item3": "<span class = 'subtitle'>\"You Won a Prize\"</span> 🎁 — Someone tells you that you've won something but you need to pay to claim it. No one gives away anything like that.",
+    "modulo-estafas.list.item4": "<span class = 'subtitle'>Family Member Scam</span> 👨‍👩‍👧 — Someone pretends to be a family member in trouble and asks for urgent money.",
+    "modulo-estafas.list.item5": "<span class = 'subtitle'>Fake Links</span> 🔗 — Links that appear to be real but lead to fake pages that steal your data.",
+
+    "modulo-estafas.descripcion2": "Although scams can take many forms, <span class= \"highlight2\">most share some signs that can help us identify them.</span> Knowing them is the first step to acting more safely.",
+    "modulo-estafas.list2.item1": "The message creates <span class=\"highlight3\">unnecessary fear or urgency</span>",
+    "modulo-estafas.list2.item2": "They ask for <span class=\"highlight3\">personal information</span>, passwords, or money",
+    "modulo-estafas.list2.item3": "The sender has a <span class=\"highlight3\">strange name</span> or unknown email address",
+    "modulo-estafas.list2.item4": "There are <span class=\"highlight3\">spelling errors</span> or the message is <span class=\"highlight3\">poorly written</span>",
+    "modulo-estafas.list2.item5": "They offer you something <span class=\"highlight3\">too good to be true</span>"
   }
 };
 
