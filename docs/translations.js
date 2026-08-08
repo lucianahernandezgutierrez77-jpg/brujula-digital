@@ -83,7 +83,7 @@ const translations = {
     "actividad1.p3.exp": "Caminar activa el cuerpo y permite que los ojos descansen de la luz de las pantallas.",
 
     "actividad1.p4" : "¿Cada cuánto tiempo se recomienda hacer una pausa al usar pantallas?",
-    "actividad1.p4.a" : "Cada 3 horass",
+    "actividad1.p4.a" : "Cada 3 horas",
     "actividad1.p4.b" : "Cada 20 minutos",
     "actividad1.p4.c" : "Solo cuando hay dolor de ojos",
     "actividad1.p4.d" : "Una vez al día",
@@ -204,7 +204,8 @@ const translations = {
     "modulo-estafas.list2.item2": "Te piden <span class=\"highlight3\">datos personales</span>, contraseñas o dinero",
     "modulo-estafas.list2.item3": "El remitente tiene un <span class=\"highlight3\">nombre extraño</span> o dirección de correo desconocida",
     "modulo-estafas.list2.item4": "Hay <span class=\"highlight3\">errores de ortografía</span> o el mensaje se ve <span class=\"highlight3\">mal redactado</span>",
-    "modulo-estafas.list2.item5": "Te ofrecen algo <span class=\"highlight3\">demasiado bueno para ser verdad</span>"
+    "modulo-estafas.list2.item5": "Te ofrecen algo <span class=\"highlight3\">demasiado bueno para ser verdad</span>",
+    "modulo-estafas.recuerda": "<strong>Recuerda:</strong> Tomarte unos segundos para verificar un mensaje puede evitar muchos problemas. Ante cualquier duda, es mejor confirmar la información antes de compartir datos personales o realizar un pago.",
 
   },
 
@@ -255,13 +256,16 @@ const translations = {
     // MODULE 1 LESSON
     "modulo-salud.video": "🎥 Recommended Video",
     "modulo-salud.video.descripcion": "Before continuing, watch this brief video about technology use:",
+
     "modulo-salud.titulo": "📈💻 Why is it important to manage screen time?  📺📊",
     "modulo-salud.descripcion": "Our time is valuable. Every moment we spend in front of a screen is a <span class = highlight5>moment that we could also dedicate to resting, engaging in physical activity, talking with our family, or simply enjoying</span> what is happening around us.",
     "modulo-salud.descripcion2": "Does this mean that technology is bad? No. Technology can be an incredible tool for learning, entertainment, and staying connected. However, like a double-edged sword, its impact depends on how we use it.",
     "modulo-salud.descripcion3": "Spending too much time in front of a screen can affect:",
+
     "modulo-salud.list.item1": "<span class = 'subtitle'>Sleep</span> 😴 — Using screens late at night can make it harder for us to fall asleep.",
     "modulo-salud.list.item2": "<span class = 'subtitle'>Physical Activity</span> 🚶 — Sometimes we spend hours sitting without realizing it.",
     "modulo-salud.list.item3": "<span class = 'subtitle'>Emotional Well-being</span> 😔 — Being constantly connected or receiving too much information can make us feel exhausted or stressed.",
+
     "modulo-salud.descripcion4": "<span class=\"highlight3\">It's not about stopping the use of technology, but rather learning to use it in a way that benefits our health and well-being.</span>",
     "modulo-salud.descripcion5": "📚 <strong>Want to learn more?</strong> The European Commission explains the effects of excessive screen time:<br>",
     "modulo-salud.actividad.titulo": "<span class=\"subtitle2\">Activity  </span>",
@@ -411,7 +415,8 @@ const translations = {
     "modulo-estafas.list2.item2": "They ask for <span class=\"highlight3\">personal information</span>, passwords, or money",
     "modulo-estafas.list2.item3": "The sender has a <span class=\"highlight3\">strange name</span> or unknown email address",
     "modulo-estafas.list2.item4": "There are <span class=\"highlight3\">spelling errors</span> or the message is <span class=\"highlight3\">poorly written</span>",
-    "modulo-estafas.list2.item5": "They offer you something <span class=\"highlight3\">too good to be true</span>"
+    "modulo-estafas.list2.item5": "They offer you something <span class=\"highlight3\">too good to be true</span>",
+    "modulo-estafas.recuerda": "<strong>Remember:</strong> Taking a few seconds to verify a message can prevent many problems. When in doubt, it's better to confirm the information before sharing personal data or making a payment.",
   }
 };
 
