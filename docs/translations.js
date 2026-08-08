@@ -182,7 +182,11 @@ const translations = {
 
     "modulo-estafas.meta": "🎯 Meta del módulo",
     "modulo-estafas.meta.descripcion": "Reconocer las señales más comunes de una estafa digital para proteger nuestra información y navegar con mayor seguridad.",
-    "modulo-estafas.boton.inicio": "🚀 Empecemos"
+    "modulo-estafas.boton.inicio": "🚀 Empecemos",
+
+    // MODULO 2 LECCION
+    "modulo-estafas.video": "🎥 Video recomendado",
+    "modulo-estafas.video.descripcion": "Antes de continuar, mira este breve video sobre estafas digitales:"
 
   },
 
@@ -370,6 +374,10 @@ const translations = {
     "modulo-estafas.meta": "🎯 Module Goal",
     "modulo-estafas.meta.descripcion": "Recognize the most common signs of a digital scam to protect our information and navigate more safely.",
     "modulo-estafas.boton.inicio": "🚀 Let's Get Started",
+
+    // MODULE 2 LESSON
+    "modulo-estafas.video": "🎥 Recommended Video",
+    "modulo-estafas.video.descripcion": "Before continuing, watch this brief video about digital scams:",
   }
 };
 
