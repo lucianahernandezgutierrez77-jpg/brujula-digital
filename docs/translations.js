@@ -417,6 +417,7 @@ const translations = {
     "modulo-estafas.list2.item4": "There are <span class=\"highlight3\">spelling errors</span> or the message is <span class=\"highlight3\">poorly written</span>",
     "modulo-estafas.list2.item5": "They offer you something <span class=\"highlight3\">too good to be true</span>",
     "modulo-estafas.recuerda": "<strong>Remember:</strong> Taking a few seconds to verify a message can prevent many problems. When in doubt, it's better to confirm the information before sharing personal data or making a payment.",
+    "modulo-esrafas.fuente": "<strong>"
   }
 };
 
