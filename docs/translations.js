@@ -157,7 +157,33 @@ const translations = {
     "modulo-salud.boton.resultado": "Ver mi resultado 🎯",
     "modulo-salud.mensaje.puntaje": "Obtuviste <strong>{respuestasCorrectas} de {total}</strong> respuestas correctas.",
     "modulo-salud.boton.inicio": "← Volver al inicio",
-    "modulo-salud.boton.siguiente": "Siguiente módulo →"
+    "modulo-salud.boton.siguiente": "Siguiente módulo →",
+
+    // INTRO MODULO 2
+    "modulo-estafas.consejos.titulo": "⚠️ Estafas digitales",
+    "modulo-estafas.consejos.descripcion": "Las estafas digitales son intentos de engañar a las personas para obtener información personal, dinero u otros beneficios. Pueden presentarse en correos electrónicos, mensajes de texto, redes sociales o sitios web falsos.",
+    "modulo-estafas.consejos": "📝 Consejos prácticos",
+
+    "titulo-estafas.consejo1": "Desconfía de la urgencia",
+    "descripcion1-estafas.consejo1": "¿Alguna vez has recibido un mensaje diciendo que tu cuenta será bloqueada si no actúas de inmediato?",
+    "descripcion1-estafas.consejo1": "Ese tipo de mensajes buscan generar miedo o urgencia para que tomemos decisiones sin pensar. Si recibes un aviso así, detente unos segundos y verifica la información antes de actuar.",
+
+    "titulo-estafas.consejo2": "Nunca compartas datos personales",
+    "descripcion1-estafas.consejo2": "¿Te han pedido alguna vez una contraseña o un código por mensaje o llamada?",
+    "descripcion2-estafas.consejo2": "Ningún banco ni entidad confiable te pedirá esa información por esos medios. Si alguien lo hace, lo mejor es no responder y verificar directamente con la institución.",
+
+    "titulo-estafas.consejo3": "Verifica antes de hacer click",
+    "descripcion1-estafas.consejo3": "¿Recibiste un enlace inesperado por WhatsApp o correo?",
+    "descripcion2-estafas.consejo3": "Antes de abrirlo, pregúntate si esperabas ese mensaje y si conoces realmente a quien lo envió. Si tienes dudas, es mejor no hacer clic.",
+
+    "titulo-estafas.consejo4": "Llama directamente",
+    "descripcion1-estafas.consejo4": "¿Recibiste una llamada de alguien que dice ser de tu banco o de una institución?",
+    "descripcion2-estafas.consejo4": "No te apresures a responder. Lo más seguro es comunicarte tú mismo usando el número oficial que aparece en la página web o en tus documentos.",
+
+    "modulo-estafas.meta": "🎯 Meta del módulo",
+    "modulo-estafas.meta.descripcion": "Reconocer las señales más comunes de una estafa digital para proteger nuestra información y navegar con mayor seguridad.",
+    "modulo-estafas.boton.inicio": "🚀 Empecemos"
+
   },
 
   //ENGLISH
@@ -318,7 +344,32 @@ const translations = {
     "modulo-salud.boton.resultado": "See my result 🎯",
     "modulo-salud.mensaje.puntaje": "You got <strong>{respuestasCorrectas} out of {total}</strong> correct answers.",
     "modulo-salud.boton.inicio": "← Back to Home",
-    "modulo-salud.boton.siguiente": "Next Module →"
+    "modulo-salud.boton.siguiente": "Next Module →",
+
+    // INTRO MODULE 2
+    "modulo-estafas.consejos.titulo": "⚠️ Digital Scams",
+    "modulo-estafas.consejos.descripcion": "Digital scams are attempts to deceive people in order to obtain personal information, money, or other benefits. They can appear in emails, text messages, social media, or fake websites.",
+    "modulo-estafas.consejos": "📝 Practical Tips",
+
+    "titulo-estafas.consejo1": "Be wary of urgency",
+    "descripcion1-estafas.consejo1": "Have you ever received a message saying that your account will be blocked if you don't act immediately?",
+    "descripcion1-estafas.consejo1": "These types of messages aim to create fear or urgency so that we make decisions without thinking. If you receive such a notice, take a few seconds to verify the information before acting.",
+
+    "titulo-estafas.consejo2": "Never share personal information",
+    "descripcion1-estafas.consejo2": "Have you ever been asked for a password or code via message or call?",
+    "descripcion2-estafas.consejo2": "No bank or trusted entity will ask for that information through those means. If someone does, it's best not to respond and verify directly with the institution.",
+
+    "titulo-estafas.consejo3": "Verify before clicking",
+    "descripcion1-estafas.consejo3": "Did you receive an unexpected link via WhatsApp or email?",
+    "descripcion2-estafas.consejo3": "Before opening it, ask yourself if you were expecting that message and if you really know who sent it. If you have doubts, it's better not to click.",
+
+    "titulo-estafas.consejo4": "Call directly",
+    "descripcion1-estafas.consejo4": "Did you receive a call from someone claiming to be from your bank or an institution?",
+    "descripcion2-estafas.consejo4": "Don't rush to answer. The safest thing is to contact them yourself using the official number that appears on the website or your documents.",
+
+    "modulo-estafas.meta": "🎯 Module Goal",
+    "modulo-estafas.meta.descripcion": "Recognize the most common signs of a digital scam to protect our information and navigate more safely.",
+    "modulo-estafas.boton.inicio": "🚀 Let's Get Started",
   }
 };
 
