@@ -206,7 +206,7 @@ const translations = {
     "modulo-estafas.list2.item4": "Hay <span class=\"highlight3\">errores de ortografía</span> o el mensaje se ve <span class=\"highlight3\">mal redactado</span>",
     "modulo-estafas.list2.item5": "Te ofrecen algo <span class=\"highlight3\">demasiado bueno para ser verdad</span>",
     "modulo-estafas.recuerda": "<strong>Recuerda:</strong> Tomarte unos segundos para verificar un mensaje puede evitar muchos problemas. Ante cualquier duda, es mejor confirmar la información antes de compartir datos personales o realizar un pago.",
-
+    "modulo-estafas.fuente": "<strong>¿Quieres saber más?</strong> La Oficina de Seguridad del Internauta explica cómo protegerse del phishing",
   },
 
   //ENGLISH
@@ -417,11 +417,9 @@ const translations = {
     "modulo-estafas.list2.item4": "There are <span class=\"highlight3\">spelling errors</span> or the message is <span class=\"highlight3\">poorly written</span>",
     "modulo-estafas.list2.item5": "They offer you something <span class=\"highlight3\">too good to be true</span>",
     "modulo-estafas.recuerda": "<strong>Remember:</strong> Taking a few seconds to verify a message can prevent many problems. When in doubt, it's better to confirm the information before sharing personal data or making a payment.",
-    "modulo-esrafas.fuente": "<strong>"
+    "modulo-estafas.fuente": "<strong>¿Quieres saber más?</strong> La Oficina de Seguridad del Internauta explica cómo protegerse del phishing",
   }
-};
-
-let idiomaActual = "es";
+},
 
 function setLanguage(lang) {
   idiomaActual = lang;
