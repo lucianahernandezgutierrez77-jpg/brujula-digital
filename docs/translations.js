@@ -431,6 +431,8 @@ const translations = {
     "modulo-estafas.actividad.descripcion": "Juan has received several messages today. Help him identify which ones are scams and which ones are legitimate.",
     "modulo-estafas.actividad.boton.iniciar":"📱 View Juan's messages",
     "modulo-estafas.actividad.dialogo":"📩 I have messages! ",
+
+
     "actividad-estafas.mensaje.final1":"🎉 Well done!",
     "actividad-estafas.mensaje.final":"Juan was able to identify the messages with your help. Remember: if you receive a suspicious message, it’s best not to click on anything, not to share any personal information, and to verify it directly with the official source."
   }
