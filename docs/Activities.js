@@ -341,13 +341,13 @@ const mensajesEstafas = [
     tipo: "correo",
     app: "📧",
     contacto: "banco.seguridad@notificaciones-urgentes.com",
-    mensaje: "Estimado cliente, su cuenta ha sido comprometida. Haga clic en el siguiente enlace para verificar su identidad o su cuenta será bloqueada en 24 horas: www.banco-seguro-verify.com",
+    mensaje: t("modulo-estafas.mesaje1"),
     hora: "10:34 a.m.",
     esEstafa: true,
     opcionCorrecta: 1,
-    opciones: ["Hago clic en el enlace para verificar mi cuenta.", "No hago clic. Llamo directamente al número oficial del banco.", "Respondo el correo con mis datos para desbloquear la cuenta."],
-    explicacionCorrecta: "✅ ¡Correcto! Los bancos nunca te piden verificar datos por enlaces en correos. Siempre llama al número oficial.",
-    explicacionError: "❌ Este es un correo de phishing. El remitente es desconocido y crea urgencia para que actúes sin pensar. Nunca hagas clic en esos enlaces."
+    opciones: [ t("modulo-estafas.mensaje1.opcionA") , t("modulo-estafas.mensaje1.opcionB"), t("modulo-estafas.mensaje1.opcionC") ],
+    explicacionCorrecta: t("modulo-estafas.explicacion.correcta1"),
+    explicacionError: t("modulo-pasoEstafas.explicacion.error"),
   },
   {
     tipo: "whatsapp",

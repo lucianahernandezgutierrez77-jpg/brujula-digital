@@ -1,16 +1,20 @@
 const translations = {
   //ESPANOL
+
   es: {
     // HEADER
+
     "header.titulo": "🧭 Brújula Digital",
     "header.subtitulo": "Usa la tecnología de forma más segura, consciente y saludable.",
 
     // HOME 
+
     "home.titulo": "Bienvenido 👋",
     "home.descripcion": "Cada paso que das en el mundo digital es una oportunidad para aprender, descubrir y sentirte más seguro al usar la tecnología.",
     "home.btn": "Comenzar",
 
     // MODULOS 
+
     "modulos.titulo": "Módulos",
     "modulos.salud": "📱 Uso saludable de dispositivos",
     "modulos.estafas": "⚠️ Estafas digitales",
@@ -18,6 +22,7 @@ const translations = {
     "modulos.privacidad": "🔒 Privacidad y seguridad",
 
     // INTRO MODULO 1
+
     "modulo-salud.consejos.titulo": "📱 Uso saludable de dispositivos",
     "modulo-salud.consejos.descripcion": "La tecnología puede ser una herramienta poderosa para aprender, comunicarnos y descubrir nuevas oportunidades. Sin embargo, también es importante aprender a usarla con equilibrio, ya que un uso excesivo puede afectar nuestra salud y bienestar.",
     "modulo-salud.consejos": "📝 Consejos prácticos",
@@ -43,6 +48,7 @@ const translations = {
     "modulo-salud.boton": "🚀 Empecemos",
 
     // MODULO 1 LECCION
+
     "modulo-salud.video": "🎥 Video recomendado",
     "modulo-salud.video.descripcion": "Antes de continuar, mira este breve video sobre el uso de la tecnología:",
     "modulo-salud.titulo": "📈💻 ¿Por qué es importante cuidar el tiempo en pantalla?  📺📊",
@@ -99,6 +105,7 @@ const translations = {
     "actividad1.correcto": "✅ ¡Correcto! Juan avanza.",
 
     //QUIZ
+
     "modulo-salud.titulo.quiz": "🧠 Pon a prueba lo que aprendiste",
     "quiz1.p1": "¿Cuál de estos efectos puede causar pasar demasiado tiempo frente a una pantalla?",
     "quiz1.p1.a": "Mejora la calidad del sueño",
@@ -162,6 +169,7 @@ const translations = {
     "modulo-salud.boton.siguiente": "Siguiente módulo →",
 
     // INTRO MODULO 2
+
     "modulo-estafas.consejos.titulo": "⚠️ Estafas digitales",
     "modulo-estafas.consejos.descripcion": "Las estafas digitales son intentos de engañar a las personas para obtener información personal, dinero u otros beneficios. Pueden presentarse en correos electrónicos, mensajes de texto, redes sociales o sitios web falsos.",
     "modulo-estafas.consejos": "📝 Consejos prácticos",
@@ -187,6 +195,7 @@ const translations = {
     "modulo-estafas.boton.inicio": "🚀 Empecemos",
 
     // MODULO 2 LECCION
+
     "modulo-estafas.video": "🎥 Video recomendado",
     "modulo-estafas.video.descripcion": "Antes de continuar, mira este breve video sobre estafas digitales:",
     "modulo-estafas.titulo": "⚠️ Estafas digitales: cómo protegernos",
@@ -207,13 +216,23 @@ const translations = {
     "modulo-estafas.list2.item5": "Te ofrecen algo <span class=\"highlight3\">demasiado bueno para ser verdad</span>",
     "modulo-estafas.recuerda": "<strong>Recuerda:</strong> Tomarte unos segundos para verificar un mensaje puede evitar muchos problemas. Ante cualquier duda, es mejor confirmar la información antes de compartir datos personales o realizar un pago.",
     "modulo-estafas.fuente": "<strong>¿Quieres saber más?</strong> La Oficina de Seguridad del Internauta explica cómo protegerse del phishing<br>",
+
     //Actividad estafas
+
     "modulo-estafas.actividad.titulo":"Actividad",
     "modulo-estafas.actividad.descripcion": "Juan ha recibido varios mensajes hoy. Ayúdalo a identificar cuáles son estafas y cuáles son legítimos.",
     "modulo-estafas.actividad.boton.iniciar":"📱 Ver mensajes de Juan",
     "modulo-estafas.actividad.dialogo":"📩 ¡Tengo mensajes!",
-    "actividad-estafas.mensaje.final1":"🎉 ¡Bien hecho!",
-    "actividad-estafas.mesaje.final":"Juan pudo identificar los mensajes gracias a tu ayuda. Recuerda: ante cualquier mensaje sospechoso, lo mejor es no hacer clic, no compartir datos y verificar directamente con la fuente oficial."
+
+    "modulo-estafas.mesaje1": "Estimado cliente, su cuenta ha sido comprometida. Haga clic en el siguiente enlace para verificar su identidad o su cuenta será bloqueada en 24 horas: www.banco-seguro-verify.com",
+    "modulo-estafas.mensaje1.opcionA": "Hago clic en el enlace para verificar mi cuenta.",
+    "modulo-estafas.mensaje1.opcionB": "No hago clic. Llamo directamente al número oficial del banco.",
+    "modulo-estafas.mensaje1.opcionC": "Respondo el correo con mis datos para desbloquear la cuenta.",
+    "modulo-estafas.explicacion.correcta1": "✅ ¡Correcto! Los bancos nunca te piden verificar datos por enlaces en correos. Siempre llama al número oficial.",
+    "modulo-estafas.explicacion.error": "❌ Este es un correo de phishing. El remitente es desconocido y crea urgencia para que actúes sin pensar. Nunca hagas clic en esos enlaces.",
+
+    "actividad-estafas.mensaje.final1": "🎉 ¡Bien hecho!",
+    "actividad-estafas.mesaje.final": "Juan pudo identificar los mensajes gracias a tu ayuda. Recuerda: ante cualquier mensaje sospechoso, lo mejor es no hacer clic, no compartir datos y verificar directamente con la fuente oficial."
   },
 
   //ENGLISH
@@ -374,6 +393,7 @@ const translations = {
     "modulo-salud.mensaje.cambio6": "🧩 Do a crossword puzzle or jigsaw puzzle",
     "modulo-salud.mensaje.cambio7": "🌱 Water the plants or go out on the balcony",
     "modulo-salud.mensaje.cambio8": "Technology is a tool, not a mandatory pastime.",
+    
     "modulo-salud.boton.resultado": "See my result 🎯",
     "modulo-salud.mensaje.puntaje": "You got <strong>{respuestasCorrectas} out of {total}</strong> correct answers.",
     "modulo-salud.boton.inicio": "← Back to Home",
@@ -432,7 +452,7 @@ const translations = {
     "modulo-estafas.actividad.boton.iniciar":"📱 View Juan's messages",
     "modulo-estafas.actividad.dialogo":"📩 I have messages! ",
 
-
+    "modulo-estafas.mensaje1":"Estimado cliente, su cuenta ha sido comprometida. Haga clic en el siguiente enlace para verificar su identidad o su cuenta será bloqueada en 24 horas: www.banco-seguro-verify.com",
     "actividad-estafas.mensaje.final1":"🎉 Well done!",
     "actividad-estafas.mensaje.final":"Juan was able to identify the messages with your help. Remember: if you receive a suspicious message, it’s best not to click on anything, not to share any personal information, and to verify it directly with the official source."
   }
