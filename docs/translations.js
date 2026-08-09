@@ -207,8 +207,10 @@ const translations = {
     "modulo-estafas.list2.item5": "Te ofrecen algo <span class=\"highlight3\">demasiado bueno para ser verdad</span>",
     "modulo-estafas.recuerda": "<strong>Recuerda:</strong> Tomarte unos segundos para verificar un mensaje puede evitar muchos problemas. Ante cualquier duda, es mejor confirmar la información antes de compartir datos personales o realizar un pago.",
     "modulo-estafas.fuente": "<strong>¿Quieres saber más?</strong> La Oficina de Seguridad del Internauta explica cómo protegerse del phishing<br>",
+    //Actividad estafas
     "modulo-estafas.actividad.titulo":"Actividad",
-    "modulo-estafas.actividad.descripcion": "Juan ha recibido varios mensajes hoy. Ayúdalo a identificar cuáles son estafas y cuáles son legítimos."
+    "modulo-estafas.actividad.descripcion": "Juan ha recibido varios mensajes hoy. Ayúdalo a identificar cuáles son estafas y cuáles son legítimos.",
+    "modulo-estafas.actividad.boton.iniciar":"📱 Ver mensajes de Juan",
   },
 
   //ENGLISH
@@ -420,9 +422,10 @@ const translations = {
     "modulo-estafas.list2.item5": "They offer you something <span class=\"highlight3\">too good to be true</span>",
     "modulo-estafas.recuerda": "<strong>Remember:</strong> Taking a few seconds to verify a message can prevent many problems. When in doubt, it's better to confirm the information before sharing personal data or making a payment.",
     "modulo-estafas.fuente": "📚 <strong>Want to learn more?</strong> <br>",
+    //Activity 
     "modulo-estafas.actividad.titulo": "Activity",
-    "modulo-estafas.actividad.descripcion": "",
-    "modulo-estafas.actividad.boton.reiniciar":"",
+    "modulo-estafas.actividad.descripcion": "Juan has received several messages today. Help him identify which ones are scams and which ones are legitimate.",
+    "modulo-estafas.actividad.boton.iniciar":"📱 View Juan's messages",
   }
 };
 
