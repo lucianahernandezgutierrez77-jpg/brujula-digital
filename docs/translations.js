@@ -211,6 +211,9 @@ const translations = {
     "modulo-estafas.actividad.titulo":"Actividad",
     "modulo-estafas.actividad.descripcion": "Juan ha recibido varios mensajes hoy. Ayúdalo a identificar cuáles son estafas y cuáles son legítimos.",
     "modulo-estafas.actividad.boton.iniciar":"📱 Ver mensajes de Juan",
+    "modulo-estafas.actividad.dialogo":"📩 ¡Tengo mensajes!",
+    "actividad-estafas.mensaje.final1":"🎉 ¡Bien hecho!",
+    "actividad-estafas.mesaje.final":"Juan pudo identificar los mensajes gracias a tu ayuda. Recuerda: ante cualquier mensaje sospechoso, lo mejor es no hacer clic, no compartir datos y verificar directamente con la fuente oficial."
   },
 
   //ENGLISH
@@ -422,10 +425,14 @@ const translations = {
     "modulo-estafas.list2.item5": "They offer you something <span class=\"highlight3\">too good to be true</span>",
     "modulo-estafas.recuerda": "<strong>Remember:</strong> Taking a few seconds to verify a message can prevent many problems. When in doubt, it's better to confirm the information before sharing personal data or making a payment.",
     "modulo-estafas.fuente": "📚 <strong>Want to learn more?</strong> <br>",
+
     //Activity 
     "modulo-estafas.actividad.titulo": "Activity",
     "modulo-estafas.actividad.descripcion": "Juan has received several messages today. Help him identify which ones are scams and which ones are legitimate.",
     "modulo-estafas.actividad.boton.iniciar":"📱 View Juan's messages",
+    "modulo-estafas.actividad.dialogo":"📩 I have messages! ",
+    "actividad-estafas.mensaje.final1":"🎉 Well done!",
+    "actividad-estafas.mensaje.final":"Juan was able to identify the messages with your help. Remember: if you receive a suspicious message, it’s best not to click on anything, not to share any personal information, and to verify it directly with the official source."
   }
 };
 

@@ -437,7 +437,7 @@ function iniciarActividadEstafas() {
 
   notificacion.classList.add("ping-animado");
 
-  dialogo.textContent = "📩 ¡Tengo mensajes!";
+  dialogo.textContent = t("modulo-estafas.actividad.dialogo");
   dialogo.classList.add("visible");
 
   iniciarAnimacionJuanEstafas();
