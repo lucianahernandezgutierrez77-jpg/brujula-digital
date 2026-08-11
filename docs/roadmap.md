@@ -1,7 +1,7 @@
 ## What's Next for Digital Compass
 Digital Compass is still growing. Some of my next goals for the project include:
 
-- Finishing Module 4.
+- Finishing Module 4. 
 - Allowing users to create accounts and save their learning progress.
 - Adding progress tracking between sessions.
 - Creating a space for comments and community feedback.

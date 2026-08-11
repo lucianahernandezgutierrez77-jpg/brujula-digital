@@ -224,7 +224,7 @@ const translations = {
     "modulo-estafas.actividad.boton.iniciar":"📱 Ver mensajes de Juan",
     "modulo-estafas.actividad.dialogo":"📩 ¡Tengo mensajes!",
 
-    "modulo-estafas.mesaje1": "Estimado cliente, su cuenta ha sido comprometida. Haga clic en el siguiente enlace para verificar su identidad o su cuenta será bloqueada en 24 horas: www.banco-seguro-verify.com",
+    "modulo-estafas.mensaje1": "Estimado cliente, su cuenta ha sido comprometida. Haga clic en el siguiente enlace para verificar su identidad o su cuenta será bloqueada en 24 horas: www.banco-seguro-verify.com",
     "modulo-estafas.mensaje1.opcionA": "Hago clic en el enlace para verificar mi cuenta.",
     "modulo-estafas.mensaje1.opcionB": "No hago clic. Llamo directamente al número oficial del banco.",
     "modulo-estafas.mensaje1.opcionC": "Respondo el correo con mis datos para desbloquear la cuenta.",
@@ -452,7 +452,14 @@ const translations = {
     "modulo-estafas.actividad.boton.iniciar":"📱 View Juan's messages",
     "modulo-estafas.actividad.dialogo":"📩 I have messages! ",
 
-    "modulo-estafas.mensaje1":"Estimado cliente, su cuenta ha sido comprometida. Haga clic en el siguiente enlace para verificar su identidad o su cuenta será bloqueada en 24 horas: www.banco-seguro-verify.com",
+    "modulo-estafas.mensaje1": "Dear customer, your account has been compromised. Click the following link to verify your identity or your account will be blocked within 24 hours: [www.banco-seguro-verify.com](http://www.banco-seguro-verify.com)",
+    "modulo-estafas.mensaje1.opcionA": "I click the link to verify my account.",
+    "modulo-estafas.mensaje1.opcionB": "I don't click the link. I call the bank's official number directly.",
+    "modulo-estafas.mensaje1.opcionC": "I reply to the email with my personal information to unlock the account.",
+    "modulo-estafas.explicacion.correcta1": "✅ Correct! Banks never ask you to verify your information through links in emails. Always call the official number.",
+    "modulo-estafas.explicacion.error": "❌ This is a phishing email. The sender is unknown and creates a sense of urgency to make you act without thinking. Never click on those links.",
+
+    "modulo-estafas.mensaje1":"Dear customer, your account has been compromised. Click the following link to verify your identity or your account will be blocked within 24 hours: [www.banco-seguro-verify.com](http://www.banco-seguro-verify.com)",
     "actividad-estafas.mensaje.final1":"🎉 Well done!",
     "actividad-estafas.mensaje.final":"Juan was able to identify the messages with your help. Remember: if you receive a suspicious message, it’s best not to click on anything, not to share any personal information, and to verify it directly with the official source."
   }
