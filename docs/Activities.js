@@ -341,7 +341,7 @@ const mensajesEstafas = [
     tipo: "correo",
     app: "📧",
     contacto: "banco.seguridad@notificaciones-urgentes.com",
-    mensaje: t("modulo-estafas.mesaje1"),
+    mensaje: t("modulo-estafas.mensaje1"),
     hora: "10:34 a.m.",
     esEstafa: true,
     opcionCorrecta: 1,

@@ -176,7 +176,7 @@ const translations = {
 
     "titulo-estafas.consejo1": "Desconfía de la urgencia",
     "descripcion1-estafas.consejo1": "¿Alguna vez has recibido un mensaje diciendo que tu cuenta será bloqueada si no actúas de inmediato?",
-    "descripcion1-estafas.consejo1": "Ese tipo de mensajes buscan generar miedo o urgencia para que tomemos decisiones sin pensar. Si recibes un aviso así, detente unos segundos y verifica la información antes de actuar.",
+    "descripcion2-estafas.consejo1": "Ese tipo de mensajes buscan generar miedo o urgencia para que tomemos decisiones sin pensar. Si recibes un aviso así, detente unos segundos y verifica la información antes de actuar.",
 
     "titulo-estafas.consejo2": "Nunca compartas datos personales",
     "descripcion1-estafas.consejo2": "¿Te han pedido alguna vez una contraseña o un código por mensaje o llamada?",
@@ -232,7 +232,7 @@ const translations = {
     "modulo-estafas.explicacion.error": "❌ Este es un correo de phishing. El remitente es desconocido y crea urgencia para que actúes sin pensar. Nunca hagas clic en esos enlaces.",
 
     "actividad-estafas.mensaje.final1": "🎉 ¡Bien hecho!",
-    "actividad-estafas.mesaje.final": "Juan pudo identificar los mensajes gracias a tu ayuda. Recuerda: ante cualquier mensaje sospechoso, lo mejor es no hacer clic, no compartir datos y verificar directamente con la fuente oficial."
+    "actividad-estafas.mensaje.final": "Juan pudo identificar los mensajes gracias a tu ayuda. Recuerda: ante cualquier mensaje sospechoso, lo mejor es no hacer clic, no compartir datos y verificar directamente con la fuente oficial."
   },
 
   //ENGLISH
@@ -406,7 +406,7 @@ const translations = {
 
     "titulo-estafas.consejo1": "Be wary of urgency",
     "descripcion1-estafas.consejo1": "Have you ever received a message saying that your account will be blocked if you don't act immediately?",
-    "descripcion1-estafas.consejo1": "These types of messages aim to create fear or urgency so that we make decisions without thinking. If you receive such a notice, take a few seconds to verify the information before acting.",
+    "descripcion2-estafas.consejo1": "These types of messages aim to create fear or urgency so that we make decisions without thinking. If you receive such a notice, take a few seconds to verify the information before acting.",
 
     "titulo-estafas.consejo2": "Never share personal information",
     "descripcion1-estafas.consejo2": "Have you ever been asked for a password or code via message or call?",
@@ -452,14 +452,13 @@ const translations = {
     "modulo-estafas.actividad.boton.iniciar":"📱 View Juan's messages",
     "modulo-estafas.actividad.dialogo":"📩 I have messages! ",
 
-    "modulo-estafas.mensaje1": "Dear customer, your account has been compromised. Click the following link to verify your identity or your account will be blocked within 24 hours: [www.banco-seguro-verify.com](http://www.banco-seguro-verify.com)",
+    "modulo-estafas.mensaje1": "Dear customer, your account has been compromised. Click the following link to verify your identity or your account will be blocked within 24 hours: www.banco-seguro-verify.com",
     "modulo-estafas.mensaje1.opcionA": "I click the link to verify my account.",
     "modulo-estafas.mensaje1.opcionB": "I don't click the link. I call the bank's official number directly.",
     "modulo-estafas.mensaje1.opcionC": "I reply to the email with my personal information to unlock the account.",
     "modulo-estafas.explicacion.correcta1": "✅ Correct! Banks never ask you to verify your information through links in emails. Always call the official number.",
     "modulo-estafas.explicacion.error": "❌ This is a phishing email. The sender is unknown and creates a sense of urgency to make you act without thinking. Never click on those links.",
 
-    "modulo-estafas.mensaje1":"Dear customer, your account has been compromised. Click the following link to verify your identity or your account will be blocked within 24 hours: [www.banco-seguro-verify.com](http://www.banco-seguro-verify.com)",
     "actividad-estafas.mensaje.final1":"🎉 Well done!",
     "actividad-estafas.mensaje.final":"Juan was able to identify the messages with your help. Remember: if you receive a suspicious message, it’s best not to click on anything, not to share any personal information, and to verify it directly with the official source."
   }
