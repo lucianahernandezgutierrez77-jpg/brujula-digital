@@ -347,7 +347,7 @@ const mensajesEstafas = [
     opcionCorrecta: 1,
     opciones: [ t("modulo-estafas.mensaje1.opcionA") , t("modulo-estafas.mensaje1.opcionB"), t("modulo-estafas.mensaje1.opcionC") ],
     explicacionCorrecta: t("modulo-estafas.explicacion.correcta1"),
-    explicacionError: t("modulo-pasoEstafas.explicacion.error"),
+    explicacionError: t("modulo-estafas.explicacion.error"),
   },
   {
     tipo: "whatsapp",

@@ -1,39 +1,106 @@
 const translations = {
-  //ESPANOL
 
-  es: {
-    // HEADER
+  // HEADER
 
-    "header.titulo": "🧭 Brújula Digital",
-    "header.subtitulo": "Usa la tecnología de forma más segura, consciente y saludable.",
+  "header.titulo": {
+    es: "🧭 Brújula Digital",
+    en: "🧭 Digital Compass",
+  },
 
-    // HOME 
+  "header.subtitulo": {
+    es: "Usa la tecnología de forma más segura, consciente y saludable.",
+    en: "Use technology in a safer, more conscious, and healthier way.",
+  },
 
-    "home.titulo": "Bienvenido 👋",
-    "home.descripcion": "Cada paso que das en el mundo digital es una oportunidad para aprender, descubrir y sentirte más seguro al usar la tecnología.",
-    "home.btn": "Comenzar",
+  // HOME
 
-    // MODULOS 
+  "home.titulo": {
+    es: "Bienvenido 👋",
+    en: "Welcome 👋",
+  },
 
-    "modulos.titulo": "Módulos",
-    "modulos.salud": "📱 Uso saludable de dispositivos",
-    "modulos.estafas": "⚠️ Estafas digitales",
-    "modulos.deepfakes": "🤖 Deepfakes y desinformación",
-    "modulos.privacidad": "🔒 Privacidad y seguridad",
+  "home.descripcion": { 
+  es: "Cada paso que das en el mundo digital es una oportunidad para aprender, descubrir y sentirte más seguro al usar la tecnología.",
+  en: "Every step you take in the digital world is an opportunity to learn, discover, and feel more confident using technology.",
+  },
 
-    // INTRO MODULO 1
+  "home.btn": {
+  es:"Comenzar",
+  en:"Get started",
+  },
 
-    "modulo-salud.consejos.titulo": "📱 Uso saludable de dispositivos",
-    "modulo-salud.consejos.descripcion": "La tecnología puede ser una herramienta poderosa para aprender, comunicarnos y descubrir nuevas oportunidades. Sin embargo, también es importante aprender a usarla con equilibrio, ya que un uso excesivo puede afectar nuestra salud y bienestar.",
-    "modulo-salud.consejos": "📝 Consejos prácticos",
+  // MODULOS 
+  "modulos.titulo":{
+  es: "Módulos",
+  en: "Modules", 
+  },
 
-    "titulo.consejo1": "Regla 20-20-20",
-    "descripcion1.consejo1": "¿Alguna vez has sentido los ojos cansados o resecos después de usar el celular por mucho tiempo?",
-    "descripcion2.consejo1": "Nuestros ojos también necesitan descansar. Cada 20 minutos, mira algo que esté a unos 6 metros de distancia durante 20 segundos. Este pequeño hábito puede ayudar a reducir la fatiga visual.",
+  "modulos.salud": {
+    es: "📱 Uso saludable de dispositivos",
+    en: "📱 Healthy Device Use",
+  },
 
-    "titulo.consejo2": "Modo nocturno",
-    "descripcion1.consejo2": "¿Te ha pasado que te cuesta dormir después de usar el teléfono por la noche?",
-    "descripcion2.consejo2": "La luz azul de las pantallas puede interferir con el sueño. Intenta activar el modo nocturno o la luz cálida después de las 7:00 p. m.",
+  "modulos.estafas": {
+  es : "⚠️ Estafas digitales",
+  en : "⚠️ Digital Scams",
+  },
+
+  "modulos.deepfakes": {
+    es: "🤖 Deepfakes y desinformación",
+    en: "🤖 Deepfakes and Misinformation",
+  },
+
+  "modulos.privacidad": {
+    es: "🔒 Privacidad y seguridad",
+    en: "🔒 Privacy and Security",
+  },
+
+  "modulo-salud.consejos.titulo": {
+    es: "📱 Uso saludable de dispositivos",
+    en: "📱 Healthy Device Use",
+  },
+
+  "modulo-salud.consejos descripcion": {
+    es: "La tecnología puede ser una herramienta poderosa para aprender, comunicarnos y descubrir nuevas oportunidades. Sin embargo, también es importante aprender a usarla con equilibrio, ya que un uso excesivo puede afectar nuestra salud y bienestar.",
+    en: "Technology can be a powerful tool for learning, communicating, and discovering new opportunities. However, it is also important to use it in a balanced way, since excessive use can affect our health and well-being.",
+  },
+
+  "modulo-salud.consejos": {
+    es: "📝 Consejos prácticos",
+    en: "📝 Practical Tips",
+  },
+
+  "titulo.consejo1": {
+    es: "Regla 20-20-20",
+    en: "20-20-20 Rule",
+  },
+
+  "descripcion1.consejo1": {
+    es: "¿Alguna vez has sentido los ojos cansados o resecos después de usar el celular por mucho tiempo?",
+    en: "Have you ever felt tired or dry eyes after using your phone for a long time?",
+  },
+
+  "descripcion2.consejo1": {
+    es: "Nuestros ojos también necesitan descansar. Cada 20 minutos, mira algo que esté a unos 6 metros de distancia durante 20 segundos. Este pequeño hábito puede ayudar a reducir la fatiga visual.",
+    en: "Our eyes also need to rest. Every 20 minutes, look at something about 6 meters away for 20 seconds. This small habit can help reduce eye strain.",
+  },
+
+  "titulo.consejo2": {
+    es: "Modo nocturno",
+    en: "Night Mode",
+  },
+
+  "descripcion1.consejo2": {
+    es: "¿Te ha pasado que te cuesta dormir después de usar el teléfono por la noche?",
+    en: "Have you ever had trouble falling asleep after using your phone at night?",
+  },
+
+  "descripcion2.consejo2" {
+    es: "La luz azul de las pantallas puede interferir con el sueño. Intenta activar el modo nocturno o la luz cálida después de las 7:00 p. m.",
+    en: "The blue light from screens can interfere with sleep. Try enabling night mode or warm lighting after 7:00 PM.",
+  },
+
+  }
 
     "titulo.consejo3": "Zona sin pantallas",
     "descripcion1.consejo3": "¿Cuántas veces has mirado el celular durante una comida o justo antes de dormir?",
@@ -236,34 +303,6 @@ const translations = {
   },
 
   //ENGLISH
-  en: {
-
-    // HEADER 
-    "header.titulo": "🧭 Digital Compass",
-    "header.subtitulo": "Use technology in a safer, more conscious, and healthier way.",
-
-    // HOME 
-    "home.titulo": "Welcome 👋",
-    "home.descripcion": "Every step you take in the digital world is an opportunity to learn, discover, and feel more confident using technology.",
-    "home.btn": "Get Started",
-
-    // MODULES 
-    "modulos.titulo": "Modules",
-    "modulos.salud": "📱 Healthy Device Use",
-    "modulos.estafas": "⚠️ Digital Scams",
-    "modulos.deepfakes": "🤖 Deepfakes and Misinformation",
-    "modulos.privacidad": "🔒 Privacy and Security",
-
-    // INTRO MODULE 1 
-    "modulo-salud.consejos.titulo": "📱 Healthy Device Use",
-    "modulo-salud.consejos.descripcion": "Technology can be a powerful tool for learning, communicating, and discovering new opportunities. However, it is also important to use it in a balanced way, since excessive use can affect our health and well-being.",
-    "modulo-salud.consejos": "📝 Practical Tips",
-
-    "titulo.consejo1": "20-20-20 Rule",
-    "descripcion1.consejo1": "Have you ever felt tired or dry eyes after using your phone for a long time?",
-    "descripcion2.consejo1": "Our eyes also need to rest. Every 20 minutes, look at something about 6 meters away for 20 seconds. This small habit can help reduce eye strain.",
-
-    "titulo.consejo2": "Night Mode",
     "descripcion1.consejo2": "Have you ever had trouble falling asleep after using your phone at night?",
     "descripcion2.consejo2": "The blue light from screens can interfere with sleep. Try enabling night mode or warm lighting after 7:00 PM.",
 
@@ -460,7 +499,29 @@ const translations = {
     "modulo-estafas.explicacion.error": "❌ This is a phishing email. The sender is unknown and creates a sense of urgency to make you act without thinking. Never click on those links.",
 
     "actividad-estafas.mensaje.final1":"🎉 Well done!",
-    "actividad-estafas.mensaje.final":"Juan was able to identify the messages with your help. Remember: if you receive a suspicious message, it’s best not to click on anything, not to share any personal information, and to verify it directly with the official source."
+    "actividad-estafas.mensaje.final":"Juan was able to identify the messages with your help. Remember: if you receive a suspicious message, it’s best not to click on anything, not to share any personal information, and to verify it directly with the official source.",
+
+ 
+    //INTRO MODULE 3
+   "modulo-deepfakes.consejos.titulo": {
+    es: "🤖 Deepfakes y desinformación",
+    en: "🤖 Deepfakes and misinformation",
+   },
+
+   "modulo-deepfakes.consejos.descripcion": {
+    es: "Hoy en día, internet nos permite acceder a una enorme cantidad de información, imágenes y videos en cuestión de segundos. Sin embargo, no todo lo que vemos es verdadero. Aprender a reconocer información falsa y contenidos creados con inteligencia artificial nos ayudará a navegar con mayor seguridad y confianza.",
+    en: "Nowadays, the internet gives us access to a huge amount of information, images, and videos in just a few seconds. However, not everything we see is true. Learning to recognize false information and content created with artificial intelligence will help us navigate the internet more safely and confidently.",
+   },
+
+   
+
+    //MODULE 3 LESSON
+    //MODULE 3 ACTIVITY
+
+    //INTRO MODULE 4
+    // MODULE 4 LESSON
+    //MODULE 4 ACTIVITY
+
   }
 };
 
