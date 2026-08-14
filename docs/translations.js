@@ -95,81 +95,284 @@ const translations = {
     en: "Have you ever had trouble falling asleep after using your phone at night?",
   },
 
-  "descripcion2.consejo2" {
+  "descripcion2.consejo2": {
     es: "La luz azul de las pantallas puede interferir con el sueño. Intenta activar el modo nocturno o la luz cálida después de las 7:00 p. m.",
     en: "The blue light from screens can interfere with sleep. Try enabling night mode or warm lighting after 7:00 PM.",
   },
 
-  }
+  "titulo.consejo3": {
+    es: "Zona sin pantallas",
+    en: "Screen-Free Zone",
+  },
 
-    "titulo.consejo3": "Zona sin pantallas",
-    "descripcion1.consejo3": "¿Cuántas veces has mirado el celular durante una comida o justo antes de dormir?",
-    "descripcion2.consejo3": "A veces, dejar el celular a un lado también hace bien. Aprovecha esos momentos para descansar, conversar o disfrutar del tiempo con las personas que te rodean.",
+  "descripcion1.consejo3": {
+    es: "¿Cuántas veces has mirado el celular durante una comida o justo antes de dormir?",
+    en: "How many times have you looked at your phone during a meal or right before going to bed?", 
+  },
 
-    "titulo.consejo4": "Postura",
-    "descripcion1.consejo4": "¿Alguna vez has sentido tensión o dolor en el cuello después de usar el teléfono?",
-    "descripcion2.consejo4": "Muchas veces se debe a la postura. Procura sostener el dispositivo a la altura de los ojos para evitar molestias en el cuello y la espalda.",
+  "descripcion2.consejo3": {
+    es: "A veces, dejar el celular a un lado también hace bien. Aprovecha esos momentos para descansar, conversar o disfrutar del tiempo con las personas que te rodean.",
+    en: "Sometimes, leaving your phone aside also does good. Take advantage of these moments to rest, chat, or enjoy time with the people around you.",
+  },
 
-    "modulo-salud.meta": "🎯 Meta del módulo",
-    "modulo-salud.meta.descripcion": "Descubrir cómo pequeños cambios en nuestros hábitos digitales pueden ayudarnos a disfrutar la tecnología de una manera más equilibrada, saludable y consciente. 🧭💙",
-    "modulo-salud.boton": "🚀 Empecemos",
+  "titulo.consejo4": {
+    es: "Postura",
+    en: "Posture",
+  },
 
-    // MODULO 1 LECCION
+  "descripcion1.consejo4": {
+    es: "¿Alguna vez has sentido tensión o dolor en el cuello después de usar el teléfono?",
+    en: "Have you ever felt tension or pain in your neck after using your phone?",
+  },
 
-    "modulo-salud.video": "🎥 Video recomendado",
-    "modulo-salud.video.descripcion": "Antes de continuar, mira este breve video sobre el uso de la tecnología:",
-    "modulo-salud.titulo": "📈💻 ¿Por qué es importante cuidar el tiempo en pantalla?  📺📊",
-    "modulo-salud.descripcion": "Nuestro tiempo es valioso. Cada momento que pasamos frente a una pantalla es un <span class = highlight5>momento que también podríamos dedicar a descansar, realizar actividad física, conversar con nuestra familia o simplemente disfrutar</span> de lo que sucede a nuestro alrededor.",
-    "modulo-salud.descripcion2": "¿Esto significa que la tecnología es mala? No. La tecnología puede ser una herramienta increíble para aprender, entretenernos y mantenernos conectados. Pero, como una espada de doble filo, su impacto depende de cómo la usamos.",
-    "modulo-salud.descripcion3": "Pasar demasiado tiempo frente a una pantalla puede afectar:",
+  "descripcion2.consejo4": {
+    es: "Muchas veces se debe a la postura. Procura sostener el dispositivo a la altura de los ojos para evitar molestias en el cuello y la espalda.",
+    en: "Many times this is due to posture. Try to hold the device at eye level to avoid discomfort in your neck and back.",
+  },
 
-    "modulo-salud.list.item1": "<span class = 'subtitle'>El sueño</span> 😴 — Usar pantallas hasta muy tarde puede hacer que nos cueste más dormir.",
-    "modulo-salud.list.item2": "<span class = 'subtitle'> La actividad física</span> 🚶 — A veces pasamos horas sentados sin darnos cuenta.",
-    "modulo-salud.list.item3": "<span class = 'subtitle'> El bienestar emocional</span> 😔 — Estar constantemente conectados o recibir demasiada información puede hacernos sentir agotados o estresados.",
+  "modulo-salud.meta": { 
+  es: "🎯 Meta del módulo",
+  en: "🎯 Module Goal", 
+  },
 
-    "modulo-salud.descripcion4": "<span class=\"highlight3\">No se trata de dejar de usar la tecnología, sino de aprender a utilizarla de una forma que beneficie nuestra salud y nuestro bienestar.</span>",
-    "modulo-salud.descripcion5": "📚 <strong>¿Quieres saber más?</strong> La Comisión Europea explica los efectos del tiempo excesivo en pantalla:<br>",
-    "modulo-salud.actividad.titulo": "<span class=\"subtitle2\">Actividad  </span>",
-    "modulo-salud.actividad.descripcion": "Después de pasar un tiempo usando el computador, Juan decidió salir a caminar para descansar su vista y mover el cuerpo. Responde correctamente las preguntas para ayudarlo a completar su recorrido.",
-    
-    //ACTIVIDAD
+  "modulo-salud.meta.descripcion": {
+    es: "Descubrir cómo pequeños cambios en nuestros hábitos digitales pueden ayudarnos a disfrutar la tecnología de una manera más equilibrada, saludable y consciente. 🧭💙",
+    en: "Discover how small changes in our digital habits can help us enjoy technology in a more balanced, healthy, and conscious way. 🧭💙",
+  },
+
+  "modulo-salud.boton": {
+    es: "🚀 Empecemos",
+    en: "🚀 Let's get started"
+  },
+
+  // MODULO 1 LECCION
+
+  "modulo-salud.video": { 
+    es: "🎥 Video recomendado",
+    en: "🎥 Recommended Video",
+  },
+
+  "modulo-salud.video.descripcion": {
+    es: "Antes de continuar, mira este breve video sobre el uso de la tecnología:",
+    en: "Before continuing, watch this brief video about technology use:",
+  },
+
+  "modulo-salud.titulo": { 
+    es: "📈💻 ¿Por qué es importante cuidar el tiempo en pantalla?  📺📊",
+    en: "📈💻 Why is it important to manage screen time?  📺📊",
+  },
+
+  "modulo-salud.descripcion": {
+    es: "Nuestro tiempo es valioso. Cada momento que pasamos frente a una pantalla es un <span class = highlight5>momento que también podríamos dedicar a descansar, realizar actividad física, conversar con nuestra familia o simplemente disfrutar</span> de lo que sucede a nuestro alrededor.",
+    en: "Our time is valuable. Every moment we spend in front of a screen is a <span class = highlight5>moment that we could also dedicate to resting, engaging in physical activity, talking with our family, or simply enjoying</span> what is happening around us.",
+  },
+
+  "modulo-salud.descripcion2": {
+    es: "¿Esto significa que la tecnología es mala? No. La tecnología puede ser una herramienta increíble para aprender, entretenernos y mantenernos conectados. Pero, como una espada de doble filo, su impacto depende de cómo la usamos.",
+    en: "Does this mean that technology is bad? No. Technology can be an incredible tool for learning, entertainment, and staying connected. However, like a double-edged sword, its impact depends on how we use it.",
+  },
+
+  "modulo-salud.descripcion3": {
+    es: "Pasar demasiado tiempo frente a una pantalla puede afectar:",
+    en: "Spending too much time in front of a screen can affect:",
+  },
+
+  "modulo-salud.list.item1": {
+    es: "<span class = 'subtitle'>El sueño</span> 😴 — Usar pantallas hasta muy tarde puede hacer que nos cueste más dormir.",
+    en: "<span class = 'subtitle'>Sleep</span> 😴 — Using screens late at night can make it harder for us to fall asleep.",
+  },
+
+  "modulo-salud.list.item2": {
+    es: "<span class = 'subtitle'> La actividad física</span> 🚶 — A veces pasamos horas sentados sin darnos cuenta.",
+    en: "<span class = 'subtitle'>Physical Activity</span> 🚶 — Sometimes we spend hours sitting without realizing it.",
+  },
+
+  "modulo-salud.list.item3": {
+    es: "<span class = 'subtitle'> El bienestar emocional</span> 😔 — Estar constantemente conectados o recibir demasiada información puede hacernos sentir agotados o estresados.",
+    en: "<span class = 'subtitle'>Emotional Well-being</span> 😔 — Being constantly connected or receiving too much information can make us feel exhausted or stressed.",
+  },
+
+  "modulo-salud.descripcion4": {
+    es: "<span class=\"highlight3\">No se trata de dejar de usar la tecnología, sino de aprender a utilizarla de una forma que beneficie nuestra salud y nuestro bienestar.</span>",
+    en: "<span class=\"highlight3\">It's not about stopping the use of technology, but rather learning to use it in a way that benefits our health and well-being.</span>",
+  },
+
+  "modulo-salud.descripcion5": {
+    es: "📚 <strong>¿Quieres saber más?</strong> La Comisión Europea explica los efectos del tiempo excesivo en pantalla:<br>",
+    en: "📚 <strong>Want to learn more?</strong> The European Commission explains the effects of excessive screen time:<br>",
+  },
+
+  //ACTIVIDAD
+
+  "modulo-salud.actividad.titulo": {
+    es: "<span class=\"subtitle2\">Actividad  </span>",
+    en: "<span class=\"subtitle2\">Activity  </span>",
+  },
+
+  "modulo-salud.actividad.descripcion": {
+    es: "Después de pasar un tiempo usando el computador, Juan decidió salir a caminar para descansar su vista y mover el cuerpo. Responde correctamente las preguntas para ayudarlo a completar su recorrido.",
+    en: "After spending some time using the computer, Juan decided to go for a walk to rest his eyes and move his body. Answer the questions correctly to help him complete his journey.",
+  },
+
+  "actividad1.p1:": {
+    es: "¿Qué es la regla 20-20-20?",
+    en: "What is the 20-20-20 rule?",
+  },
+
+  "actividad1.p1.a": {
+    es: "Cada 20 minutos, mirar algo a 6 metros durante 20 segundos",
+    en: "Every 20 minutes, look at something 6 meters away for 20 seconds",
+  },
+
+  "actividad1.p1.b": {
+    es: "Cada 20 minutos, mirar algo a 6 metros durante 20 segundos",
+    en: "Use the phone for 20 minutes and turn it off for 20 hours",
+  },
+
+  "actividad1.p1.c": {
+    es: "Cargar el teléfono cada 20 minutos",
+    en: "Charge the phone every 20 minutes",
+  },
+
+  "actividad1.p1.d": {
+    es: "Dormir 20 horas cada 20 días",
+    en: "Sleep for 20 hours every 20 days",
+  },
+
+  "actividad1.p1.exp": {
+    es: "La regla 20-20-20 ayuda a reducir la fatiga visual causada por el uso prolongado de pantallas.",
+    en: "The 20-20-20 rule helps reduce eye strain caused by prolonged screen use.",
+  },
+
+  "actividad1.p2": {
+    es: "¿Por qué es importante hacer pausas activas durante el día?",
+    en: "Why is it important to take active breaks during the day?",
+  },
+
+  "actividad1.p2.a": {
+    es: "Para gastar la batería del teléfono",
+    en: "To drain the phone's battery",
+  },
+
+  "actividad1.p2.b": {
+    es: "Para evitar la tensión muscular y el sedentarismo",
+    en: "To prevent muscle tension and sedentary behavior",
+  },
+
+  "actividad1.p2.c": {
+    es: "No son importantes si uno se siente bien",
+    en: "They are not important if one feels fine",
+  },
+
+  "actividad.p2.d": {
+    es: "Solo las necesitan los deportistas",
+    en: "Only athletes need them",
+  },
+
+  "actividad1.p2.exp": {
+    es: "Las pausas activas reducen la tensión en cuello, espalda y ojos causada por el uso prolongado de dispositivos.",
+    en: "Active breaks reduce tension in the neck, back, and eyes caused by prolonged device use.",
+  },
+
+  "actividad1.p3": {
+    es: "¿Qué beneficio tiene salir a caminar después de usar el computador?",
+    en: "What is the benefit of going for a walk after using the computer?",
+  },
+
+  "actividad1.p3.a": {
+    es: "Ninguno, es mejor seguir descansando en el sofá",
+    en: "None, it's better to keep resting on the couch",
+  },
+
+  "actividad1.p3.b": {
+    es: "Ayuda a relajar el cuerpo y descansar la vista",
+    en: "It helps relax the body and rest the eyes",
+  },
+
+  "actividad1.p3.c": {
+    es: "Solo sirve si caminas más de una hora",
+    en: "It only works if you walk for more than an hour",
+  },
+
+  "actividad1.p3.d": {
+    es: "Empeora el cansancio visual",
+    en: "It worsens eye strain",
+  },
   
-    "actividad1.p1": "¿Qué es la regla 20-20-20?",
-    "actividad1.p1.a": "Cada 20 minutos, mirar algo a 6 metros durante 20 segundos",
-    "actividad1.p1.b": "Usar el teléfono 20 minutos y apagarlo 20 horas",
-    "actividad1.p1.c": "Cargar el teléfono cada 20 minutos",
-    "actividad1.p1.d": " Dormir 20 horas cada 20 días",
-    "actividad1.p1.exp": " La regla 20-20-20 ayuda a reducir la fatiga visual causada por el uso prolongado de pantallas.",
+  "actividad1.p3.exp": {
+    es: "Caminar activa el cuerpo y permite que los ojos descansen de la luz de las pantallas.",
+    en: "Walking activates the body and allows the eyes to rest from screen light.",
+  },
 
-    "actividad1.p2": "¿Por qué es importante hacer pausas activas durante el día?",
-    "actividad1.p2.a": "Para gastar la batería del teléfono",
-    "actividad1.p2.b": "Para evitar la tensión muscular y el sedentarismo",
-    "actividad1.p2.c": "No son importantes si uno se siente bien",
-    "actividad1.p2.d": "Solo las necesitan los deportistas",
-    "actividad1.p2.exp": "Las pausas activas reducen la tensión en cuello, espalda y ojos causada por el uso prolongado de dispositivos.",
+  "actividad1.p4": {
+    es: "¿Cada cuánto tiempo se recomienda hacer una pausa al usar pantallas?",
+    en: "How often is it recommended to take a break when using screens?",
+  },
 
-    "actividad1.p3": "¿Qué beneficio tiene salir a caminar después de usar el computador?",
-    "actividad1.p3.a": "Ninguno, es mejor seguir descansando en el sofá",
-    "actividad1.p3.b": "Ayuda a relajar el cuerpo y descansar la vista",
-    "actividad1.p3.c": "Solo sirve si caminas más de una hora",
-    "actividad1.p3.d": "Empeora el cansancio visual",
-    "actividad1.p3.exp": "Caminar activa el cuerpo y permite que los ojos descansen de la luz de las pantallas.",
+  "actividad1.p4.a": {
+    es: "Cada 3 horas",
+    en: "Every 3 hours",
+  },
 
-    "actividad1.p4" : "¿Cada cuánto tiempo se recomienda hacer una pausa al usar pantallas?",
-    "actividad1.p4.a" : "Cada 3 horas",
-    "actividad1.p4.b" : "Cada 20 minutos",
-    "actividad1.p4.c" : "Solo cuando hay dolor de ojos",
-    "actividad1.p4.d" : "Una vez al día",
-    "actividad1.p4.exp" : "Se recomienda hacer una pausa cada 20 minutos para descansar la vista y el cuerpo.",
+  "actividad1.p4.b": {
+    es: "Cada 20 minutos",
+    en: "Every 20 minutes",
+  },
 
-    "modulo-salud.boton.actividad": "🚶 Iniciar actividad",
-    "modulo-salud.mesaje.final1": "🎉 ¡Excelente!",
-    "actividad1.llegue": "¡Llegué! 🏠💪",
-    "modulo-salud.mesaje.final2": "Gracias a tus respuestas, Juan pudo terminar su caminata. Recuerda que levantarte unos minutos, caminar o estirarte después de usar dispositivos electrónicos también ayuda a cuidar tu salud y descansar la vista.",
-    "modulo-salud.mesaje.fallo": "😓 Juan no pudo completar su caminata",
-    "modulo-salud.mesaje.fallo2": "Tuvo demasiados tropiezos en el camino. ¡Pero no te preocupes! Puedes intentarlo de nuevo y ayudarlo a llegar a casa.",
-    "modulo-salud.boton.reiniciar": "🔄 Intentar de nuevo",
-    "actividad1.correcto": "✅ ¡Correcto! Juan avanza.",
+  "actividad1.p4.c": {
+    es: "Solo cuando hay dolor de ojos",
+    en: "Only when there is eye pain",
+  },
+
+  "actividad1.p4.d": {
+    es: "Una vez al día", 
+    en: "Once a day",
+  },
+
+  "actividad1.p4.exp": {
+    es: "Se recomienda hacer una pausa de 20 minutos para descansar la vista y el cuerpo",
+    en: "It is recommended to take a break every 20 minutes to rest the eyes and body.",
+  },
+
+  "modulo-salud.boton.actividad": {
+    es: "🚶 Iniciar actividad",
+    en: "🚶 Start Activity",
+  },
+
+  "modulo-salud.mensaje.final1": {
+    es: "🎉 ¡Excelente!",
+    en: "🎉 Excellent!",
+  },
+
+  "actividad1.llegue": {
+    es: "¡Llegué! 🏠💪",
+    en: "I've arrived! 🏠💪",
+  },
+
+  "modulo-salud.mensaje.final2": {
+    es: "Gracias a tus respuestas, Juan pudo terminar su caminata. Recuerda que levantarte unos minutos, caminar o estirarte después de usar dispositivos electrónicos también ayuda a cuidar tu salud y descansar la vista.",
+    en: "Thanks to your answers, Juan was able to finish his walk. Remember that taking a few minutes to get up, walk, or stretch after using electronic devices also helps take care of your health and rest your eyes.",
+  },
+
+  "modulo-salud.mensaje.fallo": {
+    es: "😓 Juan no pudo completar su caminata",
+    en: "😓 Juan couldn't complete his walk",
+  },
+
+  "modulo-salud.mensaje.fallo2": {
+    es: "Tuvo demasiados tropiezos en el camino. ¡Pero no te preocupes! Puedes intentarlo de nuevo y ayudarlo a llegar a casa.",
+    en: "He had too many trips on the way. But don't worry! You can try again and help him get home.",
+  },
+
+  "modulo-salud.boton.reiniciar": {
+    es: "🔄 Intentar de nuevo",
+    en: "🔄 Try Again",
+  },
+
+  "actividad1.correcto": {
+    es: "✅ ¡Correcto! Juan avanza.",
+    en: "✅ Correct! Juan moves forward.",
+  },
 
     //QUIZ
 
@@ -300,230 +503,9 @@ const translations = {
 
     "actividad-estafas.mensaje.final1": "🎉 ¡Bien hecho!",
     "actividad-estafas.mensaje.final": "Juan pudo identificar los mensajes gracias a tu ayuda. Recuerda: ante cualquier mensaje sospechoso, lo mejor es no hacer clic, no compartir datos y verificar directamente con la fuente oficial."
-  },
-
-  //ENGLISH
-    "descripcion1.consejo2": "Have you ever had trouble falling asleep after using your phone at night?",
-    "descripcion2.consejo2": "The blue light from screens can interfere with sleep. Try enabling night mode or warm lighting after 7:00 PM.",
-
-    "titulo.consejo3": "Screen-Free Zone",
-    "descripcion1.consejo3": "How many times have you looked at your phone during a meal or right before going to bed?",
-    "descripcion2.consejo3": "Sometimes, leaving your phone aside also does good. Take advantage of these moments to rest, chat, or enjoy time with the people around you.",
-
-    "titulo.consejo4": "Posture",
-    "descripcion1.consejo4": "Have you ever felt tension or pain in your neck after using your phone?",
-    "descripcion2.consejo4": "Many times this is due to posture. Try to hold the device at eye level to avoid discomfort in your neck and back.",
-
-    "modulo-salud.meta": "🎯 Module Goal",
-    "modulo-salud.meta.descripcion": "Discover how small changes in our digital habits can help us enjoy technology in a more balanced, healthy, and conscious way. 🧭💙",
-    "modulo-salud.boton": "🚀 Let's Get Started",
-
-    // MODULE 1 LESSON
-    "modulo-salud.video": "🎥 Recommended Video",
-    "modulo-salud.video.descripcion": "Before continuing, watch this brief video about technology use:",
-
-    "modulo-salud.titulo": "📈💻 Why is it important to manage screen time?  📺📊",
-    "modulo-salud.descripcion": "Our time is valuable. Every moment we spend in front of a screen is a <span class = highlight5>moment that we could also dedicate to resting, engaging in physical activity, talking with our family, or simply enjoying</span> what is happening around us.",
-    "modulo-salud.descripcion2": "Does this mean that technology is bad? No. Technology can be an incredible tool for learning, entertainment, and staying connected. However, like a double-edged sword, its impact depends on how we use it.",
-    "modulo-salud.descripcion3": "Spending too much time in front of a screen can affect:",
-
-    "modulo-salud.list.item1": "<span class = 'subtitle'>Sleep</span> 😴 — Using screens late at night can make it harder for us to fall asleep.",
-    "modulo-salud.list.item2": "<span class = 'subtitle'>Physical Activity</span> 🚶 — Sometimes we spend hours sitting without realizing it.",
-    "modulo-salud.list.item3": "<span class = 'subtitle'>Emotional Well-being</span> 😔 — Being constantly connected or receiving too much information can make us feel exhausted or stressed.",
-
-    "modulo-salud.descripcion4": "<span class=\"highlight3\">It's not about stopping the use of technology, but rather learning to use it in a way that benefits our health and well-being.</span>",
-    "modulo-salud.descripcion5": "📚 <strong>Want to learn more?</strong> The European Commission explains the effects of excessive screen time:<br>",
-    "modulo-salud.actividad.titulo": "<span class=\"subtitle2\">Activity  </span>",
-    "modulo-salud.actividad.descripcion": "After spending some time using the computer, Juan decided to go for a walk to rest his eyes and move his body. Answer the questions correctly to help him complete his journey.",
-    
-    //ACTIVIDAD
-    "actividad1.p1": "What is the 20-20-20 rule?",
-    "actividad1.p1.a": "Every 20 minutes, look at something 6 meters away for 20 seconds",
-    "actividad1.p1.b": "Use the phone for 20 minutes and turn it off for 20 hours",
-    "actividad1.p1.c": "Charge the phone every 20 minutes",
-    "actividad1.p1.d": "Sleep for 20 hours every 20 days",
-    "actividad1.p1.exp": "The 20-20-20 rule helps reduce eye strain caused by prolonged screen use.",
-
-    "actividad1.p2": "Why is it important to take active breaks during the day?",
-    "actividad1.p2.a": "To drain the phone's battery",
-    "actividad1.p2.b": "To prevent muscle tension and sedentary behavior",
-    "actividad1.p2.c": "They are not important if one feels fine",
-    "actividad1.p2.d": "Only athletes need them",
-    "actividad1.p2.exp": "Active breaks reduce tension in the neck, back, and eyes caused by prolonged device use.",
-
-    "actividad1.p3": "What is the benefit of going for a walk after using the computer?",
-    "actividad1.p3.a": "None, it's better to keep resting on the couch",
-    "actividad1.p3.b": "It helps relax the body and rest the eyes",
-    "actividad1.p3.c": "It only works if you walk for more than an hour",
-    "actividad1.p3.d": "It worsens eye strain",
-    "actividad1.p3.exp": "Walking activates the body and allows the eyes to rest from screen light.",
-
-    "actividad1.p4" : "How often is it recommended to take a break when using screens?",
-    "actividad1.p4.a" : "Every 3 hours",
-    "actividad1.p4.b" : "Every 20 minutes",
-    "actividad1.p4.c" : "Only when there is eye pain",
-    "actividad1.p4.d" : "Once a day",
-    "actividad1.p4.exp" : "It is recommended to take a break every 20 minutes to rest the eyes and body.",
-
-    "modulo-salud.boton.actividad": "🚶 Start Activity",
-    "modulo-salud.mesaje.final1": "🎉 Excellent!",
-    "actividad1.llegue": "I've arrived! 🏠💪",
-    "modulo-salud.mesaje.final2": "Thanks to your answers, Juan was able to finish his walk. Remember that taking a few minutes to get up, walk, or stretch after using electronic devices also helps take care of your health and rest your eyes.",
-    "modulo-salud.mesaje.fallo": "😓 Juan couldn't complete his walk",
-    "modulo-salud.mesaje.fallo2": "He had too many trips on the way. But don't worry! You can try again and help him get home.",
-    "modulo-salud.boton.reiniciar": "🔄 Try Again",
-    "actividad1.correcto": "✅ Correct! Juan moves forward.",
-
-    //QUIZ
-    "modulo-salud.titulo.quiz": "🧠 Test what you've learned",
-    "quiz1.p1": "Which of these effects can result from spending too much time in front of a screen?",
-    "quiz1.p1.a": "Improves sleep quality",
-    "quiz1.p1.b": "Can make it harder to rest and sleep",
-    "quiz1.p1.c": "Increases the desire to exercise",
-    "quiz1.p1.d": "Has no effect on health",
-    "quiz1.p1.exp": "Spending too much time in front of a screen can make it harder to rest and sleep.",
-
-    "quiz1.p2": "How should we view technology?",
-    "quiz1.p2.a": "As something we should avoid completely",
-    "quiz1.p2.b": "As the center of our daily life",
-    "quiz1.p2.c": "As a tool that helps us if we use it well",
-    "quiz1.p2.d": "As something only for young people",
-    "quiz1.p2.exp": "Technology should be viewed as a tool that helps us if we use it well.",
-
-    "quiz1.p3": "What can we do to care for our screen time?",
-    "quiz1.p3.a": "Never use technology after 6pm",
-    "quiz1.p3.b": "Use the phone until we fall asleep",
-    "quiz1.p3.c": "Watch screens all day if we feel well",
-    "quiz1.p3.d": "Set time limits and take regular breaks",
-    "quiz1.p3.exp": "Setting time limits and taking regular breaks helps care for our screen time.",
-
-    "quiz1.p4": "What does the 20-20-20 rule consist of?",
-    "quiz1.p4.a": "Every 20 minutes, look at something 6 meters away for 20 seconds",
-    "quiz1.p4.b": "Use the phone for 20 minutes and turn it off for 20 hours",
-    "quiz1.p4.c": "Charge the phone every 20 minutes",
-    "quiz1.p4.d": "Walk 20 steps every 20 minutes",
-    "quiz1.p4.exp": "The 20-20-20 rule consists of looking at something 6 meters away for 20 seconds every 20 minutes.",
-
-    "quiz1.p5": "Why is it recommended to activate night mode at night?",
-    "quiz1.p5.a": "To save battery",
-    "quiz1.p5.b": "Because blue light makes it harder to fall asleep",
-    "quiz1.p5.c": "To see the screen better",
-    "quiz1.p5.d": "There is no real reason",
-    "quiz1.p5.exp": "Night mode reduces exposure to blue light, which can make it harder to fall asleep.",
-
-    "quiz1.p6": "What is a good alternative to using the phone during free time?",
-    "quiz1.p6.a": "Watch more television",
-    "quiz1.p6.b": "Look for another screen",
-    "quiz1.p6.c": "Call a family member or take a walk",
-    "quiz1.p6.d": "None, the phone is the best option",
-    "quiz1.p6.exp": "Calling a family member or taking a walk is an excellent alternative to disconnect and take care of our health.",
-    "quiz1.pregunta.correcta": "✅ Correct!",
-    "quiz1.pregunta.incorrecta": "❌ Not correct. The correct answer was: ",
-
-    "modulo-salud.mensaje.perfecto": "🎉 Perfect! You have completed the healthy device use module. Remember that small changes in our digital habits can help us enjoy technology in a more balanced, healthy, and conscious way. 🧭💙",
-    "modulo-salud.mensaje.bien":"👍 Well done! You're on the right track.",
-    "modulo-salud.mensaje.intentar": "📖 Don't worry. You can reread the lesson and try again.",
-    
-    "modulo-salud.mensaje.cambio": "🌿 What to do instead?",
-    "modulo-salud.mensaje.cambio2": "Reducing screen time doesn't mean being bored. Here are some ideas:",
-    "modulo-salud.mensaje.cambio3": "🚶 Take a short walk of 10-15 minutes",
-    "modulo-salud.mensaje.cambio4": "📞 Call a family member or friend on the phone",
-    "modulo-salud.mensaje.cambio5": "📖 Read a physical book or magazine",
-    "modulo-salud.mensaje.cambio6": "🧩 Do a crossword puzzle or jigsaw puzzle",
-    "modulo-salud.mensaje.cambio7": "🌱 Water the plants or go out on the balcony",
-    "modulo-salud.mensaje.cambio8": "Technology is a tool, not a mandatory pastime.",
-    
-    "modulo-salud.boton.resultado": "See my result 🎯",
-    "modulo-salud.mensaje.puntaje": "You got <strong>{respuestasCorrectas} out of {total}</strong> correct answers.",
-    "modulo-salud.boton.inicio": "← Back to Home",
-    "modulo-salud.boton.siguiente": "Next Module →",
-
-    // INTRO MODULE 2
-    "modulo-estafas.consejos.titulo": "⚠️ Digital Scams",
-    "modulo-estafas.consejos.descripcion": "Digital scams are attempts to deceive people in order to obtain personal information, money, or other benefits. They can appear in emails, text messages, social media, or fake websites.",
-    "modulo-estafas.consejos": "📝 Practical Tips",
-
-    "titulo-estafas.consejo1": "Be wary of urgency",
-    "descripcion1-estafas.consejo1": "Have you ever received a message saying that your account will be blocked if you don't act immediately?",
-    "descripcion2-estafas.consejo1": "These types of messages aim to create fear or urgency so that we make decisions without thinking. If you receive such a notice, take a few seconds to verify the information before acting.",
-
-    "titulo-estafas.consejo2": "Never share personal information",
-    "descripcion1-estafas.consejo2": "Have you ever been asked for a password or code via message or call?",
-    "descripcion2-estafas.consejo2": "No bank or trusted entity will ask for that information through those means. If someone does, it's best not to respond and verify directly with the institution.",
-
-    "titulo-estafas.consejo3": "Verify before clicking",
-    "descripcion1-estafas.consejo3": "Did you receive an unexpected link via WhatsApp or email?",
-    "descripcion2-estafas.consejo3": "Before opening it, ask yourself if you were expecting that message and if you really know who sent it. If you have doubts, it's better not to click.",
-
-    "titulo-estafas.consejo4": "Call directly",
-    "descripcion1-estafas.consejo4": "Did you receive a call from someone claiming to be from your bank or an institution?",
-    "descripcion2-estafas.consejo4": "Don't rush to answer. The safest thing is to contact them yourself using the official number that appears on the website or your documents.",
-
-    "modulo-estafas.meta": "🎯 Module Goal",
-    "modulo-estafas.meta.descripcion": "Recognize the most common signs of a digital scam to protect our information and navigate more safely.",
-    "modulo-estafas.boton.inicio": "🚀 Let's Get Started",
-
-    // MODULE 2 LESSON
-    "modulo-estafas.video": "🎥 Recommended Video",
-    "modulo-estafas.video.descripcion": "Before continuing, watch this brief video about digital scams:",
-    "modulo-estafas.titulo": "⚠️ Digital Scams: How to Protect Yourself",
-    "modulo-estafas.descripcion": "Digital scams are attempts to deceive people in order to obtain personal information, money, or other benefits. They can appear in emails, text messages, social media, or fake websites.",
-    "modulo-estafas.tipos": "🚨 Most Common Types of Scams",
-
-    "modulo-estafas.list.item1": "<span class = 'subtitle'>Phishing</span> 📧 — Messages that appear to be from trusted companies but aim to steal personal information.",
-    "modulo-estafas.list.item2": "<span class = 'subtitle'>False Calls</span> 📞 — Someone claims to be from the bank or government and asks for urgent information.",
-    "modulo-estafas.list.item3": "<span class = 'subtitle'>\"You Won a Prize\"</span> 🎁 — Someone tells you that you've won something but you need to pay to claim it. No one gives away anything like that.",
-    "modulo-estafas.list.item4": "<span class = 'subtitle'>Family Member Scam</span> 👨‍👩‍👧 — Someone pretends to be a family member in trouble and asks for urgent money.",
-    "modulo-estafas.list.item5": "<span class = 'subtitle'>Fake Links</span> 🔗 — Links that appear to be real but lead to fake pages that steal your data.",
-
-    "modulo-estafas.descripcion2": "Although scams can take many forms, <span class= \"highlight2\">most share some signs that can help us identify them.</span> Knowing them is the first step to acting more safely.",
-    "modulo-estafas.list2.item1": "The message creates <span class=\"highlight3\">unnecessary fear or urgency</span>",
-    "modulo-estafas.list2.item2": "They ask for <span class=\"highlight3\">personal information</span>, passwords, or money",
-    "modulo-estafas.list2.item3": "The sender has a <span class=\"highlight3\">strange name</span> or unknown email address",
-    "modulo-estafas.list2.item4": "There are <span class=\"highlight3\">spelling errors</span> or the message is <span class=\"highlight3\">poorly written</span>",
-    "modulo-estafas.list2.item5": "They offer you something <span class=\"highlight3\">too good to be true</span>",
-    "modulo-estafas.recuerda": "<strong>Remember:</strong> Taking a few seconds to verify a message can prevent many problems. When in doubt, it's better to confirm the information before sharing personal data or making a payment.",
-    "modulo-estafas.fuente": "📚 <strong>Want to learn more?</strong> <br>",
-
-    //Activity 
-    "modulo-estafas.actividad.titulo": "Activity",
-    "modulo-estafas.actividad.descripcion": "Juan has received several messages today. Help him identify which ones are scams and which ones are legitimate.",
-    "modulo-estafas.actividad.boton.iniciar":"📱 View Juan's messages",
-    "modulo-estafas.actividad.dialogo":"📩 I have messages! ",
-
-    "modulo-estafas.mensaje1": "Dear customer, your account has been compromised. Click the following link to verify your identity or your account will be blocked within 24 hours: www.banco-seguro-verify.com",
-    "modulo-estafas.mensaje1.opcionA": "I click the link to verify my account.",
-    "modulo-estafas.mensaje1.opcionB": "I don't click the link. I call the bank's official number directly.",
-    "modulo-estafas.mensaje1.opcionC": "I reply to the email with my personal information to unlock the account.",
-    "modulo-estafas.explicacion.correcta1": "✅ Correct! Banks never ask you to verify your information through links in emails. Always call the official number.",
-    "modulo-estafas.explicacion.error": "❌ This is a phishing email. The sender is unknown and creates a sense of urgency to make you act without thinking. Never click on those links.",
-
-    "actividad-estafas.mensaje.final1":"🎉 Well done!",
-    "actividad-estafas.mensaje.final":"Juan was able to identify the messages with your help. Remember: if you receive a suspicious message, it’s best not to click on anything, not to share any personal information, and to verify it directly with the official source.",
-
- 
-    //INTRO MODULE 3
-   "modulo-deepfakes.consejos.titulo": {
-    es: "🤖 Deepfakes y desinformación",
-    en: "🤖 Deepfakes and misinformation",
-   },
-
-   "modulo-deepfakes.consejos.descripcion": {
-    es: "Hoy en día, internet nos permite acceder a una enorme cantidad de información, imágenes y videos en cuestión de segundos. Sin embargo, no todo lo que vemos es verdadero. Aprender a reconocer información falsa y contenidos creados con inteligencia artificial nos ayudará a navegar con mayor seguridad y confianza.",
-    en: "Nowadays, the internet gives us access to a huge amount of information, images, and videos in just a few seconds. However, not everything we see is true. Learning to recognize false information and content created with artificial intelligence will help us navigate the internet more safely and confidently.",
-   },
-
-   
-
-    //MODULE 3 LESSON
-    //MODULE 3 ACTIVITY
-
-    //INTRO MODULE 4
-    // MODULE 4 LESSON
-    //MODULE 4 ACTIVITY
-
   }
-};
+
+//FUNCIONES
 
 let idiomaActual = "es";
 
