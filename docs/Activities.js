@@ -1,4 +1,6 @@
+
 // ACTIVIDAD
+
 let animacionPaisaje = null;
 let animacionJuan = null;
 let paso = false;
@@ -53,7 +55,13 @@ function iniciarAnimaciones() {
 }
 
 function t(clave) {
-    return translations[idiomaActual][clave];
+
+    if (!translations[clave]) {
+        console.warn("Traducción no encontrada:", clave);
+        return clave;
+    }
+
+    return translations[clave][idiomaActual] || translations[clave].es || clave;
 }
 
 let actividadPreguntas = [

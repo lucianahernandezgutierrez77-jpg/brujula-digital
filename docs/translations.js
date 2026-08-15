@@ -214,7 +214,7 @@ const translations = {
     en: "After spending some time using the computer, Juan decided to go for a walk to rest his eyes and move his body. Answer the questions correctly to help him complete his journey.",
   },
 
-  "actividad1.p1:": {
+  "actividad1.p1": {
     es: "¿Qué es la regla 20-20-20?",
     en: "What is the 20-20-20 rule?",
   },
@@ -225,7 +225,7 @@ const translations = {
   },
 
   "actividad1.p1.b": {
-    es: "Cada 20 minutos, mirar algo a 6 metros durante 20 segundos",
+    es: "Usar el teléfono durante 20 minutos y apagarlo durante 20 horas",
     en: "Use the phone for 20 minutes and turn it off for 20 hours",
   },
 
@@ -264,7 +264,7 @@ const translations = {
     en: "They are not important if one feels fine",
   },
 
-  "actividad.p2.d": {
+  "actividad1.p2.d": {
     es: "Solo las necesitan los deportistas",
     en: "Only athletes need them",
   },
@@ -384,52 +384,52 @@ const translations = {
     en: "Which of these effects can result from spending too much time in front of a screen?",
   },
 
-  "quiz.p1.a": {
+  "quiz1.p1.a": {
     es: "Mejora la calidad del sueño",
     en: "Improves sleep quality",
   },
 
-  "quiz.p1.b": {
+  "quiz1.p1.b": {
     es: "Puede dificultar el descanso y el sueño",
     en: "Can make it harder to rest and sleep",
   },
 
-  "quiz.p1.c": {
+  "quiz1.p1.c": {
     es: "Aumenta las ganas de hacer ejercicio",
     en: "Increases the desire to exercise",
   },
 
-  "quiz.p1.d": {
+  "quiz1.p1.d": {
     es: "No tiene ningún efecto en la salud",
     en: "Has no effect on health",
   },
 
-  "quiz.p1.exp": {
+  "quiz1.p1.exp": {
     es: "Pasar demasiado tiempo frente a una pantalla puede dificultar el descanso y el sueño.",
     en: "Spending too much time in front of a screen can make it harder to rest and sleep.",
   },
 
-  "quiz.p2": {
+  "quiz1.p2": {
     es: "¿Cómo debemos ver la tecnología?",
     en: "How should we view technology?",
   },
 
-  "quiz.p2.a": {
+  "quiz1.p2.a": {
     es: "Como algo que debemos evitar por completo",
     en: "As something we should avoid completely",
   },
 
-  "quiz.p2.b": {
+  "quiz1.p2.b": {
     es: "Como el centro de nuestra vida diaria",
     en: "As the center of our daily life",
   },
 
-  "quiz.p2.c": {
+  "quiz1.p2.c": {
     es: "Como una herramienta que nos ayuda si la usamos bien",
     en: "As a tool that helps us if we use it well",
   },
 
-  "quiz.p2.d": {
+  "quiz1.p2.d": {
     es: "Como algo solo para jóvenes",
     en: "As something only for young people",
   },
@@ -449,7 +449,7 @@ const translations = {
     en: "Never use technology after 6pm",
   },
 
-  "quiz.p3.b": {
+  "quiz1.p3.b": {
     es: "Usar el teléfono hasta quedarnos dormidos",
     en: "Use the phone until we fall asleep",
   },
