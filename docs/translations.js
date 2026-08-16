@@ -849,23 +849,28 @@ const translations = {
     es: "📩 ¡Tengo mensajes!",
     en: "📩 I have messages! ",
   },
+  
+  "modulo-estafas.actividad.pregunta": {
+  es: "¿Qué debería hacer Juan?",
+  en: "What should Juan do?",
+  },
 
   "modulo-estafas.mensaje1": {
     es: "Estimado cliente, su cuenta ha sido comprometida. Haga clic en el siguiente enlace para verificar su identidad o su cuenta será bloqueada en 24 horas: www.banco-seguro-verify.com",
     en: "Dear customer, your account has been compromised. Click the following link to verify your identity or your account will be blocked within 24 hours: www.banco-seguro-verify.com",
   },
 
-  "modulo-estafas.mensaje1.opcionA": {
+  "modulo-estafas.mensaje1.a": {
     es: "Hago clic en el enlace para verificar mi cuenta.",
     en: "I click the link to verify my account.",
   },
 
-  "modulo-estafas.mensaje1.opcionB": {
+  "modulo-estafas.mensaje1.b": {
     es: "No hago clic. Llamo directamente al número oficial del banco.",
     en: "I don't click the link. I call the bank's official number directly.",
   },
 
-  "modulo-estafas.mensaje1.opcionC": {
+  "modulo-estafas.mensaje1.c": {
     es: "Respondo el correo con mis datos para desbloquear la cuenta.",
     en: "I reply to the email with my personal information to unlock the account.",
   },
@@ -880,6 +885,171 @@ const translations = {
     en: "❌ This is a phishing email. The sender is unknown and creates a sense of urgency to make you act without thinking. Never click on those links.",
   },
 
+  "modulo-estafas.contacto2": {
+    es: "Carmen Rodríguez (vecina) ✅", 
+    en: "Carmen Rodríguez (neighbor) ✅",
+  },
+
+  "modulo-estafas.mensaje2": {
+    es: "Juanito, te mando la receta de las empanadas que te gustaron tanto. 🥟 Necesitas: harina, papa, carne y condimentos. ¡Que te queden ricas!",
+    en: "Juanito, I am sending you the recipe for the empanadas you liked so much. 🥟 You will need: flour, potatoes, meat, and spices. Enjoy!",
+  },
+
+  "modulo-estafas.mensaje2.a": {
+    es: "Respondo normalmente, es un mensaje de mi vecina de confianza.",
+    en: "I reply normally; it’s a message from my trusted neighbor.",
+  },
+
+  "modulo-estafas.mensaje2.b": {
+    es: "No respondo, puede ser una estafa.",
+    en: "I don't reply; it could be a scam.",
+  },
+
+  "modulo-estafas.mensaje2.c": {
+    es: "Bloqueo el número por si acaso.",
+    en: "I block the number just in case.",
+  },
+
+  "modulo-estafas.explicacion.correcta2": {
+    es: "✅ ¡Correcto! Este mensaje viene de un contacto conocido, no pide datos ni crea urgencia. No todo mensaje es una estafa.",
+    en: "✅ Correct! This message comes from someone you know, doesn’t ask for personal information, and doesn’t create a sense of urgency. Not every message is a scam.",
+  },
+
+  "modulo-estafas.explicacion.error2": {
+    es: "❌ Este es un mensaje legítimo. Viene de un contacto guardado y conocido, sin ninguna señal de alerta. Es importante no desconfiar de todo.",
+    en: "❌ This is a legitimate message. It comes from a saved, known contact and shows no warning signs. It’s important not to be suspicious of every message.",
+  },
+
+  "modulo-estafas.mensaje3": {
+    es: "🎉 ¡FELICITACIONES! Ha sido seleccionado ganador de un viaje a Cancún por 5 días. Para reclamar su premio debe pagar $50 de gastos de envío. Responda YA, la oferta vence hoy.",
+    en: "🎉 CONGRATULATIONS! You have been selected as the winner of a 5-day trip to Cancún. To claim your prize, you must pay $50 in shipping fees. RESPOND NOW—the offer expires today.",
+  },
+
+  "modulo-estafas.mensaje3.a": {
+    es: "Pago los $50 para recibir el premio, parece real.",
+    en: "I pay the $50 to receive the prize; it seems legitimate.",
+  },
+
+  "modulo-estafas.mensaje3.b": {
+    es: "Reenvío el mensaje a mis familiares para que también participen.",
+    en: "I forward the message to my family so they can participate too.",
+  },
+
+  "modulo-estafas.mensaje3.c": {
+    es: "Ignoro el mensaje y lo elimino. Nadie regala viajes así.",
+    en: "I ignore the message and delete it. No one gives away trips like that.",
+  },
+
+  "modulo-estafas.explicacion.correcta3": {
+    es: "✅ ¡Correcto! Los premios que piden un pago previo son una estafa clásica. Si no participaste en ningún sorteo, no puedes haber ganado.",
+    en: "✅ Correct! Prizes that require you to pay upfront are a classic scam. If you didn’t enter any giveaway or contest, you couldn’t have won.",
+  },
+
+  "modulo-estafas.explicacion.error3": {
+    es: "❌ Este es un mensaje de estafa. Viene de un número desconocido, crea urgencia y pide dinero por adelantado. Nadie regala viajes de esa forma.",
+    en: "❌ This is a scam message. It comes from an unknown number, creates a sense of urgency, and asks for money upfront. No one gives away trips like that.",
+  },
+
+  "modulo-estafas.contacto4": {
+    es: "+57 312 0044 871 (desconocido)",
+    en: "+1 862 044 871 (unknown)",
+  },
+
+  "modulo-estafas.mensaje4": {
+    es: "Papá soy yo, perdí mi teléfono y este es un número prestado. Estoy en un apuro y necesito que me envíes $200 urgente por transferencia. Te explico después, por favor no llames.",
+    en: "Dad, it’s me. I lost my phone, and I’m using someone else’s number. I’m in trouble and need you to send me $200 urgently by bank transfer. I’ll explain later. Please don’t call.",
+  },
+
+  "modulo-estafas.mensaje4.a": {
+    es: "Envío el dinero inmediatamente, mi hijo/nieto me necesita.",
+    en: "I send the money immediately; my son/grandson needs me.",
+  },
+  //URGENTE CORREGIR ESTO
+  "modulo-estafas.mensaje4.b": {
+    es: "Antes de hacer algo, llamo a mi hijo/nieto al número que tengo guardado para verificar.",
+    en: "Before doing anything, I call my son/grandson at the number I have saved to verify.",
+  },
+
+  "modulo-estafas.mensaje4.c": {
+    es: "Respondo el mensaje pidiendo más información.",
+    en: "I reply to the message and ask for more information.",
+  },
+
+  "modulo-estafas.explicacion.correcta4": {
+    es: "✅ ¡Correcto! Siempre verifica llamando directamente al número real de tu familiar. Esta es la estafa del 'familiar en apuros', muy común.",
+    en: "✅ Correct! Always verify by calling your family member directly using the phone number you already have saved. This is a very common “family emergency” scam.",
+  },
+
+  "modulo-estafas.explicacion.error4": {
+    es: "❌ Esta es la estafa del 'familiar en apuros'. El mensaje pide dinero urgente y dice que no llames, precisamente para que no puedas verificar. Siempre llama primero.",
+    en: "❌ This is the “family emergency” scam. The message asks for money urgently and tells you not to call, specifically to prevent you from verifying the story. Always call first.",
+  },
+
+  "modulo-estafas.contacto5": {
+    es: "Dr. Martínez (médico) ✅",
+    en: "Dr. Martínez (doctor) ✅",
+  },
+
+  "modulo-estafas.mensaje5": {
+    es: "Buenos días Juan, le confirmo su cita para el próximo martes 29 a las 9:00 a.m. en el consultorio. Por favor llegue 10 minutos antes. Cualquier duda con gusto le atiendo.",
+    en: "Good morning, Juan. I’m confirming your appointment for next Tuesday the 29th at 9:00 a.m. at the office. Please arrive 10 minutes early. If you have any questions, I’ll be happy to help.",
+  },
+
+  "modulo-estafas.mensaje5.a": {
+    es: "Respondo confirmando la cita, es mi médico de confianza.",
+    en: "I reply to confirm the appointment; it’s from my trusted doctor.",
+  },
+
+  "modulo-estafas.mensaje5.b": {
+    es: "No respondo, puede ser una estafa para robar mis datos.",
+    en: "I don't reply; it could be a scam to steal my personal information.",
+  },
+
+  "modulo-estafas.mensaje5.c": {
+    es: "Llamo al hospital para verificar si realmente es mi médico.",
+    en: "I call the hospital to verify that it’s really my doctor.",
+  },
+
+  "modulo-estafas.explicacion.correcta5": {
+    es: "✅ ¡Correcto! Este mensaje viene de un contacto guardado, no pide dinero ni datos personales, y el contenido es completamente normal.",
+    en: "✅ Correct! This message comes from a saved contact, doesn’t ask for money or personal information, and the content is completely normal.",
+  },
+
+  "modulo-estafas.explicacion.error5": {
+    es: "❌ Este es un mensaje legítimo de tu médico. Viene de un contacto conocido, solo confirma una cita y no tiene ninguna señal de alerta.",
+    en: "❌ This is a legitimate message from your doctor. It comes from a known contact, simply confirms an appointment, and shows no warning signs.",
+  },
+
+  "modulo-estafas.mensaje6": {
+    es: "Juan, le habla el técnico de Microsoft. Detectamos un virus grave en su computador. Necesitamos acceso remoto ahora mismo para solucionarlo antes de que pierda todos sus archivos.",
+    en: "Juan, this is a Microsoft technician. We detected a serious virus on your computer. We need remote access right now to fix it before you lose all your files.",
+  },
+
+  "modulo-estafas.mensaje6.a": {
+    es: "Doy acceso a mi computador, no quiero perder mis archivos",
+    en: "I give them access to my computer because I don't want to lose my files.",
+  },
+
+  "modulo-estafas.mensaje6.b": {
+    es: "Les doy mi contraseña para que puedan revisar sin problema",
+    en: "I give them my password so they can check my computer without any problems.", 
+  },
+
+  "modulo-estafas.mensaje6.c": {
+    es: "Cuelgo la llamada. Microsoft nunca llama así a su usuarios",
+    en: "I hang up the call. Microsoft never calls its users like that.",
+  },
+
+  "modulo-estafas.explicacion.correcta6": {
+    es: "✅ ¡Correcto! Microsoft ni ninguna empresa tecnológica llama por teléfono para pedir acceso a tu computador. Es una estafa de soporte técnico falso.",
+    en: "✅ Correct! Microsoft and other tech companies don’t call you out of the blue to ask for access to your computer. This is a fake tech support scam.",
+  },
+
+  "modulo-estafas.explicacion.error6": {
+    es: "❌ Esta es una estafa de soporte técnico falso. Si das acceso a tu computador, pueden robar tu información o instalarte un virus real. Siempre cuelga este tipo de llamadas.",
+    en: "❌ This is a fake tech support scam. If you give them access to your computer, they could steal your information or install malware. Always hang up on calls like this.",
+  },
+
   "actividad-estafas.mensaje.final1": {
     es: "🎉 ¡Bien hecho!",
     en: "🎉 Well done!",
@@ -889,6 +1059,7 @@ const translations = {
     es: "Juan pudo identificar los mensajes gracias a tu ayuda. Recuerda: ante cualquier mensaje sospechoso, lo mejor es no hacer clic, no compartir datos y verificar directamente con la fuente oficial.",
     en: "Juan was able to identify the messages with your help. Remember: if you receive a suspicious message, it’s best not to click on anything, not to share any personal information, and to verify it directly with the official source.",
   },
+
 
 // INTRO MODULO 3
 

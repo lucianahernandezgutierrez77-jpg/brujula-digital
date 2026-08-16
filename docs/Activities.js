@@ -349,74 +349,74 @@ const mensajesEstafas = [
     tipo: "correo",
     app: "📧",
     contacto: "banco.seguridad@notificaciones-urgentes.com",
-    mensaje: t("modulo-estafas.mensaje1"),
+    mensaje: "modulo-estafas.mensaje1",
     hora: "10:34 a.m.",
     esEstafa: true,
     opcionCorrecta: 1,
-    opciones: [ t("modulo-estafas.mensaje1.opcionA") , t("modulo-estafas.mensaje1.opcionB"), t("modulo-estafas.mensaje1.opcionC") ],
-    explicacionCorrecta: t("modulo-estafas.explicacion.correcta1"),
-    explicacionError: t("modulo-estafas.explicacion.error"),
+    opciones: [ "modulo-estafas.mensaje1.a" , "modulo-estafas.mensaje1.b", "modulo-estafas.mensaje1.c"],
+    explicacionCorrecta: "modulo-estafas.explicacion.correcta1",
+    explicacionError: "modulo-estafas.explicacion.error",
   },
   {
     tipo: "whatsapp",
     app: "💬",
-    contacto: "Carmen Rodríguez (vecina) ✅",
-    mensaje: "Juanito, te mando la receta del arroz con leche que te gustó tanto. 🍚 Necesitas: 1 taza de arroz, 1 litro de leche, azúcar al gusto y canela. ¡Que te quede rico!",
+    contacto: "modulo-estafas.contacto2",
+    mensaje: "modulo-estafas.mensaje2",
     hora: "11:05 a.m.",
     esEstafa: false,
     opcionCorrecta: 0,
-    opciones: ["Respondo normalmente, es un mensaje de mi vecina de confianza.", "No respondo, puede ser una estafa.", "Bloqueo el número por si acaso."],
-    explicacionCorrecta: "✅ ¡Correcto! Este mensaje viene de un contacto conocido, no pide datos ni crea urgencia. No todo mensaje es una estafa.",
-    explicacionError: "❌ Este es un mensaje legítimo. Viene de un contacto guardado y conocido, sin ninguna señal de alerta. Es importante no desconfiar de todo."
+    opciones: ["modulo-estafas.mensaje3.a", "modulo-estafas.mensaje3.b", "modulo-estafas.mensaje2.c"],
+    explicacionCorrecta: "modulo-estafas.explicacion.correcta2",
+    explicacionError: "modulo-estafas.explicacion.error2",
   },
   {
     tipo: "whatsapp",
     app: "💬",
     contacto: "+1 (305) 849-2201 (desconocido)",
-    mensaje: "🎉 ¡FELICITACIONES! Ha sido seleccionado ganador de un viaje a Cancún por 5 días. Para reclamar su premio debe pagar $50 de gastos de envío. Responda YA, la oferta vence hoy.",
+    mensaje: "modulo-estafas.mensaje3",
     hora: "12:18 p.m.",
     esEstafa: true,
     opcionCorrecta: 2,
-    opciones: ["Pago los $50 para recibir el premio, parece real.", "Reenvío el mensaje a mis familiares para que también participen.", "Ignoro el mensaje y lo elimino. Nadie regala viajes así."],
-    explicacionCorrecta: "✅ ¡Correcto! Los premios que piden un pago previo son una estafa clásica. Si no participaste en ningún sorteo, no puedes haber ganado.",
-    explicacionError: "❌ Este es un mensaje de estafa. Viene de un número desconocido, crea urgencia y pide dinero por adelantado. Nadie regala viajes de esa forma."
+    opciones: ["modulo-estafas.mensaje3.a", "modulo-estafas.mensaje3.b", "modulo-estafas.mensaje3.c"],
+    explicacionCorrecta: "modulo-estafas.explicacion.correcta3",
+    explicacionError: "modulo-estafas.explicacion.error3",
   },
   {
     tipo: "whatsapp",
     app: "💬",
-    contacto: "+57 312 0044 871 (desconocido)",
-    mensaje: "Papá soy yo, perdí mi teléfono y este es un número prestado. Estoy en un apuro y necesito que me envíes $200 urgente por transferencia. Te explico después, por favor no llames.",
+    contacto: "modulo-estafas.contacto4",
+    mensaje: "modulo-estafas.mensaje4",
     hora: "2:45 p.m.",
     esEstafa: true,
     opcionCorrecta: 1,
-    opciones: ["Envío el dinero inmediatamente, mi hijo/nieto me necesita.", "Antes de hacer algo, llamo a mi hijo/nieto al número que tengo guardado para verificar.", "Respondo el mensaje pidiendo más información."],
-    explicacionCorrecta: "✅ ¡Correcto! Siempre verifica llamando directamente al número real de tu familiar. Esta es la estafa del 'familiar en apuros', muy común.",
-    explicacionError: "❌ Esta es la estafa del 'familiar en apuros'. El mensaje pide dinero urgente y dice que no llames, precisamente para que no puedas verificar. Siempre llama primero."
+    opciones: ["modulo-estafas.mensaje4.a", "modulo-estafas.mensaje4.b", "modulo-estafas.mensaje4.c"],
+    explicacionCorrecta: "modulo-estafas.explicacion.correcta4",
+    explicacionError: "modulo-estafas.explicacion.error4",
   },
   {
     tipo: "whatsapp",
     app: "💬",
-    contacto: "Dr. Martínez (médico) ✅",
-    mensaje: "Buenos días Juan, le confirmo su cita para el próximo martes 29 a las 9:00 a.m. en el consultorio. Por favor llegue 10 minutos antes. Cualquier duda con gusto le atiendo.",
+    contacto: "modulo-estafas.contacto5",
+    mensaje: "modulo-estafas.mensaje5",
     hora: "3:10 p.m.",
     esEstafa: false,
     opcionCorrecta: 0,
-    opciones: ["Respondo confirmando la cita, es mi médico de confianza.", "No respondo, puede ser una estafa para robar mis datos.", "Llamo al hospital para verificar si realmente es mi médico."],
-    explicacionCorrecta: "✅ ¡Correcto! Este mensaje viene de un contacto guardado, no pide dinero ni datos personales, y el contenido es completamente normal.",
-    explicacionError: "❌ Este es un mensaje legítimo de tu médico. Viene de un contacto conocido, solo confirma una cita y no tiene ninguna señal de alerta."
+    opciones: ["modulo-estafas.mensaje5.a", "modulo-estafas.mensaje5.b", "modulo-estafas.mensaje5.c"],
+    explicacionCorrecta: "modulo-estafas.explicacion.correcta5",
+    explicacionError: "modulo-estafas.explicacion.error5",
   },
   {
     tipo: "llamada",
     app: "📞",
     contacto: "Número desconocido: +1 (800) 000-9921",
-    mensaje: '"Juan, le habla el técnico de Microsoft. Detectamos un virus grave en su computador. Necesitamos acceso remoto ahora mismo para solucionarlo antes de que pierda todos sus archivos."',
+    mensaje: "modulo-estafas.mensaje6",
     hora: "4:52 p.m.",
     esEstafa: true,
     opcionCorrecta: 2,
-    opciones: ["Doy acceso a mi computador, no quiero perder mis archivos.", "Les doy mi contraseña para que puedan revisar el problema.", "Cuelgo la llamada. Microsoft nunca llama así a sus usuarios."],
-    explicacionCorrecta: "✅ ¡Correcto! Microsoft ni ninguna empresa tecnológica llama por teléfono para pedir acceso a tu computador. Es una estafa de soporte técnico falso.",
-    explicacionError: "❌ Esta es una estafa de soporte técnico falso. Si das acceso a tu computador, pueden robar tu información o instalarte un virus real. Siempre cuelga este tipo de llamadas."
-  }
+    opciones: ["modulo-estafas.mensaje6.a", "modulo-estafas.mensaje6.b" , "modulo-estafas.mensaje6.c"],
+    explicacionCorrecta: "modulo-estafas.explicacion.correcta6",
+    explicacionError: "modulo-estafas.explicacion.error6",
+  },
 ];
 
 let mensajeEstafasIndice = 0;
@@ -486,13 +486,13 @@ function mostrarMensajeEstafas() {
   const item = mensajesMezclados[mensajeEstafasIndice];
 
   document.getElementById("telefono-icono-app").textContent = item.app;
-  document.getElementById("telefono-contacto").textContent = item.contacto;
+  document.getElementById("telefono-contacto").textContent = t(item.contacto);
   document.getElementById("telefono-hora").textContent = item.hora;
 
   const burbuja = document.getElementById("burbuja-mensaje");
   burbuja.style.opacity = "0";
   burbuja.style.transform = "translateY(10px)";
-  burbuja.textContent = item.mensaje;
+  burbuja.textContent = t(item.mensaje);
   setTimeout(() => {
     burbuja.style.transition = "opacity 0.4s, transform 0.4s";
     burbuja.style.opacity = "1";
@@ -503,9 +503,9 @@ function mostrarMensajeEstafas() {
   document.getElementById("estafas-feedback-container").style.display = "none";
 
   let html = `<div class="actividad-card">
-    <p class="actividad-pregunta"><strong>¿Qué debería hacer Juan?</strong></p>`;
+    <p class="actividad-pregunta"><strong>${t("modulo-estafas.actividad.pregunta")}</strong></p>`;
   item.opciones.forEach((op, i) => {
-    html += `<button class="actividad-opcion" onclick="responderEstafa(${i}, this)">${op}</button>`;
+    html += `<button class="actividad-opcion" onclick="responderEstafa(${i}, this)">${t(op)}</button>`;
   });
   html += `<p id="feedback-estafa-actual" class="quiz-feedback"></p></div>`;
   contenedor.innerHTML = html;
