@@ -348,7 +348,7 @@ const mensajesEstafas = [
   {
     tipo: "correo",
     app: "📧",
-    contacto: "banco.seguridad@notificaciones-urgentes.com",
+    contacto: "modulo-estafas.contacto1",
     mensaje: "modulo-estafas.mensaje1",
     hora: "10:34 a.m.",
     esEstafa: true,
@@ -365,14 +365,14 @@ const mensajesEstafas = [
     hora: "11:05 a.m.",
     esEstafa: false,
     opcionCorrecta: 0,
-    opciones: ["modulo-estafas.mensaje3.a", "modulo-estafas.mensaje3.b", "modulo-estafas.mensaje2.c"],
+    opciones: ["modulo-estafas.mensaje2.a", "modulo-estafas.mensaje2.b", "modulo-estafas.mensaje2.c"],
     explicacionCorrecta: "modulo-estafas.explicacion.correcta2",
     explicacionError: "modulo-estafas.explicacion.error2",
   },
   {
     tipo: "whatsapp",
     app: "💬",
-    contacto: "+1 (305) 849-2201 (desconocido)",
+    contacto: "modulo-estafas.contacto3",
     mensaje: "modulo-estafas.mensaje3",
     hora: "12:18 p.m.",
     esEstafa: true,
@@ -408,7 +408,7 @@ const mensajesEstafas = [
   {
     tipo: "llamada",
     app: "📞",
-    contacto: "Número desconocido: +1 (800) 000-9921",
+    contacto: "modulo-estafas.contacto6",
     mensaje: "modulo-estafas.mensaje6",
     hora: "4:52 p.m.",
     esEstafa: true,
@@ -492,7 +492,7 @@ function mostrarMensajeEstafas() {
   const burbuja = document.getElementById("burbuja-mensaje");
   burbuja.style.opacity = "0";
   burbuja.style.transform = "translateY(10px)";
-  burbuja.textContent = t(item.mensaje);
+  burbuja.innerHTML = t(item.mensaje);
   setTimeout(() => {
     burbuja.style.transition = "opacity 0.4s, transform 0.4s";
     burbuja.style.opacity = "1";
@@ -559,7 +559,7 @@ function responderEstafa(opcionElegida, boton) {
     boton.style.backgroundColor = "var(--green)";
     boton.style.color = "white";
     boton.style.borderColor = "var(--green)";
-    feedback.textContent = item.explicacionCorrecta;
+    feedback.textContent = t(item.explicacionCorrecta);
     feedback.style.color = "var(--green)";
   } else {
     boton.style.backgroundColor = "var(--red)";
@@ -568,7 +568,7 @@ function responderEstafa(opcionElegida, boton) {
     botones[item.opcionCorrecta].style.backgroundColor = "var(--green)";
     botones[item.opcionCorrecta].style.color = "white";
     botones[item.opcionCorrecta].style.borderColor = "var(--green)";
-    feedback.textContent = item.explicacionError;
+    feedback.textContent = t(item.explicacionError);
     feedback.style.color = "var(--red)";
     erroresEstafas++;
   }

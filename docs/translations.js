@@ -855,9 +855,14 @@ const translations = {
   en: "What should Juan do?",
   },
 
+  "modulo-estafas.contacto1": {
+    es: "banco.seguridad@notificaciones-urgentes.com",
+    en: "bank.security@urgent-notifications.com",
+  },
+
   "modulo-estafas.mensaje1": {
-    es: "Estimado cliente, su cuenta ha sido comprometida. Haga clic en el siguiente enlace para verificar su identidad o su cuenta será bloqueada en 24 horas: www.banco-seguro-verify.com",
-    en: "Dear customer, your account has been compromised. Click the following link to verify your identity or your account will be blocked within 24 hours: www.banco-seguro-verify.com",
+    es: "Estimado cliente, su cuenta ha sido comprometida. Haga clic en el siguiente enlace para verificar su identidad o su cuenta será bloqueada en 24 horas: <span class=\"link\">www.banco-seguro-verifica.com</span>",
+    en: "Dear customer, your account has been compromised. Click the following link to verify your identity or your account will be blocked within 24 hours: <span class=\"link\">www.secure-bank-verify.com</span>",
   },
 
   "modulo-estafas.mensaje1.a": {
@@ -918,6 +923,11 @@ const translations = {
   "modulo-estafas.explicacion.error2": {
     es: "❌ Este es un mensaje legítimo. Viene de un contacto guardado y conocido, sin ninguna señal de alerta. Es importante no desconfiar de todo.",
     en: "❌ This is a legitimate message. It comes from a saved, known contact and shows no warning signs. It’s important not to be suspicious of every message.",
+  },
+
+  "modulo-estafas.contacto3": {
+    es: "+1 (305) 849-2201 (desconocido)",
+    en: "+1 (305) 849-2201 (unknown)",
   },
 
   "modulo-estafas.mensaje3": {
@@ -1018,6 +1028,11 @@ const translations = {
   "modulo-estafas.explicacion.error5": {
     es: "❌ Este es un mensaje legítimo de tu médico. Viene de un contacto conocido, solo confirma una cita y no tiene ninguna señal de alerta.",
     en: "❌ This is a legitimate message from your doctor. It comes from a known contact, simply confirms an appointment, and shows no warning signs.",
+  },
+
+  "modulo-estafas.contacto6": {
+    es: "Número desconocido: +1 (800) 000-9921",
+    en: "unknown number: +1 (800) 000-9921",
   },
 
   "modulo-estafas.mensaje6": {

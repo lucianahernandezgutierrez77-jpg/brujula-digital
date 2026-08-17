@@ -955,3 +955,8 @@ body{
   color: var(--blue);
   border-color: white;
 }
+
+.link {
+  color: blue;
+  text-decoration: underline;
+}
