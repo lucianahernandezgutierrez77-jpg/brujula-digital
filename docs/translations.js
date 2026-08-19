@@ -559,12 +559,12 @@ const translations = {
     en: "Calling a family member or taking a walk is an excellent alternative to disconnect and take care of our health.",
   },
 
-  "quiz1.pregunta.correcta": {
+  "quizes.pregunta.correcta": {
     es: "✅ ¡Correcto!",
     en: "✅ Correct!",
   },
 
-  "quiz1.pregunta.incorrecta": {
+  "quizes.pregunta.incorrecta": {
     es: "❌ No es correcto. La respuesta correcta era: ",
     en: "❌ Not correct. The correct answer was: ",
   },
@@ -1111,7 +1111,7 @@ const translations = {
     en: "Which of these is a warning sign of a possible scam?",
   },
 
-  "quiz2.p2.a:": {
+  "quiz2.p2.a": {
     es: "El mensaje viene de un contacto conocido",
     en: "The message comes from a known contact.",
   },
@@ -1205,6 +1205,32 @@ const translations = {
     es: "Le envías una foto de tu tarjeta",
     en: "You send them a photo of your card.",
   },
+
+  "quiz2.p6": {
+    es: "¿Cuál es la mejor forma de verificar si un mensaje de una institución es real?",
+    en: "What is the best way to verify whether a message from an institution is legitimate?",
+  },
+
+  "quiz2.p6.a": {
+    es: "Hacer clic en el enlace del mensaje",
+    en: "Clicking the link in the message",
+  },
+
+  "quiz2.p6.b": {
+    es: "Responder el mensaje preguntando si es real",
+    en: "Replying to the message to ask if it’s legitimate",
+  },
+
+  "quiz2.p6.c": {
+    es: "Contactar directamente a la institución por sus canales oficiales",
+    en: "Contacting the institution directly through its official channels", 
+  },
+
+  "quiz2.p6.d": {
+    es: "Reenviar el mensaje a tus contactos",
+    en: "Forwarding the message to your contacts",
+  },
+
 
 // INTRO MODULO 3
 

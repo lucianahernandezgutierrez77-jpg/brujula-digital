@@ -92,12 +92,12 @@ function verificarRespuesta(preguntaIndice, opcionElegida, botonPresionado) {
 
   if (opcionElegida === correcta) {
     botonPresionado.style.backgroundColor = "var(--green)";
-    feedback.textContent = t("quiz1.pregunta.correcta");
+    feedback.textContent = t("quizes.pregunta.correcta");
     feedback.style.color = "var(--green)";
     respuestasCorrectas++;
   } else {
     botonPresionado.style.backgroundColor = "var(--red)";
-    feedback.textContent = t("quiz1.pregunta.incorrecta") + t(quizData[preguntaIndice].opciones[correcta]);
+    feedback.textContent = t("quizes.pregunta.incorrecta") + t(quizData[preguntaIndice].opciones[correcta]);
     feedback.style.color = "var(--red)";
     botonesDeEsaPregunta[correcta].style.backgroundColor = "var(--green)";
   }
@@ -151,7 +151,7 @@ function mostrarPuntaje() {
 const quizDataEstafas = [
   {
     pregunta: "quiz2.p1",
-    opciones: ["quiz2.p1.a", "quiz2.p1.b", "quiz2.p1.c", "quiz2.p1.c"],
+    opciones: ["quiz2.p1.a", "quiz2.p1.b", "quiz2.p1.c", "quiz2.p1.d"],
     correcta: 1
   },
   {
@@ -166,7 +166,7 @@ const quizDataEstafas = [
   },
   {
     pregunta: "quiz2.p4",
-    opciones: ["quiz2.p4.a", "quiz2,p4.b", "quiz2.p4.c", "quiz2.p4.d"],
+    opciones: ["quiz2.p4.a", "quiz2.p4.b", "quiz2.p4.c", "quiz2.p4.d"],
     correcta: 1
   },
   {
@@ -175,8 +175,8 @@ const quizDataEstafas = [
     correcta: 1
   },
   {
-    pregunta: "¿Cuál es la mejor forma de verificar si un mensaje de una institución es real?",
-    opciones: ["Hacer clic en el enlace del mensaje", "Responder el mensaje preguntando si es real", "Contactar directamente a la institución por sus canales oficiales", "Reenviar el mensaje a tus contactos"],
+    pregunta: "quiz2.p6",
+    opciones: ["quiz2.p6.a", "quiz2.p6.b", "quiz2.p6.c", "quiz2.p6.d"],
     correcta: 2
   },
 ];
@@ -186,8 +186,8 @@ let preguntasRespondidasEstafas = 0;
 
 function initQuizEstafas() {
 
-   respuestasCorrectasEstafas = 0;
-   preguntasRespondidasEstafas = 0;
+  respuestasCorrectasEstafas = 0;
+  preguntasRespondidasEstafas = 0;
 
   const container = document.getElementById("quiz-container-estafas");
   const btnResultado = document.getElementById("btn-resultado-estafas");
@@ -200,20 +200,22 @@ function initQuizEstafas() {
   let quizHTML = "";
 
   quizDataEstafas.forEach(function(item, indice) {
-  quizHTML += `<div class="quiz-pregunta" id="pregunta-${indice}">`;
 
-  quizHTML += `<p><strong>${indice + 1}. ${t(item.pregunta)}</strong></p>`;
+    quizHTML += `<div class="quiz-pregunta" id="pregunta-estafas-${indice}">`;
 
-  item.opciones.forEach(function(opcion, opcionIndice) {
-    quizHTML += `<button class="quiz-opcion" onclick="verificarRespuestaEstafas(${indice}, ${opcionIndice}, this)">${t(opcion)}</button>`;
+    quizHTML += `<p><strong>${indice + 1}. ${t(item.pregunta)}</strong></p>`;
+
+    item.opciones.forEach(function(opcion, opcionIndice) {
+      quizHTML += `<button class="quiz-opcion" onclick="verificarRespuestaEstafas(${indice}, ${opcionIndice}, this)">${t(opcion)}</button>`;
+    });
+
+    quizHTML += `<p id="feedback-estafas-${indice}" class="quiz-feedback"></p>`;
+
+    quizHTML += `</div>`;
   });
 
-  quizHTML += `<p id="feedback-estafas-${indice}" class="quiz-feedback"></p>`;
-  quizHTML += `</div>`;
-  });
-
-container.innerHTML = quizHTML;
-};
+  container.innerHTML = quizHTML;
+}
 
 function verificarRespuestaEstafas(preguntaIndice, opcionElegida, botonPresionado) {
   const correcta = quizDataEstafas[preguntaIndice].correcta;
@@ -223,16 +225,18 @@ function verificarRespuestaEstafas(preguntaIndice, opcionElegida, botonPresionad
   botones.forEach(function(btn) { btn.disabled = true; });
 
   if (opcionElegida === correcta) {
-    botonPresionado.style.backgroundColor = "var(--green)";
-    feedback.textContent = "✅ ¡Correcto!";
-    feedback.style.color = "var(--green)";
-    respuestasCorrectasEstafas++;
+  botonPresionado.style.backgroundColor = "var(--green)";
+  feedback.textContent = t("quizes.pregunta.correcta");
+  feedback.style.color = "var(--green)";
+  respuestasCorrectasEstafas++;
   } else {
-    botonPresionado.style.backgroundColor = "var(--red)";
-    feedback.textContent = "❌ No es correcto. La respuesta correcta era: " + quizDataEstafas[preguntaIndice].opciones[correcta];
-    feedback.style.color = "var(--red)";
-    botones[correcta].style.backgroundColor = "var(--green)";
-  }
+  botonPresionado.style.backgroundColor = "var(--red)";
+  feedback.textContent =
+    t("quizes.pregunta.incorrecta") +
+    t(quizDataEstafas[preguntaIndice].opciones[correcta]);
+  feedback.style.color = "var(--red)";
+  botones[correcta].style.backgroundColor = "var(--green)";
+}
 
   preguntasRespondidasEstafas++;
   if (preguntasRespondidasEstafas === quizDataEstafas.length) {
