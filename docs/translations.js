@@ -375,8 +375,8 @@ const translations = {
   },
 
   "modulo-salud.titulo.quiz": {
-    es: "🧠 Pon a prueba lo que aprendiste",
-    en: "🧠 Test what you've learned",
+    es: "<span class=\"subtitle2\">🧠 Pon a prueba lo que aprendiste</span>",
+    en: "<span class=\"subtitle2\">🧠 Test what you've learned</span>",
   },
 
   "quiz1.p1": {
@@ -831,8 +831,8 @@ const translations = {
   //ACTIVIDAD 2
 
   "modulo-estafas.actividad.titulo": {
-    es: "Actividad",
-    en: "Activity",
+    es: "<span class=\"subtitle2\">Actividad</span",
+    en: "<span class=\"subtitle2\">Activity</span",
   },
 
   "modulo-estafas.actividad.descripcion": {
@@ -1075,6 +1075,136 @@ const translations = {
     en: "Juan was able to identify the messages with your help. Remember: if you receive a suspicious message, it’s best not to click on anything, not to share any personal information, and to verify it directly with the official source.",
   },
 
+  //QUIZ ESTAFAS
+  "quiz-estafas.titulo": {
+    es: "<span class=\"subtitle2\">🧠 ¿Es estafa o no?</span>",
+    en: "<span class=\"subtitle2\">🧠 Is it a scam or not?</span>",
+  },
+
+  "quiz2.p1": {
+    es: "Recibes un mensaje de tu banco diciendo que tu cuenta será bloqueada en 2 horas. ¿Qué haces?",
+    en: "You receive a message from your bank saying that your account will be blocked in 2 hours. What do you do?",
+  },
+
+  "quiz2.p1.a": {
+    es: "Hago clic en el enlace del mensaje inmediatamente",
+    en: "I click the link in the message immediately.",
+  },
+
+  "quiz2.p1.b": {
+    es: "Llamo directamente al número oficial de mi banco para verificar",
+    en: "I call my bank directly using its official phone number to verify.",
+  },
+
+  "quiz2.p1.c": {
+    es: "Le reenvío el mensaje a un familiar",
+    en: "I forward the message to a family member.",
+  },
+
+  "quiz2.p1.d": {
+    es: "Respondo el mensaje con mis datos",
+    en: "I reply to the message with my personal information.",
+  },
+
+  "quiz2.p2": {
+    es: "¿Cuál de estas es una señal de alerta de una posible estafa?",
+    en: "Which of these is a warning sign of a possible scam?",
+  },
+
+  "quiz2.p2.a:": {
+    es: "El mensaje viene de un contacto conocido",
+    en: "The message comes from a known contact.",
+  },
+
+  "quiz2.p2.b": {
+    es: "El mensaje tiene buena ortografía",
+    en: "The message has good spelling.",
+  },
+
+  "quiz2.p2.c": {
+    es: "El mensaje crea urgencia y pide datos personales",
+    en: "The message creates a sense of urgency and asks for personal information.",
+  },
+
+  "quiz2.p2.d": {
+    es: "El mensaje llega por correo oficial",
+    en: "The message comes from an official email address.",
+  },
+
+  "quiz2.p3": {
+    es: "Te llaman diciendo que ganaste un viaje gratis pero debes pagar $50 para recibirlo. ¿Qué es esto?",
+    en: "They call you saying you won a free trip, but you have to pay $50 to receive it. What is this?",
+  },
+
+  "quiz2.p3.a": {
+    es: "Una oferta legítima",
+    en: "A legitimate offer",
+  },
+
+  "quiz2.p3.b": {
+    es: "Un error del sistema",
+    en: "A system error"
+  },
+
+  "quiz2.p3.c": {
+    es: "Una promoción real de una empresa",
+    en: "A real promotion from a company",
+  },
+
+  "quiz2.p3.d": {
+    es: "Una estafa clásica de premio falso",
+    en: "A classic fake prize scam",
+  },
+
+  "quiz2.p4": {
+    es: "¿Qué nunca te pedirá tu banco por mensaje o llamada?",
+    en: "What will your bank never ask you for via text message or phone call?",
+  },
+
+  "quiz2.p4.a": {
+    es: "Tu nombre completo",
+    en: "Your full name",
+  },
+
+  "quiz2.p4.b": {
+    es: "Tu contraseña o código de seguridad",
+    en: "Your password or security code",
+  },
+
+  "quiz2.p4.c": {
+    es: "El saldo de tu cuenta",
+    en: "Your account balance",
+  },
+
+  "quiz2.p4.d": {
+    es: "Tu número de cliente",
+    en: "Your customer number",
+  },
+
+  "quiz2.p5": {
+    es: "Recibes un WhatsApp de un número desconocido diciendo ser tu hijo en apuros y pidiendo dinero urgente. ¿Qué haces?",
+    en: "You receive a WhatsApp message from an unknown number claiming to be your child in trouble and urgently asking for money. What do you do?",
+  },
+
+  "quiz2.p5.a": {
+    es: "Envías el dinero inmediatamente",
+    en: "You send the money immediately.",
+  },
+
+  "quiz2.p5.b": {
+    es: "Llamas directamente a tu hijo al número que ya tienes guardado",
+    en: "You call your child directly using the number you already have saved.",
+  },
+
+  "quiz2.p5.c": {
+    es: "Respondes el mensaje pidiendo más información",
+    en: "You reply to the message asking for more information.",
+  },
+
+  "quiz2.p5.d": {
+    es: "Le envías una foto de tu tarjeta",
+    en: "You send them a photo of your card.",
+  },
 
 // INTRO MODULO 3
 

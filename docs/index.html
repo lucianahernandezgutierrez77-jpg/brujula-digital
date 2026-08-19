@@ -99,7 +99,7 @@
     </div>
   </section>
 
-  <!-- LECCION MÓDULO 1 -->
+  <!-- LECCION MODULO 1 -->
   <section id="leccion-salud" style="display:none">
     <div class="intro">
       <h3 data-i18n="modulo-salud.video">🎥 Video recomendado</h3>
@@ -127,7 +127,7 @@
 
 <!-- ACTIVIDAD MODULO 1 -->
 <div style="text-align: center;">
-<h2 data-i18n="modulo-salud.actividad.titulo"><span class="subtitle2">Actividad  </span></h2>
+<h2 data-i18n="modulo-salud.actividad.titulo"><span class="subtitle2">Actividad</span></h2>
 <p data-i18n="modulo-salud.actividad.descripcion">Después de pasar un tiempo usando el computador, Juan decidió salir a caminar para descansar su vista y mover el cuerpo. Responde correctamente las preguntas para ayudarlo a completar su recorrido.</p>
 </div>
 <div id="game">
@@ -183,7 +183,9 @@
 </div>
 <!-- QUIZ MODULO 1 -->
       <hr style="margin: 40px 0; border: none; border-top: 3px solid #e2e8f0;">
-      <h3 data-i18n="modulo-salud.titulo.quiz">🧠 Pon a prueba lo que aprendiste</h3>
+      <div style="text-align: center;">
+      <h2 data-i18n="modulo-salud.titulo.quiz"> <span class="subtitle2">🧠 Pon a prueba lo que aprendiste</span> </h2>
+      </div>
       <div id="quiz-container"></div>
       <div style="display: flex; justify-content: center; margin-top: 20px;">
         <button class="btn" data-i18n="modulo-salud.boton.resultado" onclick="mostrarPuntaje()" id="btn-resultado" style="display:none; width: auto;">Ver mi resultado 🎯</button>
@@ -196,7 +198,7 @@
     </div>
   </section>
 
-  <!-- INTRO MÓDULO 2 -->
+  <!-- INTRO MODULO 2 -->
   <section id="modulo-estafas" style="display:none">
     <div class="intro">
       <h2 data-i18n="modulo-estafas.consejos.titulo">⚠️ Estafas digitales</h2>
@@ -351,11 +353,13 @@
     <button class="btn" onclick="reiniciarActividadEstafas()" style="width:auto; min-width:250px;">🔄 Intentar de nuevo</button>
   </div>
 </div>
+
 <hr style="margin: 40px 0; border: none; border-top: 3px solid #e2e8f0;">
 
 <!--QUIZ !-->
-
-      <h3>🧠 ¿Es estafa o no?</h3>
+      <div style="text-align: center;">
+      <h2 data-i18n="quiz-estafas.titulo"><span class="subtitle2">🧠 ¿Es estafa o no?</span></h2>
+      </div>
       <div id="quiz-container-estafas"></div>
       <div style="display: flex; justify-content: center; margin-top: 20px;">
         <button class="btn" onclick="mostrarPuntajeEstafas()" id="btn-resultado-estafas" style="display:none; width: auto;">Ver mi resultado 🎯</button>

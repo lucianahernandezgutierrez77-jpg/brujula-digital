@@ -147,31 +147,31 @@ function mostrarPuntaje() {
   document.getElementById("btn-resultado").style.display = "none";
 }
 
-// QUIZ MÓDULO 2
+// QUIZ MODULO 2
 const quizDataEstafas = [
   {
-    pregunta: "Recibes un mensaje de tu banco diciendo que tu cuenta será bloqueada en 2 horas. ¿Qué haces?",
-    opciones: ["Hago clic en el enlace del mensaje inmediatamente", "Llamo directamente al número oficial de mi banco para verificar", "Le reenvío el mensaje a un familiar", "Respondo el mensaje con mis datos"],
+    pregunta: "quiz2.p1",
+    opciones: ["quiz2.p1.a", "quiz2.p1.b", "quiz2.p1.c", "quiz2.p1.c"],
     correcta: 1
   },
   {
-    pregunta: "¿Cuál de estas es una señal de alerta de una posible estafa?",
-    opciones: ["El mensaje viene de un contacto conocido", "El mensaje tiene buena ortografía", "El mensaje crea urgencia y pide datos personales", "El mensaje llega por correo oficial"],
+    pregunta: "quiz2.p2",
+    opciones: ["quiz2.p2.a", "quiz2.p2.b", "quiz2.p2.c", "quiz2.p2.d"],
     correcta: 2
   },
   {
-    pregunta: "Te llaman diciendo que ganaste un viaje gratis pero debes pagar $50 para recibirlo. ¿Qué es esto?",
-    opciones: ["Una oferta legítima", "Un error del sistema", "Una promoción real de una empresa", "Una estafa clásica de premio falso"],
+    pregunta: "quiz2.p3",
+    opciones: ["quiz2.p3.a", "quiz2.p3.b", "quiz2.p3.c", "quiz2.p3.d"],
     correcta: 3
   },
   {
-    pregunta: "¿Qué nunca te pedirá tu banco por mensaje o llamada?",
-    opciones: ["Tu nombre completo", "Tu contraseña o código de seguridad", "El saldo de tu cuenta", "Tu número de cliente"],
+    pregunta: "quiz2.p4",
+    opciones: ["quiz2.p4.a", "quiz2,p4.b", "quiz2.p4.c", "quiz2.p4.d"],
     correcta: 1
   },
   {
-    pregunta: "Recibes un WhatsApp de un número desconocido diciendo ser tu hijo en apuros y pidiendo dinero urgente. ¿Qué haces?",
-    opciones: ["Envías el dinero inmediatamente", "Llamas directamente a tu hijo al número que ya tienes guardado", "Respondes el mensaje pidiendo más información", "Le envías una foto de tu tarjeta"],
+    pregunta: "quiz2.p5",
+    opciones: ["quiz2.p5.a", "quiz2.p5.b", "quiz2.p5.c", "quiz2.p5.d"],
     correcta: 1
   },
   {
@@ -198,18 +198,22 @@ function initQuizEstafas() {
   resultadoFinal.innerHTML = "";
 
   let quizHTML = "";
+
   quizDataEstafas.forEach(function(item, indice) {
-    quizHTML += `<div class="quiz-pregunta" id="pregunta-estafas-${indice}">`;
-    quizHTML += `<p><strong>${indice + 1}. ${item.pregunta}</strong></p>`;
-    item.opciones.forEach(function(opcion, opcionIndice) {
-      quizHTML += `<button class="quiz-opcion" onclick="verificarRespuestaEstafas(${indice}, ${opcionIndice}, this)">${opcion}</button>`;
-    });
-    quizHTML += `<p id="feedback-estafas-${indice}" class="quiz-feedback"></p>`;
-    quizHTML += `</div>`;
+  quizHTML += `<div class="quiz-pregunta" id="pregunta-${indice}">`;
+
+  quizHTML += `<p><strong>${indice + 1}. ${t(item.pregunta)}</strong></p>`;
+
+  item.opciones.forEach(function(opcion, opcionIndice) {
+    quizHTML += `<button class="quiz-opcion" onclick="verificarRespuestaEstafas(${indice}, ${opcionIndice}, this)">${t(opcion)}</button>`;
   });
 
-  container.innerHTML = quizHTML;
-}
+  quizHTML += `<p id="feedback-estafas-${indice}" class="quiz-feedback"></p>`;
+  quizHTML += `</div>`;
+  });
+
+container.innerHTML = quizHTML;
+};
 
 function verificarRespuestaEstafas(preguntaIndice, opcionElegida, botonPresionado) {
   const correcta = quizDataEstafas[preguntaIndice].correcta;
@@ -337,7 +341,7 @@ function initQuizDeepfakes() {
   let quizHTML = "";
   quizDataDeepfakes.forEach(function(item, indice) {
     quizHTML += `<div class="quiz-pregunta" id="pregunta-deepfakes-${indice}">`;
-    quizHTML += `<p><strong>${indice + 1}. ${item.pregunta}</strong></p>`;
+    quizHTML += `<p><strong>${indice + 1}. ${t(item.pregunta)}</strong></p>`;
     item.opciones.forEach(function(opcion, opcionIndice) {
       quizHTML += `<button class="quiz-opcion" onclick="verificarRespuestaDeepfakes(${indice}, ${opcionIndice}, this)">${opcion}</button>`;
     });
