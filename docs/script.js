@@ -49,7 +49,6 @@ let resultadoMostrado = {
   privacidad: false
 };
 
-// contadores
 const contador = {
     get correctas() {
       return respuestasCorrectas;
@@ -170,7 +169,7 @@ function verificarRespuesta(
     btn.disabled = true;
   });
 
-  // RESPUESTA CORRECTA
+  // CORRECTA
   if (opcionElegida === correcta) {
 
     botonPresionado.style.backgroundColor = "var(--green)";
@@ -180,7 +179,7 @@ function verificarRespuesta(
 
     contador.correctas++;
 
-  // RESPUESTA INCORRECTA
+  // INCORRECTA
   } else {
 
     botonPresionado.style.backgroundColor = "var(--red)";

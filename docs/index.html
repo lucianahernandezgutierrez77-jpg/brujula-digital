@@ -39,7 +39,7 @@
     </div>
   </section>
 
-  <!-- MÓDULOS -->
+  <!-- MODULOS -->
   <section id="modulos" style="display:none">
     <h2 data-i18n="modulos.titulo" style="color: var(--blue);">Módulos</h2>
     <div class="module-card" onclick="showSection('modulo-salud')" data-i18n="modulos.salud">📱 Uso saludable de dispositivos</div>
@@ -48,7 +48,7 @@
     <div class="module-card" onclick="showSection('modulo-privacidad')" data-i18n="modulos.privacidad">🔒 Privacidad y seguridad</div>
   </section>
 
-  <!--INTRO MÓDULO 1 -->
+  <!--INTRO MODULO 1 -->
   <section id="modulo-salud" style="display:none">
     <div class="intro">
       <h2 data-i18n="modulo-salud.consejos.titulo">📱 Uso saludable de dispositivos</h2>
@@ -188,12 +188,12 @@
       </div>
       <div id="quiz-container"></div>
       <div style="display: flex; justify-content: center; margin-top: 20px;">
-        <button class="btn" data-i18n="modulo-salud.boton.resultado" onclick="mostrarPuntajeSalud()" id="btn-resultado" style="display:none; width: auto;">Ver mi resultado 🎯</button>
+        <button class="btn" data-i18n="modulos-boton-resultado" onclick="mostrarPuntajeSalud()" id="btn-resultado" style="display:none; width: auto;">Ver mi resultado 🎯</button>
       </div>
       <div id="resultado-final" style="display:none;"></div>
       <div style="display: flex; justify-content: space-between; align-items: center; margin-top: 20px; flex-wrap: wrap; gap: 10px;">
-        <button class="btn btn-secondary" data-i18n="modulo-salud.boton.inicio" onclick="goHome()">← Volver al inicio</button>
-        <button class="btn" data-i18n="modulo-salud.boton.siguiente" onclick="showSection('modulo-estafas')">Siguiente módulo →</button>
+        <button class="btn btn-secondary" data-i18n="modulos-boton-inicio" onclick="goHome()">← Volver al inicio</button>
+        <button class="btn" data-i18n="modulos-boton-siguiente" onclick="showSection('modulo-estafas')">Siguiente módulo →</button>
       </div>
     </div>
   </section>
@@ -279,9 +279,9 @@
         <li data-i18n="modulo-estafas.list2.item5">Te ofrecen algo <span class="highlight3">demasiado bueno para ser verdad</span></li>
       </ul>
       <p data-i18n="modulo-estafas.recuerda"><strong>Recuerda:</strong> Tomarte unos segundos para verificar un mensaje puede evitar muchos problemas. Ante cualquier duda, es mejor confirmar la información antes de compartir datos personales o realizar un pago.</p>
-      <p data-i18n="modulo-estafas.fuente">📚 <strong>¿Quieres saber más?</strong> La Oficina de Seguridad del Internauta explica cómo protegerse del phishing:<br>
+      <p data-i18n="modulo-estafas.fuente">📚 <strong>¿Quieres saber más?</strong> La Oficina de Seguridad del Internauta explica cómo protegerse del phishing:<br></p>
         <a href="https://www.osi.es/es/phishing" target="_blank" rel="noopener noreferrer" style="color: var(--blue); font-size: 1rem;">🔗 Ver fuente oficial (OSI - Oficina de Seguridad del Internauta)</a>
-      </p>
+
   <!-- ACTIVIDAD MODULO 2 -->
 <div style="text-align: center;">
 <h2 data-i18n="modulo-estafas.actividad.titulo"><span class="subtitle2">Actividad  </span></h2>
@@ -356,18 +356,18 @@
 
 <hr style="margin: 40px 0; border: none; border-top: 3px solid #e2e8f0;">
 
-<!--QUIZ !-->
+  <!--QUIZ !-->
       <div style="text-align: center;">
       <h2 data-i18n="quiz-estafas.titulo"><span class="subtitle2">🧠 ¿Es estafa o no?</span></h2>
       </div>
       <div id="quiz-container-estafas"></div>
       <div style="display: flex; justify-content: center; margin-top: 20px;">
-        <button class="btn" onclick="mostrarPuntajeEstafas()" id="btn-resultado-estafas" style="display:none; width: auto;">Ver mi resultado 🎯</button>
+        <button class="btn" data-i18n="modulos-boton-resultado" onclick="mostrarPuntajeEstafas()" id="btn-resultado-estafas" style="display:none; width: auto;">Ver mi resultado 🎯</button>
       </div>
       <div id="resultado-final-estafas" style="display:none;"></div>
       <div style="display: flex; justify-content: space-between; align-items: center; margin-top: 20px; flex-wrap: wrap; gap: 10px;">
-        <button class="btn btn-secondary" onclick="goHome()">← Volver al inicio</button>
-        <button class="btn"  onclick="showSection('modulo-deepfakes')">Siguiente módulo →</button>
+        <button class="btn btn-secondary" data-i18n="modulos-boton-inicio" onclick="goHome()">← Volver al inicio</button>
+        <button class="btn" data-i18n="modulos-boton-siguiente" onclick="showSection('modulo-deepfakes')">Siguiente módulo →</button>
       </div>
     </div>
   </section>
@@ -521,7 +521,7 @@
       </div>
   </section>
 
-  <!-- LECCIÓN MÓDULO 4 -->
+  <!-- LECCION MODULO 4 -->
    <section id="leccion-privacidad" style="display:none">
     <div class="intro">
       <h3>🎥 Video recomendado</h3>

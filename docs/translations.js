@@ -624,7 +624,7 @@ const translations = {
     en: "Technology is a tool, not a mandatory pastime.",
   },
     
-  "modulo-salud.boton.resultado": {
+  "modulos-boton-resultado": {
     es: "Ver mi resultado 🎯",
     en: "See my result 🎯",
   },
@@ -634,12 +634,12 @@ const translations = {
     en: "You got <strong>{respuestasCorrectas} out of {total}</strong> correct answers.",
   },
 
-  "modulo-salud.boton.inicio": {
+  "modulos-boton-inicio": {
     es: "← Volver al inicio",
     en: "← Back to Home",
   },
 
-  "modulo-salud.boton.siguiente": {
+  "modulos-boton-siguiente": {
     es: "Siguiente módulo →",
     en: "Next Module →",
   },
@@ -825,7 +825,7 @@ const translations = {
 
   "modulo-estafas.fuente": {
     es: "<strong>¿Quieres saber más?</strong> La Oficina de Seguridad del Internauta explica cómo protegerse del phishing<br>",
-    en: "📚 <strong>Want to learn more?</strong> <br>",
+    en: "📚 <strong>Want to learn more?</strong> The Internet User Security Office explains how to protect yourself from phishing. <br>",
   },
 
   //ACTIVIDAD 2
