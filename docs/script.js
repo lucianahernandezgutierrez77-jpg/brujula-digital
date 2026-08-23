@@ -11,8 +11,9 @@ function showSection(id) {
    }
 
   if (id === "modulo-estafas" && document.getElementById("quiz-container-estafas").children.length === 0) {
-    initQuiz(quizDataEstafas, "quiz-container-estafas", "btn-resultado-estafas", "resultado-final-estafas", "estafas", contadorEstafas, "quizDataEstafas", "contadorEstafas");
-   }
+  initQuiz(
+    quizDataEstafas,"quiz-container-estafas","btn-resultado-estafas","resultado-final-estafas", "estafas", contadorEstafas, "quizDataEstafas", "contadorEstafas");
+  }
 
   if (id === "modulo-deepfakes" && document.getElementById("quiz-container-deepfakes").children.length === 0) {
     initQuiz(quizDataDeepfakes, "quiz-container-deepfakes", "btn-resultado-deepfakes", "resultado-final-deepfakes", "deepfakes", contadorDeepfakes, "quizDataDeepfakes", "contadorDeepfakes");
@@ -40,6 +41,13 @@ let preguntasRespondidasDeepfakes = 0;
 
 let respuestasCorrectasPrivacidad = 0;
 let preguntasRespondidasPrivacidad = 0;
+
+let resultadoMostrado = {
+  salud: false,
+  estafas: false,
+  deepfakes: false,
+  privacidad: false
+};
 
 // contadores
 const contador = {
@@ -102,12 +110,7 @@ const contadorPrivacidad = {
     preguntasRespondidasPrivacidad = valor;
   },
 }
- let resultadoMostrado = {
-  salud: false,
-  estafas: false,
-  deepkaes: false,
-  privacidad: false,
- };
+
 
 function initQuiz(
   quizData, containerId, btnResultadoId, resultadoFinalId, prefijo, contador, nombreQuizData, nombreContador
@@ -177,8 +180,6 @@ function verificarRespuesta(
 
     contador.correctas++;
 
-    console.log("CORRECTAS DESPUÉS DE SUMAR:", contador.correctas);
-
   // RESPUESTA INCORRECTA
   } else {
 
@@ -195,11 +196,10 @@ function verificarRespuesta(
 
   contador.respondidas++;
 
-  console.log("RESPONDIDAS:", contador.respondidas);
-
   if (contador.respondidas === quizData.length) {
-    document.getElementById(btnResultadoId).style.display = "block";
-  }
+  const btn = document.getElementById(btnResultadoId);
+  if (btn) btn.style.display = "inline-block"; 
+ }
 }
 
 function mostrarPuntaje(
@@ -222,7 +222,6 @@ function mostrarPuntaje(
     mensaje = mensajeIntentar;
     color = "var(--orange)";
   }
-
 
   resultado.innerHTML = `
     <div style="background: white; border-radius: 12px; padding: 20px; margin-top: 15px; text-align: center; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
