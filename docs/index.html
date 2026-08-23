@@ -188,7 +188,7 @@
       </div>
       <div id="quiz-container"></div>
       <div style="display: flex; justify-content: center; margin-top: 20px;">
-        <button class="btn" data-i18n="modulo-salud.boton.resultado" onclick="mostrarPuntaje()" id="btn-resultado" style="display:none; width: auto;">Ver mi resultado 🎯</button>
+        <button class="btn" data-i18n="modulo-salud.boton.resultado" onclick="mostrarPuntajeSalud()" id="btn-resultado" style="display:none; width: auto;">Ver mi resultado 🎯</button>
       </div>
       <div id="resultado-final" style="display:none;"></div>
       <div style="display: flex; justify-content: space-between; align-items: center; margin-top: 20px; flex-wrap: wrap; gap: 10px;">
@@ -347,10 +347,10 @@
   <p data-i18n="actividad-estafas.mensaje.final">Juan pudo identificar los mensajes gracias a tu ayuda. Recuerda: ante cualquier mensaje sospechoso, lo mejor es no hacer clic, no compartir datos y verificar directamente con la fuente oficial.</p>
 </div>
 <div id="estafas-mensaje-fallo" style="display:none; background:#FFF5F5; border-radius:12px; padding:20px; margin-top:20px; border-left:4px solid var(--red);">
-  <h3>😓 Juan tuvo algunos tropiezos</h3>
-  <p>No te preocupes, reconocer una estafa no siempre es fácil. ¡Inténtalo de nuevo!</p>
+  <h3 data-i18n="actividad-estafas.mensaje.fallo">😓 Juan tuvo algunos tropiezos</h3>
+  <p data-i18n="actividad-estafas.mensaje.fallo2">No te preocupes, reconocer una estafa no siempre es fácil. ¡Inténtalo de nuevo!</p>
   <div style="display:flex; justify-content:center;">
-    <button class="btn" onclick="reiniciarActividadEstafas()" style="width:auto; min-width:250px;">🔄 Intentar de nuevo</button>
+    <button class="btn" data-i18n="actividad-estafas.reiniciar" onclick="reiniciarActividadEstafas()" style="width:auto; min-width:250px;">🔄 Intentar de nuevo</button>
   </div>
 </div>
 
@@ -367,7 +367,7 @@
       <div id="resultado-final-estafas" style="display:none;"></div>
       <div style="display: flex; justify-content: space-between; align-items: center; margin-top: 20px; flex-wrap: wrap; gap: 10px;">
         <button class="btn btn-secondary" onclick="goHome()">← Volver al inicio</button>
-        <button class="btn" onclick="showSection('modulo-deepfakes')">Siguiente módulo →</button>
+        <button class="btn"  onclick="showSection('modulo-deepfakes')">Siguiente módulo →</button>
       </div>
     </div>
   </section>
@@ -466,7 +466,7 @@
       </div>
   </section>
 
-  <!-- INTRO MÓDULO 4 -->
+  <!-- INTRO MODULO 4 -->
   <section id="modulo-privacidad" style="display:none">
     <div class="intro">
       <h2>🔒 Privacidad y seguridad</h2>

@@ -1,14 +1,26 @@
 // NAVEGACION
+
 function showSection(id) {
   document.querySelectorAll("main.container > section").forEach(function(sec) {
     sec.style.display = "none";
   });
   document.getElementById(id).style.display = "block";
 
-  if (id === "leccion-salud") initQuiz();
-  if (id === "leccion-estafas") initQuizEstafas();
-  if (id === "leccion-deepfakes") initQuizDeepfakes();
-  if (id === "leccion-privacidad") initQuizPrivacidad();
+  if (id === "modulo-salud" && document.getElementById("quiz-container").children.length === 0) {
+    initQuiz(quizData, "quiz-container", "btn-resultado", "resultado-final", "salud", contador, "quizData", "contador");
+   }
+
+  if (id === "modulo-estafas" && document.getElementById("quiz-container-estafas").children.length === 0) {
+    initQuiz(quizDataEstafas, "quiz-container-estafas", "btn-resultado-estafas", "resultado-final-estafas", "estafas", contadorEstafas, "quizDataEstafas", "contadorEstafas");
+   }
+
+  if (id === "modulo-deepfakes" && document.getElementById("quiz-container-deepfakes").children.length === 0) {
+    initQuiz(quizDataDeepfakes, "quiz-container-deepfakes", "btn-resultado-deepfakes", "resultado-final-deepfakes", "deepfakes", contadorDeepfakes, "quizDataDeepfakes", "contadorDeepfakes");
+   }
+
+  if (id === "modulo-privacidad" && document.getElementById("quiz-container-privacidad").children.length === 0) {
+    initQuiz(quizDataPrivacidad, "quiz-container-privacidad", "btn-resultado-privacidad", "resultado-final-privacidad", "privacidad", contadorPrivacidad, "quizDataPrivacidad", "contadorPrivacidad");
+  }
 
   window.scrollTo({ top: 0, behavior: "smooth" });
 }
@@ -17,7 +29,282 @@ function goHome() {
   showSection("home");
 }
 
-// QUIZ MÓDULO 1
+let respuestasCorrectas = 0;
+let preguntasRespondidas = 0;
+
+let respuestasCorrectasEstafas = 0;
+let preguntasRespondidasEstafas = 0;
+
+let repuestasCorrectasDeepfakes = 0;
+let preguntasRespondidasDeepfakes = 0;
+
+let respuestasCorrectasPrivacidad = 0;
+let preguntasRespondidasPrivacidad = 0;
+
+// contadores
+const contador = {
+    get correctas() {
+      return respuestasCorrectas;
+    },
+    set correctas(valor) {
+      respuestasCorrectas = valor;
+    },
+    get respondidas() {
+      return preguntasRespondidas;
+    },
+    set respondidas(valor) {
+      preguntasRespondidas = valor;
+    }
+  };
+
+  const contadorEstafas = {
+  get correctas() {
+    return respuestasCorrectasEstafas;
+  },
+  set correctas(valor) {
+    respuestasCorrectasEstafas = valor;
+  },
+
+  get respondidas() {
+    return preguntasRespondidasEstafas;
+  },
+  set respondidas(valor) {
+    preguntasRespondidasEstafas = valor;
+  }
+};
+
+const contadorDeepfakes = {
+  get correctas() {
+    return respuestasCorrectasDeepfakes
+  },
+  set correctas(valor) {
+    respuestasCorrectasDeepfakes = valor;
+  },
+  get respondidas() {
+    return preguntasRespondidasDeepfakes;
+  },
+  set respondidas(valor) {
+    preguntasRespondidasDeepfakes = valor;
+  }
+};
+
+const contadorPrivacidad = {
+  get correctas() {
+    return respuestasCorrectasPrivacidad
+  },
+  set correctas(valor) {
+    respuestasCorrectasPrivacidad = valor;
+  },
+  get respondidas() {
+    return preguntasRespondidasPrivacidad
+  },
+  set respondidas(valor) {
+    preguntasRespondidasPrivacidad = valor;
+  },
+}
+ let resultadoMostrado = {
+  salud: false,
+  estafas: false,
+  deepkaes: false,
+  privacidad: false,
+ };
+
+function initQuiz(
+  quizData, containerId, btnResultadoId, resultadoFinalId, prefijo, contador, nombreQuizData, nombreContador
+) {
+  const container = document.getElementById(containerId);
+  const btnResultado = document.getElementById(btnResultadoId);
+  const resultadoFinal = document.getElementById(resultadoFinalId);
+
+  btnResultado.style.display = "none";
+  resultadoFinal.style.display = "none";
+  resultadoFinal.innerHTML = "";
+
+  let quizHTML = "";
+
+  quizData.forEach(function(item, indice) {
+    quizHTML += `<div class="quiz-pregunta" id="pregunta-${prefijo}-${indice}">`;
+    
+    quizHTML += `<p><strong class="txt-pregunta" data-key="${item.pregunta}">${indice + 1}. ${t(item.pregunta)}</strong></p>`;
+
+    item.opciones.forEach(function(opcion, opcionIndice) {
+      quizHTML += `<button class="quiz-opcion"
+        data-key="${opcion}"
+        onclick="verificarRespuesta(
+          ${nombreQuizData},
+          ${indice},
+          ${opcionIndice},
+          this,
+          '${prefijo}',
+          ${nombreContador},
+          '${btnResultadoId}'
+        )">
+        ${t(opcion)}
+      </button>`;
+    });
+
+    quizHTML += `<p id="feedback-${prefijo}-${indice}" class="quiz-feedback"></p>`;
+    quizHTML += `</div>`;
+  });
+
+  container.innerHTML = quizHTML;
+}
+
+function verificarRespuesta(
+  quizData, preguntaIndice, opcionElegida, botonPresionado, prefijo, contador, btnResultadoId
+) {
+  const correcta = quizData[preguntaIndice].correcta;
+
+  const feedback = document.getElementById(
+    `feedback-${prefijo}-${preguntaIndice}`
+  );
+
+  const botonesDeEsaPregunta = document.querySelectorAll(
+    `#pregunta-${prefijo}-${preguntaIndice} .quiz-opcion`
+  );
+
+  botonesDeEsaPregunta.forEach(function(btn) {
+    btn.disabled = true;
+  });
+
+  // RESPUESTA CORRECTA
+  if (opcionElegida === correcta) {
+
+    botonPresionado.style.backgroundColor = "var(--green)";
+
+    feedback.textContent = t("quizes.pregunta.correcta");
+    feedback.style.color = "var(--green)";
+
+    contador.correctas++;
+
+    console.log("CORRECTAS DESPUÉS DE SUMAR:", contador.correctas);
+
+  // RESPUESTA INCORRECTA
+  } else {
+
+    botonPresionado.style.backgroundColor = "var(--red)";
+
+    feedback.textContent =
+      t("quizes.pregunta.incorrecta") +
+      t(quizData[preguntaIndice].opciones[correcta]);
+
+    feedback.style.color = "var(--red)";
+
+    botonesDeEsaPregunta[correcta].style.backgroundColor = "var(--green)";
+  }
+
+  contador.respondidas++;
+
+  console.log("RESPONDIDAS:", contador.respondidas);
+
+  if (contador.respondidas === quizData.length) {
+    document.getElementById(btnResultadoId).style.display = "block";
+  }
+}
+
+function mostrarPuntaje(
+  quizData, contador, resultadoFinalId, btnResultadoId, mensajePerfecto, mensajeBien, mensajeIntentar, contenidoFinal
+) {
+
+  const total = quizData.length;
+  const resultado = document.getElementById(resultadoFinalId);
+
+  let mensaje = "";
+  let color = "";
+
+  if (contador.correctas === total) {
+    mensaje = mensajePerfecto;
+    color = "var(--green)";
+  } else if (contador.correctas >= total / 2) {
+    mensaje = mensajeBien;
+    color = "var(--blue)";
+  } else {
+    mensaje = mensajeIntentar;
+    color = "var(--orange)";
+  }
+
+
+  resultado.innerHTML = `
+    <div style="background: white; border-radius: 12px; padding: 20px; margin-top: 15px; text-align: center; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+      <h3 style="color: ${color};">${mensaje}</h3>
+
+      <p style="font-size: 1.3rem;">
+        ${t("quizes.puntaje")
+          .replace("{respuestasCorrectas}", contador.correctas)
+          .replace("{total}", total)}
+      </p>
+    </div>
+
+    ${contenidoFinal}
+  `;
+
+  resultado.style.display = "block";
+  document.getElementById(btnResultadoId).style.display = "none";
+}
+
+function mostrarPuntajeSalud() {
+  mostrarPuntaje(
+    quizData,
+    contador,
+    "resultado-final",
+    "btn-resultado",
+
+    t("modulo-salud.mensaje.perfecto"),
+    t("modulo-salud.mensaje.bien"),
+    t("modulo-salud.mensaje.intentar"),
+
+    `
+    <div style="background: #F0FDF4; border-radius: 12px; padding: 20px; margin-top: 20px; border-left: 4px solid var(--green);">
+      <h3>${t("modulo-salud.mensaje.cambio")}</h3>
+      <p>${t("modulo-salud.mensaje.cambio2")}</p>
+
+      <ul style="line-height: 2;">
+        <li>${t("modulo-salud.mensaje.cambio3")}</li>
+        <li>${t("modulo-salud.mensaje.cambio4")}</li>
+        <li>${t("modulo-salud.mensaje.cambio5")}</li>
+        <li>${t("modulo-salud.mensaje.cambio6")}</li>
+        <li>${t("modulo-salud.mensaje.cambio7")}</li>
+      </ul>
+
+      <p>${t("modulo-salud.mensaje.cambio8")}</p>
+    </div>
+    `
+  );
+}
+
+function mostrarPuntajeEstafas() {
+
+  resultadoMostrado.estafas = true;
+  mostrarPuntaje(
+    quizDataEstafas,
+    contadorEstafas,
+    "resultado-final-estafas",
+    "btn-resultado-estafas",
+
+    t("modulo-estafas.mensaje.perfecto"),
+    t("modulo-estafas.mensaje.bien"),
+    t("modulo-estafas.mensaje.intentar"),
+
+    `
+    <div style="background: #F0FDF4; border-radius: 12px; padding: 20px; margin-top: 20px; border-left: 4px solid var(--green);">
+      <h3>${t("modulo-estafas.mensaje.cambio")}</h3>
+      <p>${t("modulo-estafas.mensaje.cambio2")}</p>
+
+      <ul style="line-height: 2;">
+        <li>${t("modulo-estafas.mensaje.cambio3")}</li>
+        <li>${t("modulo-estafas.mensaje.cambio4")}</li>
+        <li>${t("modulo-estafas.mensaje.cambio5")}</li>
+        <li>${t("modulo-estafas.mensaje.cambio6")}</li>
+        <li>${t("modulo-estafas.mensaje.cambio7")}</li>
+      </ul>
+
+      <p>${t("modulo-estafas.mensaje.cambio8")}</p>
+    </div>
+    `
+  );
+}
+
+// QUIZ MODULO 1
 const quizData = [
   {
     pregunta: "quiz1.p1",
@@ -49,103 +336,7 @@ const quizData = [
     opciones: ["quiz1.p6.a", "quiz1.p6.b", "quiz1.p6.c", "quiz1.p6.d"],
     correcta: 2
   }
-];
-
-let respuestasCorrectas = 0;
-let preguntasRespondidas = 0;
-
-function initQuiz() {
-  respuestasCorrectas = 0;
-  preguntasRespondidas = 0;
-
-  const container = document.getElementById("quiz-container");
-  const btnResultado = document.getElementById("btn-resultado");
-  const resultadoFinal = document.getElementById("resultado-final");
-
-  btnResultado.style.display = "none";
-  resultadoFinal.style.display = "none";
-  resultadoFinal.innerHTML = "";
-
-  let quizHTML = "";
-  quizData.forEach(function(item, indice) {
-    quizHTML += `<div class="quiz-pregunta" id="pregunta-${indice}">`;
-    quizHTML += `<p><strong>${indice + 1}. ${t(item.pregunta)}</strong></p>`;
-    item.opciones.forEach(function(opcion, opcionIndice) {
-      quizHTML += `<button class="quiz-opcion"
-    onclick="verificarRespuesta(${indice}, ${opcionIndice}, this)">
-    ${t(opcion)}
-    </button>`;
-    });
-    quizHTML += `<p id="feedback-${indice}" class="quiz-feedback"></p>`;
-    quizHTML += `</div>`;
-  });
-
-  container.innerHTML = quizHTML;
-}
-
-function verificarRespuesta(preguntaIndice, opcionElegida, botonPresionado) {
-  const correcta = quizData[preguntaIndice].correcta;
-  const feedback = document.getElementById(`feedback-${preguntaIndice}`);
-  const botonesDeEsaPregunta = document.querySelectorAll(`#pregunta-${preguntaIndice} .quiz-opcion`);
-
-  botonesDeEsaPregunta.forEach(function(btn) { btn.disabled = true; });
-
-  if (opcionElegida === correcta) {
-    botonPresionado.style.backgroundColor = "var(--green)";
-    feedback.textContent = t("quizes.pregunta.correcta");
-    feedback.style.color = "var(--green)";
-    respuestasCorrectas++;
-  } else {
-    botonPresionado.style.backgroundColor = "var(--red)";
-    feedback.textContent = t("quizes.pregunta.incorrecta") + t(quizData[preguntaIndice].opciones[correcta]);
-    feedback.style.color = "var(--red)";
-    botonesDeEsaPregunta[correcta].style.backgroundColor = "var(--green)";
-  }
-
-  preguntasRespondidas++;
-  if (preguntasRespondidas === quizData.length) {
-    document.getElementById("btn-resultado").style.display = "block";
-  }
-}
-
-function mostrarPuntaje() {
-  const total = quizData.length;
-  const resultado = document.getElementById("resultado-final");
-  let mensaje = "";
-  let color = "";
-
-  if (respuestasCorrectas === total) {
-    mensaje = t("modulo-salud.mensaje.perfecto");
-    color = "var(--green)";
-  } else if (respuestasCorrectas >= total / 2) {
-    mensaje = t("modulo-salud.mensaje.bien");
-    color = "var(--blue)";
-  } else {
-    mensaje = t("modulo-salud.mensaje.intentar");
-    color = "var(--orange)";
-  }
-
-  resultado.innerHTML = `
-    <div style="background: white; border-radius: 12px; padding: 20px; margin-top: 15px; text-align: center; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
-      <h3 style="color: ${color};">${mensaje}</h3>
-      <p style="font-size: 1.3rem;" >${t("modulo-salud.mensaje.puntaje").replace("{respuestasCorrectas}", respuestasCorrectas).replace("{total}", total)}</p>
-    </div>
-    <div style="background: #F0FDF4; border-radius: 12px; padding: 20px; margin-top: 20px; border-left: 4px solid var(--green);">
-      <h3> ${t("modulo-salud.mensaje.cambio")}</h3>
-      <p>${t("modulo-salud.mensaje.cambio2")}</p>
-      <ul style="line-height: 2;">
-        <li> ${t("modulo-salud.mensaje.cambio3")}</li>
-        <li> ${t("modulo-salud.mensaje.cambio4")}</li>
-        <li> ${t("modulo-salud.mensaje.cambio5")}</li>
-        <li> ${t("modulo-salud.mensaje.cambio6")}</li>
-        <li> ${t("modulo-salud.mensaje.cambio7")}</li>
-      </ul>
-      <p> ${t("modulo-salud.mensaje.cambio8")}</p>
-    </div>`;
-
-  resultado.style.display = "block";
-  document.getElementById("btn-resultado").style.display = "none";
-}
+]
 
 // QUIZ MODULO 2
 const quizDataEstafas = [
@@ -181,107 +372,7 @@ const quizDataEstafas = [
   },
 ];
 
-let respuestasCorrectasEstafas = 0;
-let preguntasRespondidasEstafas = 0;
-
-function initQuizEstafas() {
-
-  respuestasCorrectasEstafas = 0;
-  preguntasRespondidasEstafas = 0;
-
-  const container = document.getElementById("quiz-container-estafas");
-  const btnResultado = document.getElementById("btn-resultado-estafas");
-  const resultadoFinal = document.getElementById("resultado-final-estafas");
-
-  btnResultado.style.display = "none";
-  resultadoFinal.style.display = "none";
-  resultadoFinal.innerHTML = "";
-
-  let quizHTML = "";
-
-  quizDataEstafas.forEach(function(item, indice) {
-
-    quizHTML += `<div class="quiz-pregunta" id="pregunta-estafas-${indice}">`;
-
-    quizHTML += `<p><strong>${indice + 1}. ${t(item.pregunta)}</strong></p>`;
-
-    item.opciones.forEach(function(opcion, opcionIndice) {
-      quizHTML += `<button class="quiz-opcion" onclick="verificarRespuestaEstafas(${indice}, ${opcionIndice}, this)">${t(opcion)}</button>`;
-    });
-
-    quizHTML += `<p id="feedback-estafas-${indice}" class="quiz-feedback"></p>`;
-
-    quizHTML += `</div>`;
-  });
-
-  container.innerHTML = quizHTML;
-}
-
-function verificarRespuestaEstafas(preguntaIndice, opcionElegida, botonPresionado) {
-  const correcta = quizDataEstafas[preguntaIndice].correcta;
-  const feedback = document.getElementById(`feedback-estafas-${preguntaIndice}`);
-  const botones = document.querySelectorAll(`#pregunta-estafas-${preguntaIndice} .quiz-opcion`);
-
-  botones.forEach(function(btn) { btn.disabled = true; });
-
-  if (opcionElegida === correcta) {
-  botonPresionado.style.backgroundColor = "var(--green)";
-  feedback.textContent = t("quizes.pregunta.correcta");
-  feedback.style.color = "var(--green)";
-  respuestasCorrectasEstafas++;
-  } else {
-  botonPresionado.style.backgroundColor = "var(--red)";
-  feedback.textContent =
-    t("quizes.pregunta.incorrecta") +
-    t(quizDataEstafas[preguntaIndice].opciones[correcta]);
-  feedback.style.color = "var(--red)";
-  botones[correcta].style.backgroundColor = "var(--green)";
-}
-
-  preguntasRespondidasEstafas++;
-  if (preguntasRespondidasEstafas === quizDataEstafas.length) {
-    document.getElementById("btn-resultado-estafas").style.display = "block";
-  }
-}
-
-function mostrarPuntajeEstafas() {
-  const total = quizDataEstafas.length;
-  const resultado = document.getElementById("resultado-final-estafas");
-  let mensaje = "";
-  let color = "";
-
-  if (respuestasCorrectasEstafas === total) {
-    mensaje = "🏆 ¡Perfecto! Sabes reconocer una estafa.";
-    color = "var(--green)";
-  } else if (respuestasCorrectasEstafas >= total / 2) {
-    mensaje = "👍 ¡Bien hecho! Vas por buen camino.";
-    color = "var(--blue)";
-  } else {
-    mensaje = "📖 No te preocupes. Puedes releer la lección e intentarlo de nuevo.";
-    color = "var(--orange)";
-  }
-
-  resultado.innerHTML = `
-    <div style="background: white; border-radius: 12px; padding: 20px; margin-top: 15px; text-align: center; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
-      <h3 style="color: ${color};">${mensaje}</h3>
-      <p style="font-size: 1.3rem;">Obtuviste <strong>${respuestasCorrectasEstafas} de ${total}</strong> respuestas correctas.</p>
-    </div>
-    <div style="background: #F0FDF4; border-radius: 12px; padding: 20px; margin-top: 20px; border-left: 4px solid var(--green);">
-      <h3>🛡️ ¿Qué hacer si sospechas de una estafa?</h3>
-      <ul style="line-height: 2;">
-        <li>🚫 No respondas ni hagas clic en ningún enlace</li>
-        <li>📞 Llama directamente a la institución por su número oficial</li>
-        <li>👨‍👩‍👧 Consulta con un familiar de confianza antes de actuar</li>
-        <li>🚔 Si fuiste víctima, repórtalo a las autoridades locales</li>
-        <li>🔒 Cambia tus contraseñas si compartiste algún dato</li>
-      </ul>
-    </div>`;
-
-  resultado.style.display = "block";
-  document.getElementById("btn-resultado-estafas").style.display = "none";
-}
-
-//QUIZ MÓDULO 3
+//QUIZ MODULO 3
 const quizDataDeepfakes = [
 {
   pregunta: "Un familiar te envía por WhatsApp un video que asegura mostrar un hecho muy grave. El video parece real, pero no encuentras información en medios confiables. ¿Qué deberías hacer primero?",
@@ -324,38 +415,7 @@ const quizDataDeepfakes = [
   ],
   correcta: 2
 },
-
 ];
-
-let respuestasCorrectasDeepfakes = 0;
-let preguntasRespondidasDeepfakes = 0;
-
-function initQuizDeepfakes() {
-  respuestasCorrectasDeepfakes = 0;
-  preguntasRespondidasDeepfakes = 0;
-
-  const container = document.getElementById("quiz-container-deepfakes");
-  const btnResultado = document.getElementById("btn-resultado-deepfakes");
-  const resultadoFinal = document.getElementById("resultado-final-deepfakes");
-
-  btnResultado.style.display = "none";
-  resultadoFinal.style.display = "none";
-  resultadoFinal.innerHTML = "";
-
-  let quizHTML = "";
-  quizDataDeepfakes.forEach(function(item, indice) {
-    quizHTML += `<div class="quiz-pregunta" id="pregunta-deepfakes-${indice}">`;
-    quizHTML += `<p><strong>${indice + 1}. ${t(item.pregunta)}</strong></p>`;
-    item.opciones.forEach(function(opcion, opcionIndice) {
-      quizHTML += `<button class="quiz-opcion" onclick="verificarRespuestaDeepfakes(${indice}, ${opcionIndice}, this)">${opcion}</button>`;
-    });
-    quizHTML += `<p id="feedback-deepfakes-${indice}" class="quiz-feedback"></p>`;
-    quizHTML += `</div>`;
-  });
-
-  container.innerHTML = quizHTML;
-
-}
 
   function verificarRespuestaDeepfakes(preguntaIndice, opcionElegida, botonPresionado) {
   const correcta = quizDataDeepfakes[preguntaIndice].correcta;
@@ -382,51 +442,7 @@ function initQuizDeepfakes() {
   }
 } 
 
-  function mostrarPuntajeDeepfakes() {
-
-    const total = quizDataDeepfakes.length;
-    const resultado = document.getElementById("resultado-final-deepfakes");
-
-    let mensaje = "";
-    let color = "";
-
-    if (respuestasCorrectasDeepfakes === total) {
-        mensaje = "🏆 ¡Excelente! Sabes identificar la desinformación.";
-        color = "var(--green)";
-    }
-    else if (respuestasCorrectasDeepfakes >= total/2){
-        mensaje = "👍 ¡Muy bien! Cada vez analizas mejor la información.";
-        color = "var(--blue)";
-    }
-    else{
-        mensaje = "📖 No pasa nada. Puedes volver a leer la lección e intentarlo otra vez.";
-        color = "var(--orange)";
-    }
-
-  resultado.innerHTML = ` 
-    <div style="background: white; border-radius: 12px; padding: 20px; margin-top: 15px; text-align: center; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
-      <h3 style="color: ${color};">${mensaje}</h3>
-      <p style="font-size: 1.3rem;">Obtuviste <strong>${respuestasCorrectasDeepfakes} de ${total}</strong> respuestas correctas.</p>
-    </div>
-    <div style="background: #F0FDF4; border-radius: 12px; padding: 20px; margin-top: 20px; border-left: 4px solid var(--green);">
-      <h3>📰 ¿Cómo protegerte de la desinformación?</h3>
-      <p>No todo lo que vemos en internet es verdadero. Antes de creer o compartir una noticia, recuerda:</p>
-      <ul style="line-height: 2;">
-        <li>🔍 Verifica la información en fuentes confiables y reconocidas.</li>
-        <li>📅 Revisa la fecha de publicación y el contexto de la noticia.</li>
-        <li>🤖 Recuerda que imágenes, videos y audios pueden haber sido creados o modificados con inteligencia artificial.</li>
-        <li>⚠️ Desconfía de contenidos que buscan generar miedo, urgencia o emociones muy fuertes.</li>
-        <li>📤 Si tienes dudas, no compartas el contenido hasta comprobar que sea verdadero.</li>
-      </ul>
-      <p>La mejor forma de combatir la desinformación es detenerse unos minutos para verificar antes de compartir.</p>
-    </div>`;
-  
-  resultado.style.display = "block";
-  document.getElementById("btn-resultado-deepfakes").style.display = "none";
-
-  }
-
-  // QUIZ MÓDULO 4
+  // QUIZ MODULO 4
 const quizDataPrivacidad = [
 {
   pregunta: "Vas a crear una cuenta en una página web. ¿Cuál de estas contraseñas es la más segura?",
@@ -464,34 +480,6 @@ const quizDataPrivacidad = [
   correcta: 2
 },
 ];
-    let respuestasCorrectasPrivacidad = 0;
-    let preguntasRespondidasPrivacidad = 0;
-
-  function initQuizPrivacidad() {
-
-    respuestasCorrectasPrivacidad = 0;
-    preguntasRespondidasPrivacidad = 0;
-
-    const container = document.getElementById("quiz-container-privacidad");
-    const btnResultado = document.getElementById("btn-resultado-privacidad");
-    const resultadoFinal = document.getElementById("resultado-final-privacidad");
-
-    btnResultado.style.display = "none";
-    resultadoFinal.style.display = "none";
-    resultadoFinal.innerHTML = "";
-
-     let quizHTML = "";
-  quizDataPrivacidad.forEach(function(item, indice) {
-    quizHTML += `<div class="quiz-pregunta" id="pregunta-privacidad-${indice}">`;
-    quizHTML += `<p><strong>${indice + 1}. ${item.pregunta}</strong></p>`;
-    item.opciones.forEach(function(opcion, opcionIndice) {
-      quizHTML += `<button class="quiz-opcion" onclick="verificarRespuestaPrivacidad(${indice}, ${opcionIndice}, this)">${opcion}</button>`;
-    });
-    quizHTML += `<p id="feedback-privacidad-${indice}" class="quiz-feedback"></p>`;
-    quizHTML += `</div>`;
-  });
-  container.innerHTML = quizHTML;
-}
 
 function verificarRespuestaPrivacidad(preguntaIndice, opcionElegida, botonPresionado) {
 

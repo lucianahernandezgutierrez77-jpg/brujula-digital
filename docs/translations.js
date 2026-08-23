@@ -629,7 +629,7 @@ const translations = {
     en: "See my result 🎯",
   },
 
-  "modulo-salud.mensaje.puntaje": {
+  "quizes.puntaje": {
     es: "Obtuviste <strong>{respuestasCorrectas} de {total}</strong> respuestas correctas.",
     en: "You got <strong>{respuestasCorrectas} out of {total}</strong> correct answers.",
   },
@@ -1075,6 +1075,21 @@ const translations = {
     en: "Juan was able to identify the messages with your help. Remember: if you receive a suspicious message, it’s best not to click on anything, not to share any personal information, and to verify it directly with the official source.",
   },
 
+  "actividad-estafas.mensaje.fallo": {
+    es: "😓 Juan tuvo algunos tropiezos",
+    en: "😓 Juan had a few setbacks",
+  },
+
+  "actividad-estafas.mensaje.fallo2": {
+    es: "No te preocupes, reconocer una estafa no siempre es fácil. ¡Inténtalo de nuevo!",
+    en: "Don't worry, spotting a scam isn't always easy. Try again!",
+  },
+
+  "actividad-estafas.reiniciar": {
+    es: "🔄 Intentar de nuevo",
+    en: "🔄 Try again",
+  },
+
   //QUIZ ESTAFAS
   "quiz-estafas.titulo": {
     es: "<span class=\"subtitle2\">🧠 ¿Es estafa o no?</span>",
@@ -1231,6 +1246,60 @@ const translations = {
     en: "Forwarding the message to your contacts",
   },
 
+  "modulo-estafas.mensaje.perfecto": {
+    es: "🏆 ¡Excelente! Sabes identificar la desinformación.",
+    en: "🏆 Excellent! You know how to identify misinformation.",
+  },
+
+  "modulo-estafas.mensaje.bien": {
+    es: "👍 ¡Muy bien! Cada vez analizas mejor la información.",
+    en: "👍 Very good! You’re getting better at analyzing information.",
+  },
+
+  "modulo-estafas.mensaje.intentar": {
+    es: "📖 No pasa nada. Puedes volver a leer la lección e intentarlo otra vez.",
+    en: "📖 No worries. You can review the lesson and try again.",
+  },
+
+  "modulo-estafas.mensaje.cambio": {
+    es: "📰 ¿Cómo protegerte de la desinformación?",
+    en: "📰 How can you protect yourself from misinformation?",
+  },
+
+  "modulo-estafas.mensaje.cambio2": {
+    es: "No todo lo que vemos en internet es verdadero. Antes de creer o compartir una noticia, recuerda:",
+    en: "Not everything we see on the internet is true. Before believing or sharing a news story, remember:",
+  },
+
+  "modulo-estafas.mensaje.cambio3": {
+    es: "🔍 Verifica la información en fuentes confiables y reconocidas.",
+    en: "🔍 Verify the information using reliable and reputable sources.",
+  },
+
+  "modulo-estafas.mensaje.cambio4": {
+    es: "📅 Revisa la fecha de publicación y el contexto de la noticia.",
+    en: "📅 Check the publication date and the context of the news story.",
+  },
+
+  "modulo-estafas.mensaje.cambio5": {
+    es: "🤖 Recuerda que imágenes, videos y audios pueden haber sido creados o modificados con inteligencia artificial.",
+    en: "🤖 Remember that images, videos, and audio can be created or altered using artificial intelligence.",
+  },
+
+  "modulo-estafas.mensaje.cambio6": {
+    es: "⚠️ Desconfía de contenidos que buscan generar miedo, urgencia o emociones muy fuertes.",
+    en: "⚠️ Be cautious of content designed to create fear, urgency, or very strong emotions.",
+  },
+
+  "modulo-estafas.mensaje.cambio7": {
+    es: "📤 Si tienes dudas, no compartas el contenido hasta comprobar que sea verdadero.",
+    en: "📤 If you’re unsure, don’t share the content until you’ve confirmed that it’s true.",
+  },
+
+  "modulo-estafas.mensaje.cambio8": {
+    es: "La mejor forma de combatir la desinformación es detenerse unos minutos para verificar antes de compartir.",
+    en: "The best way to combat misinformation is to take a few minutes to verify information before sharing it.",
+  },
 
 // INTRO MODULO 3
 
@@ -1268,38 +1337,60 @@ function setLanguage(lang) {
       "lang-activo",
       btn.getAttribute("data-lang") === lang
     );
+  })
+ }
+
+ function updateQuizLanguage(containerId, quizData, prefijo) {
+  const container = document.getElementById(containerId);
+  if (!container) return;
+
+  // 1. Traducir preguntas
+  container.querySelectorAll(".txt-pregunta").forEach(function(el, index) {
+    const key = el.getAttribute("data-key");
+    if (key) el.innerHTML = `${index + 1}. ${t(key)}`;
   });
 
-  refreshDynamicContent();
+  // 2. Traducir opciones de respuesta
+  container.querySelectorAll(".quiz-opcion").forEach(function(btn) {
+    const key = btn.getAttribute("data-key");
+    if (key) btn.innerHTML = t(key);
+  });
+
+  // 3. Traducir feedbacks ya mostrados
+  quizData.forEach(function(item, indice) {
+    const feedback = document.getElementById(`feedback-${prefijo}-${indice}`);
+    if (feedback && feedback.textContent !== "") {
+      const parent = document.getElementById(`pregunta-${prefijo}-${indice}`);
+      const btnIncorrecto = parent.querySelector(".quiz-opcion[style*='red']");
+      
+      if (btnIncorrecto) {
+        feedback.textContent = t("quizes.pregunta.incorrecta") + " " + t(item.opciones[item.correcta]);
+      } else {
+        feedback.textContent = t("quizes.pregunta.correcta");
+      }
+    }
+  });
 }
 
 function refreshDynamicContent() {
-  const visibleSection = Array.from(document.querySelectorAll("main.container > section")).find(function(section) {
+  const visibleSection = Array.from(
+    document.querySelectorAll("main.container > section")
+  ).find(function(section) {
     return section.style.display !== "none";
   });
 
   if (!visibleSection) return;
 
-  if (visibleSection.id === "leccion-salud") {
-    if (typeof initQuiz === "function") initQuiz();
-    if (document.getElementById("actividad-pregunta-container").children.length > 0 && typeof mostrarPreguntaActividad === "function") {
-      mostrarPreguntaActividad();
-    }
+  if (visibleSection.id === "modulo-salud") {
+    updateQuizLanguage("quiz-container", quizData, "salud");
   }
-
-  if (visibleSection.id === "leccion-estafas" && typeof initQuizEstafas === "function") {
-    initQuizEstafas();
+  if (visibleSection.id === "modulo-estafas") {
+    updateQuizLanguage("quiz-container-estafas", quizDataEstafas, "estafas");
   }
-
-  if (visibleSection.id === "leccion-deepfakes" && typeof initQuizDeepfakes === "function") {
-    initQuizDeepfakes();
+  if (visibleSection.id === "modulo-deepfakes") {
+    updateQuizLanguage("quiz-container-deepfakes", quizDataDeepfakes, "deepfakes");
   }
-
-  if (visibleSection.id === "leccion-privacidad" && typeof initQuizPrivacidad === "function") {
-    initQuizPrivacidad();
+  if (visibleSection.id === "modulo-privacidad") {
+    updateQuizLanguage("quiz-container-privacidad", quizDataPrivacidad, "privacidad");
   }
 }
-
-document.addEventListener("DOMContentLoaded", function () {
-  setLanguage("es");
-});
