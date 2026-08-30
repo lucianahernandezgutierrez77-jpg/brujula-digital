@@ -36,7 +36,7 @@ let preguntasRespondidas = 0;
 let respuestasCorrectasEstafas = 0;
 let preguntasRespondidasEstafas = 0;
 
-let repuestasCorrectasDeepfakes = 0;
+let respuestasCorrectasDeepfakes = 0;
 let preguntasRespondidasDeepfakes = 0;
 
 let respuestasCorrectasPrivacidad = 0;
@@ -263,7 +263,6 @@ function mostrarPuntajeSalud() {
         <li>${t("modulo-salud.mensaje.cambio6")}</li>
         <li>${t("modulo-salud.mensaje.cambio7")}</li>
       </ul>
-
       <p>${t("modulo-salud.mensaje.cambio8")}</p>
     </div>
     `
@@ -295,12 +294,43 @@ function mostrarPuntajeEstafas() {
         <li>${t("modulo-estafas.mensaje.cambio6")}</li>
         <li>${t("modulo-estafas.mensaje.cambio7")}</li>
       </ul>
-
       <p>${t("modulo-estafas.mensaje.cambio8")}</p>
     </div>
     `
   );
 }
+
+function mostrarPuntajeDeepfakes() {
+
+  resultadoMostrado.deepfakes = true;
+  mostrarPuntaje(
+    quizDataDeepfakes,
+    contadorDeepfakes,
+    "resultado-final-deepfakes",
+    "btn-resultado-deepfakes",
+
+    t("modulo-deepfakes.mensaje.perfecto"),
+    t("modulo-deepfakes.mensaje.bien"),
+    t("modulo-deepfakes.mensaje.intentar"),
+
+    `
+    <div style="background: #F0FDF4; border-radius: 12px; padding: 20px; margin-top: 20px; border-left: 4px solid var(--green);">
+      <h3>${t("modulo-deepfakes.mensaje.cambio")}</h3>
+      <p>${t("modulo-deepfakes.mensaje.cambio2")}</p>
+
+      <ul style="line-height: 2;">
+        <li>${t("modulo-deepfakes.mensaje.cambio3")}</li>
+        <li>${t("modulo-deepfakes.mensaje.cambio4")}</li>
+        <li>${t("modulo-deepfakes.mensaje.cambio5")}</li>
+        <li>${t("modulo-deepfakes.mensaje.cambio6")}</li>
+      </ul>
+      
+      <p>${t("modulo-deepfakes.mensaje.cambio7")}</p>
+    </div>
+    `
+  );
+}
+
 
 // QUIZ MODULO 1
 const quizData = [
@@ -373,72 +403,44 @@ const quizDataEstafas = [
 //QUIZ MODULO 3
 const quizDataDeepfakes = [
 {
-  pregunta: "Un familiar te envía por WhatsApp un video que asegura mostrar un hecho muy grave. El video parece real, pero no encuentras información en medios confiables. ¿Qué deberías hacer primero?",
-  opciones: [ "Compartir el video para advertir a otras personas.", "Buscar si medios confiables o fuentes oficiales también informan sobre el hecho.", "Creer que es verdadero porque el video parece auténtico.", "Guardar el video como prueba sin verificarlo."
-  ],
+  pregunta: "quiz3.p1",
+  opciones: [ "quiz3.p1.a", "quiz3.p1.b", "quiz3.p1.c", "quiz3.p1.d"],
   correcta: 1
 },
 
 {
-  pregunta: "¿Cuál de estas situaciones podría ser un ejemplo de un deepfake?",
-  opciones: ["Una fotografía tomada con un celular.", "Un correo electrónico con publicidad.", "Una videollamada con mala conexión.", "Un video donde una persona parece decir algo que realmente nunca dijo."
-  ],
+  pregunta: "quiz3.p2",
+  opciones: ["quiz3.p2.a", "quiz3.p2.b", "quiz3.p2.c", "quiz3.p2.d"],
   correcta: 3
 },
 
 {
-  pregunta: "Un video muestra a un personaje público diciendo algo muy inesperado. ¿Qué aumenta la probabilidad de que sea auténtico?",
-  opciones: ["Que varias fuentes confiables informen el mismo hecho.", "Que tenga miles de compartidos.", "Que alguien de tu familia lo haya enviado.", "Que el video tenga buena calidad."
-  ],
+  pregunta: "quiz3.p3",
+  opciones: ["quiz3.p3.a", "quiz3.p3.b", "quiz3.p3.c", "quiz3.p3.d"],
   correcta: 0
 },
 
 {
-  pregunta: "¿Cuál de estas características debería hacerte revisar una noticia con más cuidado?",
-  opciones: ["Indica claramente su fuente y la fecha de publicación.", "Aparece en varios medios reconocidos.", "Promete una información impactante pero no menciona quién la publicó.", "Incluye declaraciones verificables."
+  pregunta: "quiz3.p4",
+  opciones: ["quiz3.p4.a", "quiz3.p4.b", "quiz3.p4.c", "quiz3.p4.d"
   ],
   correcta: 2
 },
 
 {
-  pregunta: "¿Por qué los deepfakes pueden ser difíciles de identificar?",
-  opciones: ["Porque siempre tienen una marca de agua.", "Porque pueden verse y escucharse muy parecidos a un contenido real.", "Porque solo existen en películas.", "Porque únicamente afectan a personas famosas."
+  pregunta: "quiz3.p5",
+  opciones: ["quiz3.p5.a", "quiz3.p5.b", "quiz3.p5.c", "quiz3.p5.d"
   ],
   correcta: 1
 },
 
 {
-  pregunta: "¿Qué significa tener pensamiento crítico al consumir información en internet?",
-  opciones: ["Creer únicamente lo que dicen las redes sociales.", "Aceptar cualquier información si tiene muchas reacciones.", "Analizar y verificar la información antes de creerla o compartirla.", "Desconfiar de toda la información que existe en internet."
+  pregunta: "quiz3.p6",
+  opciones: ["quiz3.p6.a", "quiz3.p6.b", "quiz3.p6.c", "quiz3.p6.d"
   ],
   correcta: 2
 },
 ];
-
-  function verificarRespuestaDeepfakes(preguntaIndice, opcionElegida, botonPresionado) {
-  const correcta = quizDataDeepfakes[preguntaIndice].correcta;
-  const feedback = document.getElementById(`feedback-deepfakes-${preguntaIndice}`);
-  const botones = document.querySelectorAll(`#pregunta-deepfakes-${preguntaIndice} .quiz-opcion`);
-
-  botones.forEach(function(btn) { btn.disabled = true; });
-
-  if (opcionElegida === correcta) {
-    botonPresionado.style.backgroundColor = "var(--green)";
-    feedback.textContent = "✅ ¡Correcto!";
-    feedback.style.color = "var(--green)";
-    respuestasCorrectasDeepfakes++;
-  } else {
-    botonPresionado.style.backgroundColor = "var(--red)";
-    feedback.textContent = "❌ No es correcto. La respuesta correcta era: " + quizDataDeepfakes[preguntaIndice].opciones[correcta];
-    feedback.style.color = "var(--red)";
-    botones[correcta].style.backgroundColor = "var(--green)";
-  }
-
-  preguntasRespondidasDeepfakes++;
-  if (preguntasRespondidasDeepfakes === quizDataDeepfakes.length) {
-    document.getElementById("btn-resultado-deepfakes").style.display = "block";
-  }
-} 
 
   // QUIZ MODULO 4
 const quizDataPrivacidad = [
@@ -478,32 +480,6 @@ const quizDataPrivacidad = [
   correcta: 2
 },
 ];
-
-function verificarRespuestaPrivacidad(preguntaIndice, opcionElegida, botonPresionado) {
-
-  const correcta = quizDataPrivacidad[preguntaIndice].correcta;
-  const feedback = document.getElementById(`feedback-privacidad-${preguntaIndice}`);
-  const botones = document.querySelectorAll(`#pregunta-privacidad-${preguntaIndice} .quiz-opcion`);
-
-  botones.forEach(function(btn) { btn.disabled = true; });
-
-  if (opcionElegida === correcta) {
-    botonPresionado.style.backgroundColor = "var(--green)";
-    feedback.textContent = "✅ ¡Correcto!";
-    feedback.style.color = "var(--green)";
-    respuestasCorrectasPrivacidad++;
-  } else {
-    botonPresionado.style.backgroundColor = "var(--red)";
-    feedback.textContent = "❌ No es correcto. La respuesta correcta era: " + quizDataPrivacidad[preguntaIndice].opciones[correcta];
-    feedback.style.color = "var(--red)";
-    botones[correcta].style.backgroundColor = "var(--green)";
-  }
-
-  preguntasRespondidasPrivacidad++;
-  if (preguntasRespondidasPrivacidad === quizDataPrivacidad.length) {
-    document.getElementById("btn-resultado-privacidad").style.display = "block";
-  }
-}
 
 function mostrarPuntajePrivacidad() {
 

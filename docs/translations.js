@@ -65,11 +65,6 @@ const translations = {
     en: "Technology can be a powerful tool for learning, communicating, and discovering new opportunities. However, it is also important to use it in a balanced way, since excessive use can affect our health and well-being.",
   },
 
-  "modulo-salud.consejos": {
-    es: "📝 Consejos prácticos",
-    en: "📝 Practical Tips",
-  },
-
   "titulo.consejo1": {
     es: "Regla 20-20-20",
     en: "20-20-20 Rule",
@@ -130,7 +125,7 @@ const translations = {
     en: "Many times this is due to posture. Try to hold the device at eye level to avoid discomfort in your neck and back.",
   },
 
-  "modulo-salud.meta": { 
+  "modulos-meta": { 
   es: "🎯 Meta del módulo",
   en: "🎯 Module Goal", 
   },
@@ -140,14 +135,14 @@ const translations = {
     en: "Discover how small changes in our digital habits can help us enjoy technology in a more balanced, healthy, and conscious way. 🧭💙",
   },
 
-  "modulo-salud.boton": {
+  "modulos-boton.empecemos": {
     es: "🚀 Empecemos",
     en: "🚀 Let's get started"
   },
 
   // MODULO 1 LECCION
 
-  "modulo-salud.video": { 
+  "modulos-video": { 
     es: "🎥 Video recomendado",
     en: "🎥 Recommended Video",
   },
@@ -656,7 +651,7 @@ const translations = {
     en: "Digital scams are attempts to deceive people in order to obtain personal information, money, or other benefits. They can appear in emails, text messages, social media, or fake websites.",
   },
 
-  "modulo-estafas.consejos": {
+  "modulos-consejos": {
     es: "📝 Consejos prácticos",
     en: "📝 Practical Tips",
   },
@@ -721,27 +716,12 @@ const translations = {
     en: "Don't rush to answer. The safest thing is to contact them yourself using the official number that appears on the website or your documents.",
   },
 
-  "modulo-estafas.meta": {
-    es: "🎯 Meta del módulo",
-    en: "🎯 Module Goal",
-  },
-
   "modulo-estafas.meta.descripcion": {
     es: "Reconocer las señales más comunes de una estafa digital para proteger nuestra información y navegar con mayor seguridad.",
     en: "Recognize the most common signs of a digital scam to protect our information and navigate more safely.",
   },
 
-  "modulo-estafas.boton.inicio": {
-    es: "🚀 Empecemos",
-    en: "🚀 Let's Get Started",
-  },
-
   // MODULO 2 LECCION
-
-  "modulo-estafas.video": {
-    es: "🎥 Video recomendado",
-    en: "🎥 Recommended Video",
-  },
 
   "modulo-estafas.video.descripcion": {
     es: "Antes de continuar, mira este breve video sobre estafas digitales:",
@@ -1313,7 +1293,515 @@ const translations = {
     en: "Nowadays, the internet gives us access to a huge amount of information, images, and videos in just a few seconds. However, not everything we see is true. Learning to recognize false information and content created with artificial intelligence will help us navigate the internet more safely and confidently.",
   },
 
-};
+  "titulo-deepfakes.consejo1": {
+    es: "Verifica la fuente",
+    en: "Verify the source",
+  },
+
+  "descripcion1-deepfakes.consejo1": {
+    es: "¿Alguna vez has visto una noticia sorprendente en redes sociales o por WhatsApp?",
+    en: "Have you ever seen a surprising news story on social media or WhatsApp?",
+  },
+
+  "descripcion2-deepfakes.consejo1": {
+    es: "Antes de creerla o compartirla, revisa quién la publicó. Es más confiable si proviene de un medio de comunicación reconocido o de una institución oficial.",
+    en: "Before believing or sharing it, check who published it. It’s more reliable if it comes from a reputable news outlet or an official institution.",
+  },
+
+  "titulo-deepfakes.consejo2": {
+    es: "No compartas de inmediato",
+    en: "Don't share it right away",
+  },
+
+  "descripcion1-deepfakes.consejo2": {
+    es: "¿Te ha pasado que recibes un mensaje y quieres reenviarlo enseguida?",
+    en: "Have you ever received a message and wanted to forward it right away?",
+  },
+
+  "descripcion2-deepfakes.consejo2": {
+    es: "Tómate unos segundos para verificar si la información es verdadera. Compartir una noticia falsa, aunque sea sin intención, puede contribuir a la desinformación.",
+    en: "Take a few seconds to verify whether the information is true. Sharing false information, even unintentionally, can contribute to the spread of misinformation.",
+  },
+
+  "titulo-deepfakes.consejo3": {
+    es: "No todo lo que ves es real",
+    en: "Not everything you see is real",
+  },
+
+  "descripcion1-deepfakes.consejo3": {
+    es: "¿Sabías que hoy es posible crear imágenes, videos y audios muy realistas con inteligencia artificial?",
+    en: "Did you know that it’s now possible to create very realistic images, videos, and audio using artificial intelligence?",
+  },
+
+  "descripcion2-deepfakes.consejo3": {
+    es: "Si un contenido te parece muy sorprendente o extraño, busca otras fuentes antes de creer que es verdadero.",
+    en: "If something seems very surprising or strange, look for other sources before believing it is true.",
+  },
+
+  "titulo-deepfakes.consejo4": {
+    es: "Desconfía de lo demasiado impactante",
+    en: "Be skeptical of overly shocking content.",
+  },
+
+  "descripcion1-deepfakes.consejo4":{
+    es: "¿Has visto una noticia que parece increíble o provoca una reacción muy fuerte?",
+    en: "Have you seen a news story that seems unbelievable or causes a very strong reaction?",
+  },
+
+  "descripcion2-deepfakes.consejo4": {
+    es: "Muchas veces los contenidos falsos buscan sorprendernos o hacernos reaccionar rápidamente. Si algo parece demasiado bueno, demasiado malo o demasiado increíble, verifica la información antes de compartirla.",
+    en: "Often, false content is designed to surprise us or make us react quickly. If something seems too good, too bad, or too unbelievable, verify the information before sharing it.",
+  },
+
+  "modulo-deepfakes.meta.descripcion": {
+    es: "Aprender a identificar información falsa y reconocer cómo los deepfakes pueden utilizarse para engañar, desarrollando el hábito de verificar antes de creer o compartir un contenido.",
+    en: "Learn to identify false information and recognize how deepfakes can be used to deceive, developing the habit of verifying information before believing or sharing content.",
+  },
+
+  // LECCION MODULO 3
+
+  "modulo-deepfakes.video.descripcion": {
+    es: "Antes de continuar, mira este breve video sobre la desinformación y los deepfakes:",
+    en: "Before continuing, watch this short video about misinformation and deepfakes:",
+  },
+
+  "modulo-deepfakes.titulo": {
+    es: "🤖🎭 ¿Cómo reconocer la desinformación y los deepfakes? 🔍📢️",
+    en: "🤖🎭 How to recognize misinformation and deepfakes? 🔍📢",
+  },
+
+  "modulo-deepfakes.descripcion": {
+    es: "Internet nos permite aprender cosas nuevas, mantenernos informados y comunicarnos con personas de todo el mundo. Sin embargo, no todo lo que vemos o leemos en internet es verdadero. <span class=\"highlight3\">Algunas publicaciones pueden contener información falsa o haber sido modificadas para confundir a las personas.</span>",
+    en: "The internet allows us to learn new things, stay informed, and communicate with people from all over the world. However, not everything we see or read on the internet is true. <span class=\"highlight3\">Some posts may contain false information or have been altered to mislead people.</span>",
+  },
+
+  "modulo-deepfakes.descripcion2": {
+    es: "¿Esto significa que no podemos confiar en nada de lo que vemos en internet? No. La mayoría del contenido que encontramos es auténtico, pero es importante desarrollar el hábito de verificar la información antes de creerla o compartirla.",
+    en: "Does this mean we can’t trust anything we see on the internet? No. Most of the content we come across is authentic, but it’s important to develop the habit of verifying information before believing or sharing it.",
+  },
+
+  "modulo-deepfakes.descripcion3": {
+    es: "Uno de los ejemplos más conocidos de este tipo de contenido son los <span class=\"highlight\">deepfakes</span>. Se trata de imágenes, videos o audios creados o modificados con inteligencia artificial para que parezcan reales. En algunos casos se utilizan con fines de entretenimiento, pero también pueden emplearse para difundir información falsa o hacer creer que una persona dijo o hizo algo que nunca ocurrió.",
+    en: "One of the best-known examples of this type of content is <span class=\"highlight\">deepfakes</span>. These are images, videos, or audio created or modified using artificial intelligence to make them appear real. In some cases, they are used for entertainment, but they can also be used to spread false information or make people believe that someone said or did something that never happened.",
+  },
+
+  "modulo-deepfakes.titulo2": {
+    es: "🔍 ¿Cómo podemos reconocerlos?",
+    en: "🔍 How can we recognize them?",
+  },
+
+  "modulo-deepfakes.descripcion4": {
+    es: "No siempre es fácil identificar un contenido falso, especialmente cuando ha sido creado con inteligencia artificial. Sin embargo, hay algunas señales que pueden ayudarnos a analizar la información con mayor cuidado.",
+    en: "It is not always easy to identify fake content, especially when it has been created using artificial intelligence. However, there are some signs that can help us analyze information more carefully.",
+  },
+
+  "modulo-deepfakes.list.item1": {
+    es: "🎭 El contenido parece demasiado sorprendente o increíble.",
+    en: "🎭 The content seems too surprising or unbelievable.",
+  },
+
+  "modulo-deepfakes.list.item2": {
+    es: "🔍 No encuentras la misma información en otras fuentes confiables.",
+    en: "🔍 You can’t find the same information in other reliable sources.",
+  },
+
+  "modulo-deepfakes.list.item3": {
+    es: "📢 La publicación no indica quién la creó o proviene de una fuente poco conocida.</",
+    en: "📢 The post doesn’t indicate who created it or comes from an unfamiliar source.",
+  },
+
+  "modulo-deepfakes.list.item4": {
+    es: "🤖 En algunos videos, la voz o los movimientos pueden verse poco naturales.",
+    en: "🤖 In some videos, the voice or movements may look unnatural.",
+  },
+
+  "modulo-deepfakes.list.item5": {
+    es: "📅 La información está fuera de contexto o utiliza imágenes antiguas para hablar de un hecho reciente.",
+    en: "📅 The information is out of context or uses old images to talk about a recent event.",
+  },
+
+  "modulo-deepfakes.descripcion5": {
+    es: "No siempre podremos saber de inmediato si un contenido es verdadero o falso. Por eso, si algo te genera dudas,<span class = \"highlight3\"> lo mejor es detenerte un momento, buscar otras fuentes confiables y evitar compartirlo hasta confirmar</span>  que la información es correcta. Unos minutos de verificación pueden ayudar a evitar que la desinformación siga circulando.",
+    en: "We can’t always know right away whether content is true or false. That’s why, if something makes you unsure, <span class=\"highlight3\">it’s best to pause for a moment, look for other reliable sources, and avoid sharing it until you’ve confirmed</span> that the information is correct. A few minutes of verification can help prevent misinformation from spreading.",
+  },
+
+  "modulo-deepfakes.descripcion6": {
+    es: "📚 <strong>¿Quieres saber más?</strong> El Instituto Nacional de Ciberseguridad (INCIBE) ofrece recomendaciones para identificar la desinformación y protegerse frente a contenidos manipulados, incluidos los deepfakes.",
+    en: "📚 <strong>Want to learn more?</strong> The National Institute of Cybersecurity (INCIBE) offers recommendations for identifying misinformation and protecting yourself from manipulated content, including deepfakes.",
+  },
+
+  // QUIZ DEEPFAKES
+
+  "modulo-deepfakes.titulo.quiz": {
+    es: "🧠 ¿Puedes identificar la desinformación?",
+    en: "🧠 Can you identify misinformation?",
+  },
+
+  "quiz3.p1": {
+    es: "Un familiar te envía por WhatsApp un video que asegura mostrar un hecho muy grave. El video parece real, pero no encuentras información en medios confiables. ¿Qué deberías hacer primero?",
+    en: "A family member sends you a WhatsApp video claiming to show a very serious event. The video looks real, but you can’t find information about it in reliable news sources. What should you do first?",
+  },
+
+  "quiz3.p1.a": {
+    es: "Compartir el video para advertir a otras personas.",
+    en: "Share the video to warn other people.",
+  },
+
+  "quiz3.p1.b": {
+    es: "Buscar si medios confiables o fuentes oficiales también informan sobre el hecho.",
+    en: "Check whether reliable news outlets or official sources are also reporting the event.",
+  },
+
+  "quiz3.p1.c": {
+    es: "Creer que es verdadero porque el video parece auténtico.",
+    en: "Believe it is true because the video appears authentic.",
+  },
+
+  "quiz3.p1.d": {
+    es: "Guardar el video como prueba sin verificarlo.",
+    en: "Save the video as evidence without verifying it.",
+  },
+
+  "quiz3.p2": {
+    es: "¿Cuál de estas situaciones podría ser un ejemplo de un deepfake?",
+    en: "Which of these situations could be an example of a deepfake?",
+  },
+
+  "quiz3.p2.a": {
+    es: "Una fotografía tomada con un celular.",
+    en: "A photograph taken with a cellphone.",
+  },
+
+  "quiz3.p2.b": {
+    es: "Un correo electrónico con publicidad.",
+    en: "An email containing advertising.",
+  },
+
+  "quiz3.p2.c": {
+    es: "Una videollamada con mala conexión.",
+    en: "A video call with a poor connection.",
+  },
+
+  "quiz3.p2.d": {
+    es: "Un video donde una persona parece decir algo que realmente nunca dijo.",
+    en: "A video where a person appears to say something they never actually said.",
+  },
+
+  "quiz3.p3": {
+    es: "Un video muestra a un personaje público diciendo algo muy inesperado. ¿Qué aumenta la probabilidad de que sea auténtico?",
+    en: "A video shows a public figure saying something very unexpected. What increases the likelihood that it is authentic?",
+  },
+
+  "quiz3.p3.a": {
+    es: "Que varias fuentes confiables informen el mismo hecho.",
+    en: "That several reliable sources report the same event."
+  },
+
+  "quiz3.p3.b": {
+    es: "Que tenga miles de compartidos.",
+    en: "That it has thousands of shares.",
+  },
+
+  "quiz3.p3.c": {
+    es: "Que alguien de tu familia lo haya enviado.",
+    en: "That someone in your family sent it.",
+  },
+
+  "quiz3.p3.d": {
+    es: "Que el video tenga buena calidad.",
+    en: "That the video is high quality.",
+  },
+
+  "quiz3.p4": {
+    es: "¿Cuál de estas características debería hacerte revisar una noticia con más cuidado?",
+    en: "Which of these characteristics should make you examine a news story more carefully?",
+  },
+
+  "quiz3.p4.a": {
+    es: "Indica claramente su fuente y la fecha de publicación.",
+    en: "It clearly identifies its source and publication date.",
+  },
+
+  "quiz3.p4.b": { 
+    es: "Aparece en varios medios reconocidos.",
+    en: "It appears in several reputable news outlets.",
+  },
+
+  "quiz3.p4.c": {
+    es: "Promete una información impactante pero no menciona quién la publicó.",
+    en: "Promises shocking information but doesn’t mention who published it.",
+  },
+
+  "quiz3.p4.d": {
+    es: "Incluye declaraciones verificables.",
+    en: "Includes verifiable statements.",
+  },
+
+  "quiz3.p5": {
+    es: "¿Por qué los deepfakes pueden ser difíciles de identificar?",
+    en: "Why can deepfakes be difficult to identify?",
+  },
+
+  "quiz3.p5.a": {
+    es: "Porque siempre tienen una marca de agua.",
+    en: "Because they always have a watermark.",
+  },
+
+  "quiz3.p5.b": {
+    es: "Porque pueden verse y escucharse muy parecidos a un contenido real.",
+    en: "Because they can look and sound very similar to real content.",
+  },
+
+  "quiz3.p5.c": {
+    es: "Porque solo existen en películas.",
+    en: "Because they only exist in movies.",
+  },
+
+  "quiz3.p5.d": {
+    es: "Porque únicamente afectan a personas famosas.",
+    en: "Because they only affect famous people.",
+  },
+
+  "quiz3.p6": {
+    es: "¿Qué significa tener pensamiento crítico al consumir información en internet?",
+    en: "What does it mean to think critically when consuming information on the internet?",
+  },
+
+  "quiz3.p6.a": {
+    es: "Creer únicamente lo que dicen las redes sociales.",
+    es: "Believe only what social media says.",
+  },
+
+  "quiz3.p6.b": {
+    es: "Aceptar cualquier información si tiene muchas reacciones.",
+    en: "Accept any information if it gets a lot of reactions.",
+  },
+
+  "quiz3.p6.c": {
+    es: "Analizar y verificar la información antes de creerla o compartirla.",
+    en: "Analyze and verify information before believing or sharing it.",
+  },
+
+  "quiz3.p6.d": {
+    es: "Desconfiar de toda la información que existe en internet.",
+    en: "Distrust all information that exists on the internet.",
+  },
+
+  "modulo-deepfakes.mensaje.perfecto": {
+    es: "🏆 ¡Excelente! Sabes identificar la desinformación.",
+    en: "🏆 Excellent! You know how to spot misinformation.",
+  },
+
+  "modulo-deepfakes.mensaje.bien": {
+    es: "👍 ¡Muy bien! Cada vez analizas mejor la información.",
+    en: "👍 Great job! You’re getting better at evaluating information.",
+  },
+
+  "modulo-deepfakes.mensaje.intentar": {
+    es: "📖 No pasa nada. Puedes volver a leer la lección e intentarlo otra vez.",
+    en: "📖 No worries. You can review the lesson and try again.",
+  },
+
+  "modulo-deepfakes.mensaje.cambio": {
+    es: "🛡️ ¿Cómo protegerte de la desinformación?",
+    en: "🛡️ How can you protect yourself from misinformation?",
+  },
+
+  "modulo-deepfakes.mensaje.cambio2": {
+    es: "🔍 Verifica la información en fuentes confiables y reconocidas.",
+    en: "🔍 Check the information using reliable and reputable sources.",
+  },
+
+  "modulo-deepfakes.mensaje.cambio3": {
+    es: "📅 Revisa la fecha de publicación y el contexto de la noticia.",
+    en: "📅 Check the publication date and the context of the story.",
+  },
+
+  "modulo-deepfakes.mensaje.cambio4": {
+    es: "🤖 Recuerda que imágenes, videos y audios pueden haber sido creados o modificados con inteligencia artificial.",
+    en: "🤖 Remember that images, videos, and audio can be created or altered using artificial intelligence.",
+  },
+
+  "modulo-deepfakes.mensaje.cambio5": {
+    es: "⚠️ Desconfía de contenidos que buscan generar miedo, urgencia o emociones muy fuertes.",
+    en: "⚠️ Be cautious of content designed to trigger fear, urgency, or strong emotions.",
+  },
+
+  "modulo-deepfakes.mensaje.cambio6": {
+    es: "📤 Si tienes dudas, no compartas el contenido hasta comprobar que sea verdadero.",
+    en: "📤 If you’re not sure, don’t share it until you’ve verified that it’s true.",
+  },
+
+    "modulo-deepfakes.mensaje.cambio7": {
+      es: "La mejor forma de combatir la desinformación es detenerse unos minutos para verificar antes de compartir.",
+      en: "The best way to fight misinformation is to take a few minutes to verify it before sharing.",
+    },
+
+    // INTRO PRIVACIDAD
+
+    "modulo-privacidad.consejos.titulo": {
+      es: "🔒 Privacidad y seguridad",
+      en: "🔒 Privacy and Security",
+    },
+
+    "modulo-privacidad.consejos.descripcion1": {
+      es: "¿Le darías las llaves de tu casa a un desconocido? Probablemente no. Entonces, ¿por qué compartir información personal en internet sin saber quién la recibirá?",
+      en: "Would you give the keys to your home to a stranger? Probably not. So why share personal information online without knowing who will receive it?",
+    },
+
+    "modulo-privacidad.consejos.descripcion2": {
+      es: "Cada vez que usamos un teléfono, una tableta o un computador compartimos información sobre nosotros. En la mayoría de los casos esto no representa un problema, pero es importante aprender a proteger nuestros datos y reconocer cuándo es seguro compartirlos.",
+      en: "Every time we use a phone, tablet, or computer, we share information about ourselves. In most cases, this isn’t a problem, but it’s important to learn how to protect our personal information and recognize when it’s safe to share it.",
+    },
+
+    "titulo-privacidad.consejo1": {
+      es: "No compartas información sin pensar",
+      en: "Don’t share personal information without thinking first.",
+    },
+
+    "descripcion1-privacidad.consejo1": {
+      es: "¿Alguna vez una página o una persona te ha pedido información personal?",
+      en: "Has a website or someone ever asked you for personal information?",
+    },
+
+    "descripcion2-privacidad.consejo1": {
+      es: "Antes de compartir datos como tu contraseña, documentos o información bancaria, pregúntate si realmente son necesarios y si estás en un sitio oficial. Tu información personal merece la misma protección que las llaves de tu casa.",
+      en: "Before sharing information such as your password, ID documents, or banking details, ask yourself whether you really need to provide it and whether you’re on an official website. Your personal information deserves the same protection as the keys to your home.",
+    },
+
+    "titulo-privacidad.consejo2": {
+      es: "Usa contraseñas difíciles de adivinar",
+      en: "Use strong, hard-to-guess passwords.",
+    },
+
+    "descripcion1-privacidad.consejo2": {
+      es: "¿Tu contraseña sería fácil de descubrir para alguien que te conoce?",
+      en: "Could someone who knows you easily guess your password?",
+    },
+
+    "descripcion2-privacidad.consejo2": {
+      es: "Evita usar tu nombre, fecha de nacimiento o secuencias como | 123456 |. Una contraseña segura combina letras, números y símbolos, y es diferente para cada cuenta importante.",
+      en: "Avoid using your name, date of birth, or simple sequences like | 123456 |. A strong password combines letters, numbers, and symbols, and you should use a different password for each important account.",
+    },
+
+    "titulo-privacidad.consejo3": {
+      es: "Activa una capa extra de seguridad",
+      en: "Enable an extra layer of security.",
+    },
+
+    "descripcion1-privacidad.consejo3": {
+      es: "¿Qué pasaría si alguien descubriera tu contraseña?",
+      en: "What would happen if someone discovered your password?",
+    },
+
+    "descripcion2-privacidad.consejo3": {
+      es: "Muchas cuentas permiten activar la verificación en dos pasos. Así, además de la contraseña, necesitarás un código enviado a tu teléfono o correo electrónico para iniciar sesión.",
+      en: "Many accounts offer two-step verification. This means that, in addition to your password, you’ll need a code sent to your phone or email to sign in.",
+    },
+
+    "titulo-privacidad.consejo4": {
+      es: "Ten cuidado con las redes Wi-Fi públicas",
+      en: "Be careful when using public Wi-Fi.",
+    },
+
+    "descripcion1-privacidad.consejo4": {
+      es: "¿Sueles conectarte a redes Wi-Fi gratuitas cuando estás fuera de casa?",
+      en: "Do you often connect to free Wi-Fi when you’re away from home?",
+    },
+
+    "descripcion2-privacidad.consejo4": {
+      es: "Aunque son muy útiles, algunas redes públicas pueden no ser seguras. Si es posible, evita acceder a tu banco o realizar compras mientras estés conectado a ellas.",
+      en: "Although public Wi-Fi can be convenient, some networks may not be secure. If possible, avoid accessing your bank account or making purchases while connected to them.",
+    },
+
+    "modulo-privacidad.meta.descripcion": {
+      es: "Al finalizar este módulo, conocerás cómo proteger tu información personal, crear contraseñas seguras y adoptar hábitos que te ayudarán a usar internet con mayor confianza y tranquilidad.",
+      en: "By the end of this module, you’ll know how to protect your personal information, create strong passwords, and develop habits that will help you use the internet with greater confidence and peace of mind.",
+    },
+
+    // LECCION PRIVACIDAD
+
+    "modulo-privacidad.video.descripcion": {
+      es: "Antes de continuar, mira este breve video sobre privacidad y seguridad en internet:",
+      en: "Before continuing, watch this short video about online privacy and security:",
+    },
+
+    "modulo-privacidad.titulo": {
+      es: "📖 ¿Cómo proteger tu privacidad y seguridad en internet? 📖",
+      en: "📖 How can you protect your privacy and stay safe online? 📖",
+    },
+
+    "modulo-privacidad.descripcion1": {
+      es: "Cada vez que navegas por una página web, utilizas una aplicación o creas una cuenta, compartes datos como tu nombre, correo electrónico o número de teléfono. <span class=\"highlight3\">La privacidad digital consiste en proteger esa información y decidir quién puede acceder a ella.</span> Así como cerramos la puerta de nuestra casa para proteger nuestras pertenencias, también debemos cuidar nuestra información cuando utilizamos la tecnología.",
+      en: "Every time you visit a website, use an app, or create an account, you share information such as your name, email address, or phone number. <span class=\"highlight3\">Digital privacy means protecting this information and deciding who can access it.</span> Just as we lock the door to our home to protect our belongings, we should also protect our personal information when using technology.", 
+    },
+
+    "modulo-privacidad.descripcion2": {
+      es: "Proteger tu información personal es un hábito tan importante como cerrar la puerta de tu casa o guardar tus objetos de valor en un lugar seguro.<span class=\"highlight3\"> Con unas pocas medidas sencillas puedes reducir muchos riesgos y navegar por internet con mayor tranquilidad.</span>",
+      en: "Protecting your personal information is just as important as locking the door to your home or keeping your valuables in a safe place. <span class=\"highlight3\">With a few simple steps, you can reduce many risks and browse the internet with greater peace of mind.</span>"
+    },
+
+    "modulo-privacidad.titulo2": {
+      es: "🛡️ ¿Cómo podemos protegernos?",
+      en: "🛡️ How can we protect ourselves?",
+    },
+
+    "modulo-privacidad.descripcion3": {
+      es: "Cada decisión que tomamos en internet puede ayudar a proteger nuestra información. Por eso, es importante conocer algunos hábitos que hacen la navegación más segura.",
+      en: "Every decision we make online can help protect our information. That’s why it’s important to develop a few habits that can make browsing the internet safer.",
+    },
+
+    "modulo-privacidad.list.item1": {
+      es: "No compartas <span class=\"highlight2\">información personal</span> con desconocidos. 🔒",
+      en: "Don’t share <span class=\"highlight2\">personal information</span> with strangers. 🔒",
+    },
+
+    "modulo-privacidad.list.item2": {
+      es: "Usa <span class=\"highlight2\">contraseñas seguras</span> y diferentes para tus cuentas importantes. 🔑",
+      en: "Use <span class=\"highlight2\">strong, unique passwords</span> for your important accounts. 🔑",
+    },
+
+    "modulo-privacidad.list.item3": {
+      es: "Activa la <span class=\"highlight2\">verificación en dos pasos</span> siempre que sea posible. 📱",
+      en: "Enable <span class=\"highlight2\">two-step verification</span> whenever possible. 📱",
+    },
+
+    "modulo-privacidad.list.item4": {
+      es: "Evita hacer trámites importantes desde una <span class=\"highlight2\">red Wi-Fi pública</span>. 📶",
+      en: "Avoid handling important transactions over <span class=\"highlight2\">public Wi-Fi</span>. 📶",
+    },
+
+    "modulo-privacidad.list.item5": {
+      es: "Mantén tus <span class=\"highlight2\">dispositivos actualizados</span>. 🔄",
+      en: "Keep your <span class=\"highlight2\">devices up to date</span>. 🔄",
+    },
+
+    "modulo-privacidad.list.item6": {
+      es: "<span class=\"highlight2\">Cierra sesión</span> cuando uses un computador compartido. 🚪",
+      en: "<span class=\"highlight2\">Log out</span> when using a shared computer. 🚪",
+    },
+
+    "modulo-privacidad.descripcion4": {
+      es: "Cada uno de estos hábitos aporta una capa extra de protección para tu información. Cuantos más pongamos en práctica, más seguros estaremos al navegar por internet.</",
+      en: "Each of these habits adds an extra layer of protection for your information. The more of them you put into practice, the safer you’ll be while browsing the internet.",
+    },
+
+    "modulo-privacidad.titulo3": {
+      es: "📚 <strong>¿Quieres saber más?</strong></p>",
+      en: "📚 <strong>Want to learn more?</strong>",
+    },
+
+    "modulo-privacidad.descripcion5":{
+      es: "El programa En TIC Confío+ ofrece recomendaciones para proteger tu privacidad, evitar riesgos digitales y usar internet de forma responsable.",
+      en: "The En TIC Confío+ program offers tips for protecting your privacy, avoiding digital risks, and using the internet responsibly.",
+    },
+
+    "modulo-privacidad.titulo.quiz": {
+      es: "⭐ ¿Puedes identificar la privacidad y seguridad en internet? 🔐",
+      en: "⭐ Can you identify privacy and security online? 🔐",
+    },
+}
+
 
 //FUNCIONES
 
@@ -1344,19 +1832,18 @@ function setLanguage(lang) {
   const container = document.getElementById(containerId);
   if (!container) return;
 
-  // 1. Traducir preguntas
+
   container.querySelectorAll(".txt-pregunta").forEach(function(el, index) {
     const key = el.getAttribute("data-key");
     if (key) el.innerHTML = `${index + 1}. ${t(key)}`;
   });
 
-  // 2. Traducir opciones de respuesta
+
   container.querySelectorAll(".quiz-opcion").forEach(function(btn) {
     const key = btn.getAttribute("data-key");
     if (key) btn.innerHTML = t(key);
   });
 
-  // 3. Traducir feedbacks ya mostrados
   quizData.forEach(function(item, indice) {
     const feedback = document.getElementById(`feedback-${prefijo}-${indice}`);
     if (feedback && feedback.textContent !== "") {
