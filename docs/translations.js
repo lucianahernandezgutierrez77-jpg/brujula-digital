@@ -1800,6 +1800,146 @@ const translations = {
       es: "⭐ ¿Puedes identificar la privacidad y seguridad en internet? 🔐",
       en: "⭐ Can you identify privacy and security online? 🔐",
     },
+
+    "quiz4.p1": {
+      es: "Vas a crear una cuenta en una página web. ¿Cuál de estas contraseñas es la más segura?",
+      en: "You’re creating an account on a website. Which of these passwords is the most secure?",
+    },
+
+    "quiz4.p1.b": {
+      es: "MiNombre2026",
+      en: "MyName2026",
+    },
+
+    "quiz4.p1.d": {
+      es: "contraseña",
+      en: "password",
+    },
+
+    "quiz4.p2": {
+      es: "Recibes un correo que te pide confirmar tu contraseña mediante un enlace. ¿Qué deberías hacer?",
+      en: "You receive an email asking you to confirm your password through a link. What should you do?",
+    },
+
+    "quiz4.p2.a": {
+      es: "Ignorar el mensaje para siempre.",
+      en: "Ignore the message forever.",
+    },
+
+    "quiz4.p2.b": {
+      es: "Entrar directamente al sitio web oficial y verificar si el aviso es real.",
+      en: "Go directly to the official website and check whether the alert is legitimate.",
+    },
+
+    "quiz4.p2.c": {
+      es: "Responder el correo con tu contraseña.",
+      en: "Reply to the email with your password.",
+    },
+
+    "quiz4.p2.d": {
+      es: "Hacer clic en el enlace inmediatamente.",
+      en: "Click the link immediately.",
+    },
+
+    "quiz4.p3": {
+      es: "¿Cuál de estos datos es mejor evitar publicar en redes sociales?",
+      en: "Which of these types of information is best to avoid posting on social media?",
+    },
+
+    "quiz4.p3.a": {
+      es: "Tu dirección de casa y número de teléfono.",
+      en: "Your home address and phone number.",
+    },
+
+    "quiz4.p3.b": {
+      es: "Una receta de cocina.",
+      en: "A cooking recipe.",
+    },
+
+    "quiz4.p3.c": {
+      es: "Una foto de un paisaje.",
+      en: "A landscape photo.",
+    },
+
+    "quiz4.p3.d": {
+      es: "La ciudad donde vives.",
+      en: "The city where you live.",
+    },
+
+    "quiz4.p4": {
+      es: "¿Para qué sirve la verificación en dos pasos?",
+      en: "What is two-step verification used for?",
+    },
+
+    "quiz4.p4.a": {
+      es: "Para hacer que internet sea más rápido.",
+      en: "To make the internet faster.",
+    },
+
+    "quiz4.p4.b": {
+      es: "Para añadir una capa extra de seguridad al iniciar sesión.",
+      en: "To add an extra layer of security when signing in.",
+    },
+
+    "quiz4.p4.c": {
+      es: "Para cambiar automáticamente la contraseña.",
+      en: "To automatically change your password.",
+    },
+
+    "quiz4.p4.d": {
+      es: "Para guardar más fotos en el teléfono.",
+      en: "To store more photos on your phone.",
+    },
+
+    "quiz4.p5": {
+      es: "Una aplicación solicita permiso para acceder a tu ubicación, cámara y contactos. ¿Qué es lo más recomendable?",
+      en: "An app asks for permission to access your location, camera, and contacts. What is the best thing to do?",
+    },
+
+    "quiz4.p5.a": {
+      es: "Aceptar todos los permisos sin leer.",
+      en: "Accept all permissions without reading them.",
+    },
+
+    "quiz4.p5.b": {
+      es: "Desinstalar inmediatamente la aplicación.",
+      en: "Uninstall the app immediately.",
+    },
+
+    "quiz4.p5.c": {
+      es: "Apagar el teléfono.",
+      en: "Turn off your phone.",
+    },
+
+    "quiz4.p5.d": {
+      es: "Revisar cuáles permisos realmente necesita antes de aceptarlos.",
+      en: "Review which permissions the app actually needs before accepting them.",
+    },
+
+    "quiz4.p6": {
+      es: "¿Qué ayuda a mantener más seguros tu teléfono y tus aplicaciones?",
+      en: "What helps keep your phone and apps more secure?",
+    },
+
+    "quiz4.p6.a": {
+      es: "No actualizar nunca el dispositivo.",
+      en: "Never updating the device.",
+    },
+
+    "quiz4.p6.b": {
+      es: "Instalar todas las aplicaciones que encuentres.",
+      en: "Install every app you come across.",
+    },
+
+    "quiz4.p6.c": {
+      es: "Actualizar el sistema y las aplicaciones cuando haya nuevas versiones.",
+      en: "Keep your operating system and apps updated whenever new versions are available.",
+    },
+
+    "quiz4.p6.d": {
+      es: "Compartir tu contraseña con un familiar.",
+      en: "Share your password with a family member.",
+    }
 }
 
 

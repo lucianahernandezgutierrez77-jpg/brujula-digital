@@ -445,38 +445,38 @@ const quizDataDeepfakes = [
   // QUIZ MODULO 4
 const quizDataPrivacidad = [
 {
-  pregunta: "Vas a crear una cuenta en una página web. ¿Cuál de estas contraseñas es la más segura?",
-  opciones: ["12345678", "MiNombre2026", "P4rqu3!Sol#92","contraseña" ],
+  pregunta: "quiz4.p1",
+  opciones: ["12345678", "quiz4.p1.b", "P4rqu3!Sol#92","quiz4.p1.d" ],
   correcta: 2
 },
 
 {
-  pregunta:"Recibes un correo que te pide confirmar tu contraseña mediante un enlace. ¿Qué deberías hacer?",
-  opciones: ["Ignorar el mensaje para siempre.", "Entrar directamente al sitio web oficial y verificar si el aviso es real.", "Responder el correo con tu contraseña.",  "Hacer clic en el enlace inmediatamente."],
+  pregunta:"quiz4.p2",
+  opciones: ["quiz4.p4.a", "quiz4.p2.b", "quiz4.p2.c",  "quiz4.p2.d"],
   correcta: 1
 },
 
 {
-  pregunta:  "¿Cuál de estos datos es mejor evitar publicar en redes sociales?",
-  opciones: ["Tu dirección de casa y número de teléfono.", "Una receta de cocina.","Una foto de un paisaje.", "La ciudad donde vives."],
+  pregunta:  "quiz4.p3",
+  opciones: ["quiz4.p3.a", "quiz4.p3.b","quiz4.p3.c", "quiz3.p3.d"],
   correcta: 0
 },
 
 {
-  pregunta: "¿Para qué sirve la verificación en dos pasos?",
-  opciones: ["Para hacer que internet sea más rápido.", "Para añadir una capa extra de seguridad al iniciar sesión.", "Para cambiar automáticamente la contraseña.", "Para guardar más fotos en el teléfono."],
+  pregunta: "quiz4.p4",
+  opciones: ["quiz4.p4.a", "quiz4.p4.b", "quiz4.p4.c", "quiz4.p4.d"],
   correcta: 1
 },
 
 {
-  pregunta: "Una aplicación solicita permiso para acceder a tu ubicación, cámara y contactos. ¿Qué es lo más recomendable?",
-  opciones: ["Aceptar todos los permisos sin leer.", "Desinstalar inmediatamente la aplicación.", "Apagar el teléfono.", "Revisar cuáles permisos realmente necesita antes de aceptarlos.",],
+  pregunta: "quiz4.p5",
+  opciones: ["quiz4.p5.a", "quiz4.p5.b", "quiz4.p5.c", "quiz4.p5.d",],
   correcta: 3
 },
 
 {
-  pregunta: "¿Qué ayuda a mantener más seguros tu teléfono y tus aplicaciones?",
-  opciones: ["No actualizar nunca el dispositivo.", "Instalar todas las aplicaciones que encuentres.", "Actualizar el sistema y las aplicaciones cuando haya nuevas versiones.",  "Compartir tu contraseña con un familiar."],
+  pregunta: "quiz4.p6",
+  opciones: ["quiz4.p6.a", "quiz4.p6.b", "quiz4.p6.c",  "quiz4.p6.d"],
   correcta: 2
 },
 ];
