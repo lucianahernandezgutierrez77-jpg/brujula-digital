@@ -331,6 +331,36 @@ function mostrarPuntajeDeepfakes() {
   );
 }
 
+function mostrarPuntajePrivacidad() {
+  resultadoMostrado.privacidad = true;
+  mostrarPuntaje(
+    quizDataPrivacidad,
+    contadorPrivacidad,
+    "resultado-final-privacidad",
+    "btn-resultado-privacidad",
+
+    t("modulo-privacidad.mensaje.perfecto"),
+    t("modulo-privacidad.mensaje.bien"),
+    t("modulo-privacidad.mensaje.intentar"),
+
+    `
+    <div style="background: #F0FDF4; border-radius: 12px; padding: 20px; margin-top: 20px; border-left: 4px solid var(--green);">
+      <h3>${t("modulo-privacidad.mensaje.cambio")}</h3>
+      <p>${t("modulo-privacidad.mensaje.cambio2")}</p>
+
+      <ul style="line-height: 2;">
+        <li>${t("modulo-privacidad.mensaje.cambio3")}</li>
+        <li>${t("modulo-privacidad.mensaje.cambio4")}</li>
+        <li>${t("modulo-privacidad.mensaje.cambio5")}</li>
+        <li>${t("modulo-privacidad.mensaje.cambio6")}</li>
+        <li>${t("modulo-privacidad.mensaje.cambio7")}</li>
+        <li>${t("modulo-privacidad.mensaje.cambio8")}</li>
+      </ul>
+      <p>${t("modulo-privacidad.mensaje.cambio9")}</p>
+    </div>
+    `
+  );
+}
 
 // QUIZ MODULO 1
 const quizData = [
@@ -480,44 +510,3 @@ const quizDataPrivacidad = [
   correcta: 2
 },
 ];
-
-function mostrarPuntajePrivacidad() {
-
-  const total = quizDataPrivacidad.length;
-  const resultado = document.getElementById("resultado-final-privacidad");
-  let mensaje = "";
-  let color = "";
-
-  if (respuestasCorrectasPrivacidad === total) {
-    mensaje = "🏆 ¡Excelente! Sabes proteger tu privacidad en internet.";
-    color = "var(--green)";
-  } else if (respuestasCorrectasPrivacidad >= total / 2) {
-    mensaje = "👍 ¡Muy bien! Vas desarrollando buenos hábitos digitales.";
-    color = "var(--blue)";
-  } else {
-    mensaje = "📖 No pasa nada. Puedes volver a leer la lección e intentarlo otra vez.";
-    color = "var(--orange)";
-  }
-
-  resultado.innerHTML = `
-    <div style="background: white; border-radius: 12px; padding: 20px; margin-top: 15px; text-align: center; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
-      <h3 style="color: ${color};">${mensaje}</h3>
-      <p style="font-size: 1.3rem;">Obtuviste <strong>${respuestasCorrectasPrivacidad} de ${total}</strong> respuestas correctas.</p>
-    </div>
-    <div style="background: #F0FDF4; border-radius: 12px; padding: 20px; margin-top: 20px; border-left: 4px solid var(--green);">
-      <h3>🔒 ¿Cómo proteger tu información en internet?</h3>
-      <p>Cuidar tu privacidad digital es un hábito que puedes desarrollar paso a paso. Recuerda:</p>
-      <ul style="line-height: 2;">
-        <li>🔑 Usa contraseñas seguras y diferentes para cada cuenta importante.</li>
-        <li>📱 Activa la verificación en dos pasos siempre que sea posible.</li>
-        <li>🚫 Nunca compartas datos personales con desconocidos o por mensajes.</li>
-        <li>📶 Evita hacer trámites importantes desde redes Wi-Fi públicas.</li>
-        <li>🔄 Mantén tus dispositivos y aplicaciones actualizados.</li>
-        <li>🚪 Cierra sesión cuando uses un computador compartido.</li>
-      </ul>
-      <p>Con estos hábitos puedes navegar por internet con mucha más tranquilidad y seguridad.</p>
-    </div>`;
-
-  resultado.style.display = "block";
-  document.getElementById("btn-resultado-privacidad").style.display = "none";
-}

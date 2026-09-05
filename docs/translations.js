@@ -173,18 +173,33 @@ const translations = {
   },
 
   "modulo-salud.list.item1": {
-    es: "<span class = 'subtitle'>El sueño</span> 😴 — Usar pantallas hasta muy tarde puede hacer que nos cueste más dormir.",
-    en: "<span class = 'subtitle'>Sleep</span> 😴 — Using screens late at night can make it harder for us to fall asleep.",
+    es: "<span class = 'subtitle'>El sueño</span> 😴",
+    en: "<span class = 'subtitle'>Sleep</span> 😴",
+  },
+
+  "modulo-salud.descripcion.item1": {
+    es: "Usar pantallas hasta muy tarde puede hacer que nos cueste más dormir.",
+    en: "Using screens late at night can make it harder for us to fall asleep.",
   },
 
   "modulo-salud.list.item2": {
-    es: "<span class = 'subtitle'> La actividad física</span> 🚶 — A veces pasamos horas sentados sin darnos cuenta.",
-    en: "<span class = 'subtitle'>Physical Activity</span> 🚶 — Sometimes we spend hours sitting without realizing it.",
+    es: "<span class = 'subtitle'> La actividad física</span> 🚶 ",
+    en: "<span class = 'subtitle'>Physical Activity</span> 🚶",
+  },
+
+  "modulo-salud.descripcion.item2": {
+    es: "A veces pasamos horas sentados sin darnos cuenta.",
+    en: "Sometimes we spend hours sitting without realizing it.",
   },
 
   "modulo-salud.list.item3": {
-    es: "<span class = 'subtitle'> El bienestar emocional</span> 😔 — Estar constantemente conectados o recibir demasiada información puede hacernos sentir agotados o estresados.",
-    en: "<span class = 'subtitle'>Emotional Well-being</span> 😔 — Being constantly connected or receiving too much information can make us feel exhausted or stressed.",
+    es: "<span class = 'subtitle'> El bienestar emocional</span> 😔",
+    en: "<span class = 'subtitle'>Emotional Well-being</span> 😔",
+  },
+
+  "modulo-salud.descripcion.item3": {
+    es: "Estar constantemente conectados o recibir demasiada información puede hacernos sentir agotados o estresados.",
+    en: "Being constantly connected or receiving too much information can make us feel exhausted or stressed.",
   },
 
   "modulo-salud.descripcion4": {
@@ -198,11 +213,6 @@ const translations = {
   },
 
   //ACTIVIDAD
-
-  "modulo-salud.actividad.titulo": {
-    es: "<span class=\"subtitle2\">Actividad  </span>",
-    en: "<span class=\"subtitle2\">Activity  </span>",
-  },
 
   "modulo-salud.actividad.descripcion": {
     es: "Después de pasar un tiempo usando el computador, Juan decidió salir a caminar para descansar su vista y mover el cuerpo. Responde correctamente las preguntas para ayudarlo a completar su recorrido.",
@@ -810,7 +820,7 @@ const translations = {
 
   //ACTIVIDAD 2
 
-  "modulo-estafas.actividad.titulo": {
+  "modulos-titulo.actividad": {
     es: "<span class=\"subtitle2\">Actividad</span",
     en: "<span class=\"subtitle2\">Activity</span",
   },
@@ -1939,7 +1949,67 @@ const translations = {
     "quiz4.p6.d": {
       es: "Compartir tu contraseña con un familiar.",
       en: "Share your password with a family member.",
-    }
+    },
+
+    "modulo-privacidad.mensaje.perfecto": {
+      es: "🏆 ¡Excelente! Sabes cómo proteger tu privacidad en internet.",
+      en: "🏆 Excellent! You know how to protect your privacy online.",
+    },
+
+    "modulo-privacidad.mensaje.bien": {
+      es: "👍 ¡Muy bien! Vas desarrollando buenos hábitos digitales.",
+      en: "👍 Great job! You’re developing good digital habits.",
+    },
+
+    "modulo-privacidad.mensaje.intentar": {
+      es: "📖 No pasa nada. Puedes volver a leer la lección e intentarlo otra vez.",
+      en: "📖 No worries. You can review the lesson and try again.",
+    },
+
+    "modulo-privacidad.mensaje.cambio": {
+      es: "🔒 ¿Cómo proteger tu privacidad y seguridad en internet?",
+      en: "🔒 How can you protect your privacy and security online?",
+    },
+
+    "modulo-privacidad.mensaje.cambio2": {
+      es: "Cuidar tu privacidad digital es un hábito que puedes desarrollar paso a paso. Recuerda:",
+      en: "Protecting your digital privacy is a habit you can develop step by step. Remember:",
+    },
+
+    "modulo-privacidad.mensaje.cambio3": {
+      es: "🔑 Usa contraseñas seguras y diferentes para tus cuentas importantes.",
+      en: "🔑 Use strong, unique passwords for your important accounts.",
+    },
+
+    "modulo-privacidad.mensaje.cambio4": {
+      es: "📱 Activa la verificación en dos pasos siempre que sea posible.",
+      en: "📱 Enable two-step verification whenever possible.",
+    },
+
+    "modulo-privacidad.mensaje.cambio5": {
+      es: "🚫 Nunca compartas datos personales con desconocidos o por mensajes.",
+      en: "🚫 Never share personal information with strangers or through messages.",
+    },
+
+    "modulo-privacidad.mensaje.cambio6": {
+      es: "📶 Evita hacer trámites importantes desde una red Wi-Fi pública.",
+      en: "📶 Avoid handling important transactions over public Wi-Fi.",
+    },
+
+    "modulo-privacidad.mensaje.cambio7": {
+      es: "🔄 Mantén tus dispositivos y aplicaciones actualizados.",
+      en: "🔄 Keep your devices and apps updated.",
+    },
+
+    "modulo-privacidad.mensaje.cambio8": {
+      es: "🚪 Cierra sesión cuando uses un computador compartido.",
+      en: "🚪 Close your session when using a shared computer.",
+    },
+
+    "modulo-privacidad.mensaje.cambio9": {
+      es: "Con estos hábitos puedes navegar por internet con mucha más tranquilidad y seguridad.",
+      en: "With these habits, you can browse the internet with much more peace of mind and security.",
+    },
 }
 
 

@@ -31,7 +31,7 @@
   <!-- INICIO -->
   <section id="home">
     <div class="intro">
-      <h2 data-i18n="home.titulo">Bienvenido 👋</h2>
+      <h2 data-i18n="home.titulo" style="text-align: center">Bienvenido 👋</h2>
       <p data-i18n="home.descripcion">Cada paso que das en el mundo digital es una oportunidad para aprender, descubrir y sentirte más seguro al usar la tecnología. </p>
       <div style="display: flex; justify-content: center;">
         <button class="btn" data-i18n="home.btn" onclick="showSection('modulos')" style="width: auto; min-width: 250px;">Comenzar</button>
@@ -51,9 +51,9 @@
   <!--INTRO MODULO 1 -->
   <section id="modulo-salud" style="display:none">
     <div class="intro">
-      <h2 data-i18n="modulo-salud.consejos.titulo">📱 Uso saludable de dispositivos</h2>
+      <h2 data-i18n="modulo-salud.consejos.titulo" style="text-align: center">📱 Uso saludable de dispositivos</h2>
       <p data-i18n="modulo-salud.consejos.descripcion">La tecnología puede ser una herramienta poderosa para aprender, comunicarnos y descubrir nuevas oportunidades. Sin embargo, también es importante aprender a usarla con equilibrio, ya que un uso excesivo puede afectar nuestra salud y bienestar.</p>
-      <h3 data-i18n="modulos-consejos">📝 Consejos prácticos</h3>
+      <h3 data-i18n="modulos-consejos" style="text-align:center">📝 Consejos prácticos</h3>
 <div class="consejo-card">
   <div class="consejo-texto">
     <h4><span class="subtitle2"><span class="highlight2" data-i18n="titulo.consejo1">Regla 20-20-20</span></span></h4>
@@ -112,14 +112,17 @@
           referrerpolicy="strict-origin-when-cross-origin"
           allowfullscreen></iframe>
       </div>
-      <h2 data-i18n="modulo-salud.titulo"> 📈💻 ¿Por qué es importante cuidar el tiempo en pantalla?  📺📊</h2>
+      <h2 data-i18n="modulo-salud.titulo" style="text-align:center"> 📈💻 ¿Por qué es importante cuidar el tiempo en pantalla?  📺📊</h2>
       <p data-i18n="modulo-salud.descripcion">Nuestro tiempo es valioso. Cada momento que pasamos frente a una pantalla es un <span class = highlight5>momento que también podríamos dedicar a descansar, realizar actividad física, conversar con nuestra familia o simplemente disfrutar</span> de lo que sucede a nuestro alrededor.</p>
       <p data-i18n="modulo-salud.descripcion2">¿Esto significa que la tecnología es mala? No. La tecnología puede ser una herramienta increíble para aprender, entretenernos y mantenernos conectados. Pero, como una espada de doble filo, su impacto depende de cómo la usamos.</p>
       <p data-i18n="modulo-salud.descripcion3">Pasar demasiado tiempo frente a una pantalla puede afectar:</p>
       <ul>
-        <li data-i18n="modulo-salud.list.item1"><span class = "subtitle">El sueño</span> 😴 — Usar pantallas hasta muy tarde puede hacer que nos cueste más dormir.</li>
-        <li data-i18n="modulo-salud.list.item2"><span class = "subtitle"> La actividad física</span> 🚶 — A veces pasamos horas sentados sin darnos cuenta.</li>
-        <li data-i18n="modulo-salud.list.item3"><span class = "subtitle"> El bienestar emocional</span> 😔 — Estar constantemente conectados o recibir demasiada información puede hacernos sentir agotados o estresados.</li>
+        <li data-i18n="modulo-salud.list.item1"><span class = "subtitle">El sueño</span> 😴</li>
+        <p data-i18n="modulo-salud.descripcion.item1">Usar pantallas hasta muy tarde puede hacer que nos cueste más dormir.</p>
+        <li data-i18n="modulo-salud.list.item2"><span class = "subtitle"> La actividad física</span> 🚶</li>
+          <p data-i18n="modulo-salud.descripcion.item2">A veces pasamos horas sentados sin darnos cuenta.</p>
+        <li data-i18n="modulo-salud.list.item3"><span class = "subtitle"> El bienestar emocional</span>😔</li>
+         <p data-i18n="modulo-salud.descripcion.item3">Estar constantemente conectados o recibir demasiada información puede hacernos sentir agotados o estresados.</p>
       </ul>
       <p data-i18n="modulo-salud.descripcion4"><span class="highlight3">No se trata de dejar de usar la tecnología, sino de aprender a utilizarla de una forma que beneficie nuestra salud y nuestro bienestar.</span></p>
       <p data-i18n="modulo-salud.descripcion5">📚 <strong>¿Quieres saber más?</strong> La Comisión Europea explica los efectos del tiempo excesivo en pantalla:<br></p>
@@ -127,7 +130,7 @@
 
 <!-- ACTIVIDAD MODULO 1 -->
 <div style="text-align: center;">
-<h2 data-i18n="modulo-salud.actividad.titulo"><span class="subtitle2">Actividad</span></h2>
+<h2 data-i18n="modulos-titulo.actividad"><span class="subtitle2">Actividad</span></h2>
 <p data-i18n="modulo-salud.actividad.descripcion">Después de pasar un tiempo usando el computador, Juan decidió salir a caminar para descansar su vista y mover el cuerpo. Responde correctamente las preguntas para ayudarlo a completar su recorrido.</p>
 </div>
 <div id="game">
@@ -181,9 +184,10 @@
     <button class="btn" data-i18n="modulo-salud.boton.reiniciar" onclick="reiniciarActividad()" style="width: auto; min-width: 250px;">🔄 Intentar de nuevo</button>
   </div>
 </div>
+
 <!-- QUIZ MODULO 1 -->
       <hr style="margin: 40px 0; border: none; border-top: 3px solid #e2e8f0;">
-      <div style="text-align: center;">
+      <div style="text-align: center">
       <h2 data-i18n="modulo-salud.titulo.quiz"> <span class="subtitle2">🧠 Pon a prueba lo que aprendiste</span> </h2>
       </div>
       <div id="quiz-container"></div>
@@ -201,9 +205,9 @@
   <!-- INTRO MODULO 2 -->
   <section id="modulo-estafas" style="display:none">
     <div class="intro">
-      <h2 data-i18n="modulo-estafas.consejos.titulo">⚠️ Estafas digitales</h2>
+      <h2 data-i18n="modulo-estafas.consejos.titulo" style="text-align:center">⚠️ Estafas digitales</h2>
       <p data-i18n="modulo-estafas.consejos.descripcion">Hoy en día es muy común recibir mensajes por WhatsApp, correo electrónico o llamadas de personas que intentan engañarnos. Aprender a reconocer estas situaciones nos ayuda a proteger nuestra información, nuestro dinero y a navegar por internet con mayor tranquilidad.</p>
-      <h3 data-i18n="modulos-consejos">📝 Consejos prácticos</h3>
+      <h3 data-i18n="modulos-consejos" style="text-align:center">📝 Consejos prácticos</h3>
       
 
         <div class="consejo-card">
@@ -260,7 +264,7 @@
       <div class="video-container">
         <iframe src="https://www.youtube.com/embed/ZqhCvKTK98U?si=CCe5GijveqKE_iSP" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
       </div>
-      <h2 data-i18n="modulo-estafas.titulo">🚨💻¿Cómo reconocer una estafa digital? 🔍⚠️</h2>
+      <h2 data-i18n="modulo-estafas.titulo" style="text-align:center">🚨💻¿Cómo reconocer una estafa digital? 🔍⚠️</h2>
       <p data-i18n="modulo-estafas.descripcion">Cada día aparecen nuevas formas de estafa en internet. Aunque cambian constantemente, la mayoría tienen algo en común: buscan que actuemos rápidamente, sin detenernos a pensar o verificar la información.</p>
       <h3 data-i18n="modulo-estafas.tipos">🚨 Tipos de estafas más comunes</h3>
       <ul>
@@ -284,7 +288,7 @@
 
   <!-- ACTIVIDAD MODULO 2 -->
 <div style="text-align: center;">
-<h2 data-i18n="modulo-estafas.actividad.titulo"><span class="subtitle2">Actividad  </span></h2>
+<h2 data-i18n="modulos-titulo.actividad"><span class="subtitle2">Actividad  </span></h2>
 <p data-i18n="modulo-estafas.actividad.descripcion">Juan ha recibido varios mensajes hoy. Ayúdalo a identificar cuáles son estafas y cuáles son legítimos.</p>
 </div>
 <div id="game-estafas">
@@ -439,6 +443,8 @@
     <p data-i18n="modulo-deepfakes.descripcion3">Uno de los ejemplos más conocidos de este tipo de contenido son los <span class="highlight">deepfakes</span>. Se trata de imágenes, videos o audios creados o modificados con inteligencia artificial para que parezcan reales. En algunos casos se utilizan con fines de entretenimiento, pero también pueden emplearse para difundir información falsa o hacer creer que una persona dijo o hizo algo que nunca ocurrió.</p>
     <h4 data-i18n="modulo-deepfakes.titulo2">🔍 ¿Cómo podemos reconocerlos?</h4>
     <p data-i18n="modulo-deepfakes.descripcion4">No siempre es fácil identificar un contenido falso, especialmente cuando ha sido creado con inteligencia artificial. Sin embargo, hay algunas señales que pueden ayudarnos a analizar la información con mayor cuidado.</p>
+
+    <div class="video-container"> <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/reel/DT2qJYMgBBt/" data-instgrm-version="14"> </blockquote> </div> <script async src="https://www.instagram.com/embed.js"></script>
     <ul>
       <li data-i18n="modulo-deepfakes.list.item1">🎭 El contenido parece demasiado sorprendente o increíble.</li>
       <li data-i18n="modulo-deepfakes.list.item2">🔍 No encuentras la misma información en otras fuentes confiables.</li>
@@ -449,16 +455,87 @@
     <p data-i18n="modulo-deepfakes.descripcion5">No siempre podremos saber de inmediato si un contenido es verdadero o falso. Por eso, si algo te genera dudas,<span class = "highlight3"> lo mejor es detenerte un momento, buscar otras fuentes confiables y evitar compartirlo hasta confirmar</span>  que la información es correcta. Unos minutos de verificación pueden ayudar a evitar que la desinformación siga circulando.</p>
     <p data-i18n="modulo-deepfakes.descripcion6">📚 <strong>¿Quieres saber más?</strong> El Instituto Nacional de Ciberseguridad (INCIBE) ofrece recomendaciones para identificar la desinformación y protegerse frente a contenidos manipulados, incluidos los deepfakes.<br></p>
     <a href="https://www.incibe.es/ciudadania/blog/deepfakes" target="_blank" rel="noopener noreferrer" style="color: var(--blue); font-size: 1rem;">🔗 Ver fuente oficial (INCIBE)</a>
- <hr style="margin: 25px 0; border-color: #e2e8f0;">
-      <h3 data-i18n="modulo-deepfakes.titulo.quiz">🧠 ¿Puedes identificar la desinformación?</h3>
+
+    <div style="text-align: center;">
+      <h2 data-i18n="modulos-titulo.actividad" style= text-align:center>Actividad</h2>
+      <p>En esta actividad,pondremos a prueba tus conocimientos sobre cómo identificar la desinformación en el entorno digital.</p>
+    </div>
+
+    <div id="game">
+      <div id="computador">
+        <div id="monitor">
+          <div id="pantalla"></div>
+        </div>
+        
+      </div>
+      <div id="soporte"></div>
+      <div id="base-monitor"></div>
+      <div id="teclado">
+        <div class="fila-teclas">
+          <button>Q</button>
+          <button>W</button>
+          <button>E</button>
+          <button>R</button>
+          <button>T</button>
+          <button>Y</button>
+          <button>U</button>
+          <button>I</button>
+          <button>O</button>
+          <button>P</button>
+        </div>
+
+        <div class="fila-teclas">
+          <button>A</button>
+          <button>S</button>
+          <button>D</button>
+          <button>F</button>
+          <button>G</button>
+          <button>H</button>
+          <button>J</button>
+          <button>K</button>
+          <button>L</button>
+        </div>
+
+        <div class="fila-teclas">
+          <button>Z</button>
+          <button>X</button>
+          <button>C</button>
+          <button>V</button>
+          <button>B</button>
+          <button>N</button>
+          <button>M</button>
+       </div>
+
+       <div class="fila-teclas-espacio">
+          <button>Espacio</button>
+       </div>
+
+       <div class="fila-teclas-enter">
+          <button>Enter</button>
+          </div>
+
+      <div class="fila-teclas-abajo">
+        <button>Ctrl</button>
+        <button>Win</button>
+        <button>Alt</button>
+        <button>Alt</button>
+        <button>fa</button>
+        <button>Ctrl</button>
+        <button>Fn</button>
+        </div>
+    </div>
+    </div>
+    
+    <hr style="margin: 25px 0; border-color: #e2e8f0;">
+      <h3 data-i18n="modulo-deepfakes.titulo.quiz" style="text-align:center"><span class="subtitle2">🧠 ¿Puedes identificar la desinformación?</span></h3>
       <div id="quiz-container-deepfakes"></div>
       <div style="display: flex; justify-content: center; margin-top: 20px;">
-        <button class="btn" onclick="mostrarPuntajeDeepfakes()" id="btn-resultado-deepfakes" style="display:none; width: auto;">Ver mi resultado 🎯</button>
+        <button class="btn" data-i18n="modulos-boton-resultado" onclick="mostrarPuntajeDeepfakes()" id="btn-resultado-deepfakes" style="display:none; width: auto;">Ver mi resultado 🎯</button>
       </div>
       <div id="resultado-final-deepfakes" style="display:none;"></div>
       <div style="display: flex; justify-content: space-between; align-items: center; margin-top: 20px; flex-wrap: wrap; gap: 10px;">
-        <button class="btn btn-secondary" onclick="goHome()">← Volver al inicio</button>
-        <button class="btn" onclick="showSection('modulo-privacidad')">Siguiente módulo →</button>
+        <button class="btn btn-secondary" data-i18n="modulos-boton-inicio" onclick="goHome()">← Volver al inicio</button>
+        <button class="btn" data-i18n="modulos-boton-siguiente" onclick="showSection('modulo-privacidad')">Siguiente módulo →</button>
       </div>
       </div>
   </section>
@@ -466,10 +543,10 @@
   <!-- INTRO MODULO 4 -->
   <section id="modulo-privacidad" style="display:none">
     <div class="intro">
-      <h2 data-i18n="modulo-privacidad.consejos.titulo">🔒 Privacidad y seguridad</h2>
+      <h2 data-i18n="modulo-privacidad.consejos.titulo" style= "text-align:center">>🔒 Privacidad y seguridad</h2>
       <p data-i18n="modulo-privacidad.consejos.descripcion1">¿Le darías las llaves de tu casa a un desconocido? Probablemente no. Entonces, ¿por qué compartir información personal en internet sin saber quién la recibirá?</p>
       <p data-i18n="modulo-privacidad.consejos.descripcion2">Cada vez que usamos un teléfono, una tableta o un computador compartimos información sobre nosotros. En la mayoría de los casos esto no representa un problema, pero es importante aprender a proteger nuestros datos y reconocer cuándo es seguro compartirlos.</p>
-      <h3 data-i18n="modulos-consejos">📝 Consejos prácticos:</span></h3>
+      <h3 data-i18n="modulos-consejos" style="text-align:center">📝 Consejos prácticos:</span></h3>
 
       <div class="consejo-card">
       <div class="consejo-texto">
@@ -548,7 +625,7 @@
       <h3 data-i18n="modulo-privacidad.titulo.quiz">⭐ ¿Puedes identificar la privacidad y seguridad en internet? 🔐</h3>
       <div id="quiz-container-privacidad"></div>
       <div style="display: flex; justify-content: center; margin-top: 20px;">
-        <button class="btn" onclick="mostrarPuntajePrivacidad()" id="btn-resultado-privacidad" style="display:none; width: auto;">Ver mi resultado 🎯</button>
+        <button class="btn" data-i18n="modulos-boton-resultado" onclick="mostrarPuntajePrivacidad()" id="btn-resultado-privacidad" style="display:none; width: auto;">Ver mi resultado 🎯</button>
       </div>
       <div id="resultado-final-privacidad" style="display:none;"></div>
       <div style="display: flex; justify-content: space-between; align-items: center; margin-top: 20px; flex-wrap: wrap; gap: 10px;">

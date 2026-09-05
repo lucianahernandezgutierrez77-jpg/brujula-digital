@@ -11,7 +11,7 @@ let velocidadPaisaje = 0;
 let juanCaminando = false;
 let erroresActividad = 0;
 
-function iniciarAnimaciones() {
+  function iniciarAnimaciones() {
   const paisaje1 = document.getElementById("paisaje1");
   const paisaje2 = document.getElementById("paisaje2");
   const leftArm = document.querySelector(".left-arm");
