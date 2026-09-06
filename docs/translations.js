@@ -15,8 +15,8 @@ const translations = {
   // HOME
 
   "home.titulo": {
-    es: "Bienvenido 👋",
-    en: "Welcome 👋",
+    es: "Bienvenido :)",
+    en: "Welcome :)",
   },
 
   "home.descripcion": { 
@@ -61,8 +61,8 @@ const translations = {
   },
 
   "modulo-salud.consejos.descripcion": {
-    es: "La tecnología puede ser una herramienta poderosa para aprender, comunicarnos y descubrir nuevas oportunidades. Sin embargo, también es importante aprender a usarla con equilibrio, ya que un uso excesivo puede afectar nuestra salud y bienestar.",
-    en: "Technology can be a powerful tool for learning, communicating, and discovering new opportunities. However, it is also important to use it in a balanced way, since excessive use can affect our health and well-being.",
+    es: "La tecnología puede ser una herramienta poderosa para aprender, comunicarnos y descubrir nuevas oportunidades. Sin embargo, también es importante aprender a usarla con equilibrio, ya que un uso excesivo puede afectar nuestra salud y bienestar. A continuación, encontrarás algunos consejos sencillos que pueden ayudarte a desarrollar hábitos más saludables al usar la tecnología.",
+    en: "Technology can be a powerful tool for learning, communicating, and discovering new opportunities. However, it is also important to use it in a balanced way, since excessive use can affect our health and well-being. Below, you will find some simple tips that can help you develop healthier habits when using technology.",
   },
 
   "titulo.consejo1": {
@@ -142,19 +142,14 @@ const translations = {
 
   // MODULO 1 LECCION
 
-  "modulos-video": { 
-    es: "🎥 Video recomendado",
-    en: "🎥 Recommended Video",
-  },
-
   "modulo-salud.video.descripcion": {
     es: "Antes de continuar, mira este breve video sobre el uso de la tecnología:",
     en: "Before continuing, watch this brief video about technology use:",
   },
 
   "modulo-salud.titulo": { 
-    es: "📈💻 ¿Por qué es importante cuidar el tiempo en pantalla?  📺📊",
-    en: "📈💻 Why is it important to manage screen time?  📺📊",
+    es: " ¿Por qué es importante cuidar el tiempo en pantalla?",
+    en: " Why is it important to manage screen time? ",
   },
 
   "modulo-salud.descripcion": {
@@ -173,8 +168,8 @@ const translations = {
   },
 
   "modulo-salud.list.item1": {
-    es: "<span class = 'subtitle'>El sueño</span> 😴",
-    en: "<span class = 'subtitle'>Sleep</span> 😴",
+    es: "<span class = 'subtitle'>El sueño:</span>",
+    en: "<span class = 'subtitle'>Sleep:</span>",
   },
 
   "modulo-salud.descripcion.item1": {
@@ -183,18 +178,18 @@ const translations = {
   },
 
   "modulo-salud.list.item2": {
-    es: "<span class = 'subtitle'> La actividad física</span> 🚶 ",
-    en: "<span class = 'subtitle'>Physical Activity</span> 🚶",
+    es: "<span class = 'subtitle'> La actividad física:</span>  ",
+    en: "<span class = 'subtitle'>Physical Activity:</span> ",
   },
 
   "modulo-salud.descripcion.item2": {
     es: "A veces pasamos horas sentados sin darnos cuenta.",
-    en: "Sometimes we spend hours sitting without realizing it.",
+    en: "Sometimes we spend hours sitting without even noticing.",
   },
 
   "modulo-salud.list.item3": {
-    es: "<span class = 'subtitle'> El bienestar emocional</span> 😔",
-    en: "<span class = 'subtitle'>Emotional Well-being</span> 😔",
+    es: "<span class = 'subtitle'> El bienestar emocional:</span> ",
+    en: "<span class = 'subtitle'>Emotional Well-being:</span> ",
   },
 
   "modulo-salud.descripcion.item3": {
@@ -203,13 +198,23 @@ const translations = {
   },
 
   "modulo-salud.descripcion4": {
-    es: "<span class=\"highlight3\">No se trata de dejar de usar la tecnología, sino de aprender a utilizarla de una forma que beneficie nuestra salud y nuestro bienestar.</span>",
-    en: "<span class=\"highlight3\">It's not about stopping the use of technology, but rather learning to use it in a way that benefits our health and well-being.</span>",
+    es: "<span class=\"highlight3\">No se trata de dejar de usar la tecnología, sino de aprender a utilizarla de una forma que beneficie nuestra salud y nuestro bienestar.</span> Con pequeños cambios en nuestros hábitos podemos disfrutar de sus beneficios sin dejar de cuidar nuestro cuerpo y nuestra mente.",
+    en: "<span class=\"highlight3\">It's not about stopping the use of technology, but rather learning to use it in a way that benefits our health and well-being.</span> With small changes in our habits, we can enjoy its benefits without neglecting our physical and mental well-being.",
   },
 
-  "modulo-salud.descripcion5": {
-    es: "📚 <strong>¿Quieres saber más?</strong> La Comisión Europea explica los efectos del tiempo excesivo en pantalla:<br>",
-    en: "📚 <strong>Want to learn more?</strong> The European Commission explains the effects of excessive screen time:<br>",
+  "modulo-salud.fuente.titulo": {
+    es: "ℹ️ ¿Te interesa saber más?",
+    en: "ℹ️ Interested in learning more?",
+  },
+
+  "modulo-salud.fuente.descripcion": {
+    es: "La Comisión Europea comparte información sobre cómo el exceso de tiempo frente a las pantallas puede afectar nuestra salud:",
+    en: "The European Commission shares information on how spending too much time in front of screens can affect our health:",
+  },
+
+  "modulo-salud.fuente.link": {
+    es: "➜ Más información — Comisión Europea",
+    en: "➜ Learn more — European Commission",
   },
 
   //ACTIVIDAD
@@ -739,8 +744,8 @@ const translations = {
   },
 
   "modulo-estafas.titulo": {
-    es: "⚠️ Estafas digitales: cómo protegernos",
-    en: "⚠️ Digital Scams: How to Protect Yourself",
+    es: "¿Cómo reconocer una estafa digital?",
+    en: "How to recognize a digital scam?",
   }, 
   
   "modulo-estafas.descripcion": {

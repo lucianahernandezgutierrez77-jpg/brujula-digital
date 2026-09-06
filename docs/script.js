@@ -30,6 +30,16 @@ function goHome() {
   showSection("home");
 }
 
+function mostrarFuente() {
+    const fuente = document.getElementById("fuente-salud");
+
+    if (fuente.style.display === "none") {
+        fuente.style.display = "block";
+    } else {
+        fuente.style.display = "none";
+    }
+}
+
 let respuestasCorrectas = 0;
 let preguntasRespondidas = 0;
 

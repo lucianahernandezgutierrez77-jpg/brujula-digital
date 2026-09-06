@@ -23,16 +23,3 @@ In the future, I plan to add a complete Spanish–English translation so the pla
 ## Project Status
 I plan to keep my project under active development. I want to keep improving it step by step while I learn more about programming. In the future, I plan to add new educational modules, interactive activities, and an English translation.
 
-## How to run:
-
-### Online
-You can use the project directly through GitHub Pages:
-(https://lucianahernandezgutierrez77-jpg.github.io/brujula-digital/)
-
-### Locally
-1. Clone or download this repository.
-2. Open the project folder.
-3. Open `docs/index.html` in a web browser.
-
-No additional dependencies or installations are required.
-

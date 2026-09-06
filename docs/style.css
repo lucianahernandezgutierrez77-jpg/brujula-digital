@@ -14,7 +14,7 @@
 /*=====BASE====*/
 body{
     margin: 0;
-    font-family: Arial, sans-serif;
+    font-family: "Trebuchet MS", Arial, sans-serif;
     background-color: var(--bg);
     color: var(--text);
     line-height: 1.6;
@@ -112,14 +112,36 @@ body{
 
 .intro{
     background: white;
-    padding: 20px;
-    border-radius: 12px;
-    margin-top: 20px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    padding: 32px 40px;
+    border-radius: 8px;
+    margin-top: 24px;
+    border: 2px solid var(--yellow);
 }
 
-.intro h2{
+.intro h2 {
     color: var(--blue);
+    font-size: 1.8rem;
+    line-height: 1.3;
+    margin-bottom: 20px;
+}
+
+.intro p {
+    font-size: 1.05rem;
+    line-height: 1.8;
+    margin: 0 0 20px;
+}
+
+.intro ul {
+    padding-left: 25px;
+}
+
+.intro li {
+    margin-bottom: 18px;
+}
+
+.intro li p {
+    margin-top: 5px;
+    margin-bottom: 0;
 }
 
 /*====PRINCIPAL COLOR=====*/
@@ -180,13 +202,11 @@ body{
 }
 
 .consejo-emoji {
-  font-size: 4rem;
-  flex-shrink: 0;
-  line-height: 1;
-  background: #cffec3;
-  border-radius: 12px;
-  padding: 16px;
-  border: 2px solid var(--green);
+    font-size: 4rem;
+    background: #cffec3;
+    border-radius: 12px;
+    padding: 16px;
+    border: 2px solid var(--green);
 }
 
 @media (max-width: 600px) {
@@ -206,8 +226,8 @@ body{
   padding-bottom: 56.25%; 
   height: 0;
   overflow: hidden;
-  border-radius: 12px;
-  margin: 20px 0;
+  border-radius: 6px;
+  margin: 24px 0 36px;
 }
 
 .video-container iframe {
@@ -219,6 +239,15 @@ body{
   border: 0;
 }
 
+.video-label {
+    display: block;
+    font-size: 0.8rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: var(--blue);
+    margin-bottom: 8px;
+}
+
 .short-container {
     display: flex;
     justify-content: center;
@@ -226,10 +255,77 @@ body{
 }
 
 .short-container iframe {
-    width: 315px;
-    height: 560px;
+    width: 240px;
+    height: 427px;
     max-width: 100%;
     border-radius: 12px;
+}
+
+.impact-list {
+    margin: 25px 0;
+}
+
+.impact-item {
+    display: flex;
+    gap: 16px;
+    padding: 18px 0;
+    border-bottom: 1px solid #e6e5eb;
+}
+
+.impact-item:first-child {
+    border-top: 1px solid #e6e5eb;
+}
+
+.impact-icon {
+    color: var(--blue);
+    font-weight: bold;
+    font-size: 0.9rem;
+    min-width: 30px;
+}
+
+.impact-item h3 {
+    margin: 0 0 4px;
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+.impact-item p {
+    margin: 0;
+}
+
+.fuente-btn {
+    background: none;
+    border: none;
+    color: var(--blue);
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 0;
+    margin-top: 25px;
+    cursor: pointer;
+}
+
+.fuente-btn:hover {
+    text-decoration: underline;
+}
+
+.fuente-contenido {
+    margin-top: 12px;
+    padding-left: 4px;
+}
+
+.fuente-contenido p {
+    margin-bottom: 8px;
+    color: #4B5563;
+}
+
+.fuente-link {
+    color: var(--blue);
+    font-size: 0.95rem;
+    text-decoration: none;
+}
+
+.fuente-link:hover {
+    text-decoration: underline;
 }
 
 /* ===== MODULE CARDS ===== */
