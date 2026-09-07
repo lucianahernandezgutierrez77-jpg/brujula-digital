@@ -139,7 +139,7 @@
   </div>
 
       <p data-i18n="modulo-salud.descripcion4"><span class="highlight5">No se trata de dejar de usar la tecnología, sino de aprender a utilizarla de una forma que beneficie nuestra salud y nuestro bienestar.</span> Con pequeños cambios en nuestros hábitos podemos disfrutar de sus beneficios sin dejar de cuidar nuestro cuerpo y nuestra mente.</p>
-      <button class="fuente-btn" onclick="mostrarFuente()"><span data-i18n="modulo-salud.fuente.titulo"> ℹ️ ¿Te interesa saber más?</span></button>
+      <button class="fuente-btn" onclick="mostrarFuente('fuente-salud')"><span data-i18n="modulos-fuente.titulo"> ℹ️ ¿Te interesa saber más?</span></button>
 <div id="fuente-salud" class="fuente-contenido" style="display: none;">
    <p data-i18n="modulo-salud.fuente.descripcion">La Comisión Europea comparte información sobre cómo el exceso de tiempo frente a las pantallas puede afectar nuestra salud:</p>
     <a href="https://health.ec.europa.eu/inthistogether/healthy-screentime_es" target="_blank" rel="noopener noreferrer" class="fuente-link" data-i18n="modulo-salud.fuente.link"> 🔗 Ver más — Comisión Europea </a>
@@ -224,7 +224,7 @@
   <section id="modulo-estafas" style="display:none">
     <div class="intro">
       <h2 data-i18n="modulo-estafas.consejos.titulo" style="text-align:center">⚠️ Estafas digitales</h2>
-      <p data-i18n="modulo-estafas.consejos.descripcion">Hoy en día es muy común recibir mensajes por WhatsApp, correo electrónico o llamadas de personas que intentan engañarnos. Aprender a reconocer estas situaciones nos ayuda a proteger nuestra información, nuestro dinero y a navegar por internet con mayor tranquilidad.</p>
+      <p data-i18n="modulo-estafas.consejos.descripcion">Hoy en día es muy común recibir mensajes por WhatsApp, correo electrónico o llamadas de personas que intentan engañarnos. Aprender a reconocer estas situaciones nos ayuda a proteger nuestra información, nuestro dinero y a navegar por internet con mayor tranquilidad. A continuación, encontrarás algunos consejos sencillos que pueden ayudarte a reconocer las estafas y protegerte de posibles engaños en internet.</p>
       
 
         <div class="consejo-card">
@@ -276,31 +276,53 @@
   <!-- LECCION MODULO 2 -->
   <section id="leccion-estafas" style="display:none">
     <div class="intro">
+      <span class="video-label">VIDEO</span>
       <p data-i18n="modulo-estafas.video.descripcion">Antes de continuar, mira este breve video sobre estafas digitales:</p>
       <div class="video-container">
         <iframe src="https://www.youtube.com/embed/ZqhCvKTK98U?si=CCe5GijveqKE_iSP" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
       </div>
       <h2 data-i18n="modulo-estafas.titulo" style="text-align:center">¿Cómo reconocer una estafa digital?</h2>
-      <p data-i18n="modulo-estafas.descripcion">Cada día aparecen nuevas formas de estafa en internet. Aunque cambian constantemente, la mayoría tienen algo en común: buscan que actuemos rápidamente, sin detenernos a pensar o verificar la información.</p>
-      <h3 data-i18n="modulo-estafas.tipos">🚨 Tipos de estafas más comunes</h3>
-      <ul>
-        <li data-i18n="modulo-estafas.list.item1"><span class="subtitle">Phishing</span> 📧 — Correos o mensajes que imitan a tu banco o a una empresa conocida para robarte datos.</li>
-        <li data-i18n="modulo-estafas.list.item2"><span class="subtitle">Llamadas falsas</span> 📞 — Alguien dice ser del banco o del gobierno y te pide información urgente.</li>
-        <li data-i18n="modulo-estafas.list.item3"><span class="subtitle">"Ganaste un premio"</span> 🎁 — Te dicen que ganaste algo pero necesitas pagar para recibirlo. Nadie regala nada así.</li>
-        <li data-i18n="modulo-estafas.list.item4"><span class="subtitle">Estafa del familiar</span> 👨‍👩‍👧 — Alguien finge ser un familiar en apuros y pide dinero urgente.</li>
-        <li data-i18n="modulo-estafas.list.item5"><span class="subtitle">Enlaces falsos</span> 🔗 — Links que parecen reales pero te llevan a páginas falsas que roban tus datos.</li>
+      <p data-i18n="modulo-estafas.descripcion">Cada día aparecen nuevas formas de estafa en internet. Aunque cambian constantemente, la mayoría tienen algo en común: <span class="highlight5">buscan que actuemos rápidamente, sin detenernos a pensar o verificar la información.</span></p>
+      <h2 data-i18n="modulo-estafas.tipos">Tipos de estafas más comunes:</h2>
+      <ul class="lista-brujula">
+        <li data-i18n="modulo-estafas.list.item1"><span class="subtitle">Phishing:</span> Correos o mensajes que imitan a tu banco o a una empresa conocida para robarte datos.</li>
+        <li data-i18n="modulo-estafas.list.item2"><span class="subtitle">Llamadas falsas:</span> Alguien dice ser del banco o del gobierno y te pide información urgente.</li>
+        <li data-i18n="modulo-estafas.list.item3"><span class="subtitle">"Ganaste un premio":</span> Te dicen que ganaste algo pero necesitas pagar para recibirlo. Nadie regala nada así.</li>
+        <li data-i18n="modulo-estafas.list.item4"><span class="subtitle">Estafa del familiar:</span> Alguien finge ser un familiar en apuros y pide dinero urgente.</li>
+        <li data-i18n="modulo-estafas.list.item5"><span class="subtitle">Enlaces falsos:</span> Links que parecen reales pero te llevan a páginas falsas que roban tus datos.</li>
       </ul>
-      <p data-i18n="modulo-estafas.descripcion2">Aunque las estafas pueden presentarse de muchas formas, <span class= "highlight2">la mayoría comparten algunas señales que pueden ayudarnos a identificarlas.</span> Conocerlas es el primer paso para actuar con mayor seguridad.</p>
-      <ul>
-        <li data-i18n="modulo-estafas.list2.item1">El mensaje crea <span class=" highlight3">miedo o urgencia innecesaria</span></li>
-        <li data-i18n="modulo-estafas.list2.item2">Te piden <span class="highlight3">datos personales</span>, contraseñas o dinero</li>
-        <li data-i18n="modulo-estafas.list2.item3">El remitente tiene un <span class="highlight3">nombre extraño</span> o dirección de correo desconocida</li>
-        <li data-i18n="modulo-estafas.list2.item4">Hay <span class="highlight3">errores de ortografía</span> o el mensaje se ve <span class="highlight3">mal redactado</span></li>
-        <li data-i18n="modulo-estafas.list2.item5">Te ofrecen algo <span class="highlight3">demasiado bueno para ser verdad</span></li>
-      </ul>
+      <p data-i18n="modulo-estafas.descripcion2">Aunque las estafas pueden presentarse de muchas formas, <span class= "highlight5">la mayoría comparten algunas señales que pueden ayudarnos a identificarlas.</span> Conocerlas es el primer paso para actuar con mayor seguridad.</p>
+      
+    <div class="impact-item">
+      <div class="impact-icon">1</div>
+      <p data-i18n="modulo-estafas.list2.item1">El mensaje crea <span class=" highlight5">miedo o urgencia innecesaria</span></p>
+    </div>
+
+    <div class="impact-item">
+      <div class  = "impact-icon">2</div>
+      <p data-i18n="modulo-estafas.list2.item2">Te piden <span class="highlight5">datos personales</span>, contraseñas o dinero</p>
+    </div>
+
+    <div class="impact-item">
+      <div class  = "impact-icon">3</div>
+        <p data-i18n="modulo-estafas.list2.item3">El remitente tiene un <span class="highlight5">nombre extraño</span> o dirección de correo desconocida</p>
+    </div>
+
+    <div class="impact-item">
+      <div class  = "impact-icon">4</div>
+        <p data-i18n="modulo-estafas.list2.item4">Hay <span class="highlight5">errores de ortografía</span> o el mensaje se ve <span class="highlight5">mal redactado</span></p>
+    </div>
+    <div class="impact-item">
+      <div class  = "impact-icon">5</div>
+        <p data-i18n="modulo-estafas.list2.item5">Te ofrecen algo <span class="highlight5">demasiado bueno para ser verdad</span></p>
+    </div>
       <p data-i18n="modulo-estafas.recuerda"><strong>Recuerda:</strong> Tomarte unos segundos para verificar un mensaje puede evitar muchos problemas. Ante cualquier duda, es mejor confirmar la información antes de compartir datos personales o realizar un pago.</p>
-      <p data-i18n="modulo-estafas.fuente">📚 <strong>¿Quieres saber más?</strong> La Oficina de Seguridad del Internauta explica cómo protegerse del phishing:<br></p>
-        <a href="https://www.osi.es/es/phishing" target="_blank" rel="noopener noreferrer" style="color: var(--blue); font-size: 1rem;">🔗 Ver fuente oficial (OSI - Oficina de Seguridad del Internauta)</a>
+      <button class="fuente-btn" onclick="mostrarFuente('fuente-estafas')"><span data-i18n="modulos-fuente.titulo"> ℹ️ ¿Te interesa saber más?</span></button>
+      <div id="fuente-estafas" class="fuente-contenido" style="display: none;">
+      <p data-i18n="modulo-estafas.fuente.descripcion">La Oficina de Seguridad del Internauta explica cómo protegerse del phishing:</p>
+        <a href="https://www.osi.es/es/phishing" target="_blank" rel="noopener noreferrer" style="color: var(--blue); font-size: 1rem;" data-i18n="modulo-estafas.fuente.link">🔗 Ver fuente oficial (OSI - Oficina de Seguridad del Internauta)</a>
+      </div>
+      <hr style="margin: 40px 0; border: none; border-top: 3px solid #e2e8f0;">
 
   <!-- ACTIVIDAD MODULO 2 -->
 <div style="text-align: center;">

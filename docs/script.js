@@ -30,8 +30,8 @@ function goHome() {
   showSection("home");
 }
 
-function mostrarFuente() {
-    const fuente = document.getElementById("fuente-salud");
+function mostrarFuente(idFuente) {
+    const fuente = document.getElementById(idFuente);
 
     if (fuente.style.display === "none") {
         fuente.style.display = "block";

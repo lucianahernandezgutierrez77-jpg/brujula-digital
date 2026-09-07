@@ -131,17 +131,33 @@ body{
     margin: 0 0 20px;
 }
 
-.intro ul {
-    padding-left: 25px;
-}
-
-.intro li {
-    margin-bottom: 18px;
-}
-
 .intro li p {
     margin-top: 5px;
     margin-bottom: 0;
+}
+
+.intro ul + p {
+    margin-top: 30px;
+}
+
+.lista-brujula {
+    list-style: none;
+    padding-left: 0;
+}
+
+.lista-brujula li {
+    position: relative;
+    padding-left: 24px;
+    margin-bottom: 16px;
+    line-height: 1.7;
+}
+
+.lista-brujula li::before {
+    content: "🧭";
+    position: absolute;
+    left: 0;
+    top: 4px;
+    font-size: 0.55rem;
 }
 
 /*====PRINCIPAL COLOR=====*/

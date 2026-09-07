@@ -202,7 +202,7 @@ const translations = {
     en: "<span class=\"highlight3\">It's not about stopping the use of technology, but rather learning to use it in a way that benefits our health and well-being.</span> With small changes in our habits, we can enjoy its benefits without neglecting our physical and mental well-being.",
   },
 
-  "modulo-salud.fuente.titulo": {
+  "modulos-fuente.titulo": {
     es: "ℹ️ ¿Te interesa saber más?",
     en: "ℹ️ Interested in learning more?",
   },
@@ -662,14 +662,10 @@ const translations = {
   },
 
   "modulo-estafas.consejos.descripcion": {
-    es: "Las estafas digitales son intentos de engañar a las personas para obtener información personal, dinero u otros beneficios. Pueden presentarse en correos electrónicos, mensajes de texto, redes sociales o sitios web falsos.",
-    en: "Digital scams are attempts to deceive people in order to obtain personal information, money, or other benefits. They can appear in emails, text messages, social media, or fake websites.",
+    es: "Las estafas digitales son intentos de engañar a las personas para obtener información personal, dinero u otros beneficios. Pueden presentarse en correos electrónicos, mensajes de texto, redes sociales o sitios web falsos. A continuación, encontrarás algunos consejos sencillos que pueden ayudarte a reconocer las estafas y protegerte de posibles engaños en internet.",
+    en: "Digital scams are attempts to deceive people in order to obtain personal information, money, or other benefits. They can appear in emails, text messages, social media, or fake websites. Below, you will find some simple tips that can help you recognize scams and protect yourself from potential online fraud.",
   },
 
-  "modulos-consejos": {
-    es: "📝 Consejos prácticos",
-    en: "📝 Practical Tips",
-  },
 
   "titulo-estafas.consejo1": {
     es: "Desconfía de la urgencia",
@@ -749,68 +745,68 @@ const translations = {
   }, 
   
   "modulo-estafas.descripcion": {
-    es: "Las estafas digitales son intentos de engañar a las personas para obtener información personal, dinero u otros beneficios. Pueden presentarse en correos electrónicos, mensajes de texto, redes sociales o sitios web falsos.",
-    en: "Digital scams are attempts to deceive people in order to obtain personal information, money, or other benefits. They can appear in emails, text messages, social media, or fake websites.",
+    es: "Cada día aparecen nuevas formas de estafa en internet. Aunque cambian constantemente, la mayoría tienen algo en común: <span class='highlight5'>buscan que actuemos rápidamente, sin detenernos a pensar o verificar la información.</span>",
+    en: "Every day, new types of online scams appear. Although they are constantly changing, most of them have something in common: <span class='highlight5'>they try to make us act quickly without taking a moment to think or verify the information.</span>"
   },
 
   "modulo-estafas.tipos": {
-    es: "🚨 Tipos de estafas más comunes",
-    en: "🚨 Most Common Types of Scams",
+    es: " Tipos de estafas más comunes:",
+    en: " Most Common Types of Scams:",
   },
 
   "modulo-estafas.list.item1": {
-    es: "<span class = 'subtitle'>Phishing</span> 📧 — Mensajes que parecen de empresas confiables, pero buscan robar información personal.",
-    en: "<span class = 'subtitle'>Phishing</span> 📧 — Messages that appear to be from trusted companies but aim to steal personal information.",
+    es: "<span class = 'subtitle'>Phishing:</span> Mensajes que parecen de empresas confiables, pero buscan robar información personal.",
+    en: "<span class = 'subtitle'>Phishing:</span> Messages that appear to be from trusted companies but aim to steal personal information.",
   },
 
   "modulo-estafas.list.item2": {
-    es: "<span class = 'subtitle'>Llamadas falsas</span> 📞 — Alguien dice ser del banco o del gobierno y te pide información urgente.",
-    en: "<span class = 'subtitle'>False Calls</span> 📞 — Someone claims to be from the bank or government and asks for urgent information.",
+    es: "<span class = 'subtitle'>Llamadas falsas:</span> Alguien dice ser del banco o del gobierno y te pide información urgente.",
+    en: "<span class = 'subtitle'>False Calls:</span>  Someone claims to be from the bank or government and asks for urgent information.",
   },
 
   "modulo-estafas.list.item3": {
-    es: "<span class = 'subtitle'>\"Ganaste un premio\"</span> 🎁 — Te dicen que ganaste algo pero necesitas pagar para recibirlo. Nadie regala nada así.",
-    en: "<span class = 'subtitle'>\"You Won a Prize\"</span> 🎁 — Someone tells you that you've won something but you need to pay to claim it. No one gives away anything like that.",
+    es: "<span class = 'subtitle'>Ganaste un premio:</span> Te dicen que ganaste algo pero necesitas pagar para recibirlo. Nadie regala nada así.",
+    en: "<span class = 'subtitle'>You Won a Prize:</span> Someone tells you that you've won something but you need to pay to claim it. No one gives away anything like that.",
   },
 
   "modulo-estafas.list.item4":{
-    es: "<span class = 'subtitle'>Estafa del familiar</span> 👨‍👩‍👧 — Alguien finge ser un familiar en apuros y pide dinero urgente.",
-    en: "<span class = 'subtitle'>Family Member Scam</span> 👨‍👩‍👧 — Someone pretends to be a family member in trouble and asks for urgent money.",
+    es: "<span class = 'subtitle'>Estafa del familiar:</span> Alguien finge ser un familiar en apuros y pide dinero urgente.",
+    en: "<span class = 'subtitle'>Family Member Scam:</span> Someone pretends to be a family member in trouble and asks for urgent money.",
   },
 
   "modulo-estafas.list.item5": {
-    es: "<span class = 'subtitle'>Enlaces falsos</span> 🔗 — Links que parecen reales pero te llevan a páginas falsas que roban tus datos.",
-    en: "<span class = 'subtitle'>Fake Links</span> 🔗 — Links that appear to be real but lead to fake pages that steal your data.",
+    es: "<span class = 'subtitle'>Enlaces falsos:</span> Links que parecen reales pero te llevan a páginas falsas que roban tus datos.",
+    en: "<span class = 'subtitle'>Fake Links:</span> Links that appear to be real but lead to fake pages that steal your data.",
   },
 
   "modulo-estafas.descripcion2": {
-    es: "Aunque las estafas pueden presentarse de muchas formas, <span class= \"highlight2\">la mayoría comparten algunas señales que pueden ayudarnos a identificarlas.</span> Conocerlas es el primer paso para actuar con mayor seguridad.",
-    en: "Although scams can take many forms, <span class= \"highlight2\">most share some signs that can help us identify them.</span> Knowing them is the first step to acting more safely.",
+    es: "Aunque las estafas pueden presentarse de muchas formas, <span class= \"highlight5\">la mayoría comparten algunas señales que pueden ayudarnos a identificarlas.</span> Conocerlas es el primer paso para actuar con mayor seguridad.",
+    en: "Although scams can take many forms, <span class= \"highlight5\">most share some signs that can help us identify them.</span> Knowing them is the first step to acting more safely.",
   },
 
   "modulo-estafas.list2.item1": {
-    es: "El mensaje crea <span class=\"highlight3\">miedo o urgencia innecesaria</span>",
-    en: "The message creates <span class=\"highlight3\">unnecessary fear or urgency</span>",
+    es: "El mensaje crea <span class=\"highlight5\">miedo o urgencia innecesaria</span>",
+    en: "The message creates <span class=\"highlight5\">unnecessary fear or urgency</span>",
   },
 
   "modulo-estafas.list2.item2": {
-    es: "Te piden <span class=\"highlight3\">datos personales</span>, contraseñas o dinero",
-    en: "They ask for <span class=\"highlight3\">personal information</span>, passwords, or money",
+    es: "Te piden <span class=\"highlight5\">datos personales</span>, contraseñas o dinero",
+    en: "They ask for <span class=\"highlight5\">personal information</span>, passwords, or money",
   },
 
   "modulo-estafas.list2.item3": {
-    es: "El remitente tiene un <span class=\"highlight3\">nombre extraño</span> o dirección de correo desconocida",
-    en: "The sender has a <span class=\"highlight3\">strange name</span> or unknown email address",
+    es: "El remitente tiene un <span class=\"highlight5\">nombre extraño</span> o dirección de correo desconocida",
+    en: "The sender has a <span class=\"highlight5\">strange name</span> or unknown email address",
   },
 
   "modulo-estafas.list2.item4": {
-    es:"Hay <span class=\"highlight3\">errores de ortografía</span> o el mensaje se ve <span class=\"highlight3\">mal redactado</span>",
-    en: "There are <span class=\"highlight3\">spelling errors</span> or the message is <span class=\"highlight3\">poorly written</span>",
+    es:"Hay <span class=\"highlight5\">errores de ortografía</span> o el mensaje se ve <span class=\"highlight5\">mal redactado</span>",
+    en: "There are <span class=\"highlight5\">spelling errors</span> or the message is <span class=\"highlight5\">poorly written</span>",
   },
 
   "modulo-estafas.list2.item5": {
-    es: "Te ofrecen algo <span class=\"highlight3\">demasiado bueno para ser verdad</span>",
-    en: "They offer you something <span class=\"highlight3\">too good to be true</span>",
+    es: "Te ofrecen algo <span class=\"highlight5\">demasiado bueno para ser verdad</span>",
+    en: "They offer you something <span class=\"highlight5\">too good to be true</span>",
   },
 
   "modulo-estafas.recuerda": {
@@ -818,9 +814,14 @@ const translations = {
     en: "<strong>Remember:</strong> Taking a few seconds to verify a message can prevent many problems. When in doubt, it's better to confirm the information before sharing personal data or making a payment.",
   },
 
-  "modulo-estafas.fuente": {
-    es: "<strong>¿Quieres saber más?</strong> La Oficina de Seguridad del Internauta explica cómo protegerse del phishing<br>",
-    en: "📚 <strong>Want to learn more?</strong> The Internet User Security Office explains how to protect yourself from phishing. <br>",
+  "modulo-estafas.fuente.descripcion": {
+    es: "La Oficina de Seguridad del Internauta explica cómo protegerse del phishing",
+    en: "The Internet User Security Office explains how to protect yourself from phishing.",
+  },
+
+  "modulo-estafas.fuente.link": {
+    es: "➜ Más información — OSI",
+    en: "➜ Learn more — OSI",
   },
 
   //ACTIVIDAD 2
