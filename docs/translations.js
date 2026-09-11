@@ -1088,8 +1088,8 @@ const translations = {
 
   //QUIZ ESTAFAS
   "quiz-estafas.titulo": {
-    es: "<span class=\"subtitle2\">🧠 ¿Es estafa o no?</span>",
-    en: "<span class=\"subtitle2\">🧠 Is it a scam or not?</span>",
+    es: "<span class=\"subtitle2\"> ¿Es estafa o no?</span>",
+    en: "<span class=\"subtitle2\"> Is it a scam or not?</span>",
   },
 
   "quiz2.p1": {
@@ -1382,13 +1382,13 @@ const translations = {
   },
 
   "modulo-deepfakes.titulo": {
-    es: "🤖🎭 ¿Cómo reconocer la desinformación y los deepfakes? 🔍📢️",
-    en: "🤖🎭 How to recognize misinformation and deepfakes? 🔍📢",
+    es: "¿Cómo reconocer la desinformación y los deepfakes?",
+    en: "How to recognize misinformation and deepfakes?",
   },
 
   "modulo-deepfakes.descripcion": {
-    es: "Internet nos permite aprender cosas nuevas, mantenernos informados y comunicarnos con personas de todo el mundo. Sin embargo, no todo lo que vemos o leemos en internet es verdadero. <span class=\"highlight3\">Algunas publicaciones pueden contener información falsa o haber sido modificadas para confundir a las personas.</span>",
-    en: "The internet allows us to learn new things, stay informed, and communicate with people from all over the world. However, not everything we see or read on the internet is true. <span class=\"highlight3\">Some posts may contain false information or have been altered to mislead people.</span>",
+    es: "Internet nos permite aprender cosas nuevas, mantenernos informados y comunicarnos con personas de todo el mundo. Sin embargo, no todo lo que vemos o leemos en internet es verdadero. <span class=\"highlight5\">Algunas publicaciones pueden contener información falsa o haber sido modificadas para confundir a las personas.</span>",
+    en: "The internet allows us to learn new things, stay informed, and communicate with people from all over the world. However, not everything we see or read on the internet is true. <span class=\"highlight5\">Some posts may contain false information or have been altered to mislead people.</span>",
   },
 
   "modulo-deepfakes.descripcion2": {
@@ -1402,8 +1402,8 @@ const translations = {
   },
 
   "modulo-deepfakes.titulo2": {
-    es: "🔍 ¿Cómo podemos reconocerlos?",
-    en: "🔍 How can we recognize them?",
+    es: "¿Cómo podemos reconocerlos?",
+    en: "How can we recognize them?",
   },
 
   "modulo-deepfakes.descripcion4": {
@@ -1412,45 +1412,50 @@ const translations = {
   },
 
   "modulo-deepfakes.list.item1": {
-    es: "🎭 El contenido parece demasiado sorprendente o increíble.",
-    en: "🎭 The content seems too surprising or unbelievable.",
+    es: "El contenido parece demasiado sorprendente o increíble.",
+    en: "The content seems too surprising or unbelievable.",
   },
 
   "modulo-deepfakes.list.item2": {
-    es: "🔍 No encuentras la misma información en otras fuentes confiables.",
-    en: "🔍 You can’t find the same information in other reliable sources.",
+    es: "No encuentras la misma información en otras fuentes confiables.",
+    en: "You can’t find the same information in other reliable sources.",
   },
 
   "modulo-deepfakes.list.item3": {
-    es: "📢 La publicación no indica quién la creó o proviene de una fuente poco conocida.</",
-    en: "📢 The post doesn’t indicate who created it or comes from an unfamiliar source.",
+    es: "La publicación no indica quién la creó o proviene de una fuente poco conocida.",
+    en: "The post doesn’t indicate who created it or comes from an unfamiliar source.",
   },
 
   "modulo-deepfakes.list.item4": {
-    es: "🤖 En algunos videos, la voz o los movimientos pueden verse poco naturales.",
-    en: "🤖 In some videos, the voice or movements may look unnatural.",
+    es: "En algunos videos, la voz o los movimientos pueden verse poco naturales.",
+    en: "In some videos, the voice or movements may look unnatural.",
   },
 
   "modulo-deepfakes.list.item5": {
-    es: "📅 La información está fuera de contexto o utiliza imágenes antiguas para hablar de un hecho reciente.",
-    en: "📅 The information is out of context or uses old images to talk about a recent event.",
+    es: "La información está fuera de contexto o utiliza imágenes antiguas para hablar de un hecho reciente.",
+    en: "The information is out of context or uses old images to talk about a recent event.",
   },
 
   "modulo-deepfakes.descripcion5": {
-    es: "No siempre podremos saber de inmediato si un contenido es verdadero o falso. Por eso, si algo te genera dudas,<span class = \"highlight3\"> lo mejor es detenerte un momento, buscar otras fuentes confiables y evitar compartirlo hasta confirmar</span>  que la información es correcta. Unos minutos de verificación pueden ayudar a evitar que la desinformación siga circulando.",
-    en: "We can’t always know right away whether content is true or false. That’s why, if something makes you unsure, <span class=\"highlight3\">it’s best to pause for a moment, look for other reliable sources, and avoid sharing it until you’ve confirmed</span> that the information is correct. A few minutes of verification can help prevent misinformation from spreading.",
+    es: "No siempre podremos saber de inmediato si un contenido es verdadero o falso. Por eso, si algo te genera dudas,<span class = \"highlight5\"> lo mejor es detenerte un momento, buscar otras fuentes confiables y evitar compartirlo hasta confirmar</span>  que la información es correcta. Unos minutos de verificación pueden ayudar a evitar que la desinformación siga circulando.",
+    en: "We can’t always know right away whether content is true or false. That’s why, if something makes you unsure, <span class=\"highlight5\">it’s best to pause for a moment, look for other reliable sources, and avoid sharing it until you’ve confirmed</span> that the information is correct. A few minutes of verification can help prevent misinformation from spreading.",
   },
 
-  "modulo-deepfakes.descripcion6": {
-    es: "📚 <strong>¿Quieres saber más?</strong> El Instituto Nacional de Ciberseguridad (INCIBE) ofrece recomendaciones para identificar la desinformación y protegerse frente a contenidos manipulados, incluidos los deepfakes.",
-    en: "📚 <strong>Want to learn more?</strong> The National Institute of Cybersecurity (INCIBE) offers recommendations for identifying misinformation and protecting yourself from manipulated content, including deepfakes.",
+  "modulo-deepfakes.fuente.descripcion": {
+    es: "El Instituto Nacional de Ciberseguridad (INCIBE) ofrece recomendaciones para identificar la desinformación y protegerse frente a contenidos manipulados, incluidos los deepfakes.",
+    en: "The National Institute of Cybersecurity (INCIBE) offers recommendations for identifying misinformation and protecting yourself from manipulated content, including deepfakes.",
+  },
+
+  "modulo-deepfakes.fuente.link": {
+    es: "🔗 Más sobre deepfakes — INCIBE",
+    en: "🔗 More about deepfakes — INCIBE",
   },
 
   // QUIZ DEEPFAKES
 
   "modulo-deepfakes.titulo.quiz": {
-    es: "🧠 ¿Puedes identificar la desinformación?",
-    en: "🧠 Can you identify misinformation?",
+    es: "<span class='subtitle2'>¿Puedes identificar la desinformación?</span>",
+    en: "<span class='subtitle2'>Can you identify misinformation?</span>",
   },
 
   "quiz3.p1": {
