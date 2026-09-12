@@ -1164,7 +1164,8 @@ body{
 
 .fila-teclas {
   display: flex;
-  gap: 6px;
+  gap: 3px;
+  margin-bottom: 5px;
 }
 
 .fila-teclas button {
@@ -1179,14 +1180,36 @@ body{
   box-sizing: border-box;
 }
 
-.fila-teclas-espacio button {
-  width: 140px;
-  height: 20px;
-  border-radius: 5px;
-  margin: 0 auto;
-  padding: 12px;
-  box-sizing: border-box;
+.fila-teclas .esc {
+  width: 20px;
+  font-size: 8px;
+}
 
+.fila-teclas .tab {
+  width: 30px;
+}
+
+.fila-teclas .capslock {
+  width: 35px;
+  font-size: 5px;
+}
+
+.fila-teclas .enter {
+  width: 40px;
+  position: relative;
+  left: -2px;
+  font-size: 10px;
+}
+
+.fila-teclas .shift {
+  width: 54px;
+  font-size: 10px;
+}
+
+.fila-teclas-espacio {
+  display: flex;
+  justify-content: center;
+  margin-top: 6px;
 }
 
 .fila-teclas-enter button {
@@ -1194,7 +1217,13 @@ body{
   height: 20px;
   border-radius: 5px;
   box-sizing: border-box;
-  margin-left: 10px;
+}
+
+.fila-teclas-abajo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3px;
 }
 
 .fila-teclas-abajo button {
@@ -1202,7 +1231,9 @@ body{
   height: 20px;
   border-radius: 5px;
   box-sizing: border-box;
-  margin-left: 10px;
-  margin-top: 20px;
 }
 
+.fila-teclas-abajo .espacio {
+  width: 140px;
+  height: 20px;
+}

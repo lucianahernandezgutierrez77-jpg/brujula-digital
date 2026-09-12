@@ -198,8 +198,8 @@ const translations = {
   },
 
   "modulo-salud.descripcion4": {
-    es: "<span class=\"highlight3\">No se trata de dejar de usar la tecnología, sino de aprender a utilizarla de una forma que beneficie nuestra salud y nuestro bienestar.</span> Con pequeños cambios en nuestros hábitos podemos disfrutar de sus beneficios sin dejar de cuidar nuestro cuerpo y nuestra mente.",
-    en: "<span class=\"highlight3\">It's not about stopping the use of technology, but rather learning to use it in a way that benefits our health and well-being.</span> With small changes in our habits, we can enjoy its benefits without neglecting our physical and mental well-being.",
+    es: "<span class=\"highlight5\">No se trata de dejar de usar la tecnología, sino de aprender a utilizarla de una forma que beneficie nuestra salud y nuestro bienestar.</span> Con pequeños cambios en nuestros hábitos podemos disfrutar de sus beneficios sin dejar de cuidar nuestro cuerpo y nuestra mente.",
+    en: "<span class=\"highlight5\">It's not about stopping the use of technology, but rather learning to use it in a way that benefits our health and well-being.</span> With small changes in our habits, we can enjoy its benefits without neglecting our physical and mental well-being.",
   },
 
   "modulos-fuente.titulo": {
