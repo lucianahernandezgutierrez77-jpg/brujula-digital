@@ -15,3 +15,4 @@ Digital Compass is still growing. Some of my next goals for the project include:
 - Add my personal style  []
 - cambiar la forma de presentar los subtitulos 3
 - anadir "ventanas" para separar cada parte de la actividad
+- Hacer titilar los botones de iniciar actividad
