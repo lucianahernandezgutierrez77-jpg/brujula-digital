@@ -1748,23 +1748,23 @@ const translations = {
     },
 
     "modulo-privacidad.titulo": {
-      es: "📖 ¿Cómo proteger tu privacidad y seguridad en internet? 📖",
-      en: "📖 How can you protect your privacy and stay safe online? 📖",
+      es: "¿Cómo proteger tu privacidad y seguridad en internet?",
+      en: "How can you protect your privacy and stay safe online?",
     },
 
     "modulo-privacidad.descripcion1": {
-      es: "Cada vez que navegas por una página web, utilizas una aplicación o creas una cuenta, compartes datos como tu nombre, correo electrónico o número de teléfono. <span class=\"highlight3\">La privacidad digital consiste en proteger esa información y decidir quién puede acceder a ella.</span> Así como cerramos la puerta de nuestra casa para proteger nuestras pertenencias, también debemos cuidar nuestra información cuando utilizamos la tecnología.",
-      en: "Every time you visit a website, use an app, or create an account, you share information such as your name, email address, or phone number. <span class=\"highlight3\">Digital privacy means protecting this information and deciding who can access it.</span> Just as we lock the door to our home to protect our belongings, we should also protect our personal information when using technology.", 
+      es: "Cada vez que navegas por una página web, utilizas una aplicación o creas una cuenta, compartes datos como tu nombre, correo electrónico o número de teléfono. <span class=\"highlight5\">La privacidad digital consiste en proteger esa información y decidir quién puede acceder a ella.</span> Así como cerramos la puerta de nuestra casa para proteger nuestras pertenencias, también debemos cuidar nuestra información cuando utilizamos la tecnología.",
+      en: "Every time you visit a website, use an app, or create an account, you share information such as your name, email address, or phone number. <span class=\"highlight5\">Digital privacy means protecting this information and deciding who can access it.</span> Just as we lock the door to our home to protect our belongings, we should also protect our personal information when using technology.", 
     },
 
     "modulo-privacidad.descripcion2": {
-      es: "Proteger tu información personal es un hábito tan importante como cerrar la puerta de tu casa o guardar tus objetos de valor en un lugar seguro.<span class=\"highlight3\"> Con unas pocas medidas sencillas puedes reducir muchos riesgos y navegar por internet con mayor tranquilidad.</span>",
-      en: "Protecting your personal information is just as important as locking the door to your home or keeping your valuables in a safe place. <span class=\"highlight3\">With a few simple steps, you can reduce many risks and browse the internet with greater peace of mind.</span>"
+      es: "Proteger tu información personal es un hábito tan importante como cerrar la puerta de tu casa o guardar tus objetos de valor en un lugar seguro.<span class=\"highlight5\"> Con unas pocas medidas sencillas puedes reducir muchos riesgos y navegar por internet con mayor tranquilidad.</span>",
+      en: "Protecting your personal information is just as important as locking the door to your home or keeping your valuables in a safe place. <span class=\"highlight5\">With a few simple steps, you can reduce many risks and browse the internet with greater peace of mind.</span>"
     },
 
     "modulo-privacidad.titulo2": {
-      es: "🛡️ ¿Cómo podemos protegernos?",
-      en: "🛡️ How can we protect ourselves?",
+      es: "¿Cómo podemos protegernos?",
+      en: "How can we protect ourselves?",
     },
 
     "modulo-privacidad.descripcion3": {
@@ -1773,33 +1773,33 @@ const translations = {
     },
 
     "modulo-privacidad.list.item1": {
-      es: "No compartas <span class=\"highlight2\">información personal</span> con desconocidos. 🔒",
-      en: "Don’t share <span class=\"highlight2\">personal information</span> with strangers. 🔒",
+      es: "No compartas <span class=\"highlight3\">información personal</span> con desconocidos.",
+      en: "Don’t share <span class=\"highlight3\">personal information</span> with strangers.",
     },
 
     "modulo-privacidad.list.item2": {
-      es: "Usa <span class=\"highlight2\">contraseñas seguras</span> y diferentes para tus cuentas importantes. 🔑",
-      en: "Use <span class=\"highlight2\">strong, unique passwords</span> for your important accounts. 🔑",
+      es: "Usa <span class=\"highlight3\">contraseñas seguras</span> y diferentes para tus cuentas importantes.",
+      en: "Use <span class=\"highlight3\">strong, unique passwords</span> for your important accounts.",
     },
 
     "modulo-privacidad.list.item3": {
-      es: "Activa la <span class=\"highlight2\">verificación en dos pasos</span> siempre que sea posible. 📱",
-      en: "Enable <span class=\"highlight2\">two-step verification</span> whenever possible. 📱",
+      es: "Activa la <span class=\"highlight3\">verificación en dos pasos</span> siempre que sea posible.",
+      en: "Enable <span class=\"highlight3\">two-step verification</span> whenever possible.",
     },
 
     "modulo-privacidad.list.item4": {
-      es: "Evita hacer trámites importantes desde una <span class=\"highlight2\">red Wi-Fi pública</span>. 📶",
-      en: "Avoid handling important transactions over <span class=\"highlight2\">public Wi-Fi</span>. 📶",
+      es: "Evita hacer trámites importantes desde una <span class=\"highlight3\">red Wi-Fi pública</span>.",
+      en: "Avoid handling important transactions over <span class=\"highlight3\">public Wi-Fi</span>.",
     },
 
     "modulo-privacidad.list.item5": {
-      es: "Mantén tus <span class=\"highlight2\">dispositivos actualizados</span>. 🔄",
-      en: "Keep your <span class=\"highlight2\">devices up to date</span>. 🔄",
+      es: "Mantén tus <span class=\"highlight3\">dispositivos actualizados</span>.",
+      en: "Keep your <span class=\"highlight3\">devices up to date</span>.",
     },
 
     "modulo-privacidad.list.item6": {
-      es: "<span class=\"highlight2\">Cierra sesión</span> cuando uses un computador compartido. 🚪",
-      en: "<span class=\"highlight2\">Log out</span> when using a shared computer. 🚪",
+      es: "<span class=\"highlight3\">Cierra sesión</span> cuando uses un computador compartido.",
+      en: "<span class=\"highlight3\">Log out</span> when using a shared computer.",
     },
 
     "modulo-privacidad.descripcion4": {
@@ -1807,19 +1807,19 @@ const translations = {
       en: "Each of these habits adds an extra layer of protection for your information. The more of them you put into practice, the safer you’ll be while browsing the internet.",
     },
 
-    "modulo-privacidad.titulo3": {
-      es: "📚 <strong>¿Quieres saber más?</strong></p>",
-      en: "📚 <strong>Want to learn more?</strong>",
-    },
-
-    "modulo-privacidad.descripcion5":{
+    "modulo-privacidad.fuente.descripcion":{
       es: "El programa En TIC Confío+ ofrece recomendaciones para proteger tu privacidad, evitar riesgos digitales y usar internet de forma responsable.",
       en: "The En TIC Confío+ program offers tips for protecting your privacy, avoiding digital risks, and using the internet responsibly.",
     },
 
+    "modulo-privacidad.fuente.link": {
+      es: "🔗 En TIC Confío+",
+      en: "🔗 En TIC Confío+",
+    },
+
     "modulo-privacidad.titulo.quiz": {
-      es: "⭐ ¿Puedes identificar la privacidad y seguridad en internet? 🔐",
-      en: "⭐ Can you identify privacy and security online? 🔐",
+      es: " ¿Puedes identificar la privacidad y seguridad en internet?",
+      en: " Can you identify privacy and security online?",
     },
 
     "quiz4.p1": {

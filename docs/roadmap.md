@@ -13,4 +13,5 @@ Digital Compass is still growing. Some of my next goals for the project include:
 - Award an honorary mention to learners who complete all modules. []
 - Add interactive activities and real-world scenarios to reinforce learning. []
 - Add my personal style  []
-- cambiar la forma de presentar los subtitulos 3 
+- cambiar la forma de presentar los subtitulos 3
+- anadir "ventanas" para separar cada parte de la actividad
