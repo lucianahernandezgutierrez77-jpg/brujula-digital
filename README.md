@@ -13,7 +13,7 @@ These experiences inspired me to create Digital Compass, an educational platform
 
 Instead of focusing only on technical skills, the platform includes digital literacy, critical thinking, and responsible technology use. My goal is to help older adults recognize online risks, make informed decisions, and enjoy the benefits of technology without feeling consumed or unsafe. 
 
-I believe technology should be a tool that improves people's lives—not something that confuses, manipulates, or controls them. I care deeply about helping others, so Digital Compass was created with that vision in mind.
+I believe technology should be a tool that improves people's lives not something that confuses, manipulates, or controls them. I care deeply about helping others, so Digital Compass was created with that vision in mind.
 
 ## Language
 Although this README is written in English, the educational content is currently available in Spanish, as the project was originally created for older adults in my community in Colombia, where Spanish is the primary language.

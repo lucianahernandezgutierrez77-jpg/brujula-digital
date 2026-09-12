@@ -16,3 +16,5 @@ Digital Compass is still growing. Some of my next goals for the project include:
 - cambiar la forma de presentar los subtitulos 3
 - anadir "ventanas" para separar cada parte de la actividad
 - Hacer titilar los botones de iniciar actividad
+- Reparar el bug de cargar el quiz
+- anadir imagenes en la intro del modulo
