@@ -115,7 +115,7 @@ body{
     padding: 32px 40px;
     border-radius: 8px;
     margin-top: 24px;
-    border: 2px solid var(--yellow);
+    border: 2px solid #15fa6a;
 }
 
 .intro h2 {
@@ -722,16 +722,13 @@ body{
   position: absolute;
   top: 20px;
   left: 400px;
-
   width: 210px;
   height: 75px;
-
   background: #9fd3ff;
   border: 5px solid #8b5e3c;
   border-radius: 6px;
   overflow: hidden;
   z-index: 5;
-
 }
 
 #ventana::before {
@@ -755,7 +752,7 @@ body{
 }
 
 #ventana-cielo{
-  position: relative;
+    position: relative;
     display:flex;
     justify-content:center;
     align-items:center;
@@ -1091,7 +1088,7 @@ body{
 
 /*--ACTIVIDAD MODULO 3 ---*/
 
-#escena-cuarto {
+#escena-sala {
   position: relative;
   height: 170px;
   background: linear-gradient(to bottom, #f4f1ea 0%, #e9e2d8 100%);
@@ -1099,7 +1096,7 @@ body{
   overflow: hidden;
 }
 
-#piso {
+#piso-sala {
   position: absolute;
   bottom: 0;
   width: 100%;
@@ -1108,12 +1105,129 @@ body{
   border-top: 4px solid #8b5e3c;
 }
 
-#cuarto-fondo {
+#sofa-sala {
   position: absolute;
-  width: 100%;
-  height: 100%;
+  bottom: 3px;
+  left: 45px;
+  font-size: 100px;
 }
 
+#mesa-sala {
+  position: absolute;
+  bottom: 3px;
+  right: 70px;
+  font-size: 70px;
+}
+
+#computador-sala {
+  position: absolute;
+  bottom: 40px;
+  right: 140px;
+  font-size: 50px;
+}
+
+#silla-sala {
+  position: absolute;
+  bottom: 0px;
+  right: 135px;
+  width: 55px;
+  height: 95px;
+}
+
+.respaldo-silla {
+  position: absolute;
+  top: 6px;
+  left: 11px;
+  width: 32px;
+  height: 38px;
+  background: #475569;
+  border-radius: 8px 8px 4px 4px;
+}
+
+.asiento-silla {
+  position: absolute;
+  top: 40px;
+  left: 5px;
+  width: 45px;
+  height: 12px;
+  background: #334155;
+  border-radius: 4px;
+}
+
+
+.palo-silla {
+  position: absolute;
+  top: 50px;
+  left: 25px;
+  width: 6px;
+  height: 30px;
+  background: #1e293b;
+}
+
+.base-v {
+  position: absolute;
+  bottom: 13px;
+  left: 26px;
+  width: 4px;
+  height: 18px;
+  background: #1e293b;
+  transform: rotate(65deg);
+  transform-origin: bottom center;
+}
+
+.base-v::after {
+  content: "";
+  position: absolute;
+  width: 4px;
+  height: 18px;
+  background: #1e293b;
+  transform: rotate(-130deg);
+  transform-origin: bottom center;
+}
+
+#cuadro-sala {
+  position: absolute;
+  top: 10px;
+  left: 50px;
+  font-size: 60px;
+}
+
+#planta-sala {
+  position: absolute;
+  bottom: 5px;
+  left: 0px;
+  font-size: 60px;
+}
+
+#ventana-sala {
+  position: absolute;
+  top: 20px;
+  right: 400px;
+  width: 115px;
+  height: 80px;
+  border-radius: 6px;
+}
+
+#libreria-sala {
+  position: absolute;
+  bottom: 10px;
+  right: 300px;
+  width: 55px;
+  height: 115px;
+}
+
+#juan-deepfakes {
+  position: absolute;
+  left: 50%;
+  bottom: 15px;
+  transform: translateX(-50%);
+  width: 40px;
+  height: 70px;
+  transition: transform 2s linear;
+  z-index: 20;
+}
+
+/* ===== ESENA COMPUTADOR ===== */
 #computador {
   width: 500px;
   margin: 0 auto;
@@ -1152,8 +1266,8 @@ body{
 
 #teclado {
   width: 350px;
-  height: 130px;
-  background: #8311b4;
+  height: 140px;
+  background: #11a4b4;
   margin: 20px auto 0;
   border-radius: 7px;
   padding: 10px;
@@ -1178,15 +1292,17 @@ body{
   font-size: 15px;
   font-weight: bold;
   box-sizing: border-box;
+  font-size: 10px;
 }
 
 .fila-teclas .esc {
   width: 20px;
-  font-size: 8px;
+  font-size: 5px;
 }
 
 .fila-teclas .tab {
   width: 30px;
+  font-size: 10px;
 }
 
 .fila-teclas .capslock {
@@ -1231,6 +1347,11 @@ body{
   height: 20px;
   border-radius: 5px;
   box-sizing: border-box;
+  font-weight: bold;
+  border: none;
+  background: #e2e8f0;
+  box-shadow: 0 3px 0 #94a3b8;
+  font-size: 10px;
 }
 
 .fila-teclas-abajo .espacio {
