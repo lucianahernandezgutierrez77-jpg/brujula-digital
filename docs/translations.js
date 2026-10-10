@@ -1451,6 +1451,188 @@ const translations = {
     en: "🔗 More about deepfakes — INCIBE",
   },
 
+  // ACTIVIDAD DEEPFAKES
+
+  "modulo-deepfakes.act.p1": {
+    es: "Juan encuentra esta noticia en redes sociales y quiere compartirla con sus amigos. ¿Qué debería hacer primero?",
+    en: "Juan finds this news story on social media and wants to share it with his friends. What should he do first?",
+  },
+
+  "modulo-deepfakes.act.p1.a": {
+    es: "Compartirla con sus amigos",
+    en: "Share it with his friends",
+  },
+
+  "modulo-deepfakes.act.p1.b": {
+    es: "Darle 'me gusta'",
+    en: "Like it",
+  },
+
+  "modulo-deepfakes.act.p1.c": {
+    es: "Verificar si la información es verdadera en otras fuentes confiables",
+    en: "Verify whether the information is true using other reliable sources",
+  },
+
+  "modulo-deepfakes.act.p1.d": {
+    es: "Ignorarla sin revisar nada",
+    en: "Ignore it without checking anything",
+  },
+
+  "modulo-deepfakes.act.p1.exp.correcta:": {
+    es: "✅ ¡Correcto! Antes de compartir una noticia, lo mejor es verificar si la información es verdadera en otras fuentes confiables.",
+    en: "✅ Correct! Before sharing a news story, it’s best to verify whether the information is true using other reliable sources.",
+  },
+
+  "modulo-deepfakes.act.p1.exp.error:": {
+    es: "❌ Este contenido podría ser falso. Antes de compartirlo, lo mejor es verificar si la información es verdadera en otras fuentes confiables.",
+    en: "❌ This content could be false. Before sharing it, it’s best to verify whether the information is true using other reliable sources.",
+  },
+
+  "modulo-deepfakes.act.p2": {
+    es: "Juan ve un video de una persona famosa diciendo algo sorprendente. ¿Qué palabra debaria recordar antes de creerlo?",
+    en: "Juan sees a video of a famous person saying something surprising. What word should he remember before believing it?",
+  },
+
+  "modulo-deepfakes.act.p2.palabraclave": {
+    es: "verificar",
+    en: "verify",
+  },
+
+  "modulo-deepfakes.act.p2.exp.correcta:": {
+    es: "✅ ¡Correcto! Antes de creer un contenido, lo mejor es verificar si la información es verdadera en otras fuentes confiables.",
+    en: "✅ Correct! Before believing content, it’s best to verify whether the information is true using other reliable sources.",
+  },
+
+  "modulo-deepfakes.act.p2.exp.error:": {
+    es: "❌ Este contenido podría ser falso. Antes de creerlo, lo mejor es verificar si la información es verdadera en otras fuentes confiables.",
+    en: "❌ This content could be false. Before believing it, it’s best to verify whether the information is true using other reliable sources.",
+  },
+
+  "modulo-deepfakes.act.p3": {
+    es: "Juan  encuentra estas tres publicaciones con información diferente. ¿Qué debería hacer para descubir cuál es confiable?",
+    en: "Juan finds these three posts with different information. What should he do to discover which one is reliable?",
+  },
+
+  "modulo-deepfakes.act.p3.a": {
+    es: "Elegir la que tenga más 'me gusta' y compartidos",
+    en: "Choose the one with the most 'likes' and shares",
+  },
+
+  "modulo-deepfakes.act.p3.b": {
+    es: "Creer la que vio primero",
+    en: "Believe the one he saw first",
+  },
+
+  "modulo-deepfakes.act.p3.c": {
+    es: "Compartir las tres",
+    en: "Share all three",
+  },
+
+  "modulo-deepfakes.act.p3.d": {
+    es: "Comparar la información con otras fuentes confiables y reconocidas",
+    en: "Compare the information with other reliable and reputable sources",
+  },
+
+  "modulo-deepfakes.act.p3.exp.correcta":{
+    es: "✅ ¡Correcto! Para descubrir cuál información es confiable, lo mejor es comparar la información con otras fuentes confiables y reconocidas.",
+    en: "✅ Correct! To discover which information is reliable, it’s best to compare the information with other reliable and reputable sources.",
+  },
+
+  "modulo-deepfakes.act.p3.exp.error":{
+    es: "❌ Para descubrir cuál información es confiable, lo mejor es comparar la información con otras fuentes confiables y reconocidas.",
+    en: "❌ To discover which information is reliable, it’s best to compare the information with other reliable and reputable sources.",
+  },
+
+  "modulo-deepfakes.act.p4": {
+    es: "Juan encuentra esta noticia y quiere saber si puede confiar en ella. ¿Qué debería buscar primero?",
+    en: "Juan finds this news story and wants to know if he can trust it. What should he look for first?",
+  },
+
+  "modulo-deepfakes.act.p4.a": {
+    es: "La cantidad de 'me gusta'",
+    en: "The number of likes",
+  },
+
+  "modulo-deepfakes.act.p4.b": {
+    es: "La fuente que publicó la noticia",
+    en: "The source that published the news story",
+  },
+
+  "modulo-deepfakes.act.p4.c": {
+    es: "La cantidad de veces que se compartió",
+    en: "The number of times it was shared",
+  },
+
+  "modulo-deepfakes.act.p4.d": {
+    es: "Los comentarios más populares",
+    en: "The most popular comments",
+  },
+
+  "modulo-deepfakes.act.p4.exp.correcta": {
+    es: "✅ ¡Correcto! Para saber si una noticia es confiable, lo mejor es revisar la fuente que la publicó.",
+    en: "✅ Correct! To determine whether a news story is reliable, it’s best to check the source that published it.",
+  },
+
+  "modulo-deepfakes.act.p4.exp.error": {
+    es: "❌ Para saber si una noticia es confiable, lo mejor es revisar la fuente que la publicó.",
+    en: "❌ To determine whether a news story is reliable, it’s best to check the source that published it.",
+  },
+
+  "modulo-deepfakes.act.p5": {
+    es: "Juan encuentra esta publicación de una fuente oficial y la información está confirmada. ¿Qué debería hacer?",
+    en: "Juan finds this post from an official source and the information is confirmed. What should he do?"
+  },
+
+  "modulo-deepfakes.act.p5.a": {
+    es: "Compartirla si considera que es útil, citando la fuente",
+    en: "Share it if he thinks it’s useful, making sure to cite the source.",
+  },
+
+  "modulo-deepfakes.act.p5.b": {
+    es: "Ignorarla porque no tiene muchos 'me gusta'",
+    en: "Ignore it because it doesn’t have many 'likes'.",
+  },
+
+  "modulo-deepfakes.act.p5.c": {
+    es: "Reportarla como falsa.",
+    en: "Report it as false.",
+  },
+
+  "modulo-deepfakes.act.p5.d": {
+    es: "Cambiar el titular para llamar la atención.",
+    en: "Change the headline to get more attention.",
+  },
+
+  "modulo-deepfakes.act.p5.exp.correcta": {
+    es: "✅ ¡Correcto! Si la información está confirmada por una fuente oficial, puedes compartirla si consideras que es útil, citando la fuente.",
+    en: "✅ Correct! If the information is confirmed by an official source, you can share it if you think it’s useful, making sure to cite the source.",
+  },
+
+  "modulo-deepfakes.act.p5.exp.error": {
+    es: "❌ Si la información está confirmada por una fuente oficial, puedes compartirla si consideras que es útil, citando la fuente.",
+    en: "❌ If the information is confirmed by an official source, you can share it if you think it’s useful, making sure to cite the source.",
+  },
+
+  "modulo-deepfakes.act.p6": {
+    es: "Ayudale a Juan a recordar la palabra. Es una imagen, un audio o un video creado o modificado con inteligencia artificial para hacer parecer que la persona dijo o hizo algo que en realidad no ocurrió.",
+    en: "Help Juan remember the word. It’s an image, audio, or video created or modified using artificial intelligence to make it seem like a person said or did something that didn’t actually happen.",
+  },
+
+  "modulo-deepfakes.act.p6.palabraclave": {
+    es: "deepfake",
+    en: "deepfake",
+  },
+
+  "modulo-deepfakes.act.p6.exp.correcta": {
+    es: "✅ ¡Correcto! Un deepfake es una imagen, audio o video creado o modificado con inteligencia artificial para hacer parecer que la persona dijo o hizo algo que en realidad no ocurrió.",
+    en: "✅ Correct! A deepfake is an image, audio, or video created or modified with artificial intelligence to make it seem like a person said or did something that didn’t actually happen.",
+  },
+
+  "modulo-deepfakes.act.p6.exp.error": {
+    es: "❌ Un deepfake es una imagen, audio o video creado o modificado con inteligencia artificial para hacer parecer que la persona dijo o hizo algo que en realidad no ocurrió.",
+    en: "❌ A deepfake is an image, audio, or video created or modified with artificial intelligence to make it seem like a person said or did something that didn’t actually happen.",
+  },
+
   // QUIZ DEEPFAKES
 
   "modulo-deepfakes.titulo.quiz": {
@@ -2022,7 +2204,6 @@ const translations = {
       en: "With these habits, you can browse the internet with much more peace of mind and security.",
     },
 }
-
 
 //FUNCIONES
 

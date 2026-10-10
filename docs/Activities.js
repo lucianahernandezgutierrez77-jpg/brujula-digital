@@ -620,3 +620,179 @@ if(animacionJuanEstafas){
   document.getElementById("escena-telefono").style.display = "none";
   document.getElementById("escena-cuarto").style.display = "block";
 }
+
+// ACTIVIDAD MODULO 3 
+
+const casosDeepfakes = [
+  {
+    tipo: "seleccion",
+    imagen: "",
+    pregunta: "modulo-deepfakes.act.p1",
+    opciones: ["modulo-deepfakes.act.p1.a", "modulo-deepfakes.act.p1.b", "modulo-deepfakes.act.p1.c", "modulo-deepfakes.act.p1.d"],
+    correcta: 2,
+    explicacioncorrecta: "modulo-deepfakes.act.p1.exp.correcta",
+    explicacionerror: "modulo-deepfakes.act.p1.exp.error"
+  },
+
+  {
+    tipo: "escritura",
+    imagen: "",
+    pregunta: "modulo-deepfakes.act.p2",
+    palabraClave: "modulo-deepfakes.act.p2.palabraclave",
+    correcta: 2,
+    explicacioncorrecta: "modulo-deepfakes.act.p2.exp.correcta",
+    explicacionerror: "modulo-deepfakes.act.p2.exp.error"
+  },
+   // tal vez ccambiar una "seleccion" por una "escritura" 
+  {
+    tipo: "seleccion",
+    imagen: "",
+    pregunta: "modulo-deepfakes.act.p3",
+    opciones: ["modulo-deepfakes.act.p3.a", "modulo-deepfakes.act.p3.b", "modulo-deepfakes.act.p3.c", "modulo-deepfakes.act.p3.d"],
+    correcta: 3,
+    explicacioncorrecta: "modulo-deepfakes.act.p3.exp.correcta",
+    explicacionerror: "modulo-deepfakes.act.p3.exp.error"
+  },
+
+  {
+    tipo:"seleccion",
+    imagen: "",
+    pregunta: "modulo-deepfakes.act.p4",
+    opciones: ["modulo-deepfakes.act.p4.a", "modulo-deepfakes.act.p4.b", "modulo-deepfakes.act.p4.c", "modulo-deepfakes.act.p4.d"],
+    correcta: 1,
+    explicacioncorrecta: "modulo-deepfakes.act.p4.exp.correcta",
+    explicacionerror: "modulo-deepfakes.act.p4.exp.error"
+  },
+
+  {
+    tipo:"seleccion",
+    imagen: "",
+    pregunta: "modulo-deepfakes.act.p5",
+    opciones: ["modulo-deepfakes.act.p5.a", "modulo-deepfakes.act.p5.b", "modulo-deepfakes.act.p5.c", "modulo-deepfakes.act.p5.d"],
+    correcta: 0,
+    explicacioncorrecta: "modulo-deepfakes.act.p5.exp.correcta",
+    explicacionerror: "modulo-deepfakes.act.p5.exp.error"
+  },
+
+  {
+    tipo:"escritura",
+    imagen: "",
+    pregunta: "modulo-deepfakes.act.p6",
+    palabraClave: "modulo-deepfakes.act.p6.palabraclave",
+    correcta: 2,
+    explicacioncorrecta: "modulo-deepfakes.act.p6.exp.correcta",
+    explicacionerror: "modulo-deepfakes.act.p6.exp.error"
+  }
+
+];
+
+let casoDeepfakesIndice = 0;
+let erroresDeepfakes = 0;
+let casosDeepfakesMezclados = [];
+
+let animacionJuanDeepfakes = null;
+let pasoDeepfakes = false;
+let juanCaminandoDeepfakes = false;
+
+function mostrarCasoDeepfakes(indice) {
+  const caso = casosDeepfakesMezclados[indice];
+
+  const pestanas = document.querySelectorAll(".pestana-deepfakes");
+
+  pestanas.forEach((pestana, i) => {
+  pestana.classList.toggle("activa", i === indice);
+  });
+
+  document.getElementById("pregunta-deepfakes").textContent =
+    t(caso.pregunta);
+
+  const contenedor = document.getElementById("opciones-deepfakes");
+  contenedor.innerHTML = "";
+
+  if (caso.tipo === "seleccion") {
+    caso.opciones.forEach((opcion, indiceOpcion) => {
+      const boton = document.createElement("button");
+
+      boton.textContent = t(opcion);
+      boton.className = "opcion-deepfakes";
+
+      contenedor.appendChild(boton);
+    });
+  }
+}
+
+function iniciarActividadDeepfakes() {
+
+  document.getElementById("btn-iniciar-actividad").style.display = "none";
+  document.getElementById("escena-deepfakes-1").style.display = "block";
+
+  casoDeepfakesIndice = 0;
+  erroresDeepfakes = 0;
+  casosDeepfakesMezclados = mezclarArray([...casosDeepfakes]);
+
+  const dialogo = document.getElementById("juan-dialogo-deepfakes");
+  const juan = document.getElementById("juan-deepfakes");
+
+  juan.style.transition = "none";
+  juan.style.transform = "translateX(-50%)";
+
+  void juan.offsetWidth;
+
+  juan.style.transition = "transform 4s linear";
+
+  dialogo.textContent = t("modulo-deepfakes.actividad.dialogo");
+  dialogo.classList.add("visible");
+
+  iniciarAnimacionJuanDeepfakes();
+
+  juanCaminandoDeepfakes = true;
+
+  juan.style.transform = "translateX(500px)";
+
+  setTimeout(() => {
+
+    juanCaminandoDeepfakes = false;
+
+  document.getElementById("escena-deepfakes-1").style.display = "none";
+  document.getElementById("escena-deepfakes-2").style.display = "block";
+  mostrarCasoDeepfakes(casoDeepfakesIndice);
+
+   }, 4000);
+}
+
+function iniciarAnimacionJuanDeepfakes() {
+
+  const juan = document.getElementById("juan-deepfakes");
+
+  const leftArm = juan.querySelector(".left-arm-deepfakes");
+  const rightArm = juan.querySelector(".right-arm-deepfakes");
+  const leftLeg = juan.querySelector(".left-leg-deepfakes");
+  const rightLeg = juan.querySelector(".right-leg-deepfakes");
+  const head = juan.querySelector(".head-deepfakes");
+
+  if (animacionJuanDeepfakes) {
+    clearInterval(animacionJuanDeepfakes);
+  }
+
+  animacionJuanDeepfakes = setInterval(() => {
+
+    if (!juanCaminandoDeepfakes) return;
+
+    if (pasoDeepfakes) {
+      leftArm.style.transform = "rotate(45deg)";
+      rightArm.style.transform = "rotate(-25deg)";
+      leftLeg.style.transform = "rotate(35deg)";
+      rightLeg.style.transform = "rotate(-15deg)";
+      head.style.top = "1px";
+    } else {
+      leftArm.style.transform = "rotate(25deg)";
+      rightArm.style.transform = "rotate(-45deg)";
+      leftLeg.style.transform = "rotate(15deg)";
+      rightLeg.style.transform = "rotate(-35deg)";
+      head.style.top = "0px";
+    }
+
+    pasoDeepfakes = !pasoDeepfakes;
+
+  }, 180);
+}

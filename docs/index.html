@@ -502,14 +502,39 @@
       <p>En esta actividad,pondremos a prueba tus conocimientos sobre cómo identificar la desinformación en el entorno digital.</p>
     </div>
 
-    <div id="game">
-      <div id="escena-sala">
+    <div style="display: flex; justify-content: center;">
+  <button
+    class="btn"
+    id="btn-iniciar-actividad"
+    data-i18n="modulo-salud.boton.actividad"
+    onclick="iniciarActividadDeepfakes()"
+    style="width: auto; min-width: 250px;"
+  >
+    Iniciar actividad
+  </button>
+</div>
+
+<div id="game">
+  <div id="escena-deepfakes-1" style="display: none;">
+
+    <div id="escena-sala">
       <div id="piso-sala"></div>
 
-      <img id="ventana-sala" src="imagenes/ventana.jpeg" alt="Ventana">
+      <img
+        id="ventana-sala"
+        src="imagenes/ventana.jpeg"
+        alt="Ventana"
+      >
+
       <div id="sofa-sala">🛋️</div>
       <div id="mesa-sala">┳━┳</div>
-      <img id="libreria-sala" src="imagenes/bookshelf.jpeg" alt="libreria">
+
+      <img
+        id="libreria-sala"
+        src="imagenes/bookshelf.jpeg"
+        alt="Librería"
+      >
+
       <div id="computador-sala">🖥️</div>
 
       <div id="silla-sala">
@@ -518,21 +543,59 @@
         <div class="palo-silla"></div>
         <div class="base-v"></div>
       </div>
-      
+
       <div id="cuadro-sala">🖼︎</div>
+      <div id="cuadro2-sala">🦖</div>
       <div id="planta-sala">🪴</div>
-      </div>
-      <div id="juan-deepfakes"></div>
+      <div id="calendario-sala">📆</div>
+    </div>
+
+    <div id="juan-deepfakes">
+      <div class="head-deepfakes"></div>
+      <div class="body-deepfakes"></div>
+
+      <div class="left-arm-deepfakes"></div>
+      <div class="right-arm-deepfakes"></div>
+
+      <div class="left-leg-deepfakes"></div>
+      <div class="right-leg-deepfakes"></div>
+
+      <div id="juan-dialogo-deepfakes"></div>
+    </div>
+
+  </div>
+
+  <div id="escena-deepfakes-2" style="display: none;">
+
+    <div id="computador">
+
+      <div id="monitor">
+        <div id="pantalla">
+
+          <div id="navegador-deepfakes">
+
+            <div id="pestanas-deepfakes">
+              <button class="pestana-deepfakes activa"> Caso 1 <span class="cerrar-pestana">×</span></button>
+              <button class="pestana-deepfakes">Caso 2 <span class="cerrar-pestana">×</span></button>
+              <button class="pestana-deepfakes">Caso 3 <span class="cerrar-pestana">×</span></button>
+              <button class="pestana-deepfakes">Caso 4 <span class="cerrar-pestana">×</span></button>
+              <button class="pestana-deepfakes">Caso 5 <span class="cerrar-pestana">×</span></button>
+              <button class="pestana-deepfakes">Caso 6 <span class="cerrar-pestana">×</span></button>
+            </div>
+
+            <div id="contenido-navegador-deepfakes">
+              <div id="pregunta-deepfakes"></div>
+              <div id="opciones-deepfakes"></div>
+            </div>
+
+          </div>
+        </div>
       </div>
 
-      <div id="computador">
-        <div id="monitor">
-          <div id="pantalla"></div>
-        </div>
-        
-      </div>
       <div id="soporte"></div>
       <div id="base-monitor"></div>
+
+    <div id="zona-escritorio">
       <div id="teclado">
 
         <div class="fila-teclas">
@@ -551,6 +614,7 @@
           <button>=</button>
           <button class="capslock">←</button>
         </div>
+
         <div class="fila-teclas">
           <button class="tab">Tab</button>
           <button>Q</button>
@@ -597,8 +661,7 @@
           <button>.</button>
           <button>/</button>
           <button class="shift">Shift</button>
-       </div>
-
+        </div>
 
         <div class="fila-teclas-abajo">
           <button>Ctrl</button>
@@ -606,13 +669,19 @@
           <button>Alt</button>
           <button class="espacio"></button>
           <button>Alt</button>
+          <button>fa</button>
           <button>Ctrl</button>
           <button>Fn</button>
         </div>
       </div>
-   </div>
-    
+      </div>
+      <div id="mouse-deepfakes"></div>
+    </div>
+  </div>
+</div>
+
     <hr style="margin: 25px 0; border-color: #e2e8f0;">
+
       <h2 data-i18n="modulo-deepfakes.titulo.quiz" style="text-align:center"><span class="subtitle2">¿Puedes identificar la desinformación?</span></h2>
       <div id="quiz-container-deepfakes"></div>
       <div style="display: flex; justify-content: center; margin-top: 20px;">
