@@ -1601,7 +1601,7 @@ body{
 #opciones-deepfakes {
   display: flex;
   flex-direction: column;
-  gap: 7px;
+  gap: 2px;
 }
 
 .opcion-deepfakes {
@@ -1612,4 +1612,23 @@ body{
   color: #1f2937;
   text-align: left;
   cursor: pointer;
+}
+
+#respuesta-deepfakes {
+  min-height: 24px;
+  margin: 8px 10px;
+  padding: 3px 6px;
+  border-bottom: 1px solid #64748b;
+  font-size: 14px;
+  color: #1f2937;
+}
+
+#cursor-respuesta-deepfakes {
+  animation: parpadeo-cursor 1s steps(2, start) infinite;
+}
+
+@keyframes parpadeo-cursor {
+  to {
+    visibility: hidden;
+  }
 }

@@ -5,6 +5,8 @@ Digital Compass is still growing. Some of my next goals for the project include:
 - Module 3 and 4 activities []
 - Finishing Module 4 []
 - Fix the quizes translation feature[]
+- cleaning up the code []
+- split the CSS file (not defined) []
 - Improve and complete Spanish and English translations []
 - Add images to module introductions (not defined) []
 - Improve subtitle presentation (not defined)[]
