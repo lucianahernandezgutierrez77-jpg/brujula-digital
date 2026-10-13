@@ -1537,8 +1537,13 @@ body{
   height: 100%;
   background: #f8fafc;
   border-radius: 10px;
-  overflow: hidden;
+  overflow: auto;
   box-sizing: border-box;
+}
+
+#contenido-navegador-deepfakes {
+  padding: 12px;
+  color: #1f2937;
 }
 
 #pestanas-deepfakes {
@@ -1565,11 +1570,6 @@ body{
   background: #f8fafc;
   color: #1d4ed8;
   font-weight: bold;
-}
-
-#contenido-navegador-deepfakes {
-  padding: 12px;
-  color: #1f2937;
 }
 
 .pestana-deepfakes {
@@ -1631,4 +1631,26 @@ body{
   to {
     visibility: hidden;
   }
+}
+
+#resultado-deepfakes {
+  display: block !important;
+  visibility: visible !important;
+  opacity: 1 !important;
+  position: relative;
+  z-index: 10;
+  min-height: 20px;
+  margin: 10px;
+  padding: 8px;
+  color: #1f2937;
+  background: #ffffff;
+  font-size: 14px;
+}
+
+#resultado-deepfakes.correcta {
+  color: #15803d;
+}
+
+#resultado-deepfakes.incorrecta {
+  color: #b91c1c;
 }

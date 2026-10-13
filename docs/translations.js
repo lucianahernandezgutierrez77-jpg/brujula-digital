@@ -1485,7 +1485,7 @@ const translations = {
 
   "modulo-deepfakes.act.p1.exp.error:": {
     es: "❌ Este contenido podría ser falso. Antes de compartirlo, lo mejor es verificar si la información es verdadera en otras fuentes confiables.",
-    en: "❌ This content could be false. Before sharing it, it’s best to verify whether the information is true using other reliable sources.",
+    en: "❌ This content could be false. Before sharing it, verify whether the information is true using other reliable sources.",
   },
 
   "modulo-deepfakes.act.p2": {

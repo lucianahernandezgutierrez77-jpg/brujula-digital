@@ -631,7 +631,7 @@ const casosDeepfakes = [
     opciones: ["modulo-deepfakes.act.p1.a", "modulo-deepfakes.act.p1.b", "modulo-deepfakes.act.p1.c", "modulo-deepfakes.act.p1.d"],
     correcta: 2,
     explicacioncorrecta: "modulo-deepfakes.act.p1.exp.correcta",
-    explicacionerror: "modulo-deepfakes.act.p1.exp.error"
+    explicacionerror: "modulo-deepfakes.act.p1.exp.error",
   },
 
   {
@@ -686,8 +686,18 @@ const casosDeepfakes = [
 
 ];
 
-function iniciarActividadDeepfakes() {
+let casoDeepfakesIndice = 0;
+let erroresDeepfakes = 0;
+let casosDeepfakesMezclados = [];
+let respuestaComprobadaDeepfakes = false;
 
+let animacionJuanDeepfakes = null;
+let pasoDeepfakes = false;
+let juanCaminandoDeepfakes = false;
+
+// INICIAR ACTIVIDAD
+
+function iniciarActividadDeepfakes() {
   document.getElementById("btn-iniciar-actividad").style.display = "none";
   document.getElementById("escena-deepfakes-1").style.display = "block";
 
@@ -711,30 +721,21 @@ function iniciarActividadDeepfakes() {
   iniciarAnimacionJuanDeepfakes();
 
   juanCaminandoDeepfakes = true;
-
   juan.style.transform = "translateX(500px)";
 
   setTimeout(() => {
-
     juanCaminandoDeepfakes = false;
 
-  document.getElementById("escena-deepfakes-1").style.display = "none";
-  document.getElementById("escena-deepfakes-2").style.display = "block";
-  mostrarCasoDeepfakes(casoDeepfakesIndice);
+    document.getElementById("escena-deepfakes-1").style.display = "none";
+    document.getElementById("escena-deepfakes-2").style.display = "block";
 
-   }, 4000);
+    mostrarCasoDeepfakes(casoDeepfakesIndice);
+  }, 4000);
 }
 
-let casoDeepfakesIndice = 0;
-let erroresDeepfakes = 0;
-let casosDeepfakesMezclados = [];
-
-let animacionJuanDeepfakes = null;
-let pasoDeepfakes = false;
-let juanCaminandoDeepfakes = false;
+// ANIMACIÓN DE JUAN
 
 function iniciarAnimacionJuanDeepfakes() {
-
   const juan = document.getElementById("juan-deepfakes");
 
   const leftArm = juan.querySelector(".left-arm-deepfakes");
@@ -748,7 +749,6 @@ function iniciarAnimacionJuanDeepfakes() {
   }
 
   animacionJuanDeepfakes = setInterval(() => {
-
     if (!juanCaminandoDeepfakes) return;
 
     if (pasoDeepfakes) {
@@ -766,17 +766,21 @@ function iniciarAnimacionJuanDeepfakes() {
     }
 
     pasoDeepfakes = !pasoDeepfakes;
-
   }, 180);
 }
 
+// MOSTRAR CASO
+
 function mostrarCasoDeepfakes(indice) {
   const caso = casosDeepfakesMezclados[indice];
+  respuestaComprobadaDeepfakes = false;
+
+  if (!caso) return;
 
   const pestanas = document.querySelectorAll(".pestana-deepfakes");
 
   pestanas.forEach((pestana, i) => {
-  pestana.classList.toggle("activa", i === indice);
+    pestana.classList.toggle("activa", i === indice);
   });
 
   document.getElementById("pregunta-deepfakes").textContent =
@@ -785,45 +789,100 @@ function mostrarCasoDeepfakes(indice) {
   const contenedor = document.getElementById("opciones-deepfakes");
   contenedor.innerHTML = "";
 
+  const resultado = document.getElementById("resultado-deepfakes");
+  resultado.textContent = "";
+  resultado.className = "";
+
+  document.getElementById("numero-respuesta-deepfakes").textContent = "";
+
   if (caso.tipo === "seleccion") {
     caso.opciones.forEach((opcion, indiceOpcion) => {
       const boton = document.createElement("button");
 
-      boton.textContent = t(opcion);
+      boton.textContent = `${indiceOpcion + 1}. ${t(opcion)}`;
       boton.className = "opcion-deepfakes";
+
+      boton.addEventListener("click", () => {
+        escribirNumeroDeepfakes(String(indiceOpcion + 1));
+      });
 
       contenedor.appendChild(boton);
     });
+  } else if (caso.tipo === "escritura") {
+    const aviso = document.createElement("p");
+    aviso.textContent = "Esta pregunta requiere una respuesta escrita.";
+    contenedor.appendChild(aviso);
   }
 }
 
-// ESCRITURA EN EL TECLADO DE DEEPFAKES
+document
+  .getElementById("siguiente-caso-deepfakes")
+  .addEventListener("click", () => {
+    if (casoDeepfakesIndice < casosDeepfakesMezclados.length - 1) {
+      casoDeepfakesIndice++;
+      mostrarCasoDeepfakes(casoDeepfakesIndice);
+    } else {
+      const pregunta = document.getElementById("pregunta-deepfakes");
+      const opciones = document.getElementById("opciones-deepfakes");
+      const resultado = document.getElementById("resultado-deepfakes");
+      const boton = document.getElementById("siguiente-caso-deepfakes");
+
+      pregunta.textContent = "¡Actividad completada!";
+      opciones.innerHTML = "";
+      resultado.textContent =
+        `Has terminado los seis casos. Errores: ${erroresDeepfakes} de ${casosDeepfakesMezclados.length}.`;
+      resultado.className = "";
+      boton.style.display = "none";
+      document.getElementById("respuesta-deepfakes").style.display = "none";
+    }
+  });
+
+// ESCRIBIR NÚMERO
 
 function escribirNumeroDeepfakes(numero) {
   document.getElementById("numero-respuesta-deepfakes").textContent = numero;
 }
 
+// COMPROBAR RESPUESTA
+
 function comprobarRespuestaDeepfakes() {
-  const numero = document.getElementById(
+  const elementoRespuesta = document.getElementById(
     "numero-respuesta-deepfakes"
-  ).textContent;
+  );
+
+  const numero = elementoRespuesta.textContent.trim();
+
+  if (respuestaComprobadaDeepfakes) return;
 
   if (!["1", "2", "3", "4"].includes(numero)) return;
 
   const caso = casosDeepfakesMezclados[casoDeepfakesIndice];
 
-  if (caso.tipo !== "seleccion") return;
+  if (!caso || caso.tipo !== "seleccion") return;
 
   const respuestaUsuario = Number(numero) - 1;
+  const resultado = document.getElementById("resultado-deepfakes");
 
-  if (respuestaUsuario === caso.correcta) {
-    console.log("¡Respuesta correcta!");
-  } else {
-    console.log("Respuesta incorrecta.");
+  if (!resultado) return;
+
+  const esCorrecta = respuestaUsuario === caso.correcta;
+  respuestaComprobadaDeepfakes = true;
+  const clave = esCorrecta
+    ? caso.explicacioncorrecta
+    : caso.explicacionerror;
+
+  resultado.textContent = t(clave);
+  resultado.className = esCorrecta ? "correcta" : "incorrecta";
+
+  if (!esCorrecta) {
+    erroresDeepfakes++;
   }
+  document.getElementById("siguiente-caso-deepfakes").style.display =
+  "block";
 }
 
-// Teclado físico
+// CONECTAR TECLADO FÍSICO
+
 document.addEventListener("keydown", (evento) => {
   const escena = document.getElementById("escena-deepfakes-2");
 
@@ -838,7 +897,8 @@ document.addEventListener("keydown", (evento) => {
   }
 });
 
-// Teclado dibujado
+// CONECTAR TECLADO DIBUJADO
+
 document.getElementById("teclado").addEventListener("click", (evento) => {
   const tecla = evento.target.closest("button");
 
@@ -852,23 +912,3 @@ document.getElementById("teclado").addEventListener("click", (evento) => {
     comprobarRespuestaDeepfakes();
   }
 });
-
-function comprobarRespuestaDeepfakes() {
-  const numero = document.getElementById(
-    "numero-respuesta-deepfakes"
-  ).textContent;
-
-  if (!["1", "2", "3", "4"].includes(numero)) return;
-
-  const caso = casosDeepfakesMezclados[casoDeepfakesIndice];
-
-  if (caso.tipo !== "seleccion") return;
-
-  const respuestaUsuario = Number(numero) - 1;
-
-  if (respuestaUsuario === caso.correcta) {
-    console.log("¡Respuesta correcta!");
-  } else {
-    console.log("Respuesta incorrecta.");
-  }
-}

@@ -1,13 +1,15 @@
 ## What's Next for Digital Compass
-Digital Compass is still growing. Some of my next goals for the project include:
+Digital Compass is still a work in progress, and I hope to keep improving it. Some things I'd like to work on next are:
 
 ## Short-term 
 - Module 3 and 4 activities []
+- Add a brief introduction explaining how users should respond to the questions and interact with the Module 3 activity []
 - Finishing Module 4 []
 - Fix the quizes translation feature[]
 - cleaning up the code []
 - split the CSS file (not defined) []
 - Improve and complete Spanish and English translations []
+- Add an accurate and natural English translation []
 - Add images to module introductions (not defined) []
 - Improve subtitle presentation (not defined)[]
 - Add visual "windows" to separate sections of modules []
