@@ -1654,3 +1654,67 @@ body{
 #resultado-deepfakes.incorrecta {
   color: #b91c1c;
 }
+
+
+#aviso-tecla-deepfakes {
+  display: none;
+  position: relative;
+  margin: 10px auto;
+  padding: 8px 12px;
+  max-width: 90%;
+  background-color: #FEF3C7;
+  color: #92400E;
+  border: 1px solid #F59E0B;
+  border-radius: 8px;
+  font-size: 13px;
+  text-align: center;
+  line-height: 1.4;
+  opacity: 0;
+  transform: translateY(-20px);
+}
+
+#aviso-tecla-deepfakes::before {
+  content: "⚠️ ";
+}
+
+#aviso-tecla-deepfakes.aviso-visible {
+  display: block;
+  animation: aviso-deslizar 3.6s ease-in-out forwards;
+}
+
+@keyframes aviso-deslizar {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+
+  15% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  80% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  100% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+}
+
+#imagen-caso-deepfakes {
+  display: block;
+  width: 100%;
+  max-width: 600px;
+  max-height: 350px;
+  height: auto;
+  object-fit: contain;
+  margin: 20px auto;
+  border-radius: 12px;
+}
+
+
+
+

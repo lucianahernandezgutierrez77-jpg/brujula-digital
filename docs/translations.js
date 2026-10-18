@@ -1455,7 +1455,7 @@ const translations = {
 
   "modulo-deepfakes.act.p1": {
     es: "Juan encuentra esta noticia en redes sociales y quiere compartirla con sus amigos. ¿Qué debería hacer primero?",
-    en: "Juan finds this news story on social media and wants to share it with his friends. What should he do first?",
+    en: "",
   },
 
   "modulo-deepfakes.act.p1.a": {
@@ -1631,6 +1631,11 @@ const translations = {
   "modulo-deepfakes.act.p6.exp.error": {
     es: "❌ Un deepfake es una imagen, audio o video creado o modificado con inteligencia artificial para hacer parecer que la persona dijo o hizo algo que en realidad no ocurrió.",
     en: "❌ A deepfake is an image, audio, or video created or modified with artificial intelligence to make it seem like a person said or did something that didn’t actually happen.",
+  },
+
+  "modulo-deepfakes.act.aviso.tecla": {
+    es: "No deberías presionar esa tecla.",
+    en: "You shouldn't press that key.",
   },
 
   // QUIZ DEEPFAKES
@@ -2203,9 +2208,20 @@ const translations = {
       es: "Con estos hábitos puedes navegar por internet con mucha más tranquilidad y seguridad.",
       en: "With these habits, you can browse the internet with much more peace of mind and security.",
     },
+
 }
 
 //FUNCIONES
+
+function t(clave) {
+
+    if (!translations[clave]) {
+        console.warn("Traducción no encontrada:", clave);
+        return clave;
+    }
+
+    return translations[clave][idiomaActual] || translations[clave].es || clave;
+}
 
 let idiomaActual = "es";
 
