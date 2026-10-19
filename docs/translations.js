@@ -2307,16 +2307,16 @@ function refreshDynamicContent() {
 
   if (!visibleSection) return;
 
-  if (visibleSection.id === "modulo-salud") {
+  if (visibleSection.id === "leccion-salud") {
     updateQuizLanguage("quiz-container", quizData, "salud");
   }
-  if (visibleSection.id === "modulo-estafas") {
+  if (visibleSection.id === "leccion-estafas") {
     updateQuizLanguage("quiz-container-estafas", quizDataEstafas, "estafas");
   }
-  if (visibleSection.id === "modulo-deepfakes") {
+  if (visibleSection.id === "leccion-deepfakes") {
     updateQuizLanguage("quiz-container-deepfakes", quizDataDeepfakes, "deepfakes");
   }
-  if (visibleSection.id === "modulo-privacidad") {
+  if (visibleSection.id === "leccion-privacidad") {
     updateQuizLanguage("quiz-container-privacidad", quizDataPrivacidad, "privacidad");
   }
 }
