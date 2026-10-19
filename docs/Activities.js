@@ -616,6 +616,7 @@ const casosDeepfakes = [
   {
     tipo: "seleccion",
     pregunta: "modulo-deepfakes.act.p1",
+    imagen: { es: "imagenes/post1-es.jpeg", en: "imagenes/post1-en.jpeg"},
     opciones: ["modulo-deepfakes.act.p1.a", "modulo-deepfakes.act.p1.b", "modulo-deepfakes.act.p1.c", "modulo-deepfakes.act.p1.d"],
     correcta: 2,
     explicacioncorrecta: "modulo-deepfakes.act.p1.exp.correcta",
@@ -637,6 +638,7 @@ const casosDeepfakes = [
     tipo: "seleccion",
     imagen: "",
     pregunta: "modulo-deepfakes.act.p3",
+    imagen: { es: "imagenes/post3-es.png", en: "imagenes/post3-en.png"},
     opciones: ["modulo-deepfakes.act.p3.a", "modulo-deepfakes.act.p3.b", "modulo-deepfakes.act.p3.c", "modulo-deepfakes.act.p3.d"],
     correcta: 3,
     explicacioncorrecta: "modulo-deepfakes.act.p3.exp.correcta",
@@ -767,7 +769,7 @@ function mostrarCasoDeepfakes(indice) {
 
   document.getElementById("navegador-deepfakes").scrollTo({
     top: 0,
-    behavior: "smooth",
+    behavior: "instant",
   });
 
   const pestanas = document.querySelectorAll(".pestana-deepfakes");
