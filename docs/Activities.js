@@ -625,7 +625,6 @@ const casosDeepfakes = [
 
   {
     tipo: "escritura",
-    imagen: "",
     pregunta: "modulo-deepfakes.act.p2",
     imagen: { es: "imagenes/post2.jpeg", en: "imagenes/post2.jpeg", },
     palabraClave: "modulo-deepfakes.act.p2.palabraclave", // Palabra clave : "verificar", "verify"
@@ -636,7 +635,6 @@ const casosDeepfakes = [
   
   {
     tipo: "seleccion",
-    imagen: "",
     pregunta: "modulo-deepfakes.act.p3",
     imagen: { es: "imagenes/post3-es.png", en: "imagenes/post3-en.png"},
     opciones: ["modulo-deepfakes.act.p3.a", "modulo-deepfakes.act.p3.b", "modulo-deepfakes.act.p3.c", "modulo-deepfakes.act.p3.d"],
@@ -647,7 +645,6 @@ const casosDeepfakes = [
 
   {
     tipo:"seleccion",
-    imagen: "",
     pregunta: "modulo-deepfakes.act.p4",
     imagen: { es: "imagenes/post4-es.png", en: "imagenes/post4-en.jpeg", },
     opciones: ["modulo-deepfakes.act.p4.a", "modulo-deepfakes.act.p4.b", "modulo-deepfakes.act.p4.c", "modulo-deepfakes.act.p4.d"],
@@ -658,7 +655,6 @@ const casosDeepfakes = [
 
   {
     tipo:"seleccion",
-    imagen: "",
     pregunta: "modulo-deepfakes.act.p5",
     imagen: { es: "imagenes/post5.jpeg", en: "imagenes/post5.jpeg", },
     opciones: ["modulo-deepfakes.act.p5.a", "modulo-deepfakes.act.p5.b", "modulo-deepfakes.act.p5.c", "modulo-deepfakes.act.p5.d"],
@@ -669,7 +665,6 @@ const casosDeepfakes = [
 
   {
     tipo:"escritura",
-    imagen: "",
     pregunta: "modulo-deepfakes.act.p6",
     imagen: { es: "imagenes/post6.jpeg", en: "imagenes/post6.jpeg", },
     palabraClave: "modulo-deepfakes.act.p6.palabraclave", // palabra clave: deepfake
@@ -858,10 +853,11 @@ document
       const resultado = document.getElementById("resultado-deepfakes");
       const boton = document.getElementById("siguiente-caso-deepfakes");
 
-      pregunta.textContent = "¡Actividad completada!";
+      pregunta.textContent = t("modulo-deepfakes.act.completada");
       opciones.innerHTML = "";
-      resultado.textContent =
-        `Has terminado los seis casos. Errores: ${erroresDeepfakes} de ${casosDeepfakesMezclados.length}.`;
+      resultado.textContent = t("modulo-deepfakes.act.completada.detalle")
+        .replace("{errores}", erroresDeepfakes)
+        .replace("{total}", casosDeepfakesMezclados.length);
       resultado.className = "";
       boton.style.display = "none";
       document.getElementById("respuesta-deepfakes").style.display = "none";
@@ -1001,10 +997,6 @@ document.getElementById("teclado").addEventListener("click", (evento) => {
   const caso = casosDeepfakesMezclados[casoDeepfakesIndice];
 
   if (!caso) return;
-
-console.log("Tecla:", textoTecla);
-console.log("Tipo de caso:", caso.tipo);
-console.log("Respuesta comprobada:", respuestaComprobadaDeepfakes);
 
   if (respuestaComprobadaDeepfakes) return;
   ocultarAvisoTeclaDeepfakes();

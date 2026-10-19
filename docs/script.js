@@ -492,13 +492,13 @@ const quizDataPrivacidad = [
 
 {
   pregunta:"quiz4.p2",
-  opciones: ["quiz4.p4.a", "quiz4.p2.b", "quiz4.p2.c",  "quiz4.p2.d"],
+  opciones: ["quiz4.p2.a", "quiz4.p2.b", "quiz4.p2.c",  "quiz4.p2.d"],
   correcta: 1
 },
 
 {
   pregunta:  "quiz4.p3",
-  opciones: ["quiz4.p3.a", "quiz4.p3.b","quiz4.p3.c", "quiz3.p3.d"],
+  opciones: ["quiz4.p3.a", "quiz4.p3.b","quiz4.p3.c", "quiz4.p3.d"],
   correcta: 0
 },
 

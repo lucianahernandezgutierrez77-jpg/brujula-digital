@@ -834,8 +834,8 @@ const translations = {
   //ACTIVIDAD 2
 
   "modulos-titulo.actividad": {
-    es: "<span class=\"subtitle2\">Actividad</span",
-    en: "<span class=\"subtitle2\">Activity</span",
+    es: "<span class=\"subtitle2\">Actividad</span>",
+    en: "<span class=\"subtitle2\">Activity</span>",
   },
 
   "modulo-estafas.actividad.descripcion": {
@@ -1486,12 +1486,12 @@ const translations = {
     en: "Ignore it without checking anything",
   },
 
-  "modulo-deepfakes.act.p1.exp.correcta:": {
+  "modulo-deepfakes.act.p1.exp.correcta": {
     es: "✅ ¡Correcto! Antes de compartir una noticia, lo mejor es verificar si la información es verdadera en otras fuentes confiables.",
     en: "✅ Correct! Before sharing a news story, it's best to verify the facts with other trusted sources.",
   },
 
-  "modulo-deepfakes.act.p1.exp.error:": {
+  "modulo-deepfakes.act.p1.exp.error": {
     es: "❌ Este contenido podría ser falso. Antes de compartirlo, lo mejor es verificar si la información es verdadera en otras fuentes confiables.",
     en: "❌ This content could be false. Before sharing it, it's best to verify the facts with other trusted sources.",
   },
@@ -1506,12 +1506,12 @@ const translations = {
     en: "verify",
   },
 
-  "modulo-deepfakes.act.p2.exp.correcta:": {
+  "modulo-deepfakes.act.p2.exp.correcta": {
     es: "✅ ¡Correcto! Antes de creer un contenido, lo mejor es verificar si la información es verdadera en otras fuentes confiables.",
     en: "✅ Correct! Before taking content as fact, it's best to verify the information with other trusted sources.",
   },
 
-  "modulo-deepfakes.act.p2.exp.error:": {
+  "modulo-deepfakes.act.p2.exp.error": {
     es: "❌ Este contenido podría ser falso. Antes de creerlo, lo mejor es verificar si la información es verdadera en otras fuentes confiables.",
     en: "❌ This content could be false. Before believing it, it's best to verify the facts with other trusted sources.",
   },
@@ -1644,6 +1644,16 @@ const translations = {
   "modulo-deepfakes.act.aviso.tecla": {
     es: "No deberías presionar esa tecla.",
     en: "You shouldn't press that key.",
+  },
+
+  "modulo-deepfakes.act.completada": {
+    es: "¡Actividad completada!",
+    en: "Activity completed!",
+  },
+
+  "modulo-deepfakes.act.completada.detalle": {
+    es: "Has terminado los seis casos. Errores: {errores} de {total}.",
+    en: "You finished all six cases. Mistakes: {errores} out of {total}.",
   },
 
   // QUIZ DEEPFAKES
@@ -2049,7 +2059,7 @@ const translations = {
       en: "Go directly to the official website to check if the alert is legitimate.",
     },
 
-    "quiz4.p3.c": {
+    "quiz4.p2.c": {
       es: "Responder el correo con tu contraseña.",
       en: "Reply to the email with your password.",
     },
@@ -2252,8 +2262,10 @@ function setLanguage(lang) {
       "lang-activo",
       btn.getAttribute("data-lang") === lang
     );
-  })
- }
+  });
+
+  refreshDynamicContent();
+}
 
  function updateQuizLanguage(containerId, quizData, prefijo) {
   const container = document.getElementById(containerId);
