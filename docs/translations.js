@@ -1482,6 +1482,11 @@ const translations = {
 
   // ACTIVIDAD DEEPFAKES
 
+   "modulo-deepfakes.actividad.dialogo": {
+    es: "¡Veamos!",
+    en: "Let's see!",
+  },
+
   "modulo-deepfakes.act.p1": {
     es: "Juan encuentra esta noticia en redes sociales y quiere compartirla con sus amigos. ¿Qué debería hacer primero?",
     en: "Juan finds this news story on social media and wants to share it with his friends. What should he do first?",
