@@ -5,8 +5,8 @@ const translations = {
   // HEADER
 
   "header.titulo": {
-    es: "🧭 Brújula Digital",
-    en: "🧭 Digital Compass",
+    es: "Brújula Digital",
+    en: "Digital Compass",
   },
 
   "header.subtitulo": {
@@ -63,23 +63,23 @@ const translations = {
   },
 
   "modulos.salud": {
-    es: "📱 Uso saludable de dispositivos",
-    en: "📱 Healthy Device Use",
+    es: "Uso saludable de dispositivos",
+    en: "Healthy Device Use",
   },
 
   "modulos.estafas": {
-    es: "⚠️ Estafas digitales",
-    en: "⚠️ Digital Scams",
+    es: "Estafas digitales",
+    en: " Digital Scams",
   },
 
   "modulos.deepfakes": {
-    es: "🤖 Deepfakes y desinformación",
-    en: "🤖 Deepfakes and Misinformation",
+    es: "Deepfakes y desinformación",
+    en: "Deepfakes and Misinformation",
   },
 
   "modulos.privacidad": {
-    es: "🔒 Privacidad y seguridad",
-    en: "🔒 Privacy and Security",
+    es: "Privacidad y seguridad",
+    en: "Privacy and Security",
   },
 
   //INTRO MODULO 1
@@ -154,8 +154,8 @@ const translations = {
   },
 
   "modulos-meta": { 
-    es: "🎯 Meta del módulo",
-    en: "🎯 Module Goal", 
+    es: "Meta del módulo",
+    en: "Module Goal", 
   },
 
   "modulo-salud.meta.descripcion": {
@@ -392,8 +392,8 @@ const translations = {
   },
 
   "modulo-salud.mensaje.fallo": {
-    es: "😓 Juan no pudo completar su caminata",
-    en: "😓 Juan couldn't finish his walk",
+    es: ":( Juan no pudo completar su caminata",
+    en: ":( Juan couldn't finish his walk",
   },
 
   "modulo-salud.mensaje.fallo2": {
@@ -407,8 +407,8 @@ const translations = {
   },
 
   "actividad1.correcto": {
-    es: "✅ ¡Correcto! Juan avanza.",
-    en: "✅ Correct! Juan moves forward.",
+    es: "¡Correcto! Juan avanza.",
+    en: "Correct! Juan moves forward.",
   },
 
   // QUIZ MODULO 1 
@@ -624,8 +624,8 @@ const translations = {
   },
 
   "modulo-salud.mensaje.cambio": {
-    es: "🌿 ¿Qué hacer en cambio?",
-    en: "🌿 What to do instead?",
+    es: "¿Qué hacer en cambio?",
+    en: "What to do instead?",
   },
 
   "modulo-salud.mensaje.cambio2": {
@@ -634,28 +634,28 @@ const translations = {
   },
 
   "modulo-salud.mensaje.cambio3": {
-    es: "🚶 Dar una caminata corta de 10-15 minutos",
-    en: "🚶 Take a quick 10–15 minute walk",
+    es: "Dar una caminata corta de 10-15 minutos",
+    en: "Take a quick 10–15 minute walk",
   },
 
   "modulo-salud.mensaje.cambio4": {
-    es: "📞 Llamar a un familiar o amigo por teléfono",
-    en: "📞 Give a friend or family member a call",
+    es: "Llamar a un familiar o amigo por teléfono",
+    en: "Give a friend or family member a call",
   },
 
   "modulo-salud.mensaje.cambio5": {
-    es: "📖 Leer un libro o revista física",
-    en: "📖 Read a physical book or magazine",
+    es: "Leer un libro o revista física",
+    en: " Read a physical book or magazine",
   },
 
   "modulo-salud.mensaje.cambio6": {
-    es: "🧩 Hacer un crucigrama o rompecabezas",
-    en: "🧩 Work on a crossword or jigsaw puzzle",
+    es: "Hacer un crucigrama o rompecabezas",
+    en: "Work on a crossword or jigsaw puzzle",
   },
 
   "modulo-salud.mensaje.cambio7": {
-    es: "🌱 Regar las plantas o salir al balcón",
-    en: "🌱 Water your plants or step out onto the balcony",
+    es: "Regar las plantas o salir al balcón",
+    en: "Water your plants or step out onto the balcony",
   },
 
   "modulo-salud.mensaje.cambio8": {
@@ -1272,23 +1272,23 @@ const translations = {
   },
 
   "modulo-estafas.mensaje.perfecto": {
-    es: "🏆 ¡Excelente! Sabes identificar la desinformación.",
-    en: "🏆 Excellent! You know how to spot misinformation.",
+    es: "¡Excelente! Sabes identificar la desinformación.",
+    en: "Excellent! You know how to spot misinformation.",
   },
 
   "modulo-estafas.mensaje.bien": {
-    es: "👍 ¡Muy bien! Cada vez analizas mejor la información.",
-    en: "👍 Great job! You're getting better at analyzing information.",
+    es: "¡Muy bien! Cada vez analizas mejor la información.",
+    en: "Great job! You're getting better at analyzing information.",
   },
 
   "modulo-estafas.mensaje.intentar": {
-    es: "📖 No pasa nada. Puedes volver a leer la lección e intentarlo otra vez.",
-    en: "📖 Don't worry. You can review the lesson and try again.",
+    es: "No pasa nada. Puedes volver a leer la lección e intentarlo otra vez.",
+    en: "Don't worry. You can review the lesson and try again.",
   },
 
   "modulo-estafas.mensaje.cambio": {
-    es: "📰 ¿Cómo protegerte de la desinformación?",
-    en: "📰 How can you protect yourself from misinformation?",
+    es: "¿Cómo protegerte de la desinformación?",
+    en: "How can you protect yourself from misinformation?",
   },
 
   "modulo-estafas.mensaje.cambio2": {
@@ -1297,28 +1297,28 @@ const translations = {
   },
 
   "modulo-estafas.mensaje.cambio3": {
-    es: "🔍 Verifica la información en fuentes confiables y reconocidas.",
-    en: "🔍 Check information against reliable, reputable sources.",
+    es: "Verifica la información en fuentes confiables y reconocidas.",
+    en: "Check information against reliable, reputable sources.",
   },
 
   "modulo-estafas.mensaje.cambio4": {
-    es: "📅 Revisa la fecha de publicación y el contexto de la noticia.",
-    en: "📅 Check the publish date and the full context of the story.",
+    es: "Revisa la fecha de publicación y el contexto de la noticia.",
+    en: "Check the publish date and the full context of the story.",
   },
 
   "modulo-estafas.mensaje.cambio5": {
-    es: "🤖 Recuerda que imágenes, videos y audios pueden haber sido creados o modificados con inteligencia artificial.",
-    en: "🤖 Keep in mind that images, videos, and audio can be generated or altered with AI.",
+    es: "Recuerda que imágenes, videos y audios pueden haber sido creados o modificados con inteligencia artificial.",
+    en: "Keep in mind that images, videos, and audio can be generated or altered with AI.",
   },
 
   "modulo-estafas.mensaje.cambio6": {
-    es: "⚠️ Desconfía de contenidos que buscan generar miedo, urgencia o emociones muy fuertes.",
-    en: "⚠️ Be wary of content designed to trigger fear, urgency, or strong emotional reactions.",
+    es: "Desconfía de contenidos que buscan generar miedo, urgencia o emociones muy fuertes.",
+    en: "Be wary of content designed to trigger fear, urgency, or strong emotional reactions.",
   },
 
   "modulo-estafas.mensaje.cambio7": {
-    es: "📤 Si tienes dudas, no compartas el contenido hasta comprobar que sea verdadero.",
-    en: "📤 When in doubt, don't share until you've verified it's true.",
+    es: "Si tienes dudas, no compartas el contenido hasta comprobar que sea verdadero.",
+    en: "When in doubt, don't share until you've verified it's true.",
   },
 
   "modulo-estafas.mensaje.cambio8": {
