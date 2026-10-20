@@ -231,6 +231,7 @@ function mostrarPreguntaActividad() {
 function responderActividad(opcionElegida, boton) {
   const item = actividadPreguntas[actividadIndice];
   const feedback = document.getElementById("feedback-actividad");
+  const actividadCard = boton.closest(".actividad-card");
   const botones = document.querySelectorAll("#actividad-pregunta-container .actividad-opcion");
   const juan = document.getElementById("juan");
   const dialogo = document.getElementById("juan-dialogo");
@@ -238,6 +239,10 @@ function responderActividad(opcionElegida, boton) {
   botones.forEach(b => b.disabled = true);
 
   if (opcionElegida === item.correcta) {
+    if (actividadCard) {
+    actividadCard.classList.remove("respuesta-incorrecta");
+    actividadCard.classList.add("respuesta-correcta");
+    }
     boton.style.backgroundColor = "var(--green)";
     boton.style.color = "white";
     boton.style.borderColor = "var(--green)";
@@ -257,6 +262,10 @@ function responderActividad(opcionElegida, boton) {
     }, 3000);
 
   } else {
+    if (actividadCard) {
+    actividadCard.classList.remove("respuesta-correcta");
+    actividadCard.classList.add("respuesta-incorrecta");
+   }
   erroresActividad++;
   boton.style.backgroundColor = "var(--red)";
   boton.style.color = "white";
@@ -540,17 +549,26 @@ function iniciarAnimacionJuanEstafas() {
 function responderEstafa(opcionElegida, boton) {
   const item = mensajesMezclados[mensajeEstafasIndice];
   const botones = document.querySelectorAll("#estafas-pregunta-container .actividad-opcion");
+  const actividadCard = boton.closest(".actividad-card");
   botones.forEach(b => b.disabled = true);
 
   const feedback = document.getElementById("feedback-estafa-actual");
 
   if (opcionElegida === item.opcionCorrecta) {
+    if (actividadCard) {
+    actividadCard.classList.remove("respuesta-incorrecta");
+    actividadCard.classList.add("respuesta-correcta");
+    }
     boton.style.backgroundColor = "var(--green)";
     boton.style.color = "white";
     boton.style.borderColor = "var(--green)";
     feedback.textContent = t(item.explicacionCorrecta);
     feedback.style.color = "var(--green)";
   } else {
+    if (actividadCard) {
+     actividadCard.classList.remove("respuesta-correcta");
+     actividadCard.classList.add("respuesta-incorrecta");
+    }
     boton.style.backgroundColor = "var(--red)";
     boton.style.color = "white";
     boton.style.borderColor = "var(--red)";

@@ -31,6 +31,31 @@ const translations = {
     en: "Get started",
   },
 
+  "home.modulos.titulo": {
+    es: "¿Qué vas a aprender?",
+    en: "What will you learn?",
+  },
+
+  "modulos.salud-corto": {
+    es: "Salud digital",
+    en: "Digital health",
+  },
+
+  "modulos.estafas-corto": {
+    es: "Estafas",
+    en: "Scams",
+  },
+
+  "modulos.deepfakes-corto": {
+    es: "Deepfakes",
+    en: "Deepfakes",
+  },
+
+  "modulos.privacidad-corto": {
+    es: "Privacidad",
+    en: "Privacy",
+  },
+
   // MODULOS 
   "modulos.titulo": {
     es: "Módulos",

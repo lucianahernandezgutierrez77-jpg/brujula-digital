@@ -167,6 +167,10 @@ function verificarRespuesta(
 ) {
   const correcta = quizData[preguntaIndice].correcta;
 
+  const pregunta = document.getElementById(
+    `pregunta-${prefijo}-${preguntaIndice}`
+  );
+
   const feedback = document.getElementById(
     `feedback-${prefijo}-${preguntaIndice}`
   );
@@ -180,27 +184,29 @@ function verificarRespuesta(
   });
 
   // CORRECTA
-  if (opcionElegida === correcta) {
+   if (opcionElegida === correcta) {
+     pregunta.classList.add("respuesta-correcta");
 
-    botonPresionado.style.backgroundColor = "var(--green)";
+     botonPresionado.style.backgroundColor = "var(--green)";
 
-    feedback.textContent = t("quizes.pregunta.correcta");
-    feedback.style.color = "var(--green)";
+     feedback.textContent = t("quizes.pregunta.correcta");
+      feedback.style.color = "var(--green)";
 
-    contador.correctas++;
+     contador.correctas++;
 
   // INCORRECTA
   } else {
+  pregunta.classList.add("respuesta-incorrecta");
 
-    botonPresionado.style.backgroundColor = "var(--red)";
+  botonPresionado.style.backgroundColor = "var(--red)";
 
-    feedback.textContent =
-      t("quizes.pregunta.incorrecta") +
-      t(quizData[preguntaIndice].opciones[correcta]);
+  feedback.textContent =
+    t("quizes.pregunta.incorrecta") +
+    t(quizData[preguntaIndice].opciones[correcta]);
 
-    feedback.style.color = "var(--red)";
+  feedback.style.color = "var(--red)";
 
-    botonesDeEsaPregunta[correcta].style.backgroundColor = "var(--green)";
+  botonesDeEsaPregunta[correcta].style.backgroundColor = "var(--green)";
   }
 
   contador.respondidas++;
