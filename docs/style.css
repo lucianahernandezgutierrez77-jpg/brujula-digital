@@ -476,30 +476,7 @@ margin-top: 24px;
 }
 
 /*====PRINCIPAL COLOR=====*/
-.btn {
-  background: #7dd3fc;
-  color: #0f172a;
-  border: none;
-  border-radius: 18px;
-  padding: 24px 90px;
-  font-size: 2rem;
-  font-weight: bold;
-  cursor: pointer;
-  transition: background 0.3s ease, box-shadow 0.3s ease;
-  box-shadow: 0 0 15px #7dd3fc,
-              0 0 35px #7dd3fc;
-  margin-bottom: 20px;
-  font-family: "Trebuchet MS", Arial, sans-serif;
-}
-
-.btn:hover {
-  background: #bae6fd;
-  box-shadow: 0 0 20px #7dd3fc,
-              0 0 40px #38bdf8,
-              0 0 60px rgba(56, 189, 248, 0.7);
-}
-
-.btn2{
+.btn{
     background-color: var(--blue);
     color: white;
     border: none;
@@ -517,13 +494,14 @@ margin-top: 24px;
 }
 
 /*==BRILLANTE==*/
-.btn2:hover {
+.btn:hover {
   filter: brightness(1.2);
   box-shadow: 0 0 10px var(--#7dd3fc), 0 0 22px var(--#7dd3fc), 0 0 45px rgba(59, 130, 246, 1);
   transform: translateY(-2px);
 }
 
 /*==CAMBIO AL PRESIONAR==*/
+
 .btn:active {
   transform: translateY(0);
   box-shadow: 0 0 8px var(--blue);
