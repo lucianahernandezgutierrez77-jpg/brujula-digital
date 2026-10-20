@@ -82,9 +82,10 @@ const translations = {
     en: "🔒 Privacy and Security",
   },
 
+  //INTRO MODULO 1
   "modulo-salud.consejos.titulo": {
-    es: "📱 Uso saludable de dispositivos",
-    en: "📱 Healthy Device Use",
+    es: "Uso saludable de dispositivos",
+    en: "Healthy Device Use",
   },
 
   "modulo-salud.consejos.descripcion": {
@@ -163,8 +164,8 @@ const translations = {
   },
 
   "modulos-boton.empecemos": {
-    es: "🚀 Empecemos",
-    en: "🚀 Let's get started",
+    es: "Empecemos",
+    en: "Let's get started",
   },
 
   // MODULO 1 LECCION
@@ -245,9 +246,6 @@ const translations = {
   },
 
   //ACTIVIDAD
-
-  //ACTIVIDAD
-
   "modulo-salud.actividad.descripcion": {
     es: "Después de pasar un tiempo usando el computador, Juan decidió salir a caminar para descansar su vista y mover el cuerpo. Responde correctamente las preguntas para ayudarlo a completar su recorrido.",
     en: "After spending some time on his computer, Juan decided to take a walk to rest his eyes and stretch his body. Answer the questions correctly to help him complete his walk.",
@@ -404,8 +402,8 @@ const translations = {
   },
 
   "modulo-salud.boton.reiniciar": {
-    es: "🔄 Intentar de nuevo",
-    en: "🔄 Try again",
+    es: "Intentar de nuevo",
+    en: "Try again",
   },
 
   "actividad1.correcto": {
@@ -601,28 +599,28 @@ const translations = {
   },
 
   "quizes.pregunta.correcta": {
-    es: "✅ ¡Correcto!",
-    en: "✅ Correct!",
+    es: "¡Correcto! (＾▽＾)",
+    en: "Correct! (＾▽＾)",
   },
 
   "quizes.pregunta.incorrecta": {
-    es: "❌ No es correcto. La respuesta correcta era: ",
-    en: "❌ Incorrect. The correct answer was: ",
+    es: "No es correcto. La respuesta correcta era: ",
+    en: "Incorrect. The correct answer was: ",
   },
 
   "modulo-salud.mensaje.perfecto": {
-    es: "🎉 ¡Perfecto! Has completado el módulo de uso saludable de dispositivos. Recuerda que pequeños cambios en nuestros hábitos digitales pueden ayudarnos a disfrutar la tecnología de una manera más equilibrada, saludable y consciente. 🧭💙",
-    en: "🎉 Perfect! You've completed the Healthy Device Use module. Remember that small shifts in our digital habits can help us enjoy technology in a more balanced, healthy, and mindful way. 🧭💙",
+    es: "¡Perfecto! Has completado el módulo de uso saludable de dispositivos. Recuerda que pequeños cambios en nuestros hábitos digitales pueden ayudarnos a disfrutar la tecnología de una manera más equilibrada, saludable y consciente. 🧭💙",
+    en: "Perfect! You've completed the Healthy Device Use module. Remember that small shifts in our digital habits can help us enjoy technology in a more balanced, healthy, and mindful way. 🧭💙",
   },
 
   "modulo-salud.mensaje.bien": {
-    es: "👍 ¡Bien hecho! Vas por buen camino.",
-    en: "👍 Well done! You're on the right track.",
+    es: "¡Bien hecho! Vas por buen camino.",
+    en: "Well done! You're on the right track.",
   },
 
   "modulo-salud.mensaje.intentar": {
-    es: "📖 No te preocupes. Puedes releer la lección e intentarlo de nuevo.",
-    en: "📖 Don't worry. You can reread the lesson and try again.",
+    es: "No te preocupes. Puedes releer la lección e intentarlo de nuevo.",
+    en: "Don't worry. You can reread the lesson and try again.",
   },
 
   "modulo-salud.mensaje.cambio": {
@@ -666,13 +664,13 @@ const translations = {
   },
 
   "modulos-boton-resultado": {
-    es: "Ver mi resultado 🎯",
-    en: "See my score 🎯",
+    es: "Ver mi resultado",
+    en: "See my score",
   },
 
   "quizes.puntaje": {
-    es: "Obtuviste <strong>{respuestasCorrectas} de {total}</strong> respuestas correctas.",
-    en: "You scored <strong>{respuestasCorrectas} out of {total}</strong> correct answers.",
+    es: "Obtuviste {respuestasCorrectas} de {total} respuestas correctas.",
+    en: "You scored {respuestasCorrectas} out of {total} correct answers.",
   },
 
   "modulos-boton-inicio": {
@@ -687,11 +685,9 @@ const translations = {
 
   // INTRO MODULO 2
 
-  // INTRO MODULO 2
-
   "modulo-estafas.consejos.titulo": {
-    es: "⚠️ Estafas digitales",
-    en: "⚠️ Digital Scams",
+    es: "Estafas digitales",
+    en: "Digital Scams",
   },
 
   "modulo-estafas.consejos.descripcion": {
@@ -869,8 +865,8 @@ const translations = {
   },
 
   "modulo-estafas.actividad.boton.iniciar": {
-    es: "📱 Ver mensajes de Juan",
-    en: "📱 View Juan's messages",
+    es: "Ver mensajes de Juan",
+    en: "View Juan's messages",
   },
 
   "modulo-estafas.actividad.dialogo":{
@@ -1333,8 +1329,8 @@ const translations = {
 // INTRO MODULO 3
 
   "modulo-deepfakes.consejos.titulo": {
-    es: "🤖 Deepfakes y desinformación",
-    en: "🤖 Deepfakes and Misinformation",
+    es: "Deepfakes y desinformación",
+    en: "Deepfakes and Misinformation",
   },
 
   "modulo-deepfakes.consejos.descripcion": {
@@ -1891,8 +1887,8 @@ const translations = {
   // INTRO PRIVACIDAD
 
     "modulo-privacidad.consejos.titulo": {
-      es: "🔒 Privacidad y seguridad",
-      en: "🔒 Privacy and Security",
+      es: "Privacidad y seguridad",
+      en: "Privacy and Security",
     },
 
     "modulo-privacidad.consejos.descripcion1": {

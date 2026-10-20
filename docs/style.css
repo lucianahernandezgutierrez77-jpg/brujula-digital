@@ -496,7 +496,8 @@ margin-top: 24px;
 /*==BRILLANTE==*/
 .btn:hover {
   filter: brightness(1.2);
-  box-shadow: 0 0 10px var(--#7dd3fc), 0 0 22px var(--#7dd3fc), 0 0 45px rgba(59, 130, 246, 1);
+  box-shadow: 0 0 10px #7dd3fc, 0 0 22px #7dd3fc, 0 0 38px rgba(125, 211, 252, 0.6);
+  background-color: #11a4b4;
   transform: translateY(-2px);
 }
 
@@ -504,7 +505,7 @@ margin-top: 24px;
 
 .btn:active {
   transform: translateY(0);
-  box-shadow: 0 0 8px var(--blue);
+  box-shadow: 0 0 8px var(--#7dd3fc);
 }
 /*==VERIFICAR SI AUN SE NECESITA==*/
 .btn2-secondary {
@@ -554,8 +555,8 @@ margin-top: 24px;
   align-items: center;
   gap: 18px;
   margin-bottom: 16px;
-  background: white;
-  border: 1px solid var(--border);
+  background: azure;
+  border: 3px solid #7dd3fc !important;
   border-radius: var(--radius);
   padding: 18px;
 }
