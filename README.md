@@ -1,4 +1,4 @@
-# Digital Compass (Brulula Digital)
+# Digital Compass
 Its mission is to help older adults navigate the digital world safely.
 
 # Why I Started This Project 
@@ -16,9 +16,7 @@ Instead of focusing only on technical skills, the platform includes digital lite
 I believe technology should be a tool that improves people's lives not something that confuses, manipulates, or controls them. I care deeply about helping others, so Digital Compass was created with that vision in mind.
 
 ## Language
-Although this README is written in English, the educational content is currently available in Spanish, as the project was originally created for older adults in my community in Colombia, where Spanish is the primary language.
-
-In the future, I plan to add a complete Spanish–English translation so the platform can reach a broader audience while still supporting its original Spanish-speaking users.
+Digital Compass was originally created in Spanish for older adults in my community in Colombia. Later, I added an English translation, so the content is now available in both languages.
 
 ## Features
 Digital Compass combines educational content with videos, quizzes, and interactive activities about deepfakes, online scams, and digital well-being. The goal is to make these topics easier to understand and keep users engaged without making the activities too simple. By exploring real-life situations and answering questions, users can practice thinking critically and making safer decisions when using technology.
@@ -27,5 +25,5 @@ Digital Compass combines educational content with videos, quizzes, and interacti
 I built Digital Compass using HTML, CSS, and JavaScript. HTML privides the structure, CSS handles the design, and JavaScript makes the quizzes and interactive activities work.
 
 ## Project Status
-I plan to keep my project under active development. I want to keep improving it step by step while I learn more about programming. In the future, I plan to add new educational modules, interactive activities, and an English translation.
+Digital Compass is a functional first version, but there's still room to improve. I plan to keep developing it step by step as I learn more about programming. In the future, I'd like to add more educational content and interactive activities to help users continue learning about digital safety and well-being.
 
