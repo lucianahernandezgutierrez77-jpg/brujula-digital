@@ -20,6 +20,12 @@ Although this README is written in English, the educational content is currently
 
 In the future, I plan to add a complete Spanish–English translation so the platform can reach a broader audience while still supporting its original Spanish-speaking users.
 
+## Features
+Digital Compass combines educational content with videos, quizzes, and interactive activities about deepfakes, online scams, and digital well-being. The goal is to make these topics easier to understand and keep users engaged without making the activities too simple. By exploring real-life situations and answering questions, users can practice thinking critically and making safer decisions when using technology.
+
+## Tecnologies Used
+I built Digital Compass using HTML, CSS, and JavaScript. HTML privides the structure, CSS handles the design, and JavaScript makes the quizzes and interactive activities work.
+
 ## Project Status
 I plan to keep my project under active development. I want to keep improving it step by step while I learn more about programming. In the future, I plan to add new educational modules, interactive activities, and an English translation.
 
