@@ -117,7 +117,21 @@ margin-top: 24px;
 }
 
 .home-modulo-icono {
-  font-size: 1.9rem;
+  height: 140px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.home-modulo-icono img {
+  width: 120px;
+  height: auto;
+  object-fit: contain;
+  border: 1px solid #7dd3fc;
+  box-sizing: border-box;
+  border-radius: 12px;
+  display: block
 }
 
 .home-modulo-nombre {
@@ -125,6 +139,8 @@ margin-top: 24px;
   font-weight: 600;
   color: var(--text);
   line-height: 1.4;
+  margin: 0;
+  text-align: center;
 }
 
 @media (max-width: 600px) {

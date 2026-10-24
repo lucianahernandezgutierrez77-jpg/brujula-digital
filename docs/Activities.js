@@ -645,7 +645,7 @@ const casosDeepfakes = [
     tipo: "escritura",
     pregunta: "modulo-deepfakes.act.p2",
     imagen: { es: "imagenes/post2.jpeg", en: "imagenes/post2.jpeg", },
-    palabraClave: "modulo-deepfakes.act.p2.palabraclave", // Palabra clave : "verificar", "verify"
+    palabraClave: "modulo-deepfakes.act.p2.palabraclave", //  Recordar: anadir mas palabras clave 
     correcta: 2,
     explicacioncorrecta: "modulo-deepfakes.act.p2.exp.correcta",
     explicacionerror: "modulo-deepfakes.act.p2.exp.error"
@@ -685,7 +685,7 @@ const casosDeepfakes = [
     tipo:"escritura",
     pregunta: "modulo-deepfakes.act.p6",
     imagen: { es: "imagenes/post6.jpeg", en: "imagenes/post6.jpeg", },
-    palabraClave: "modulo-deepfakes.act.p6.palabraclave", // palabra clave: deepfake
+    palabraClave: "modulo-deepfakes.act.p6.palabraclave", 
     correcta: 2,
     explicacioncorrecta: "modulo-deepfakes.act.p6.exp.correcta",
     explicacionerror: "modulo-deepfakes.act.p6.exp.error"
