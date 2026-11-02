@@ -2,7 +2,10 @@
 Digital Compass is still a work in progress, and I hope to keep improving it. Some things I'd like to work on next are:
 
 ## Short-term 
-- Module 3 and 4 activities []
+- Add a confetti animation for perfect quiz scores (not defined) []
+- Add sound effects to make the experience more attractive []
+- Module 3 activity [x]
+- Module 4 activity []
 - Add a brief introduction explaining how users should respond to the questions and interact with the Module 3 activity []
 - Finishing Module 4 []
 - Fix the quizes translation feature[]

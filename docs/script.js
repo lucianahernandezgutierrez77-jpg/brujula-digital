@@ -23,7 +23,7 @@ function showSection(id) {
     initQuiz(quizDataPrivacidad, "quiz-container-privacidad", "btn-resultado-privacidad", "resultado-final-privacidad", "privacidad", contadorPrivacidad, "quizDataPrivacidad", "contadorPrivacidad");
   }
 
-  window.scrollTo({ top: 0, behavior: "smooth" });
+  window.scrollTo({ top: 0, behavior: "instant" });
 }
 
 function goHome() {
@@ -229,28 +229,33 @@ function mostrarPuntaje(
 
   if (contador.correctas === total) {
     mensaje = mensajePerfecto;
-    color = "var(--green)";
+    claseResultado = "perfecto";
+
   } else if (contador.correctas >= total / 2) {
     mensaje = mensajeBien;
-    color = "var(--blue)";
+    claseResultado = "bien";
   } else {
     mensaje = mensajeIntentar;
-    color = "var(--orange)";
+    claseResultado = "intentar";
   }
 
-  resultado.innerHTML = `
-    <div style="background: white; border-radius: 12px; padding: 20px; margin-top: 15px; text-align: center; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
-      <h3 style="color: ${color};">${mensaje}</h3>
+  const plantilla = document.getElementById("plantilla-resultado");
+  const tarjeta = plantilla.content.cloneNode(true);
+  const tarjetaElemento = tarjeta.querySelector(".tarjeta-resultado"); tarjetaElemento.classList.add(claseResultado);
 
-      <p style="font-size: 1.3rem;">
-        ${t("quizes.puntaje")
-          .replace("{respuestasCorrectas}", contador.correctas)
-          .replace("{total}", total)}
-      </p>
-    </div>
 
-    ${contenidoFinal}
-  `;
+  const titulo = tarjeta.querySelector(".mensaje-resultado");
+  titulo.textContent = mensaje;
+  titulo.style.color = color;
+
+  const puntaje = tarjeta.querySelector(".puntaje-resultado");
+  puntaje.textContent = t("quizes.puntaje")
+  .replace("{respuestasCorrectas}", contador.correctas)
+  .replace("{total}", total);
+
+
+  resultado.replaceChildren(tarjeta);
+  resultado.insertAdjacentHTML("beforeend", contenidoFinal);
 
   resultado.style.display = "block";
   document.getElementById(btnResultadoId).style.display = "none";
@@ -288,16 +293,9 @@ function mostrarPuntajeSalud() {
 function mostrarPuntajeEstafas() {
 
   resultadoMostrado.estafas = true;
-  mostrarPuntaje(
-    quizDataEstafas,
-    contadorEstafas,
-    "resultado-final-estafas",
-    "btn-resultado-estafas",
+  mostrarPuntaje( quizDataEstafas, contadorEstafas, "resultado-final-estafas", "btn-resultado-estafas",
 
-    t("modulo-estafas.mensaje.perfecto"),
-    t("modulo-estafas.mensaje.bien"),
-    t("modulo-estafas.mensaje.intentar"),
-
+    t("modulo-estafas.mensaje.perfecto"), t("modulo-estafas.mensaje.bien"), t("modulo-estafas.mensaje.intentar"),
     `
     <div style="background: #F0FDF4; border-radius: 12px; padding: 20px; margin-top: 20px; border-left: 4px solid var(--green);">
       <h3>${t("modulo-estafas.mensaje.cambio")}</h3>
