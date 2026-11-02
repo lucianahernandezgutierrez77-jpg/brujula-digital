@@ -2,7 +2,6 @@
 :root {
     --blue: #1e3a8a;
     --blue-mid: #2563EB;
-    --blue-dark: #1D4ED8;
     --blue-light: #eff6ff;
     --magenta: #7c3aed;
     --magenta-light: #ede9fe;
@@ -11,12 +10,7 @@
     --text: #1a1a1a;
     --text-soft: #5c5c6e;
 
-    --orange: #F97316;
     --green: #10B981;
-    --green-light: #F0FDF4;
-    --red: #EF4444;
-    --yellow: #FACC15;
-    --golden: #DAA520;
 
     --border: #dde1e9;
     --radius: 8px;
@@ -33,7 +27,7 @@ body {
     font-size: 1.05rem;
 }
 
-/*HEADER*/
+/*LA PARTE DE ARRIBA*/
 .header {
     background: var(--blue);
     color: white;
@@ -69,7 +63,7 @@ body {
     margin-bottom: 10px;
 }
 
-/*HOME H*/
+/*PAGINA DE INICIO*/
 
 .home-hero {
     text-align: center;
@@ -342,6 +336,7 @@ body {
     font-weight: inherit;
     color: inherit;
 }
+/* NOTA MENTAL PARA RECORDAR: ELIMINAR LOS RESALTADORES QUE NO SE USAN DESPUES DE IDENTIFICARLOS*/
 
 /*CONTAINER*/
 .container {
@@ -529,7 +524,7 @@ body {
     margin-left: 10px;
 }
 
-/*FOOTER*/
+/*LO DE ABAJO*/
 .footer {
     text-align: center;
     padding: 24px;
@@ -539,7 +534,7 @@ body {
     border-top: 1px solid var(--border);
 }
 
-/*RESPONSIVE*/
+/*PARA QUE SE VEA BIEN EN EL CELULAR*/
 @media (max-width: 600px) {
     .header h1 {
         font-size: 1.75rem;
@@ -557,7 +552,7 @@ body {
     }
 }
 
-/*==CONSEJO==*/
+/*LAS TARJETAS CON CONSEJOS*/
 .consejo-card {
     display: flex;
     align-items: center;
@@ -712,7 +707,7 @@ body {
     text-decoration: underline;
 }
 
-/*TARJETAS DE LOS MODULOS*/
+/*LAS TARJETAS DE LOS MODULOS*/
 .modules h2 {
     color: var(--blue);
     margin-bottom: 15px;
