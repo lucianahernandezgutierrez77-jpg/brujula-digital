@@ -25,5 +25,5 @@ Digital Compass was originally created in Spanish for older adults in my communi
 I used HTML, CSS, and JavaScript.
 
 ## Project Status
-Digital Compass is a functional first version, but there's still room to improve. I plan to keep developing it step by step as I learn more about programming. In the future, I'd like to add more educational content and interactive activities to help users continue learning about digital safety and well-being.
+Digital Compass is the first version of something I'd like to keep building and improving. Some features are already working, but there are still things I'd like to change or add. I want to keep working on it as I learn more about programming and come up with new ideas for the project.
 

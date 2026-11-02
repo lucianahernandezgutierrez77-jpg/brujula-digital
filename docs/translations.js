@@ -1,9 +1,5 @@
 const translations = {
-
-  // HEADER
-
-  // HEADER
-
+  // TEXTO DE ARRIBA
   "header.titulo": {
     es: "Brújula Digital",
     en: "Digital Compass",
@@ -14,8 +10,7 @@ const translations = {
     en: "Use technology safely, consciously, and mindfully.",
   },
 
-  // HOME
-
+  // INICIO
   "home.titulo": {
     es: "Bienvenido :)",
     en: "Welcome :)",
@@ -169,7 +164,6 @@ const translations = {
   },
 
   // MODULO 1 LECCION
-
   "modulo-salud.video.descripcion": {
     es: "Antes de continuar, mira este breve video sobre el uso de la tecnología:",
     en: "Before moving on, watch this short video about technology use:",
@@ -412,7 +406,6 @@ const translations = {
   },
 
   // QUIZ MODULO 1 
-
   "modulo-salud.titulo.quiz": {
     es: "<span class=\"subtitle2\">Pon a prueba lo que aprendiste</span>",
     en: "<span class=\"subtitle2\">Test what you've learned</span>",
@@ -684,7 +677,6 @@ const translations = {
   },
 
   // INTRO MODULO 2
-
   "modulo-estafas.consejos.titulo": {
     es: "Estafas digitales",
     en: "Digital Scams",
@@ -697,7 +689,7 @@ const translations = {
 
   "titulo-estafas.consejo1": {
     es: "Desconfía de la urgencia",
-    en: "Watch out for artificial urgency",
+    en: "Be wary of urgency",
   },
 
   "descripcion1-estafas.consejo1": {
@@ -761,7 +753,6 @@ const translations = {
   },
 
   // MODULO 2 LECCION
-
   "modulo-estafas.video.descripcion": {
     es: "Antes de continuar, mira este breve video sobre estafas digitales:",
     en: "Before moving on, watch this quick video about digital scams:",
@@ -853,7 +844,6 @@ const translations = {
   },
 
   //ACTIVIDAD 2
-
   "modulos-titulo.actividad": {
     es: "<span class=\"subtitle2\">Actividad</span>",
     en: "<span class=\"subtitle2\">Activity</span>",
@@ -998,7 +988,7 @@ const translations = {
     es: "Envío el dinero inmediatamente, mi hijo/nieto me necesita.",
     en: "Send the money right away—my child/grandchild needs help.",
   },
-  //URGENTE CORREGIR ESTO
+  // NOTA MENTAL: CORREGIR EL CONTENIDO DE ESTA PREGUNTA
   "modulo-estafas.mensaje4.b": {
     es: "Antes de hacer algo, llamo a mi hijo/nieto al número que tengo guardado para verificar.",
     en: "Before doing anything, call my child/grandchild using the number saved in my contacts to verify.",
@@ -1115,7 +1105,6 @@ const translations = {
   },
 
   //QUIZ ESTAFAS
-
   "quiz-estafas.titulo": {
     es: "<span class=\"subtitle2\"> ¿Es estafa o no?</span>",
     en: "<span class=\"subtitle2\"> Is it a scam or not?</span>",
@@ -1327,7 +1316,6 @@ const translations = {
   },
 
 // INTRO MODULO 3
-
   "modulo-deepfakes.consejos.titulo": {
     es: "Deepfakes y desinformación",
     en: "Deepfakes and Misinformation",
@@ -1404,7 +1392,6 @@ const translations = {
   },
 
   // LECCION MODULO 3
-
   "modulo-deepfakes.video.descripcion": {
     es: "Antes de continuar, mira este breve video sobre la desinformación y los deepfakes:",
     en: "Before moving on, watch this short video about misinformation and deepfakes:",
@@ -1481,7 +1468,6 @@ const translations = {
   },
 
   // ACTIVIDAD DEEPFAKES
-
    "modulo-deepfakes.actividad.dialogo": {
     es: "¡Veamos!",
     en: "Let's see!",
@@ -1683,7 +1669,6 @@ const translations = {
   },
 
   // QUIZ DEEPFAKES
-
   "modulo-deepfakes.titulo.quiz": {
     es: "<span class='subtitle2'>¿Puedes identificar la desinformación?</span>",
     en: "<span class='subtitle2'>Can you spot misinformation?</span>",
@@ -1890,7 +1875,6 @@ const translations = {
   },
 
   // INTRO PRIVACIDAD
-
     "modulo-privacidad.consejos.titulo": {
       es: "Privacidad y seguridad",
       en: "Privacy and Security",
@@ -1972,7 +1956,6 @@ const translations = {
     },
 
     // LECCION PRIVACIDAD
-
     "modulo-privacidad.video.descripcion": {
       es: "Antes de continuar, mira este breve video sobre privacidad y seguridad en internet:",
       en: "Before moving on, watch this short video about online privacy and security:",
@@ -2049,7 +2032,6 @@ const translations = {
     },
 
     // QUIZ PRIVACIDAD
-
     "modulo-privacidad.titulo.quiz": {
       es: " ¿Puedes identificar la privacidad y seguridad en internet?",
       en: " Test your online privacy and security knowledge",
@@ -2257,7 +2239,6 @@ const translations = {
 }
 
 //FUNCIONES
-
 function t(clave) {
 
     if (!translations[clave]) {
