@@ -15,14 +15,14 @@ Instead of focusing only on technical skills, the platform includes digital lite
 
 I believe technology should be a tool that improves people's lives not something that confuses, manipulates, or controls them. I care deeply about helping others, so Digital Compass was created with that vision in mind.
 
+## Features
+Digital Compass has a character named Juan who guides users through different activities based on situations they might encounter online. These activities include topics like deepfakes, online scams, privacy, and digital well-being, helping users learn how to recognize risks and make better decisions.
+
 ## Language
 Digital Compass was originally created in Spanish for older adults in my community in Colombia. Later, I added an English translation, so the content is now available in both languages.
 
-## Features
-Digital Compass combines educational content with videos, quizzes, and interactive activities about deepfakes, online scams, and digital well-being. The goal is to make these topics easier to understand and keep users engaged without making the activities too simple. By exploring real-life situations and answering questions, users can practice thinking critically and making safer decisions when using technology.
-
 ## Tecnologies Used
-I built Digital Compass using HTML, CSS, and JavaScript. HTML privides the structure, CSS handles the design, and JavaScript makes the quizzes and interactive activities work.
+I used HTML, CSS, and JavaScript.
 
 ## Project Status
 Digital Compass is a functional first version, but there's still room to improve. I plan to keep developing it step by step as I learn more about programming. In the future, I'd like to add more educational content and interactive activities to help users continue learning about digital safety and well-being.
