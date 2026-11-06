@@ -1,5 +1,5 @@
 # Digital Compass
-It started when I noticed my grandmother struggle to tell AI-generated videos apart from real ones. It made me think about how older adults experience the digital world and the importance of making it easier and safer to navigate.
+It started when I noticed my grandmother struggle to tell AI-generated videos apart from real ones. This made me think about how older adults experience the digital world and the importance of making it easier and safer to navigate.
 
 ## Features
 Digital Compass has a character named Juan who guides users through different activities based on situations they might encounter online. These activities include topics like deepfakes, online scams, privacy, and digital well-being, helping users learn how to recognize risks and make better decisions.
