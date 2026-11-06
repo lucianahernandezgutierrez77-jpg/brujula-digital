@@ -1,5 +1,4 @@
 // NAVEGACION
-
 function showSection(id) {
   document.querySelectorAll("main.container > section").forEach(function(sec) {
     sec.style.display = "none";
@@ -7,20 +6,20 @@ function showSection(id) {
   document.getElementById(id).style.display = "block";
 
   if (id === "modulo-salud" && document.getElementById("quiz-container").children.length === 0) {
-    initQuiz(quizData, "quiz-container", "btn-resultado", "resultado-final", "salud", contador, "quizData", "contador");
+    initQuiz(quizData, "quiz-container", "btn-resultado", "resultado-final", "salud", contador);
    }
 
   if (id === "modulo-estafas" && document.getElementById("quiz-container-estafas").children.length === 0) {
   initQuiz(
-    quizDataEstafas,"quiz-container-estafas","btn-resultado-estafas","resultado-final-estafas", "estafas", contadorEstafas, "quizDataEstafas", "contadorEstafas");
+    quizDataEstafas,"quiz-container-estafas","btn-resultado-estafas","resultado-final-estafas", "estafas", contadorEstafas);
   }
 
   if (id === "modulo-deepfakes" && document.getElementById("quiz-container-deepfakes").children.length === 0) {
-    initQuiz(quizDataDeepfakes, "quiz-container-deepfakes", "btn-resultado-deepfakes", "resultado-final-deepfakes", "deepfakes", contadorDeepfakes, "quizDataDeepfakes", "contadorDeepfakes");
+    initQuiz(quizDataDeepfakes, "quiz-container-deepfakes", "btn-resultado-deepfakes", "resultado-final-deepfakes", "deepfakes", contadorDeepfakes);
    }
 
   if (id === "modulo-privacidad" && document.getElementById("quiz-container-privacidad").children.length === 0) {
-    initQuiz(quizDataPrivacidad, "quiz-container-privacidad", "btn-resultado-privacidad", "resultado-final-privacidad", "privacidad", contadorPrivacidad, "quizDataPrivacidad", "contadorPrivacidad");
+    initQuiz(quizDataPrivacidad, "quiz-container-privacidad", "btn-resultado-privacidad", "resultado-final-privacidad", "privacidad", contadorPrivacidad  );
   }
 
   window.scrollTo({ top: 0, behavior: "instant" });
@@ -40,18 +39,6 @@ function mostrarFuente(idFuente) {
     }
 }
 
-let respuestasCorrectas = 0;
-let preguntasRespondidas = 0;
-
-let respuestasCorrectasEstafas = 0;
-let preguntasRespondidasEstafas = 0;
-
-let respuestasCorrectasDeepfakes = 0;
-let preguntasRespondidasDeepfakes = 0;
-
-let respuestasCorrectasPrivacidad = 0;
-let preguntasRespondidasPrivacidad = 0;
-
 let resultadoMostrado = {
   salud: false,
   estafas: false,
@@ -59,78 +46,18 @@ let resultadoMostrado = {
   privacidad: false
 };
 
-const contador = {
-    get correctas() {
-      return respuestasCorrectas;
-    },
-    set correctas(valor) {
-      respuestasCorrectas = valor;
-    },
-    get respondidas() {
-      return preguntasRespondidas;
-    },
-    set respondidas(valor) {
-      preguntasRespondidas = valor;
-    }
-  };
-
-  const contadorEstafas = {
-  get correctas() {
-    return respuestasCorrectasEstafas;
-  },
-  set correctas(valor) {
-    respuestasCorrectasEstafas = valor;
-  },
-
-  get respondidas() {
-    return preguntasRespondidasEstafas;
-  },
-  set respondidas(valor) {
-    preguntasRespondidasEstafas = valor;
-  }
-};
-
-const contadorDeepfakes = {
-  get correctas() {
-    return respuestasCorrectasDeepfakes
-  },
-  set correctas(valor) {
-    respuestasCorrectasDeepfakes = valor;
-  },
-  get respondidas() {
-    return preguntasRespondidasDeepfakes;
-  },
-  set respondidas(valor) {
-    preguntasRespondidasDeepfakes = valor;
-  }
-};
-
-const contadorPrivacidad = {
-  get correctas() {
-    return respuestasCorrectasPrivacidad
-  },
-  set correctas(valor) {
-    respuestasCorrectasPrivacidad = valor;
-  },
-  get respondidas() {
-    return preguntasRespondidasPrivacidad
-  },
-  set respondidas(valor) {
-    preguntasRespondidasPrivacidad = valor;
-  },
-}
+const contador = { correctas: 0, respondidas: 0 };
+const contadorEstafas = { correctas: 0, respondidas: 0 };
+const contadorDeepfakes = { correctas: 0, respondidas: 0 };
+const contadorPrivacidad = { correctas: 0, respondidas: 0 };
 
 
 function initQuiz(
-  quizData, containerId, btnResultadoId, resultadoFinalId, prefijo, contador, nombreQuizData, nombreContador
-) {
+  quizData, containerId, btnResultadoId, resultadoFinalId, prefijo, contador) {
   const container = document.getElementById(containerId);
-  const btnResultado = document.getElementById(btnResultadoId);
-  const resultadoFinal = document.getElementById(resultadoFinalId);
-
-  btnResultado.style.display = "none";
-  resultadoFinal.style.display = "none";
-  resultadoFinal.innerHTML = "";
+  document.getElementById(btnResultadoId).style.display = "none";
+  document.getElementById(resultadoFinalId).style.display = "none";
+  document.getElementById(resultadoFinalId).innerHTML = "";
 
   let quizHTML = "";
 
@@ -142,15 +69,10 @@ function initQuiz(
     item.opciones.forEach(function(opcion, opcionIndice) {
       quizHTML += `<button class="quiz-opcion"
         data-key="${opcion}"
-        onclick="verificarRespuesta(
-          ${nombreQuizData},
-          ${indice},
-          ${opcionIndice},
-          this,
-          '${prefijo}',
-          ${nombreContador},
-          '${btnResultadoId}'
-        )">
+        data-indice="${indice}"
+        data-opcion="${opcionIndice}"
+        data-prefijo="${prefijo}"
+        data-btn="${btnResultadoId}">
         ${t(opcion)}
       </button>`;
     });
@@ -160,6 +82,14 @@ function initQuiz(
   });
 
   container.innerHTML = quizHTML;
+
+  container.querySelectorAll(".quiz-opcion").forEach(function(btn) {
+    btn.addEventListener("click", function() {
+      const i = Number(btn.dataset.indice);
+      const op = Number(btn.dataset.opcion);
+      verificarRespuesta(quizData, i, op, btn, prefijo, contador, btnResultadoId);
+    });
+  });
 }
 
 function verificarRespuesta(
@@ -486,7 +416,7 @@ const quizDataDeepfakes = [
 },
 ];
 
-  // QUIZ MODULO 4
+// QUIZ MODULO 4
 const quizDataPrivacidad = [
 {
   pregunta: "quiz4.p1",

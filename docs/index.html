@@ -24,16 +24,18 @@
     EN
   </button>
   </div>
+
   <h1 data-i18n="header.titulo">Brújula Digital</h1>
   <p data-i18n="header.subtitulo">Usa la tecnología de forma más segura, consciente y saludable.</p>
 </header>
 
 <main class="container">
 
-  <!--INICIO-->
+  <!--PARTE DEL INICIO-->
   <section id="home">
     <div class="home-hero">
-      <!-- JUAN SOSTENIENDO LA BRUJULA -->
+
+      <!-- JUAN Y LA BRUJULA -->
        <div class="home-juan-wrapper">
         <div class="home-brujula-gigante">🧭</div>
         <div class="home-juan">
@@ -50,6 +52,7 @@
       <p data-i18n="home.descripcion" class="home-descripcion">Cada paso que das en el mundo digital es una oportunidad para aprender, descubrir y sentirte más seguro al usar la tecnología.</p>
     </div>
 
+    <!-- MINIATURAS DE LOS MODULOS -->
     <p data-i18n="home.modulos.titulo" class="home-modulos-titulo">¿Qué vas a aprender?</p>
     <div class="home-modulos-grid">
       <div class="home-modulo-card" onclick="showSection('modulo-salud')">
@@ -75,7 +78,7 @@
     </div>
   </section>
 
-  <!-- MODULOS -->
+  <!-- BOTONES DE INICIO DE MODULOS -->
   <section id="modulos" style="display:none">
     <h2 data-i18n="modulos.titulo" style="color: var(--blue);">Módulos</h2>
     <div class="module-card" onclick="showSection('modulo-salud')" data-i18n="modulos.salud">📱 Uso saludable de dispositivos</div>
@@ -134,19 +137,32 @@
     </div>
   </section>
 
-  <!-- LECCION MODULO 1 -->
+  <!-- LA BARRA DE PROGRESO ENTRE LOS MODULOS -->
   <section id="leccion-salud" style="display:none">
     <div class="progreso-modulo">
       <div class="progreso-pasos">
-        <div class="progreso-paso activo"><span>1</span><p data-i18n="modulos.salud-corto">Salud digital</p></div>
+
+         <div class="progreso-paso activo">
+          <span>1</span>
+          <p data-i18n="modulos.salud-corto">Salud digital</p></div>
+         <div class="progreso-linea"></div>
+
+         <div class="progreso-paso">
+          <span>2</span>
+          <p data-i18n="modulos.estafas-corto">Estafas</p></div>
         <div class="progreso-linea"></div>
-        <div class="progreso-paso"><span>2</span><p data-i18n="modulos.estafas-corto">Estafas</p></div>
-        <div class="progreso-linea"></div>
-        <div class="progreso-paso"><span>3</span><p data-i18n="modulos.deepfakes-corto">Deepfakes</p></div>
-        <div class="progreso-linea"></div>
-        <div class="progreso-paso"><span>4</span><p data-i18n="modulos.privacidad-corto">Privacidad</p></div>
+
+         <div class="progreso-paso">
+          <span>3</span>
+          <p data-i18n="modulos.deepfakes-corto">Deepfakes</p></div>
+         <div class="progreso-linea"></div>
+         <div class="progreso-paso">
+          <span>4</span>
+          <p data-i18n="modulos.privacidad-corto">Privacidad</p></div>
       </div>
     </div>
+
+    <!-- LECCION MODULO 1 -->
     <div class="intro">
       <span class="video-label">VIDEO</span>
         <p data-i18n="modulo-salud.video.descripcion"> Antes de continuar, mira este breve video sobre el uso de la tecnología:</p>
@@ -191,7 +207,7 @@
    <p data-i18n="modulo-salud.fuente.descripcion">La Comisión Europea comparte información sobre cómo el exceso de tiempo frente a las pantallas puede afectar nuestra salud:</p>
     <a href="https://health.ec.europa.eu/inthistogether/healthy-screentime_es" target="_blank" rel="noopener noreferrer" class="fuente-link" data-i18n="modulo-salud.fuente.link"> 🔗 Ver más — Comisión Europea </a>
 </div>
-      <div class="separador-seccion"><span>🧭</span></div>
+    <div class="separador-seccion"><span>🧭</span></div>
 
 <!-- ACTIVIDAD MODULO 1 -->
 <div style="text-align: center;">
@@ -250,7 +266,7 @@
   </div>
 </div>
 
-<!-- QUIZ MODULO 1 -->
+    <!-- QUIZ MODULO 1 -->
       <div class="separador-seccion"><span>🧭</span></div>
       <div style="text-align: center">
       <h2 data-i18n="modulo-salud.titulo.quiz"> <span class="subtitle2"> Pon a prueba lo que aprendiste</span> </h2>

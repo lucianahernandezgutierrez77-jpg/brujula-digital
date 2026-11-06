@@ -113,18 +113,18 @@ body {
 }
 
 .home-modulo-card {
-    background: var(--bg-soft);
+    text-align: center;
     border: 1px solid var(--border);
-    border-left: 3px solid var(--magenta);
+    transition: background 0.15s, border-left-color 0.15s;
     border-radius: var(--radius);
+    border-left: 3px solid var(--magenta);
     padding: 16px 14px;
     cursor: pointer;
-    transition: background 0.15s, border-left-color 0.15s;
     display: flex;
+    background: var(--bg-soft);
     flex-direction: column;
     align-items: center;
     gap: 8px;
-    text-align: center;
 }
 
 .home-modulo-card:hover {
@@ -174,11 +174,11 @@ body {
 /*PROGRESO ENTRE LOS MODULOS*/
 
 .progreso-modulo {
+    border-radius: var(--radius);
+    border: 1px solid var(--border);
     margin: 20px 0 0;
     padding: 16px 20px;
     background: white;
-    border-radius: var(--radius);
-    border: 1px solid var(--border);
 }
 
 .progreso-pasos {
@@ -264,7 +264,6 @@ body {
 }
 
 /*SEPARADOR DE SECCION*/
-
 .separador-seccion {
     display: flex;
     align-items: center;
@@ -302,11 +301,11 @@ body {
 
 /*RESALTADORES*/
 .highlight {
-    background-color: var(--magenta-light);
-    padding: 2px 6px;
     border-radius: 4px;
+    padding: 2px 6px;
     font-weight: 600;
     color: var(--magenta);
+    background-color: var(--magenta-light);
 }
 
 .highlight2 {
@@ -336,7 +335,7 @@ body {
     color: inherit;
 }
 
-/* NOTA MENTAL PARA RECORDAR: ELIMINAR LOS RESALTADORES QUE NO SE USAN DESPUES DE IDENTIFICARLOS*/
+/* NOTA MENTAL PARA RECORDAR: ELIMINAR LOS HIGHLIGHTS QUE NO SE USAN DESPUES DE IDENTIFICARLOS*/
 
 /*CONTAINER*/
 .container {
@@ -346,7 +345,6 @@ body {
 }
 
 /*JUAN EN EL INICIO*/
-
 .home-juan {
     position: absolute;
     width: 60px;
@@ -645,18 +643,18 @@ body {
 }
 
 .impact-icon {
-    background: var(--magenta);
     color: white;
     font-weight: bold;
-    font-size: 0.85rem;
     min-width: 28px;
     height: 28px;
     border-radius: 50%;
     display: flex;
+    background: var(--magenta);
     align-items: center;
-    justify-content: center;
     flex-shrink: 0;
+    font-size: 0.85rem;
     margin-top: 2px;
+    justify-content: center;
 }
 
 .impact-item h3 {
